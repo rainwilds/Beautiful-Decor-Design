@@ -49,14 +49,14 @@ input
 
     color-scheme: light dark;
 
-    --color-background-light: #cce4ce;
-    --color-background-dark: #26453d;
+    --color-background-light: #ffffff;
+    --color-background-dark: #2f0728;
 
-    --color-accent-light: #509180;
-    --color-accent-dark: #cff2d2;
+    --color-accent-light: #9f368c;
+    --color-accent-dark: #6b245e;
 
-    --color-accent-opaque-light: rgb(44, 68, 61, 0.2);
-    --color-accent-opaque-dark: rgb(208, 227, 207, 0.2);
+    --color-accent-opaque-light: rgba(159, 54, 140, 0.2);
+    --color-accent-opaque-dark: rgba(107, 36, 94, 0.2);
 
     --color-contrast-light: black;
     --color-contrast-dark: white;
