@@ -336,6 +336,7 @@ footer {
         grid-area: 1 / 2 / 2 / -2;
         max-width: none;
   }
+}
   
   
   @media (max-width: 1200px) {
