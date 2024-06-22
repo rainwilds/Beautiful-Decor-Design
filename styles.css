@@ -64,6 +64,9 @@ input
     --color-contrast-light-1: rgba(0, 0, 0, 0.1);
     --color-contrast-dark-1: rgba(255, 255, 255, 0.1);
 
+    --color-contrast-light-2: rgba(0, 0, 0, 0.2);
+    --color-contrast-dark-2: rgba(255, 255, 255, 0.2);
+
     --color-contrast-light-4: rgba(0, 0, 0, 0.4);
     --color-contrast-dark-4: rgba(255, 255, 255, 0.4);
 
@@ -217,7 +220,7 @@ header {
 
 header>div {
     grid-area: 1 / 1 / 2 / 9;
-    background-color: var(--color-contrast-dark-4);
+    background-color: var(--color-contrast-dark-2);
     z-index: 2;
 } 
 
