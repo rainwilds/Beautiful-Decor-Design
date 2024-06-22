@@ -206,7 +206,6 @@ button:hover {
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     transition-property: background-color;
     transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
 }
 
 header {
@@ -282,11 +281,13 @@ header>nav ul>li {
 }
 
 header nav a {
-    transition: background-color 0.5s ease-out;
-    border: none;
+    border-bottom: solid 1px;
     /* filter: drop-shadow(2px 4px 30px black); PLACEHOLDER */
 }
-
+header nav a:hover {
+    border: none;
+    transition: border 0.5s ease-out;
+}
 header nav nav a {
     padding: none;
 }
