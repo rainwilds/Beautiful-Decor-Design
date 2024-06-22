@@ -285,7 +285,7 @@ header nav a {
     /* filter: drop-shadow(2px 4px 30px black); PLACEHOLDER */
 }
 header nav a:hover {
-    border: none;
+    border: transparent;
     transition: border 0.5s ease-out;
 }
 header nav nav a {
