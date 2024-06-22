@@ -337,8 +337,8 @@ footer {
     }
     header>hgroup {
         grid-area: 1 / 2 / 2 / -2;
-        max-width: none;
     }
+
 }
 
 
@@ -349,6 +349,9 @@ footer {
     }
     header>nav {
         display: none;
+    }
+    header>hgroup {
+        max-width: none;
     }
 }
 
