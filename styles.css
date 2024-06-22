@@ -92,9 +92,9 @@ input
     --font-2-weight-medium: 400;
     --font-2-weight-heavy: 600;
 
-    --font-2-size-small: 15px;
-    --font-2-size-medium: 18px;
-    --font-2-size-large: 20px;
+    --font-2-size-small: 19px;
+    --font-2-size-medium: 22px;
+    --font-2-size-large: 24px;
 
     /* base font */
     font-family: var(--font-2-family);
