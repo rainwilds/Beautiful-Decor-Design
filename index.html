@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Behive: Property Visuals that Create a Buzz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Property visual for the real estate agents, designers and builders">
+    <meta name="keywords" content="">
+    <meta name="author" content="David Dufourq">
+    <!-- <link rel="icon" sizes="" type="image/svg" href=""> -->
+    <!-- <link rel="apple-touch-icon" sizes="" href=""> -->
+    <!-- <link rel="mask-icon" href="" color=""> -->
+    <link rel="canonical" href="">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hhp5lle.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/8430ed0e74.css" crossorigin="anonymous">
+</head>
+
+<body>
+<header>
+        <!-- overlay PLACEHOLDER
+        <div></div> -->
+        <!-- header video PLACEHOLDER
+        <video autoplay muted loop disablepictureinpicture poster="./img/RE-image.jpg">
+            <source src="./img/RE-video_2.webm" type="video/webm">
+        </video> -->
+        <nav>
+            <ul>
+                <li><a href="#">
+                        <i class="fa-sharp fa-light fa-house-chimney"></i>
+                        Outdoor</a></li>
+                <li><a href="#">
+                        <i class="fa-sharp fa-light fa-person-simple"></i>
+                    Indoor</a></li>
+                <li><a href="#">
+                        <i class="fa-sharp fa-light fa-images"></i>
+                        Repairs</a></li>
+                <li><a id="header-nav-active" href="#plants">
+                        <i class="fa-sharp fa-light fa-seedling"></i>
+                       Contact
+                    </a>
+                    <!-- <nav>
+                        <ul>
+                            <li><a href="#">Eucalypts</a></li>
+                            <li><a href="#">Wattles</a></li>
+                            <li><a href="#">Acacia</a></li>
+                        </ul>
+                    </nav> -->
+                </li>
+                <li><a href="#">
+                        <i class="fa-sharp fa-light fa-typewriter"></i>
+                        Blog</a></li>
+                <li><a href="#">
+                        <i class="fa-sharp fa-light fa-at"></i>
+                        Contact</a></li>
+            </ul>
+        </nav>
+        <hgroup>
+            <h1>Beautiful Home, Beautiful Life</h1>
+            <p>Showcase properties in their best light with a range of visual services for property experts.
+                Specialising in commercial & tourism.</p>
+        </hgroup>
+
+    </header>
+    <main>
+        <!-- form PLACEHOLDER
+        <form id="my-form" action="https://formspree.io/f/xblrrlaz" method="POST">
+            <label>Email:</label>
+            <input type="email" name="email" />
+            <label>Message:</label>
+            <input type="text" name="message" />
+            <button id="my-form-button">Submit</button>
+            <p id="my-form-status"></p>
+          </form>       -->
+    </main>
+    <footer>
+        footer content
+    </footer>
+
+    <!-- form ajax PLACEHOLDER
+    <script>
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              status.innerHTML = "Thanks for your submission!";
+              form.reset()
+            } else {
+              response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                  status.innerHTML = "Oops! There was a problem submitting your form"
+                }
+              })
+            }
+          }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
+      </script> -->
+</body>
+
+</html>
