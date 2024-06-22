@@ -272,9 +272,9 @@ header>hgroup {
     grid-area: 1 / 2 / 2 / span 3;
     z-index: 3;
     height: fit-content;
+    width: max-content;
     align-self: end;
     bottom: var(--space-huge);
-    position: relative;
 }
 
 main {
