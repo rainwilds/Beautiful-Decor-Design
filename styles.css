@@ -321,9 +321,7 @@ footer {
 
 
 @media (max-width: 768px) {
-header>hgroup{
-    grid-area: 1 / 2 / 2 / -2;
-    max-width: none;
+
 }
   }
   
@@ -333,6 +331,10 @@ header>hgroup{
     dialog {
       max-width: 90vw;
     }
+
+    header>hgroup{
+        grid-area: 1 / 2 / 2 / -2;
+        max-width: none;
   }
   
   
