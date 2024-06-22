@@ -196,10 +196,9 @@ header {
     grid-area: 1 / 1 / -1 / -1;
     background-color: light-dark(var(--color-accent-opaque-light),
             var(--color-accent-opaque-dark));
-    /* background image PLACEHOLDER 
-    background-image: url(./img/RE-image.jpg);
+    background-image: url(./img/header.jpg);
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover; 
 }
 
 /* background overlay PLACEHOLDER 
