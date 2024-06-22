@@ -223,7 +223,7 @@ header {
 
 
 header>div {
-    grid-area: 1 / 1 / 2 / 9;
+    grid-area: 1 / 1 / -1 / -1;
     background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light));
     z-index: 2;
 } 
@@ -263,6 +263,11 @@ header>nav {
     justify-self: center;
     height: min-content;
     margin-top: var(--space-medium);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: var(--space-tiny) var(--space-medium);
+    border-radius: 10px;
+    background-color: var(--color-contrast-dark-4);
 }
 
 header>nav ul {
