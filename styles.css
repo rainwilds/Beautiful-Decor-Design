@@ -199,6 +199,8 @@ button {
 }
 button:hover {
     background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light));
+    transition-property: background-color;
+    transition-duration: 1s;
 }
 
 header {
