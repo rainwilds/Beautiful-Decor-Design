@@ -208,7 +208,7 @@ header {
 
 header>div {
     grid-area: 1 / 1 / 2 / 9;
-    background-color: #0000005c;
+    background-color: var(--color-contrast-dark-4);
     z-index: 2;
 } 
 
