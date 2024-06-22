@@ -325,6 +325,7 @@ footer {
 
 /***/
 
+/* -- media -- */
 
 /* @media (max-width: 768px) {} */
 
@@ -359,3 +360,5 @@ footer {
       aspect-ratio: 3 / 1;
     } */
 }
+
+/***/
