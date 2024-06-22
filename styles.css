@@ -282,10 +282,11 @@ header>nav ul>li {
 
 header nav a {
     border-bottom: solid 1px;
+    border-color: var(--color-accent-light);
     /* filter: drop-shadow(2px 4px 30px black); PLACEHOLDER */
 }
 header nav a:hover {
-    border: transparent;
+    border-color: transparent;
     transition: border 0.5s ease-out;
 }
 header nav nav a {
