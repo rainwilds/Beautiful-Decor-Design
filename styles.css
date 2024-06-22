@@ -194,6 +194,13 @@ a:not(button a) {
             var(--color-contrast-dark-1));
 }
 
+button {
+    border-radius: 10px;
+}
+button:hover {
+    background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light));
+}
+
 header {
     display: grid;
     grid-template: subgrid / subgrid;
