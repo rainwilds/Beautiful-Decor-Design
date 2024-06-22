@@ -24,7 +24,7 @@ input
 /* textarea TEST */
     {
     font: inherit;
-    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+    background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light));
     padding: var(--space-tiny);
     border: none;
 }
@@ -181,8 +181,8 @@ p:not(:last-of-type) {
 }
 
 a {
-    color: light-dark(var(--color-contrast-light-8),
-            var(--color-contrast-dark-8));
+    color: light-dark(var(--color-accent-light),
+            var(--color-accent-dark));
     text-decoration: none;
 
     /* adobe font requirements */
@@ -201,7 +201,7 @@ button {
     border-radius: 10px;
 }
 button:hover {
-    background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light));
+    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     transition-property: background-color;
     transition-duration: 1s;
 }
