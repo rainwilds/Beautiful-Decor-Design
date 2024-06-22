@@ -273,7 +273,7 @@ header>hgroup {
     z-index: 3;
     height: fit-content;
     width: max-content;
-    align-self: end;
+    align-self: center;
     bottom: var(--space-huge);
 }
 
