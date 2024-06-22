@@ -318,3 +318,41 @@ footer {
 }
 
 /***/
+
+
+@media (max-width: 768px) {
+
+  }
+  
+  
+  @media (max-width: 980px) {
+  
+    dialog {
+      max-width: 90vw;
+    }
+  }
+  
+  
+  @media (max-width: 1200px) {
+    body {
+      grid-template: 100vh auto auto / 3vw repeat(6, 1fr) 3vw;
+  
+    }
+  
+    header>nav {
+      display: none;
+    }
+  
+  
+  }
+  
+  @media (min-width: 1921px) {
+    body {
+        grid-template: 100vh auto auto / 20vw repeat(6, 1fr) 20vw;
+  
+    }
+  
+    /* header>figure>picture>img {
+      aspect-ratio: 3 / 1;
+    } */
+}
