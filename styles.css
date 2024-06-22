@@ -250,6 +250,7 @@ header>nav ul {
     list-style-type: none;
     display: flex;
     align-items: center;
+    gap: var(--space-large);
 }
 
 header>nav ul>li {
