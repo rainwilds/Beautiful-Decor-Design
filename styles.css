@@ -192,6 +192,7 @@ a {
     /***/
 
 }
+
 a:not(button a) {
     border-bottom: solid 5px light-dark(var(--color-contrast-light-1),
             var(--color-contrast-dark-1));
@@ -200,6 +201,7 @@ a:not(button a) {
 button {
     border-radius: 10px;
 }
+
 button:hover {
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     transition-property: background-color;
@@ -215,7 +217,7 @@ header {
             var(--color-accent-opaque-dark));
     background-image: url(./img/header.jpg);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     overflow: hidden;
 }
 
@@ -276,7 +278,7 @@ header>nav ul>li {
 
 header nav a {
     transition: background-color 0.5s ease-out,
-    border: none;
+        border: none;
     /* filter: drop-shadow(2px 4px 30px black); PLACEHOLDER */
 }
 
@@ -292,12 +294,15 @@ header>hgroup {
     max-width: 30vw;
     justify-self: center;
 }
+
 header>hgroup>p {
     padding-bottom: var(--space-medium);
 }
+
 header>hgroup>button:first-of-type {
     margin-right: var(--space-small);
 }
+
 header>span {
     grid-area: 1 / 1 / 2 / 9;
     z-index: 2;
@@ -305,6 +310,7 @@ header>span {
     font-size: clamp(100vh, 100vh, 100vw);
     opacity: 0.1;
 }
+
 main {
     display: grid;
     grid-template: subgrid / subgrid;
@@ -320,44 +326,35 @@ footer {
 /***/
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {} */
 
-}
-  
-  
-  
-  @media (max-width: 980px) {
-  
+
+
+@media (max-width: 980px) {
     dialog {
-      max-width: 90vw;
+        max-width: 90vw;
     }
-
-    header>hgroup{
+    header>hgroup {
         grid-area: 1 / 2 / 2 / -2;
         max-width: none;
-  }
+    }
 }
-  
-  
-  @media (max-width: 1200px) {
+
+
+@media (max-width: 1200px) {
     body {
-      grid-template: 100vh auto auto / 3vw repeat(6, 1fr) 3vw;
-  
+        grid-template: 100vh auto auto / 3vw repeat(6, 1fr) 3vw;
+
     }
-  
     header>nav {
-      display: none;
+        display: none;
     }
-  
-  
-  }
-  
-  @media (min-width: 1921px) {
+}
+
+@media (min-width: 1921px) {
     body {
         grid-template: 100vh auto auto / 20vw repeat(6, 1fr) 20vw;
-  
     }
-  
     /* header>figure>picture>img {
       aspect-ratio: 3 / 1;
     } */
