@@ -196,38 +196,48 @@ header {
     grid-area: 1 / 1 / -1 / -1;
     background-color: light-dark(var(--color-accent-opaque-light),
             var(--color-accent-opaque-dark));
-    /* background-image: url(./img/RE-image.jpg);
+    /* background image PLACEHOLDER 
+    background-image: url(./img/RE-image.jpg);
     background-repeat: no-repeat;
     background-size: cover; */
 }
 
+/* background overlay PLACEHOLDER 
 header>div {
     grid-area: 1 / 1 / 2 / 9;
     background-color: #0000005c;
     z-index: 2;
-}
+} */
 
-header>video {
-    grid-area: 1 / 1 / 2 / 9;
-    width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-}
+/* background overlay hover transition PLACEHOLDER
 header>div:hover{
     transition-property: background-color;
     transition-duration: 3s;
     transition-delay: 1s;
     background-color: transparent;
-}
+}*/
+
+/* header video initial opacity PLACEHOLDER
 header > div ~ *:not(video) {
     opacity: 1;
-}
+*/
+
+/* header video PLACEHOLDER
+header>video {
+    grid-area: 1 / 1 / 2 / 9;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+} */
+
+/* selects all except the header video PLACEHOLDER
 header:hover > div ~ *:not(video) {
     transition-property: opacity;
     transition-duration: 2s;
     transition-delay: 1s;
     opacity: 0;
-}
+}*/
+
 header>nav {
     grid-area: 1 / 1 / 2 / 9;
     z-index: 3;
@@ -250,7 +260,7 @@ header nav a {
     transition: background-color 0.5s ease-out,
         color 0.5s ease-out;
     border: none;
-    filter: drop-shadow(2px 4px 30px black);
+    /* filter: drop-shadow(2px 4px 30px black); PLACEHOLDER */
 }
 
 header nav nav a {
@@ -270,6 +280,12 @@ main {
     display: grid;
     grid-template: subgrid / subgrid;
     grid-area: 2 / 1 / 3 / -1;
+}
+
+footer {
+    display: grid;
+    grid-template: subgrid / subgrid;
+    grid-area: 3 / 1 / 4 / -1;
 }
 
 /***/
