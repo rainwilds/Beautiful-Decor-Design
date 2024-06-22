@@ -81,15 +81,17 @@ input
     /* -- font -- */
 
     /* font 1 */
-    --font-1-family: acumin-pro, sans-serif;
+    --font-1-family: hummingbird, sans-serif;
     /* --font-1-weight-light: 400; PLACEHOLDER */
-    /* --font-1-weight-medium: 400 PLACEHOLDER; */
-    --font-1-weight-heavy: 700;
+    --font-1-weight-medium: 400 PLACEHOLDER;
+    /* --font-1-weight-heavy: 700 PLACEHOLDER; */
+
     /* font 2 */
-    --font-2-family: myriad-pro, sans-serif;
-    --font-2-weight-light: 300;
+    --font-2-family: chaparral-pro, serif;
+    /* --font-2-weight-light: 300 PLACEHOLDER; */
     --font-2-weight-medium: 400;
-    --font-2-weight-heavy: 700;
+    --font-2-weight-heavy: 600;
+
     --font-2-size-small: 15px;
     --font-2-size-medium: 18px;
     --font-2-size-large: 20px;
@@ -136,7 +138,7 @@ h6 {
 
     /* adobe font requirements */
 
-    font-weight: var(--font-1-weight-heavy);
+    font-weight: var(--font-1-weight-medium);
     font-style: normal;
 
     /***/
@@ -184,7 +186,7 @@ a {
 
     /* adobe font requirements */
 
-    font-weight: var(--font-2-weight-heavy);
+    font-weight: var(--font-2-weight-medium);
 
     /***/
 
