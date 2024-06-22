@@ -133,8 +133,8 @@ h4,
 h5,
 h6 {
     font-family: var(--font-1-family);
-    line-height: 0;
-    padding-bottom: var(--space-medium);
+    line-height: 1;
+    padding-bottom: var(--space-tiny);
 
     /* adobe font requirements */
 
@@ -145,7 +145,7 @@ h6 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 h2 {
