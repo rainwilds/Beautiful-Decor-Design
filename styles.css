@@ -277,7 +277,12 @@ header>hgroup {
     text-align: center;
     bottom: var(--space-huge);
 }
-
+header>hgroup>p {
+    padding-bottom: var(--space-medium);
+}
+header>hgroup>button:first-of-type {
+    margin-right: var(--space-small);
+}
 main {
     display: grid;
     grid-template: subgrid / subgrid;
