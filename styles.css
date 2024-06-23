@@ -36,6 +36,10 @@ button {
     cursor: pointer;
 }
 
+form {
+    grid-template-rows: inherit;
+}
+
 form > button:hover {
     color: var(--color-static-light-6)
 }
