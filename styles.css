@@ -28,6 +28,9 @@ textarea
     border: solid 1px transparent;
     border-radius: var(--border-radius-small);
     color: var(--color-static-light);
+    outline: solid 1px;
+    outline-color: transparent;
+
 }
 
 button {
@@ -43,8 +46,8 @@ input:not(:last-of-type) {
 }
 
 input:focus-visible, select:focus-visible, textarea:focus-visible {
-    outline: solid 1px;
     outline-color: var(--color-static-light);
+    transition: outline 1s;
 }
 
 input:last-of-type, textarea:last-of-type {
