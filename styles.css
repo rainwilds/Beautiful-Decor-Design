@@ -145,7 +145,7 @@ h5,
 h6 {
     font-family: var(--font-1-family);
     line-height: 1;
-    padding-bottom: var(--space-tiny);
+    /* padding-bottom: var(--space-tiny); PLACEHOLDER */
 
     /* adobe font requirements */
 
@@ -349,9 +349,12 @@ main>section {
     border-radius: var(--border-radius-medium);
 }
 
+main>section:first-child>hgroup>img {
+    margin-bottom: var(--space-small);
+}
+
 main>section:first-child {
     grid-area: 2 / 2 / 3 / -2;
-    background: black;
     display: flex;
     gap: var(--space-medium);
 }
