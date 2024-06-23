@@ -467,6 +467,9 @@ main>section:first-child {
     display: flex;
     gap: var(--space-medium);
     margin-top: var(--space-large);
+    background-image: repeating-linear-gradient(to right, var(--color-accent-light), var(--color-accent-light) 10px, transparent 10px, transparent);
+    background-size: 32px 32px;
+    background-color: var(--color-accent-dark);
 }
 
 main>section:first-child>hgroup {
