@@ -42,9 +42,9 @@ input:not(:last-of-type) {
     margin-bottom: var(--space-small);
 }
 
-input:focus-visible, select:focus-visible {
+input:focus-visible, select:focus-visible, textarea:focus-visible {
     outline: solid 1px;
-    outline-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+    outline-color: var(--color-static-light);
 }
 
 input:last-of-type, textarea:last-of-type {
@@ -307,6 +307,10 @@ button:hover {
 
 form {
     display: grid;
+}
+
+form > p {
+    margin-top: var(--space-medium);
 }
 
 header {
