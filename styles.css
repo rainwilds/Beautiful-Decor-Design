@@ -325,13 +325,12 @@ main {
 }
 
 main > section:first-child {
-    grid-area: 2 / 2 / 3 / -1;
+    grid-area: 2 / 2 / 3 / -2;
     background: black;
+    display: flex;
+ gap: var(--space-medium);
 }
 
-main > section > hgroup:first-child{
-
-}
 
 footer {
     display: grid;
