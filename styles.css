@@ -344,13 +344,6 @@ main {
 main>section {
     grid-template: subgrid / subgrid;
     margin-bottom: var(--space-large);
-    border: solid 1px;
-    border-color: var(--color-accent-light);
-    border-radius: var(--border-radius-medium);
-}
-
-main>section:first-child>hgroup>img {
-    margin-bottom: var(--space-small);
 }
 
 main>section:first-child {
@@ -361,6 +354,13 @@ main>section:first-child {
 
 main>section:first-child>hgroup {
     padding: var(---space-medium);
+    border: solid 1px;
+    border-color: var(--color-accent-light);
+    border-radius: var(--border-radius-medium);
+}
+
+main>section:first-child>hgroup>img {
+    margin-bottom: var(--space-small);
 }
 
 main>section:last-child {
