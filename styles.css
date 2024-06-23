@@ -176,23 +176,23 @@ h1 {
 }
 
 h2 {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }
 
 h4 {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }
 
 h5 {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
 }
 
 h6 {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
 }
 
 p {
@@ -369,7 +369,7 @@ main>section:first-child {
 }
 
 main>section:first-child>hgroup {
-    padding: var(---space-medium);
+    padding: var(--space-small);
     border: solid 1px;
     border-color: var(--color-accent-light);
     border-radius: var(--border-radius-medium);
