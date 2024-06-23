@@ -149,6 +149,7 @@ h6 {
 
 h1 {
     font-size: 4rem;
+    color: var(--color--static--light);
 }
 
 h2 {
@@ -224,7 +225,7 @@ header {
 
 header>div {
     grid-area: 1 / 1 / -1 / -1;
-    background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light));
+    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     z-index: 2;
 }
 
@@ -307,6 +308,7 @@ header>hgroup {
 
 header>hgroup>p {
     padding-bottom: var(--space-medium);
+    color: var(--color--static--light);
 }
 
 header>hgroup>button:first-of-type {
