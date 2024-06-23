@@ -369,7 +369,7 @@ main>section:first-child {
 }
 
 main>section:first-child>hgroup {
-    padding: var(--space-small);
+    padding: var(--space-medium);
     border: solid 1px;
     border-color: var(--color-accent-light);
     border-radius: var(--border-radius-medium);
@@ -423,6 +423,10 @@ footer {
 
     header>hgroup {
         max-width: none;
+    }
+
+    main>section:first-child>hgroup {
+        padding: var(---space-small);
     }
 }
 
