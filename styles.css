@@ -116,6 +116,14 @@ input
 
     /***/
 
+    /* -- border -- */
+
+    --border-radius-small: 10px;
+    --border-radius-medium: 20px;
+    --border-radius-large: 30px;
+
+    /***/
+
 }
 
 /***/
@@ -308,6 +316,9 @@ header>hgroup {
     text-align: center;
     max-width: 50vw;
     justify-self: center;
+    border: solid 1px;
+    border-color: var(--color-accent-light);
+    border-radius: var(--border-radius-medium);
 }
 
 header>hgroup>p {
