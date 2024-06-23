@@ -468,6 +468,11 @@ main>section:last-child {
     grid-area: 3 / 3 / 4 / -3;
 }
 
+main>section:last-child hgroup {
+    text-align: center;
+    margin-bottom: var(--space-medium);
+}
+
 
 footer {
     display: grid;
