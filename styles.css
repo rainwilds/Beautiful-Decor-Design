@@ -309,6 +309,7 @@ button:hover {
 
 form {
     display: grid;
+    grid-template-columns: auto auto;
 }
 
 form > p {
