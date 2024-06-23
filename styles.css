@@ -25,6 +25,11 @@ form > button:hover {
     color: var(--color-static-light-6)
 }
 
+input:focus {
+    border: solid 1px;
+    border-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+}
+
 input:last-of-type {
     margin-bottom: var(--space-small);
 }
