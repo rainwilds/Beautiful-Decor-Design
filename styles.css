@@ -211,11 +211,11 @@ button {
     border-radius: 10px;
 }
 
-button > a {
+button>a {
     color: var(--color-static-light);
 }
 
-button > a:hover {
+button>a:hover {
     color: var(--color-contrast-light-6);
 }
 
@@ -300,17 +300,13 @@ header>nav ul>li {
 
 header nav a {
     border-bottom: solid 1px;
-    border-color: var(--color-accent-light);
-    /* filter: drop-shadow(2px 4px 30px black); PLACEHOLDER */
+    border-color: light-dark(var(--color-accent-light),
+            var(--color-accent-dark));
 }
 
 header nav a:hover {
     border-color: transparent;
     transition: border 0.5s ease-out;
-}
-
-header nav nav a {
-    padding: none;
 }
 
 header>hgroup {
@@ -320,9 +316,6 @@ header>hgroup {
     text-align: center;
     max-width: 50vw;
     justify-self: center;
-    border: solid 1px;
-    border-color: var(--color-accent-light);
-    border-radius: var(--border-radius-medium);
 }
 
 header>hgroup>p {
@@ -351,6 +344,9 @@ main {
 main>section {
     grid-template: subgrid / subgrid;
     margin-bottom: var(--space-large);
+    border: solid 1px;
+    border-color: var(--color-accent-light);
+    border-radius: var(--border-radius-medium);
 }
 
 main>section:first-child {
