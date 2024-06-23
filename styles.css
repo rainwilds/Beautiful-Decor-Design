@@ -42,7 +42,7 @@ button,
 input
 
 /* select, TEST */
-/* textarea TEST */
+textarea
     {
     font: inherit;
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
@@ -449,7 +449,6 @@ main>section:first-child>hgroup>img {
 
 main>section:last-child {
     grid-area: 3 / 3 / 4 / -3;
-    background: white;
 }
 
 
