@@ -17,6 +17,18 @@ picture {
     display: block;
 }
 
+button {
+    cursor: pointer;
+}
+
+form > button:hover {
+    color: var(--color-static-light-6)
+}
+
+input:last-of-type {
+    margin-bottom: var(--space-small);
+}
+
 button,
 input
 
@@ -27,6 +39,8 @@ input
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     padding: var(--space-tiny);
     border: none;
+    border-radius: var(--border-radius-small);
+    color: var(--color-static-light);
 }
 
 /***/
@@ -222,10 +236,6 @@ a:not(button > a) {
             var(--color-contrast-dark-1));
 }
 
-button {
-    border-radius: 10px;
-}
-
 button>a {
     color: var(--color-static-light);
 }
@@ -254,7 +264,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    padding-bottom: var(--space-large);
 }
 
 
@@ -370,6 +379,7 @@ main>section:first-child {
     grid-area: 2 / 2 / 3 / -2;
     display: flex;
     gap: var(--space-medium);
+    margin-top: var(--space-large);
 }
 
 main>section:first-child>hgroup {
@@ -387,9 +397,9 @@ main>section:first-child>hgroup{
 }
 
 main>section:first-child>hgroup>img {
-    margin-bottom: var(--space-small);
-    border-radius: var(--border-radius-medium);
-    aspect-ratio: 3 / 2;
+    margin-bottom: var(--space-medium);
+    border-radius: var(--border-radius-small);
+    aspect-ratio: 16 / 9;
 }
 
 main>section:last-child {
