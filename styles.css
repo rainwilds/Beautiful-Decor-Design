@@ -482,7 +482,7 @@ main>section:first-child>hgroup {
 }
 
 main>section:first-child>hgroup:hover {
-    background-color: light(var(--color-accent-opaque-dark),var(--color-accent-opaque-light));
+    background-color: light-dark(var(--color-accent-opaque-light),var(--color-accent-opaque-dark));
     transition: background-color 0.5s;
 }
 
