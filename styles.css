@@ -476,10 +476,11 @@ main>section:first-child>hgroup {
     background-color: transparent;
 }
 
-main>section:first-child>hgroup{
+main>section:first-child>hgroup:hover {
     background-color: light(var(--color-accent-opaque-light),var(--color-accent-opaque-dark));
     transition: background-color 0.5s;
 }
+
 
 main>section:first-child>hgroup>img {
     margin-bottom: var(--space-medium);
