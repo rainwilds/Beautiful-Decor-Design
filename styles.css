@@ -378,6 +378,12 @@ main>section:first-child>hgroup {
     border: solid 1px;
     border-color: var(--color-accent-light);
     border-radius: var(--border-radius-medium);
+    background-color: transparent;
+}
+
+main>section:first-child>hgroup{
+    background-color: light(var(--color-accent-opaque-light),var(--color-accent-opaque-dark));
+    transition: background-color 0.5s;
 }
 
 main>section:first-child>hgroup>img {
