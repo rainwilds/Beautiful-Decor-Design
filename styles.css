@@ -311,7 +311,8 @@ form {
 }
 
 form > p {
-    margin-top: var(--space-medium);
+    margin-top: var(--space-small);
+    grid-row: 6;
 }
 
 form > label {
@@ -334,9 +335,6 @@ form>textarea {
 
 form > button {
     grid-row: 5;
-    grid-column: 2;
-    width: fit-content;
-    justify-self: right;
 }
 
 
