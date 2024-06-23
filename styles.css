@@ -17,6 +17,19 @@ picture {
     display: block;
 }
 
+button,
+input,
+/* select, TEST */
+textarea
+    {
+    font: inherit;
+    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+    padding: var(--space-tiny);
+    border: solid 1px transparent;
+    border-radius: var(--border-radius-small);
+    color: var(--color-static-light);
+}
+
 button {
     cursor: pointer;
 }
@@ -38,18 +51,8 @@ input:last-of-type, textarea:last-of-type {
     margin-bottom: var(--space-medium);
 }
 
-button,
-input
-
-/* select, TEST */
-textarea
-    {
-    font: inherit;
-    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
-    padding: var(--space-tiny);
-    border: solid 1px transparent;
-    border-radius: var(--border-radius-small);
-    color: var(--color-static-light);
+label {
+    margin-bottom: var(--space-tiny);
 }
 
 /***/
