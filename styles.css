@@ -491,9 +491,9 @@ main>section:first-child>hgroup>img {
 
 main>section:last-child {
     grid-area: 3 / 3 / 4 / -3;
-    background-image: repeating-linear-gradient(to right, var(--color-accent-light), var(--color-accent-light) 10px, transparent 10px, transparent);
+    /* background-image: repeating-linear-gradient(to right, var(--color-accent-light), var(--color-accent-light) 10px, transparent 10px, transparent);
     background-size: 32px 32px;
-    background-color: var(--color-accent-dark);
+    background-color: var(--color-accent-dark); */
 }
 
 main>section:last-child hgroup {
