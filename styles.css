@@ -79,6 +79,21 @@ input
     --color-static-light: white;
     --color-static-dark: black;
 
+    --color-static-dark-1: rgba(0, 0, 0, 0.1);
+    --color-static-light-1: rgba(255, 255, 255, 0.1);
+
+    --color-static-dark-2: rgba(0, 0, 0, 0.2);
+    --color-static-light-2: rgba(255, 255, 255, 0.2);
+
+    --color-static-dark-4: rgba(0, 0, 0, 0.4);
+    --color-static-light-4: rgba(255, 255, 255, 0.4);
+
+    --color-static-dark-6: rgba(0, 0, 0, 0.6);
+    --color-static-light-6: rgba(255, 255, 255, 0.6);
+
+    --color-static-dark-8: rgba(0, 0, 0, 0.8);
+    --color-static-light-8: rgba(255, 255, 255, 0.8);
+
     /***/
 
     /* -- font -- */
@@ -216,7 +231,7 @@ button>a {
 }
 
 button>a:hover {
-    color: var(--color-contrast-light-6);
+    color: var(--color-static-light-6);
 }
 
 button:hover {
