@@ -425,8 +425,8 @@ footer {
 /* -- media -- */
 
 @media (max-width: 768px) {
-    main>section:first-child {
-        grid-area: 2 / 2 / 3 / -2;
+    main>section  {
+        grid-area: 2 / 2 / 3 / -2 !important;
     }
 }
 
