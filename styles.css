@@ -40,18 +40,18 @@ form > button:hover {
     color: var(--color-static-light-6)
 }
 
-input:not(:last-of-type) {
+/* input:not(:last-of-type) {
     margin-bottom: var(--space-small);
-}
+} */
 
 input:focus-visible, select:focus-visible, textarea:focus-visible {
     outline-color: var(--color-static-light);
     transition: outline 1s;
 }
 
-input:last-of-type, textarea:last-of-type {
+/* input:last-of-type, textarea:last-of-type {
     margin-bottom: var(--space-medium);
-}
+} */
 
 label {
     margin-bottom: var(--space-tiny);
