@@ -240,6 +240,10 @@ button:hover {
     transition-duration: 0.5s;
 }
 
+form {
+    display: grid;
+}
+
 header {
     display: grid;
     grid-template: subgrid / subgrid;
@@ -250,7 +254,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    margin-bottom: var(--space-large);
+    padding-bottom: var(--space-large);
 }
 
 
@@ -370,6 +374,7 @@ main>section:first-child {
 
 main>section:first-child>hgroup {
     padding: var(--space-medium);
+    text-align: center;
     border: solid 1px;
     border-color: var(--color-accent-light);
     border-radius: var(--border-radius-medium);
@@ -377,6 +382,8 @@ main>section:first-child>hgroup {
 
 main>section:first-child>hgroup>img {
     margin-bottom: var(--space-small);
+    border-radius: var(--border-radius-medium);
+    aspect-ratio: 3 / 2;
 }
 
 main>section:last-child {
@@ -426,7 +433,7 @@ footer {
     }
 
     main>section:first-child>hgroup {
-        padding: var(---space-small);
+        padding: var(--space-small);
     }
 }
 
