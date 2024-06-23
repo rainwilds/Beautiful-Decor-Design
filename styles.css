@@ -330,6 +330,10 @@ main > section:first-child {
     display: flex;
  gap: var(--space-medium);
 }
+main > section:last-child {
+    grid-area: 3 / 3 / 4 / -3;
+    background: white;
+}
 
 
 footer {
