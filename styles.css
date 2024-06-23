@@ -203,6 +203,10 @@ button {
     border-radius: 10px;
 }
 
+button a {
+    color: var(--color-static-light);
+}
+
 button:hover {
     background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light));
     transition-property: background-color;
