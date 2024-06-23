@@ -202,7 +202,7 @@ a {
 
 }
 
-a:not(button a) {
+a:not(button > a) {
     border-bottom: solid 5px light-dark(var(--color-contrast-light-1),
             var(--color-contrast-dark-1));
 }
@@ -211,8 +211,12 @@ button {
     border-radius: 10px;
 }
 
-button a {
+button > a {
     color: var(--color-static-light);
+}
+
+button > a:hover {
+    color: var(--color-contrast-light-6);
 }
 
 button:hover {
