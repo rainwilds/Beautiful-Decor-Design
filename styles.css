@@ -24,7 +24,7 @@ input
 /* textarea TEST */
     {
     font: inherit;
-    background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light));
+    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     padding: var(--space-tiny);
     border: none;
 }
@@ -76,8 +76,8 @@ input
     --color-contrast-light-8: rgba(0, 0, 0, 0.8);
     --color-contrast-dark-8: rgba(255, 255, 255, 0.8);
 
-    --color--static--light: white;
-    --color--static--dark: black;
+    --color-static-light: white;
+    --color-static-dark: black;
 
     /***/
 
@@ -149,7 +149,7 @@ h6 {
 
 h1 {
     font-size: 4rem;
-    color: var(--color--static--light);
+    color: var(--color-static-light);
 }
 
 h2 {
@@ -204,7 +204,7 @@ button {
 }
 
 button:hover {
-    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+    background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light));
     transition-property: background-color;
     transition-duration: 0.5s;
 }
@@ -308,7 +308,7 @@ header>hgroup {
 
 header>hgroup>p {
     padding-bottom: var(--space-medium);
-    color: var(--color--static--light);
+    color: var(--color-static-light);
 }
 
 header>hgroup>button:first-of-type {
