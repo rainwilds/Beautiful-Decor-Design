@@ -412,6 +412,7 @@ footer {
     display: grid;
     grid-template: subgrid / subgrid;
     grid-area: 3 / 1 / 4 / -1;
+    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
 }
 
 /***/
