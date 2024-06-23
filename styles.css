@@ -32,6 +32,8 @@ textarea
     outline-color: transparent;
     background-image: repeating-linear-gradient(to right, var(--color-accent-opaque-light), var(--color-accent-opaque-light) 10px, transparent 10px, transparent);
     background-size: 32px 32px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 button {
@@ -49,6 +51,7 @@ form > button:hover {
 input:focus-visible, select:focus-visible, textarea:focus-visible {
     outline-color: var(--color-static-light);
     transition: outline 1s;
+    background-image: none;
 }
 
 /* input:last-of-type, textarea:last-of-type {
@@ -312,7 +315,6 @@ form {
 }
 
 form > p {
-    margin-top: var(--space-small);
     grid-row: 6;
 }
 
@@ -336,6 +338,7 @@ form>textarea {
 
 form > button {
     grid-row: 5;
+    margin-top: var(--space-small);
 }
 
 
