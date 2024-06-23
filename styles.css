@@ -30,7 +30,8 @@ textarea
     color: var(--color-static-light);
     outline: solid 1px;
     outline-color: transparent;
-
+    background-image: repeating-linear-gradient(to right, var(--color-accent-opaque-light), var(--color-accent-opaque-light) 10px, transparent 10px, transparent);
+    background-size: 32px 32px;
 }
 
 button {
@@ -38,7 +39,8 @@ button {
 }
 
 form > button:hover {
-    color: var(--color-static-light-6)
+    color: var(--color-static-light-6);
+    background-image: none;
 }
 
 /* input:not(:last-of-type) {
@@ -490,9 +492,6 @@ main>section:first-child>hgroup>img {
 
 main>section:last-child {
     grid-area: 3 / 3 / 4 / -3;
-    /* background-image: repeating-linear-gradient(to right, var(--color-accent-light), var(--color-accent-light) 10px, transparent 10px, transparent);
-    background-size: 32px 32px;
-    background-color: var(--color-accent-dark); */
 }
 
 main>section:last-child hgroup {
