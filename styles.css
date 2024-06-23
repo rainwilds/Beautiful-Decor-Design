@@ -25,10 +25,6 @@ form > button:hover {
     color: var(--color-static-light-6)
 }
 
-input {
-    border: solid 1px transparent;
-}
-
 input:not(:last-of-type) {
     margin-bottom: var(--space-small);
 }
@@ -38,8 +34,8 @@ input:focus-visible {
     border-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
 }
 
-input:last-of-type {
-    margin-bottom: var(--space-small);
+input:last-of-type, textarea:last-of-type {
+    margin-bottom: var(--space-medium);
 }
 
 button,
@@ -51,7 +47,7 @@ input
     font: inherit;
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     padding: var(--space-tiny);
-    border: none;
+    border: solid 1px transparent;
     border-radius: var(--border-radius-small);
     color: var(--color-static-light);
 }
