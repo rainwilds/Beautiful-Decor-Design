@@ -166,6 +166,42 @@ input
 
 /***/
 
+/* -- media -- */
+
+@media (max-width: 768px) {
+    header>hgroup {
+        grid-area: 1 / 1 / 2 / -1 !important;
+        padding: var(--space-small);
+    }
+    main>section  {
+        grid-column-start: 2 !important;
+        grid-column-end: -2 !important;
+    }
+    main>section:first-child>hgroup>img {
+        aspect-ratio: 3 / 2;
+    }
+}
+
+
+
+@media (max-width: 980px) {
+    dialog {
+        max-width: 90vw;
+    }
+
+    header>hgroup {
+        grid-area: 1 / 2 / 2 / -2;
+    }
+
+    main>section:first-child {
+        flex-direction: column;
+        grid-area: 2 / 3 / 3 / -3;
+    }
+
+}
+
+/***/
+
 /* -- tags -- */
 
 body {
@@ -426,39 +462,7 @@ footer {
 
 /***/
 
-/* -- media -- */
 
-@media (max-width: 768px) {
-    header>hgroup {
-        grid-area: 1 / 1 / 2 / -1 !important;
-        padding: var(--space-small);
-    }
-    main>section  {
-        grid-column-start: 2 !important;
-        grid-column-end: -2 !important;
-    }
-    main>section:first-child>hgroup>img {
-        aspect-ratio: 3 / 2;
-    }
-}
-
-
-
-@media (max-width: 980px) {
-    dialog {
-        max-width: 90vw;
-    }
-
-    header>hgroup {
-        grid-area: 1 / 2 / 2 / -2;
-    }
-
-    main>section:first-child {
-        flex-direction: column;
-        grid-area: 2 / 3 / 3 / -3;
-    }
-
-}
 
 @media (max-width: 1024px) {
     header>nav {
