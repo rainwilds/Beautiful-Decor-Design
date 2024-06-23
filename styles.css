@@ -464,6 +464,12 @@ footer {
 
 }
 
+@media (max-width: 1024px) {
+    header>nav {
+        display: none;
+    }
+}
+
 
 @media (max-width: 1200px) {
     body {
@@ -471,9 +477,7 @@ footer {
 
     }
 
-    header>nav {
-        display: none;
-    }
+
 
     header>hgroup {
         max-width: none;
