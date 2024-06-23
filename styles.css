@@ -425,6 +425,10 @@ footer {
 /* -- media -- */
 
 @media (max-width: 768px) {
+    header>hgroup {
+        grid-area: 1 / 1 / 2 / -1 !important;
+        padding: var(--space-small);
+    }
     main>section  {
         grid-area: 2 / 2 / 3 / -2 !important;
     }
