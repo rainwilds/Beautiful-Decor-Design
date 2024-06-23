@@ -436,6 +436,10 @@ header>hgroup {
     justify-self: center;
 }
 
+header>hgroup>img{
+    z-index: 2;
+}
+
 header>hgroup>p {
     padding-bottom: var(--space-medium);
     color: var(--color-static-light);
