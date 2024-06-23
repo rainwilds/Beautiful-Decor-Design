@@ -172,6 +172,13 @@ label {
 /* -- media -- */
 
 @media (max-width: 768px) {
+
+    :root {
+        --font-2-size-small: 17px;
+        --font-2-size-medium: 20px;
+        --font-2-size-large: 22px;
+    }
+
     header>hgroup {
         grid-area: 1 / 1 / 2 / -1 !important;
         padding: var(--space-small);
