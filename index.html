@@ -2,131 +2,113 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Behive: Property Visuals that Create a Buzz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Property visual for the real estate agents, designers and builders">
-    <meta name="keywords" content="">
-    <meta name="author" content="David Dufourq">
-    <!-- <link rel="icon" sizes="" type="image/svg" href=""> -->
-    <!-- <link rel="apple-touch-icon" sizes="" href=""> -->
-    <!-- <link rel="mask-icon" href="" color=""> -->
-    <link rel="canonical" href="">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://use.typekit.net/bnt1hso.css">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/8430ed0e74.css" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <title>Behive: Property Visuals that Create a Buzz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Property visual for the real estate agents, designers and builders">
+  <meta name="keywords" content="">
+  <meta name="author" content="David Dufourq">
+  <!-- <link rel="icon" sizes="" type="image/svg" href=""> -->
+  <!-- <link rel="apple-touch-icon" sizes="" href=""> -->
+  <!-- <link rel="mask-icon" href="" color=""> -->
+  <link rel="canonical" href="">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/bnt1hso.css">
+  <link rel="stylesheet" href="https://kit.fontawesome.com/8430ed0e74.css" crossorigin="anonymous">
 </head>
 
 <body>
-<header>
-  <span>B</span>
- 
-        <div></div>
-        <!-- header video PLACEHOLDER
+  <header>
+    <span>B</span>
+    <div></div>
+    <!-- header video PLACEHOLDER
         <video autoplay muted loop disablepictureinpicture poster="./img/RE-image.jpg">
             <source src="./img/RE-video_2.webm" type="video/webm">
         </video> -->
-        <nav>
-            <ul>
-                <li><a href="#">
-                        
-                        Indoor</a></li>
-                <li><a href="#">
-                        
-                    Outdoor</a></li>
-                <li><a href="#">
-                        
-                        Repairs</a></li>
-                <li><a id="header-nav-active" href="#plants">
-                    
-                       Contact
-                    </a>
+    <nav>
+      <ul>
+        <li><a href="#">Indoor</a></li>
+        <li><a href="#">Outdoor</a></li>
+        <li><a href="#">Repairs</a></li>
+        <li><a id="header-nav-active" href="#plants">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <hgroup>
+      <h1>Beautiful home, beautiful life</h1>
+      <p>Showcase properties in their best light with a range of visual services for property experts.
+        Specialising in commercial & tourism.</p>
+      <button><a href="#">Contact Now</a></button>
+      <button><a href="#">Learn More</a></button>
+    </hgroup>
+  </header>
+  <main>
+    <section>
+      <hgourp>
+        <img src="./img/header.jpg">
+        <h2>Indoor</h2>
+        <p>Explore the range of indoor uploholstry and more...</p>
+      </hgourp>
+      <hgourp>
+        <img src="./img/header.jpg">
+        <h2>Indoor</h2>
+        <p>Explore the range of indoor uploholstry and more...</p>
+      </hgourp>
+      <hgourp>
+        <img src="./img/header.jpg">
+        <h2>Indoor</h2>
+        <p>Explore the range of indoor uploholstry and more...</p>
+      </hgourp>
+    </section>
+    <section>
 
-                </li>
-                <li><a href="#">
-                    
-                        About</a></li>
+      <form id="contact-form" action="https://formspree.io/f/xblrrlaz" method="POST">
+        <label>Email:</label>
+        <input type="email" name="email" />
+        <label>Message:</label>
+        <input type="text" name="message" />
+        <button id="contact-form-button">Submit</button>
+        <p id="contact-form-status"></p>
+      </form>
+    </section>
 
-            </ul>
-        </nav>
-        <hgroup>
-            <h1>Beautiful home, beautiful life</h1>
-            <p>Showcase properties in their best light with a range of visual services for property experts.
-                Specialising in commercial & tourism.</p>
-                <button><a href="#">Contact Now</a></button>
-                <button><a href="#">Learn More</button>
-        </hgroup>
+  </main>
+  <footer>
+    footer content
+  </footer>
 
+  <script>
+    var form = document.getElementById("contact-form");
 
-    </header>
-    <main>
-      <section>
-<hgourp>
-  <img src="./img/header.jpg">
-<h2>Indoor</h2>
-<p>Explore the range of indoor uploholstry and more...</p>
-</hgourp>
-<hgourp>
-  <img src="./img/header.jpg">
-<h2>Indoor</h2>
-<p>Explore the range of indoor uploholstry and more...</p>
-</hgourp>
-<hgourp>
-  <img src="./img/header.jpg">
-<h2>Indoor</h2>
-<p>Explore the range of indoor uploholstry and more...</p>
-</hgourp>
-
-      </section>
-      <section>
-      
-        <form id="contact-form" action="https://formspree.io/f/xblrrlaz" method="POST">
-            <label>Email:</label>
-            <input type="email" name="email" />
-            <label>Message:</label>
-            <input type="text" name="message" />
-            <button id="contact-form-button">Submit</button>
-            <p id="contact-form-status"></p>
-          </form>      
-      </section>
-
-    </main>
-    <footer>
-        footer content
-    </footer>
-
-    <script>
-        var form = document.getElementById("contact-form");
-        
-        async function handleSubmit(event) {
-          event.preventDefault();
-          var status = document.getElementById("contact-form-status");
-          var data = new FormData(event.target);
-          fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-          }).then(response => {
-            if (response.ok) {
-              status.innerHTML = "Thanks for your submission!";
-              form.reset()
-            } else {
-              response.json().then(data => {
-                if (Object.hasOwn(data, 'errors')) {
-                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                } else {
-                  status.innerHTML = "Oops! There was a problem submitting your form"
-                }
-              })
-            }
-          }).catch(error => {
-            status.innerHTML = "Oops! There was a problem submitting your form"
-          });
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("contact-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
         }
-        form.addEventListener("submit", handleSubmit)
-      </script>
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+  </script>
 
 </body>
 
