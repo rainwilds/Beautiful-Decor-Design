@@ -29,9 +29,9 @@ input:not(:last-of-type) {
     margin-bottom: var(--space-small);
 }
 
-input:focus-visible {
-    border: solid 1px;
-    border-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+input:focus-visible, select:focus-visible {
+    outline: solid 1px;
+    outline-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
 }
 
 input:last-of-type, textarea:last-of-type {
