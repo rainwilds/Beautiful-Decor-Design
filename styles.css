@@ -478,10 +478,11 @@ main>section:first-child>hgroup {
     border-color: var(--color-accent-light);
     border-radius: var(--border-radius-medium);
     background-color: transparent;
+    cursor: pointer;
 }
 
 main>section:first-child>hgroup:hover {
-    background-color: light(var(--color-accent-opaque-light),var(--color-accent-opaque-dark));
+    background-color: light(var(--color-accent-opaque-dark),var(--color-accent-opaque-light));
     transition: background-color 0.5s;
 }
 
