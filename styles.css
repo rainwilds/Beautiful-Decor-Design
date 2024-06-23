@@ -314,12 +314,13 @@ header>nav ul>li {
 }
 
 header nav a {
+    color: var(--color-static-light);
     border-bottom: solid 1px;
-    border-color: light-dark(var(--color-accent-light),
-            var(--color-accent-dark));
+    border-color: var(--color-static-light);
 }
 
 header nav a:hover {
+    color: var(--color-static-light-6);
     border-color: transparent;
     transition: border 0.5s ease-out;
 }
