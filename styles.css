@@ -510,6 +510,15 @@ footer {
     grid-area: 3 / 1 / 4 / -1;
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
 }
+footer>section:nth-child(1) {
+    grid-column: 2 / span 2;
+}
+footer>section:nth-child(2) {
+    grid-column: 4 / span 2;
+}
+footer>section:nth-child(3) {
+    grid-column: 6 / span 2;
+}
 
 /***/
 
