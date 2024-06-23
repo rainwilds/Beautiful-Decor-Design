@@ -211,13 +211,14 @@ button:hover {
 header {
     display: grid;
     grid-template: subgrid / subgrid;
-    grid-area: 1 / 1 / -1 / -1;
+    grid-area: 1 / 1 / 2 / -1;
     background-color: light-dark(var(--color-accent-opaque-light),
             var(--color-accent-opaque-dark));
     background-image: url(./img/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    margin-bottom: var(--space-large);
 }
 
 
@@ -225,7 +226,7 @@ header>div {
     grid-area: 1 / 1 / -1 / -1;
     background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light));
     z-index: 2;
-} 
+}
 
 /* background overlay hover transition PLACEHOLDER
 header>div:hover{
@@ -285,10 +286,12 @@ header nav a {
     border-color: var(--color-accent-light);
     /* filter: drop-shadow(2px 4px 30px black); PLACEHOLDER */
 }
+
 header nav a:hover {
     border-color: transparent;
     transition: border 0.5s ease-out;
 }
+
 header nav nav a {
     padding: none;
 }
@@ -320,26 +323,27 @@ header>span {
 
 main {
     display: grid;
-    grid-template: subgrid / subgrid;
+    grid-template: auto auto / subgrid;
     grid-area: 2 / 1 / 3 / -1;
 }
 
-main > section {
+main>section {
     grid-template: subgrid / subgrid;
+    margin-bottom: var(--space-large);
 }
 
-main > section:first-child {
+main>section:first-child {
     grid-area: 2 / 2 / 3 / -2;
     background: black;
     display: flex;
- gap: var(--space-medium);
+    gap: var(--space-medium);
 }
 
-main > section:first-child >hgroup {
- padding: var(---space-medium);
-}   
+main>section:first-child>hgroup {
+    padding: var(---space-medium);
+}
 
-main > section:last-child {
+main>section:last-child {
     grid-area: 3 / 3 / 4 / -3;
     background: white;
 }
@@ -363,6 +367,7 @@ footer {
     dialog {
         max-width: 90vw;
     }
+
     header>hgroup {
         grid-area: 1 / 2 / 2 / -2;
     }
@@ -375,9 +380,11 @@ footer {
         grid-template: 100vh auto auto / 3vw repeat(6, 1fr) 3vw;
 
     }
+
     header>nav {
         display: none;
     }
+
     header>hgroup {
         max-width: none;
     }
@@ -387,6 +394,7 @@ footer {
     body {
         grid-template: 100vh auto auto / 20vw repeat(6, 1fr) 20vw;
     }
+
     /* header>figure>picture>img {
       aspect-ratio: 3 / 1;
     } */
