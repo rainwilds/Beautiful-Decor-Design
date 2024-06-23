@@ -430,7 +430,11 @@ footer {
         padding: var(--space-small);
     }
     main>section  {
-        grid-area: 2 / 2 / 3 / -2 !important;
+        grid-column-start: 2 !important;
+        grid-column-end: -2 !important;
+    }
+    main>section:first-child>hgroup>img {
+        aspect-ratio: 3 / 2;
     }
 }
 
