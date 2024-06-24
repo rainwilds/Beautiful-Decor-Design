@@ -522,7 +522,7 @@ footer {
 }
 
 footer>div{
-    grid-area: 3 / 1 / 5 / -1;
+    grid-area: 3 / 1 / 4 / -1;
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     z-index: 2;
 }
