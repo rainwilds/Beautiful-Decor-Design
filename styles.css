@@ -564,7 +564,7 @@ footer>section:nth-of-type(1)>div:nth-child(2) {
     white-space: nowrap;
 }
 
-footer>section:nth-of-type(1)>div h4 {
+footer>section:nth-of-type(1)>div:nth-child(3) h4 {
     margin-top: var(--space-small);
 }
 
@@ -574,7 +574,7 @@ footer>section:nth-of-type(1) ul {
 
 footer>section:nth-of-type(1)>div:nth-child(4) {
     align-self: end;
-    min-width: 30vw;
+    min-width: 20vw;
 }
 
 footer>section:nth-of-type(1)>div>img {
