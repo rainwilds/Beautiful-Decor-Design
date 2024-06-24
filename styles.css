@@ -331,17 +331,13 @@ form>label {
 
 form>label:nth-child(1) {
     grid-row: 1;
+    grid-column-end: 2;
 }
 
-form>label:nth-child(3) {
+form>label:nth-child(4) {
     grid-row: 1;
     grid-column: 2;
 }
-
-/* form>label:nth-child(4) {
-    grid-row: 1;
-    grid-column: 2;
-} */
 
 form>textarea {
     grid-column: 1 / 3;
