@@ -521,8 +521,14 @@ footer {
     background-position: bottom right;
 }
 
+footer>section:first-child {
+    grid-area: 3 / 2 / 4 / -2;
+    display: flex;
+    gap: var(--space-medium);
+    padding: var(--space-large) 0;
+}
+
 footer>section:first-child div:nth-child(1) {
-    grid-column: 2 / span 2;
     padding: var(--space-medium);
     border-radius: var(--border-radius-medium);
     -webkit-backdrop-filter: blur(10px);
@@ -531,7 +537,6 @@ footer>section:first-child div:nth-child(1) {
 }
 
 footer>section:first-child div:nth-child(2) {
-    grid-column: 4 / span 2;
     padding: var(--space-medium);
     border-radius: var(--border-radius-medium);
     -webkit-backdrop-filter: blur(10px);
@@ -542,6 +547,19 @@ footer>section:first-child div:nth-child(2) {
 footer>section:first-child div:nth-child(3) {
     grid-column: 6 / span 2;
     align-self: end;
+}
+
+footer>section:first-child>img {
+    width: 300px;
+}
+
+footer>section:last-child {
+    grid-area: 4 / 2 / 5 / -2;
+    padding-bottom: var(--space-large);
+}
+
+footer>section:last-child>hr {
+    margin-bottom: var(--space-small);
 }
 
 /***/
