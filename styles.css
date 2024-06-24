@@ -302,7 +302,7 @@ a {
 
 }
 
-a:not(button > a, footer a) {
+a:not(button > a, footer a, main>section>a) {
     border-bottom: solid 5px light-dark(var(--color-contrast-light-1),
             var(--color-contrast-dark-1));
 }
@@ -477,15 +477,15 @@ main>section {
     margin-bottom: var(--space-large);
 }
 
-main>section>a {
-    border: none;
-}
-
 main>section:first-child {
     grid-area: 2 / 2 / 3 / -2;
     display: flex;
     gap: var(--space-medium);
     margin-top: var(--space-large);
+}
+
+main>section:first-child a {
+    color: var(--color-static-light);
 }
 
 main>section:first-child>a>hgroup {
@@ -509,6 +509,8 @@ main>section:first-child>a>hgroup>img {
     border-radius: var(--border-radius-small);
     aspect-ratio: 16 / 9;
 }
+
+
 
 main>section:last-child {
     grid-area: 3 / 3 / 4 / -3;
