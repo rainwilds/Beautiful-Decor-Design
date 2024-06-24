@@ -512,17 +512,16 @@ main>section:last-child hgroup {
 
 footer {
     display: grid;
-    grid-template: subgrid / subgrid;
+    grid-template: auto auto / subgrid;
     grid-area: 3 / 1 / 4 / -1;
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     background-image: url(./img/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
-    padding: var(--space-large) 0;
 }
 
-footer>section:nth-child(1) {
+footer>section:first-child div:nth-child(1) {
     grid-column: 2 / span 2;
     padding: var(--space-medium);
     border-radius: var(--border-radius-medium);
@@ -531,15 +530,16 @@ footer>section:nth-child(1) {
     background-color: var(--color-contrast-dark-4);
 }
 
-footer>section:nth-child(2) {
+footer>section:first-child div:nth-child(2) {
     grid-column: 4 / span 2;
     padding: var(--space-medium);
-    border-radius: var(--border-radius-medium);    -webkit-backdrop-filter: blur(10px);
+    border-radius: var(--border-radius-medium);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: var(--color-contrast-dark-4);
 }
 
-footer>section:nth-child(3) {
+footer>section:first-child div:nth-child(3) {
     grid-column: 6 / span 2;
     align-self: end;
 }
