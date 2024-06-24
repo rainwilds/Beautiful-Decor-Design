@@ -21,6 +21,10 @@ address {
     font-style: inherit;
 }
 
+hr {
+    border-style: solid;
+}
+
 button,
 input,
 /* select, TEST */
@@ -521,13 +525,13 @@ footer {
     background-position: bottom right;
 }
 
-footer>div{
+footer>div {
     grid-area: 3 / 1 / 4 / -1;
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     z-index: 2;
 }
 
-footer>section:first-of-type {
+footer>section:nth-of-type(1) {
     grid-area: 3 / 2 / 4 / -2;
     display: flex;
     gap: var(--space-medium);
@@ -570,7 +574,7 @@ footer>section:last-of-type {
 }
 
 footer>section:last-of-type>hr {
-    margin-bottom: var(--space-small);
+    margin: var(--space-small) 0;
 }
 
 /***/
