@@ -305,6 +305,28 @@ form>p {
     grid-row: 6;
 }
 
+dialog {
+    justify-self: center;
+    align-self: center;
+    border: none;
+    max-width: 40vw;
+    background-color: light-dark(var(--color-background-light),
+        var(--color-background-dark));
+    grid-template: repeat(3, auto) / var(--space-large) 1fr var(--space-large);
+  }
+  
+  dialog::backdrop {
+    background-color: light-dark(var(--color-contrast-light-1),
+        var(--color-contrast-dark-1));
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+  }
+  
+  dialog>hgroup {
+    grid-area: 2 / 2 / 3 / 3;
+    margin-top: var(--space-medium);
+  }
+  
 header {
     display: grid;
     grid-template: subgrid / subgrid;

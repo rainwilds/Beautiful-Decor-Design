@@ -45,6 +45,22 @@
       <button><a href="#">Contact Now</a></button>
       <button><a href="#">Learn More</a></button>
     </hgroup>
+
+    <dialog>
+      <img src="./img/header.jpg" alt="Alt title" title="Image title" loading="lazy" />
+      <hgroup>
+        <h3>Contact Me</h3>
+        <p>Elit scelerisque mauris
+          pellentesque pulvinar pellentesque habitant. Nisi porta lorem mollis
+          aliquam ut porttitor leo a diam.</p>
+        <form>
+          <label for="field1">Enter something here</label>
+          <input name="test" />
+        </form>
+      </hgroup>
+      <button autofocus><i class="fa-light fa-xmark"></i>Close</button>
+    </dialog>
+
   </header>
   <main>
     <section>
@@ -156,6 +172,22 @@
 
 
   </footer>
+
+  <script>
+    const dialog = document.querySelector("dialog");
+    const showButton = document.querySelector("p + button");
+    const closeButton = document.querySelector("dialog button");
+
+    showButton.addEventListener("click", () => {
+      dialog.style.display = "grid";
+      dialog.showModal();
+    });
+
+    closeButton.addEventListener("click", () => {
+      dialog.style.display = "none";
+      dialog.close();
+    });
+  </script>
 
   <script>
     var form = document.getElementById("contact-form");
