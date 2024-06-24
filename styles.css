@@ -313,6 +313,12 @@ dialog {
     background-color: light-dark(var(--color-background-light),
         var(--color-background-dark));
     grid-template: repeat(3, auto) / var(--space-large) 1fr var(--space-large);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  dialog[open] {
+    opacity: 1;
   }
   
   dialog::backdrop {
