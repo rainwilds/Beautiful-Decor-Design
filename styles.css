@@ -521,16 +521,19 @@ footer {
 
 footer>section:nth-child(1) {
     grid-column: 2 / span 2;
-    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     padding: var(--space-medium);
     border-radius: var(--border-radius-medium);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: var(--color-contrast-dark-4);
 }
 
 footer>section:nth-child(2) {
     grid-column: 4 / span 2;
-    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     padding: var(--space-medium);
-    border-radius: var(--border-radius-medium);
+    border-radius: var(--border-radius-medium);    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: var(--color-contrast-dark-4);
 }
 
 footer>section:nth-child(3) {
