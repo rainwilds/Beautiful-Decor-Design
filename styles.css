@@ -533,6 +533,7 @@ footer {
 
 footer a {
     border: none;
+    cursor: pointer;
 }
 
 footer a:hover {
