@@ -639,7 +639,7 @@ footer address i {
 
 @media (min-width: 1921px) {
     body {
-        grid-template: 100vh auto auto / 20vw repeat(6, 1fr) 20vw;
+        grid-template: 100vh auto auto / 10vw repeat(6, 1fr) 10vw;
     }
 
     /* header>figure>picture>img {
