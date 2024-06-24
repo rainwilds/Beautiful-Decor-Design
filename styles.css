@@ -183,67 +183,6 @@ textarea:focus-visible {
 
 /***/
 
-/* -- media -- */
-
-@media (max-width: 768px) {
-
-    :root {
-        --font-2-size-small: 17px;
-        --font-2-size-medium: 20px;
-        --font-2-size-large: 22px;
-    }
-
-    header>hgroup {
-        grid-area: 1 / 1 / 2 / -1 !important;
-        padding: var(--space-small);
-    }
-
-    main>section {
-        grid-column-start: 2 !important;
-        grid-column-end: -2 !important;
-    }
-
-    main>section:first-child>a>hgroup>img {
-        aspect-ratio: 3 / 2;
-    }
-
-}
-
-
-
-@media (max-width: 980px) {
-    dialog {
-        max-width: 90vw;
-    }
-
-    header>hgroup {
-        grid-area: 1 / 2 / 2 / -2;
-    }
-
-    main>section:first-child {
-        flex-direction: column;
-        grid-area: 2 / 3 / 3 / -3;
-    }
-
-    footer>section:nth-of-type(1) {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    footer > section:nth-child(2) > div:nth-child(3) {
-        min-width: auto;
-    }
-
-    footer>section:nth-of-type(1)>div:nth-child(4) {
-        align-self: center;
-    }
-
-    
-
-}
-
-/***/
-
 /* -- tags -- */
 
 body {
@@ -618,7 +557,62 @@ footer address i {
 
 /***/
 
+@media (max-width: 768px) {
 
+    :root {
+        --font-2-size-small: 17px;
+        --font-2-size-medium: 20px;
+        --font-2-size-large: 22px;
+    }
+
+    header>hgroup {
+        grid-area: 1 / 1 / 2 / -1 !important;
+        padding: var(--space-small);
+    }
+
+    main>section {
+        grid-column-start: 2 !important;
+        grid-column-end: -2 !important;
+    }
+
+    main>section:first-child>a>hgroup>img {
+        aspect-ratio: 3 / 2;
+    }
+
+}
+
+
+
+@media (max-width: 980px) {
+    dialog {
+        max-width: 90vw;
+    }
+
+    header>hgroup {
+        grid-area: 1 / 2 / 2 / -2;
+    }
+
+    main>section:first-child {
+        flex-direction: column;
+        grid-area: 2 / 3 / 3 / -3;
+    }
+
+    footer>section:nth-of-type(1) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer > section:nth-child(2) > div:nth-child(3) {
+        min-width: auto;
+    }
+
+    footer>section:nth-of-type(1)>div:nth-child(4) {
+        align-self: center;
+    }
+
+    
+
+}
 
 @media (max-width: 1024px) {
     header>nav {
