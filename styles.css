@@ -531,6 +531,7 @@ footer>section:first-child {
     grid-area: 3 / 2 / 4 / -2;
     display: flex;
     gap: var(--space-medium);
+    justify-content: space-between;
     padding: var(--space-large) 0;
 }
 
