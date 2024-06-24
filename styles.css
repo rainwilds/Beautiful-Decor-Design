@@ -22,7 +22,9 @@ address {
 }
 
 hr {
-    border-style: solid;
+    border: none;
+    height: 1px;
+    background: var(--color-static-light);
 }
 
 button,
