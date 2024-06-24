@@ -316,8 +316,8 @@ dialog {
   }
   
   dialog::backdrop {
-    background-color: light-dark(var(--color-contrast-light-1),
-        var(--color-contrast-dark-1));
+    background-color: light-dark(var(--color-static-light-1),
+        var(--color-static-dark-1));
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
   }
@@ -326,7 +326,7 @@ dialog {
     grid-area: 2 / 2 / 3 / 3;
     margin-top: var(--space-medium);
   }
-  
+
 header {
     display: grid;
     grid-template: subgrid / subgrid;
