@@ -396,7 +396,7 @@ header>nav {
     backdrop-filter: blur(10px);
     padding: var(--space-tiny) var(--space-medium);
     border-radius: 10px;
-    background-color: var(--color-static-light-4);
+    background-color:light-dark(var(--color-static-light-1),var(--color-static-dark-1));
 }
 
 header>nav ul {
@@ -543,7 +543,7 @@ footer>section:nth-of-type(1) {
     border-radius: var(--border-radius-medium);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: var(--color-static-light-4);
+    background-color: light-dark(var(--color-static-light-1),var(--color-static-dark-1));
     margin-top: var(--space-large);
     margin-bottom: var(--space-medium);
     color: var(--color-static-light);
