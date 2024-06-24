@@ -17,6 +17,10 @@ picture {
     display: block;
 }
 
+address {
+    font-style: inherit;
+}
+
 button,
 input,
 /* select, TEST */
