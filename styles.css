@@ -538,6 +538,7 @@ footer>section:nth-child(2) {
 
 footer>section:nth-child(3) {
     grid-column: 6 / span 2;
+    align-self: end;
 }
 
 /***/
