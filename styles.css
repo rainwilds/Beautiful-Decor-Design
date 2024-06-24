@@ -11,10 +11,6 @@
     box-sizing: border-box;
 }
 
-html:focus-within {
-    scroll-behavior: smooth
-}
-
 img,
 picture {
     max-width: 100%;
@@ -156,6 +152,8 @@ textarea:focus-visible {
     --border-radius-large: 30px;
 
     /***/
+
+    scroll-behavior: smooth
 
 }
 
