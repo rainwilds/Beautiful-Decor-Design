@@ -546,23 +546,15 @@ footer>section:nth-of-type(1) {
     margin-bottom: var(--space-small);
 }
 
-footer>section:nth-of-type(1) div:nth-child(1) {
-
+footer>section:nth-of-type(2)>div:nth-child(3)>h4:last-of-type {
+    margin-top: var(--space-medium);
 }
 
-footer>section:nth-of-type(1) div:nth-child(1)>ul {
+footer>section:nth-of-type(1)>div:nth-child(1)>ul {
     list-style: none;
 }
 
-footer>section:nth-of-type(1) div:nth-child(2) {
-
-}
-
-footer>section:nth-of-type(1) div:nth-child(3) {
-
-}
-
-footer>section:nth-of-type(1) div:nth-child(4) {
+footer>section:nth-of-type(1)>div:nth-child(4) {
     align-self: end;
 }
 
