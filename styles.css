@@ -293,12 +293,12 @@ form>input[type="email"] {
 }
 
 form>label:nth-of-type(2) {
-    grid-row: 2;
+    grid-row: 1;
     grid-column-end: 3;
 }
 
 form>input[type="tel"] {
-    grid-row: 1;
+    grid-row: 2;
     grid-column-end: 3;
 }
 
