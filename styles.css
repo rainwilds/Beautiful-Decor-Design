@@ -637,14 +637,16 @@ footer address i {
     }
 }
 
-@media (min-width: 1921px) {
+@media (min-width: 1920px) {
     body {
         grid-template: 100vh auto auto / 10vw repeat(6, 1fr) 10vw;
     }
+}
 
-    /* header>figure>picture>img {
-      aspect-ratio: 3 / 1;
-    } */
+@media (min-width: 2560px) {
+    body {
+        grid-template: 100vh auto auto / 20vw repeat(6, 1fr) 20vw;
+    }
 }
 
 /***/
