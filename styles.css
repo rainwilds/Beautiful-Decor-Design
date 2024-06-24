@@ -527,7 +527,7 @@ footer>div{
     z-index: 2;
 }
 
-footer>section:first-child {
+footer>section:first-of-type {
     grid-area: 3 / 2 / 4 / -2;
     display: flex;
     gap: var(--space-medium);
