@@ -576,6 +576,39 @@ footer address i {
         --font-2-size-large: 22px;
     }
 
+    form {
+        grid-template-columns: auto;
+    }
+
+
+    form>label:nth-of-type(2) {
+        grid-row: 3;
+        grid-column-end: 2;
+    }
+
+    form>input[type="tel"] {
+        grid-row: 4;
+        grid-column-end: 2;
+    }
+
+    form>label:nth-of-type(3) {
+        grid-row: 5;
+        grid-column: 1 / 2;
+    }
+
+    form>textarea {
+        grid-row: 6;
+        grid-column: 1 / 2;
+    }
+
+    form>button {
+        grid-row: 7;
+    }
+
+    form>p {
+        grid-row: 8;
+    }
+
     header>hgroup {
         grid-area: 1 / 1 / 2 / -1 !important;
         padding: var(--space-small);
