@@ -257,7 +257,7 @@ a {
 
 }
 
-a:not(button > a, footer a, main>section>a) {
+a:not(button > a, header nav a, main>section>a, footer a) {
     border-bottom: solid 5px light-dark(var(--color-contrast-light-1),
             var(--color-contrast-dark-1));
 }
