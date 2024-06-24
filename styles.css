@@ -597,6 +597,10 @@ footer>section:nth-of-type(2)>span {
     font-size: var(--font-2-size-small);
 }
 
+footer > section:nth-child(2) > div:nth-child(3) {
+    min-width: 30ch;
+}
+
 footer address {
     line-height: 2;
 }
