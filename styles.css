@@ -509,12 +509,23 @@ footer {
     grid-template: subgrid / subgrid;
     grid-area: 3 / 1 / 4 / -1;
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+    background-image: url(./img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    padding: var(--space-large) 0;
 }
 footer>section:nth-child(1) {
     grid-column: 2 / span 2;
+    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+    padding: var(--space-medium);
+    border-radius: var(--border-radius-medium);
 }
 footer>section:nth-child(2) {
     grid-column: 4 / span 2;
+    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+    padding: var(--space-medium);
+    border-radius: var(--border-radius-medium);
 }
 footer>section:nth-child(3) {
     grid-column: 6 / span 2;
