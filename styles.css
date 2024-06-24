@@ -333,10 +333,15 @@ form>label:nth-child(1) {
     grid-row: 1;
 }
 
-form>label:nth-child(4) {
+form>label:nth-child(3) {
     grid-row: 1;
     grid-column: 2;
 }
+
+/* form>label:nth-child(4) {
+    grid-row: 1;
+    grid-column: 2;
+} */
 
 form>textarea {
     grid-column: 1 / 3;
@@ -347,8 +352,6 @@ form>button {
     grid-row: 5;
     margin-top: var(--space-small);
 }
-
-
 
 header {
     display: grid;
