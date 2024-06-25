@@ -578,6 +578,7 @@ footer>section:nth-of-type(2) {
   padding-bottom: var(--space-large);
   color: var(--color-static-light);
   background-color: var(--color-background-dark);
+  background-color: light-dark(var(--color-background-light), var(--color-background-dark));
 }
 
 footer>section:nth-of-type(2)>span {
