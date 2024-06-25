@@ -518,7 +518,8 @@ main>section:last-child hgroup {
 footer {
     display: grid;
     grid-template: auto auto / subgrid;
-    grid-area: 3 / 1 / 4 / -1;
+    /* grid-area: 3 / 1 / 4 / -1; */
+    grid-area: footer / gutter-left / footer / gutter-right;
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     background-image: url(./img/header.jpg);
     background-repeat: no-repeat;
@@ -542,7 +543,8 @@ footer h3 {
 }
 
 footer>div {
-    grid-area: 3 / 1 / 5 / -1;
+    /* grid-area: 3 / 1 / 5 / -1; */
+    grid-area: footer / gutter-left / footer / gutter-right;
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
 }
 
