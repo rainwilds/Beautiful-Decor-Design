@@ -348,7 +348,7 @@ dialog>img {
 
 header {
     display: grid;
-    grid-template: subgrid / subgrid;
+    /* grid-template: subgrid / subgrid; */
     /* grid-area: 1 / 1 / 2 / -1; */
     grid-area: header;
     background-color: light-dark(var(--color-accent-opaque-light),
@@ -361,8 +361,8 @@ header {
 
 
 header>div {
-    /* grid-area: 1 / 1 / -1 / -1; */
-    grid-area: header;
+    grid-area: 1 / 1 / -1 / -1;
+    /* grid-area: header; */
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     z-index: 2;
 }
