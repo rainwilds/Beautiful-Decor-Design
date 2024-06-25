@@ -462,7 +462,7 @@ header>span {
 
 main {
     display: grid;
-    grid-template: auto auto / subgrid;
+    grid-template: subgrid / subgrid;
     grid-area: 2 / 1 / 3 / -1;
 }
 
@@ -518,7 +518,7 @@ main>section:last-child hgroup {
 
 footer {
     display: grid;
-    grid-template: auto auto / subgrid;
+    grid-template: subgrid / subgrid;
     /* grid-area: 3 / 1 / 4 / -1; */
     grid-area: footer / gutter-left / footer / gutter-right;
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
