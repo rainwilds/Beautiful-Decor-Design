@@ -698,6 +698,10 @@ footer address i {
 @media (max-width: 1200px) {
     body {
         grid-template: 100vh auto auto / 3vw repeat(6, 1fr) 3vw;
+        grid-template-areas:
+        "gutter-left header header header header header header gutter-right"
+        "gutter-left main main main main main main gutter-right"
+        "gutter-left footer footer footer footer footer footer gutter-right";
 
     }
 
@@ -713,12 +717,20 @@ footer address i {
 @media (min-width: 1920px) {
     body {
         grid-template: 100vh auto auto / 10vw repeat(6, 1fr) 10vw;
+        grid-template-areas:
+        "gutter-left header header header header header header gutter-right"
+        "gutter-left main main main main main main gutter-right"
+        "gutter-left footer footer footer footer footer footer gutter-right";
     }
 }
 
 @media (min-width: 2560px) {
     body {
         grid-template: 100vh auto auto / 20vw repeat(6, 1fr) 20vw;
+        grid-template-areas:
+        "gutter-left header header header header header header gutter-right"
+        "gutter-left main main main main main main gutter-right"
+        "gutter-left footer footer footer footer footer footer gutter-right";
     }
 }
 
