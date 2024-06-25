@@ -668,7 +668,6 @@ footer address i {
 
     main>section:first-child {
         flex-direction: column;
-        grid-area: 2 / 3 / 3 / -3;
     }
 
     footer>section:nth-of-type(1) {
