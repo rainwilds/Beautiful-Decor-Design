@@ -162,10 +162,16 @@ textarea:focus-visible {
 
 body {
     display: grid;
-    grid-template-areas: "gap header header header header header header gap"
+    /* grid-template-areas: "gap header header header header header header gap"
         "gap main main main main main main gap"
         "gap footer footer footer footer footer footer gap";
-    grid-template: 100vh auto auto / 5vw repeat(6, 1fr) 5vw;
+    grid-template: 100vh auto auto / 5vw repeat(6, 1fr) 5vw; */
+    grid-template-areas: 
+  "gap header header header header header header gap" 
+  "gap main main main main main main gap" 
+  "gap footer footer footer footer footer footer gap";
+grid-template-rows: 100vh auto auto;
+grid-template-columns: 5vw repeat(6, 1fr) 5vw;
     column-gap: var(--space-medium);
     background-color: light-dark(var(--color-background-light), var(--color-background-dark));
 }
