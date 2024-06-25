@@ -460,12 +460,11 @@ main {
 }
 
 main>section {
-    grid-template: subgrid / subgrid;
     margin-bottom: var(--space-large);
 }
 
 main>section:first-child {
-    grid-area: 2 / 2 / 3 / -2;
+    grid-area: 1 / 1 / 2 / -1;
     display: flex;
     gap: var(--space-medium);
     margin-top: var(--space-large);
@@ -500,7 +499,7 @@ main>section:first-child>a>hgroup>img {
 
 
 main>section:last-child {
-    grid-area: 3 / 3 / 4 / -3;
+    grid-area: 2 / 2 / 3 / -2;
 }
 
 main>section:last-child hgroup {
