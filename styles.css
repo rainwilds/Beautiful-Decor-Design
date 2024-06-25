@@ -13,6 +13,7 @@
 
 img,
 picture {
+    width: 100%; /* ensures aspect-ratio functions as expected */
     max-width: 100%;
     display: block;
 }
