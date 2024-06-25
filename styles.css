@@ -517,6 +517,7 @@ footer {
 }
 
 footer a {
+    color: var(--color-static-light);
     border: none;
 }
 
