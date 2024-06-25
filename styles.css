@@ -510,8 +510,7 @@ main>section:last-child hgroup {
 
 footer {
     display: grid;
-    grid-template: subgrid / subgrid;
-    /* grid-area: 3 / 1 / 4 / -1; */
+    grid-template: repeat(2, auto) / subgrid
     grid-area: footer / gutter-left / footer / gutter-right;
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     background-image: url(./img/header.jpg);
