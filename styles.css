@@ -163,12 +163,8 @@ textarea:focus-visible {
 
 body {
     display: grid;
-
-    grid-template: 100vh auto auto / 5vw repeat(6, 1fr) 5vw; 
-
-    /* grid-template-rows: 100vh auto auto; */
-    /* grid-template-columns: 5vw repeat(6, 1fr) 5vw; */
-    grid-template-areas: "gutter-left header header header header header header gutter-right" "gutter-left main main main main main main gutter-right" "gutter-left footer footer footer footer footer footer gutter-right";
+    grid-template: 100vh auto auto auto / 5vw repeat(6, 1fr) 5vw; 
+    grid-template-areas: "gutter-left header header header header header header gutter-right" "gutter-left main main main main main main gutter-right" "gutter-left footer footer footer footer footer footer gutter-right" "gutter-left footer footer footer footer footer footer gutter-right";
     column-gap: var(--space-medium);
     background-color: light-dark(var(--color-background-light), var(--color-background-dark));
 }
