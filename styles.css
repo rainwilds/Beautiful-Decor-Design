@@ -49,8 +49,6 @@ button {
     cursor: pointer;
 }
 
-dialog {}
-
 form>button:hover {
     color: var(--color-static-light-6);
 }
@@ -167,7 +165,7 @@ body {
     grid-template-areas: "... header header header header header header ..."
         "... main main main main main main ..."
         "... footer footer footer footer footer footer ...";
-    grid-template: 100vh auto auto / 5vw repeat(6, 1fr) 5vw;
+    grid-template: 100vh 1fr 1fr / 5vw repeat(6, 1fr) 5vw;
     column-gap: var(--space-medium);
     background-color: light-dark(var(--color-background-light), var(--color-background-dark));
 }
