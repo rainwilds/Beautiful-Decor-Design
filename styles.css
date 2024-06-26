@@ -471,7 +471,7 @@ main>section {
 }
 
 main>section:first-child {
-    grid-area: 1 / 1 / 2 / -1;
+    grid-area: 1 / 2 / 2 / -2;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--space-medium);
