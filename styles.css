@@ -463,7 +463,7 @@ header>span {
 main {
     display: grid;
     grid-template: repeat(2, auto) / subgrid;
-    grid-area: grid-area: main / gutter-left / main / gutter-right;
+    grid-area: main / gutter-left / main / gutter-right;
 }
 
 main>section {
