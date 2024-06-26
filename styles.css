@@ -664,10 +664,6 @@ footer address i {
         grid-area: 1 / 2 / 2 / -2;
     }
 
-    main>section:first-child>a>hgroup {
-        padding: var(--space-small);
-    }
-
 }
 
 @media (max-width: 1024px) {
