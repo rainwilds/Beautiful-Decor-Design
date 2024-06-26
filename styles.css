@@ -596,8 +596,16 @@ footer address ul {
     list-style-type: none;
 }
 
+footer address ul li:first-of-type {
+    margin-bottom: var(--space-small);
+}
+
 footer address i {
     margin-right: var(--space-tiny);
+}
+
+footer img {
+    margin-top: var(--space-medium);
 }
 
 /***/
