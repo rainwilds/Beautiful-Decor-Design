@@ -549,7 +549,7 @@ footer>div {
 footer>section:nth-of-type(1) {
     grid-area: 1 / 2 / 2 / -2;
     display: grid;
-    grid-template-columns: repeat(2, max-content) 1fr minmax(200px, 350px);
+    grid-template-columns: repeat(2, max-content) fit-content(30ch) minmax(150px, 350px);
     gap: var(--space-medium);
     justify-content: space-between;
     padding: var(--space-medium);
