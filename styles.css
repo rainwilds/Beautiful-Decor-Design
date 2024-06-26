@@ -640,8 +640,7 @@ footer address i {
     }
 
     header>hgroup {
-        grid-area: 1 / 1 / 2 / -1 !important;
-        padding: var(--space-small);
+        grid-area: 1 / 2 / 2 / -2 !important;
     }
 
     main>section:first-child>a>hgroup>img {
