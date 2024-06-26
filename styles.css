@@ -590,12 +590,6 @@ footer>section:nth-of-type(2)>span {
     font-size: var(--font-2-size-small);
 }
 
-
-
-footer address:not(address a:first-of-type) {
-    line-height: 2;
-}
-
 footer address i {
     margin-right: var(--space-tiny);
 }
