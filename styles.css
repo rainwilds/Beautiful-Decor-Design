@@ -648,7 +648,7 @@ footer address i {
     }
 
     footer>section:nth-of-type(1) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 
 }
