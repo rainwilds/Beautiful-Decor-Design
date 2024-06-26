@@ -164,98 +164,6 @@ textarea:focus-visible {
 
 /***/
 
-@media (max-width: 768px) {
-
-    :root {
-        --font-2-size-small: 17px;
-        --font-2-size-medium: 20px;
-        --font-2-size-large: 22px;
-    }
-
-    form {
-        grid-template-columns: auto;
-    }
-
-
-    form>label:nth-of-type(2) {
-        grid-row: 3;
-        grid-column-end: 2;
-    }
-
-    form>input[type="tel"] {
-        grid-row: 4;
-        grid-column-end: 2;
-    }
-
-    form>label:nth-of-type(3) {
-        grid-row: 5;
-        grid-column: 1 / 2;
-    }
-
-    form>textarea {
-        grid-row: 6;
-        grid-column: 1 / 2;
-    }
-
-    form>button {
-        grid-row: 7;
-    }
-
-    form>p {
-        grid-row: 8;
-    }
-
-    header>hgroup {
-        grid-area: 1 / 1 / 2 / -1 !important;
-        padding: var(--space-small);
-    }
-
-    main>section {
-        grid-column-start: 2 !important;
-        grid-column-end: -2 !important;
-    }
-
-    main>section:first-child>a>hgroup>img {
-        aspect-ratio: 3 / 2;
-    }
-
-    footer>section:nth-of-type(1) {
-        grid-template-columns: 1fr;
-    }
-
-
-
-}
-
-
-
-@media (max-width: 980px) {
-    dialog {
-        max-width: 90vw;
-    }
-
-    header>hgroup {
-        grid-area: 1 / 2 / 2 / -2;
-    }
-
-    main>section:first-child {
-        flex-direction: column;
-    }
-
-    /* footer>section:nth-child(2)>div:nth-child(3) {
-        min-width: auto;
-    }
-
-    footer>section:nth-of-type(1)>div:nth-child(4) {
-        align-self: center;
-    } */
-
-
-
-}
-
-
-
 /* -- tags -- */
 
 body {
@@ -670,10 +578,6 @@ footer>section:nth-of-type(1)>div:nth-child(4) {
     align-self: end;
 }
 
-/* footer>section:nth-of-type(1)>div>img {
-    width: clamp(100%, 350px, 500px);
-} */
-
 footer>section:nth-of-type(2) {
     grid-area: 2 / 1 / 3 / -1;
     padding: var(--space-medium);
@@ -698,14 +602,90 @@ footer address i {
 
 /***/
 
+@media (max-width: 768px) {
+
+    :root {
+        --font-2-size-small: 17px;
+        --font-2-size-medium: 20px;
+        --font-2-size-large: 22px;
+    }
+
+    form {
+        grid-template-columns: auto;
+    }
+
+
+    form>label:nth-of-type(2) {
+        grid-row: 3;
+        grid-column-end: 2;
+    }
+
+    form>input[type="tel"] {
+        grid-row: 4;
+        grid-column-end: 2;
+    }
+
+    form>label:nth-of-type(3) {
+        grid-row: 5;
+        grid-column: 1 / 2;
+    }
+
+    form>textarea {
+        grid-row: 6;
+        grid-column: 1 / 2;
+    }
+
+    form>button {
+        grid-row: 7;
+    }
+
+    form>p {
+        grid-row: 8;
+    }
+
+    header>hgroup {
+        grid-area: 1 / 1 / 2 / -1 !important;
+        padding: var(--space-small);
+    }
+
+    main>section {
+        grid-column-start: 2 !important;
+        grid-column-end: -2 !important;
+    }
+
+    main>section:first-child>a>hgroup>img {
+        aspect-ratio: 3 / 2;
+    }
+
+    footer>section:nth-of-type(1) {
+        grid-template-columns: 1fr !important;
+    }
+
+}
+
+@media (max-width: 980px) {
+
+    dialog {
+        max-width: 90vw;
+    }
+
+    header>hgroup {
+        grid-area: 1 / 2 / 2 / -2;
+    }
+
+    main>section:first-child {
+        flex-direction: column;
+    }
+
+}
+
 @media (max-width: 1024px) {
+
     header>nav {
         display: none;
     }
 
-
 }
-
 
 @media (max-width: 1200px) {
     body {
@@ -714,7 +694,6 @@ footer address i {
             "gutter-left header header header header header header gutter-right"
             "gutter-left main main main main main main gutter-right"
             "gutter-left footer footer footer footer footer footer gutter-right";
-
     }
 
     header>hgroup {
@@ -730,9 +709,11 @@ footer address i {
         justify-content: center;
         text-align: center;
     }
+
 }
 
 @media (min-width: 1920px) {
+
     body {
         grid-template: 100vh auto auto / 10vw repeat(6, 1fr) 10vw;
         grid-template-areas:
@@ -740,9 +721,11 @@ footer address i {
             "gutter-left main main main main main main gutter-right"
             "gutter-left footer footer footer footer footer footer gutter-right";
     }
+
 }
 
 @media (min-width: 2560px) {
+
     body {
         grid-template: 60vh auto auto / 20vw repeat(6, 1fr) 20vw;
         grid-template-areas:
@@ -750,6 +733,7 @@ footer address i {
             "gutter-left main main main main main main gutter-right"
             "gutter-left footer footer footer footer footer footer gutter-right";
     }
+
 }
 
 /***/
