@@ -549,7 +549,7 @@ footer>div {
 footer>section:nth-of-type(1) {
     grid-area: 1 / 2 / 2 / -2;
     display: grid;
-    grid-template-columns: repeat(3, minmax(min-content, max-content)) minmax(150px, 300px);
+    grid-template-columns: repeat(2, max-content) 1fr minmax(150px, 300px);
     gap: var(--space-medium);
     justify-content: space-between;
     padding: var(--space-medium);
@@ -707,7 +707,7 @@ footer address i {
     }
 
     footer>section:nth-of-type(1) {
-        grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    grid-template-columns: repeat(2, max-content) 1fr minmax(150px, 300px);
     }
 }
 
