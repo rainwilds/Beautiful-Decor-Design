@@ -463,7 +463,7 @@ header>span {
 main {
     display: grid;
     grid-template: repeat(2, auto) / subgrid;
-    grid-area: main;
+    grid-area: grid-area: main / gutter-left / main / gutter-right;
 }
 
 main>section {
@@ -642,10 +642,6 @@ footer address i {
     header>hgroup {
         grid-area: 1 / 1 / 2 / -1 !important;
         padding: var(--space-small);
-    }
-
-    main>section:first-child {
-        
     }
 
     main>section:first-child>a>hgroup>img {
