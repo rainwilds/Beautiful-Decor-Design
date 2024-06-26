@@ -318,7 +318,6 @@ dialog {
     grid-template: repeat(3, auto) / var(--space-large) 1fr var(--space-large);
 }
 
-
 dialog::backdrop {
     background-color: light-dark(var(--color-static-light-1),
             var(--color-static-dark-1));
@@ -441,7 +440,6 @@ header>hgroup {
     max-width: 50vw;
     justify-self: center;
 }
-
 
 header>hgroup>p {
     padding-bottom: var(--space-medium);
@@ -630,6 +628,8 @@ footer img {
 }
 
 /***/
+
+/* -- media -- */
 
 @media (max-width: 768px) {
 
