@@ -644,9 +644,8 @@ footer address i {
         padding: var(--space-small);
     }
 
-    main>section {
-        grid-column-start: 2 !important;
-        grid-column-end: -2 !important;
+    main>section:first-child {
+        
     }
 
     main>section:first-child>a>hgroup>img {
@@ -654,7 +653,7 @@ footer address i {
     }
 
     footer>section:nth-of-type(1) {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr;
     }
 
 }
