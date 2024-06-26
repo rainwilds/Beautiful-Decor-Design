@@ -684,18 +684,13 @@ footer address i {
         flex-direction: column;
     }
 
-    footer>section:nth-of-type(1) {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    footer>section:nth-child(2)>div:nth-child(3) {
+    /* footer>section:nth-child(2)>div:nth-child(3) {
         min-width: auto;
     }
 
     footer>section:nth-of-type(1)>div:nth-child(4) {
         align-self: center;
-    }
+    } */
 
 
 
@@ -729,7 +724,9 @@ footer address i {
     }
 
     footer>section:nth-of-type(1) {
-        grid-template-columns: repeat(2, fit-content(30ch));
+        grid-template-columns: repeat(2, fit-content(33ch));
+        justify-content: center;
+        text-align: center;
     }
 }
 
