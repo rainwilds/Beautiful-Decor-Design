@@ -576,7 +576,6 @@ footer>section:nth-of-type(1) ul {
 
 footer>section:nth-of-type(1)>div:nth-child(4) {
     align-self: end;
-    min-width: 20vw;
 }
 
 /* footer>section:nth-of-type(1)>div>img {
