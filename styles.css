@@ -472,7 +472,8 @@ main>section {
 
 main>section:first-child {
     grid-area: 1 / 1 / 2 / -1;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-medium);
     margin-top: var(--space-large);
 }
@@ -489,6 +490,7 @@ main>section:first-child>a>hgroup {
     border-radius: var(--border-radius-medium);
     background-color: transparent;
     cursor: pointer;
+    height: 100%; /* makes all tiles same height */
 }
 
 main>section:first-child>a>hgroup:hover {
