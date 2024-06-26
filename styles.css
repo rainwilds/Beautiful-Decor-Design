@@ -509,7 +509,7 @@ main>section:first-child>a>hgroup>img {
 
 
 main>section:last-child {
-    grid-area: 2 / 2 / 3 / -2;
+    grid-area: 2 / 3 / 3 / -3;
 }
 
 main>section:last-child hgroup {
@@ -715,9 +715,9 @@ footer img {
         max-width: none;
     }
 
-    main>section:last-child {
+    /* main>section:last-child {
         grid-area: 2 / 3 / 3 / -3;
-    }
+    } */
 
     footer>section:nth-of-type(1) {
         grid-template-columns: repeat(2, fit-content(33ch));
