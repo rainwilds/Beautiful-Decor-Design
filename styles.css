@@ -690,6 +690,10 @@ footer address i {
         max-width: none;
     }
 
+    main>section:last-child {
+        grid-area: 2 / 3 / 3 / -3;
+    }
+
     footer>section:nth-of-type(1) {
         grid-template-columns: repeat(2, fit-content(33ch));
         justify-content: center;
