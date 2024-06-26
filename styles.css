@@ -601,8 +601,12 @@ footer>section:nth-of-type(2)>div:nth-child(3)>h3:nth-child(2) {
     margin-top: var(--space-medium);
 }
 
-footer>section:nth-of-type(2)>div:nth-child(3)>h3:last-of-type {
+footer>section:nth-of-type(2) > div:nth-child(3) > h3:nth-child(2) {
     margin-top: var(--space-medium);
+}
+
+footer>section:nth-of-type(2) > div:nth-child(4) ul > li > a {
+    margin-top: var(--space-tiny);
 }
 
 footer address {
@@ -613,7 +617,7 @@ footer address ul {
     list-style-type: none;
 }
 
-footer address ul li:first-of-type {
+footer address ul >li:first-of-type {
     margin-bottom: var(--space-small);
 }
 
@@ -715,9 +719,9 @@ footer img {
         max-width: none;
     }
 
-    /* main>section:last-child {
-        grid-area: 2 / 3 / 3 / -3;
-    } */
+    main>section:last-child {
+        grid-area: 2 / 2 / 3 / -2;
+    }
 
     footer>section:nth-of-type(1) {
         grid-template-columns: repeat(2, fit-content(33ch));
