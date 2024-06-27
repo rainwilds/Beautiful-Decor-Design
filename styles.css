@@ -600,7 +600,7 @@ footer>section:nth-of-type(2) {
 footer>section:nth-of-type(2)>div {
     justify-self: end;
     display: flex;
-    gap: var(--space-small);
+    gap: var(--space-medium);
 }
 
 
