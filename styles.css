@@ -697,10 +697,14 @@ footer img {
 
     footer>section:nth-of-type(2) {
         grid-template-columns: 1fr;
-        justify-self: center;
+        justify-self: center;  
     }
 
-    gr
+    footer>section:nth-of-type(2)>span {
+        text-align: center;
+    }
+
+    
 }
 
 @media (max-width: 980px) {
