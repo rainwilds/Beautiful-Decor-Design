@@ -696,14 +696,15 @@ footer img {
     }
 
     footer>section:nth-of-type(2) {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
 
     footer>section:nth-of-type(2) * {
         text-align: center;
+        width: 100%;
     }
 
-    
+
 }
 
 @media (max-width: 980px) {
