@@ -468,7 +468,7 @@ main>section {
     margin-bottom: var(--space-large);
 }
 
-main>section:first-child {
+main>section:nth-of-type(1) {
     grid-area: 1 / 2 / 2 / -2;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -476,11 +476,11 @@ main>section:first-child {
     margin-top: var(--space-large);
 }
 
-main>section:first-child a {
+main>section:nth-of-type(1) a {
     color: light-dark(var(--color-static-dark), var(--color-static-light));
 }
 
-main>section:first-child>a>hgroup {
+main>section:nth-of-type(1)>a>hgroup {
     padding: var(--space-medium);
     text-align: center;
     border: solid 1px;
@@ -492,13 +492,13 @@ main>section:first-child>a>hgroup {
     /* makes all tiles same height */
 }
 
-main>section:first-child>a>hgroup:hover {
+main>section:nth-of-type(1)>a>hgroup:hover {
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     transition: background-color 0.5s;
 }
 
 
-main>section:first-child>a>hgroup>img {
+main>section:nth-of-type(1)>a>hgroup>img {
     margin-bottom: var(--space-medium);
     border-radius: var(--border-radius-small);
     aspect-ratio: 16 / 9;
@@ -506,11 +506,11 @@ main>section:first-child>a>hgroup>img {
 
 
 
-main>section:last-child {
+main>section:nth-of-type(2){
     grid-area: 2 / 3 / 3 / -3;
 }
 
-main>section:last-child hgroup {
+main>section:nth-of-type(2) hgroup {
     text-align: center;
     margin-bottom: var(--space-medium);
 }
@@ -735,10 +735,10 @@ footer img {
     header>hgroup {
         max-width: none;
     }
-    main>section:first-child>a>hgroup>img {
+    main>section:nth-of-type(1)>a>hgroup>img {
         aspect-ratio: 3 / 2;
     }
-    main>section:last-child {
+    main>section:nth-of-type(2){
         grid-area: 2 / 2 / 3 / -2;
     }
 
