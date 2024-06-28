@@ -687,10 +687,6 @@ footer img {
         grid-area: 1 / 2 / 2 / -2 !important;
     }
 
-    main>section:first-child>a>hgroup>img {
-        aspect-ratio: 3 / 2;
-    }
-
     footer>section:nth-of-type(1) {
         grid-template-columns: 1fr !important;
     }
@@ -739,10 +735,13 @@ footer img {
     header>hgroup {
         max-width: none;
     }
-
+    main>section:first-child>a>hgroup>img {
+        aspect-ratio: 3 / 2;
+    }
     main>section:last-child {
         grid-area: 2 / 2 / 3 / -2;
     }
+
 
     footer>section:nth-of-type(1) {
         grid-template-columns: repeat(2, fit-content(33ch));
