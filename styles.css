@@ -638,6 +638,15 @@ footer img {
     margin-top: var(--space-medium);
 }
 
+
+.hidden-content {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.hidden-content.show {
+    opacity: 1;
+}
 /***/
 
 /* -- media -- */
