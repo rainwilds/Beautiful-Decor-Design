@@ -642,10 +642,13 @@ footer img {
 .hidden-content {
     opacity: 0;
     transition: opacity 0.5s;
+    transition-delay: 1s;
+    display: none;
 }
 
 .hidden-content.show {
     opacity: 1;
+    display: block;
 }
 /***/
 
