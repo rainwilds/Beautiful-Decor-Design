@@ -177,6 +177,10 @@ body {
     background-color: light-dark(var(--color-background-light), var(--color-background-dark));
 }
 
+body.page-standard {
+    grid-template: 40vh auto auto / 5vw repeat(6, 1fr) 5vw;
+}
+
 h1,
 h2,
 h3,
@@ -648,7 +652,7 @@ footer img {
 
 .hidden-content.show {
     opacity: 1;
-    display: block;
+    display: grid;
 }
 /***/
 
