@@ -490,7 +490,7 @@ main>section {
     margin-bottom: var(--space-large);
 }
 
-main>section:nth-of-type(1) {
+main>section#services {
     grid-area: 1 / 2 / 2 / -2;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -498,11 +498,11 @@ main>section:nth-of-type(1) {
     margin-top: var(--space-large);
 }
 
-main>section:nth-of-type(1) a {
+main>section#services a {
     color: light-dark(var(--color-static-dark), var(--color-static-light));
 }
 
-main>section:nth-of-type(1)>a>hgroup {
+main>section#services>a>hgroup {
     padding: var(--space-medium);
     text-align: center;
     border: solid 1px;
@@ -514,13 +514,13 @@ main>section:nth-of-type(1)>a>hgroup {
     /* makes all tiles same height */
 }
 
-main>section:nth-of-type(1)>a>hgroup:hover {
+main>section#services>a>hgroup:hover {
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     transition: background-color 0.5s;
 }
 
 
-main>section:nth-of-type(1)>a>hgroup>img {
+main>section#services>a>hgroup>img {
     margin-bottom: var(--space-medium);
     border-radius: var(--border-radius-small);
     aspect-ratio: 16 / 9;
@@ -528,17 +528,17 @@ main>section:nth-of-type(1)>a>hgroup>img {
 
 
 
-main>section:nth-of-type(2) {
+main>section#message {
     grid-area: 2 / 3 / 3 / -3;
 }
 
-main>section:nth-of-type(2) hgroup {
+main>section#message hgroup {
     text-align: center;
     margin-bottom: var(--space-medium);
 }
 
 
-main>section:nth-of-type(3) {
+main>section#brands {
     grid-area: 3 / 1 / 4 / -1;
     display: grid;
     grid-template: auto auto / auto;
@@ -548,7 +548,7 @@ main>section:nth-of-type(3) {
     padding: var(--space-large);
 }
 
-main>section:nth-of-type(3)>div {
+main>section#brands>div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 160px));
     gap: var(--space-medium);
@@ -556,12 +556,12 @@ main>section:nth-of-type(3)>div {
     justify-content: center;
 }
 
-main>section:nth-of-type(3)>div>a:hover {
+main>section#brands>div>a:hover {
     filter: opacity(0.5);
     transition: filter 0.5s;
 }
 
-main>section:nth-of-type(3) hgroup {
+main>section#brands hgroup {
     text-align: center;
 }
 
@@ -810,11 +810,11 @@ footer img {
         max-width: none;
     }
 
-    main>section:nth-of-type(1)>a>hgroup>img {
+    main>section#services>a>hgroup>img {
         aspect-ratio: 3 / 2;
     }
 
-    main>section:nth-of-type(2) {
+    main>section#message {
         grid-area: 2 / 2 / 3 / -2;
     }
 
@@ -849,7 +849,7 @@ footer img {
             "gutter-left footer footer footer footer footer footer gutter-right";
     }
 
-    main>section:nth-of-type(3)>div {
+    main>section#brands>div {
         max-width: var(--max-width);
         justify-self: center;
     }
