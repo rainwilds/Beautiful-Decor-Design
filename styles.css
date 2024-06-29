@@ -602,15 +602,15 @@ footer>section:nth-of-type(1) {
     grid-template-columns: repeat(2, max-content) fit-content(33ch) minmax(150px, 350px);
     gap: var(--space-medium);
     justify-content: space-between;
-    padding: var(--space-medium);
+    /* padding: var(--space-medium); */
     border-radius: var(--border-radius-medium);
     -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: light-dark(var(--color-static-light-1), var(--color-static-dark-1));
-    background-image: var(--background-noise);
+    /* backdrop-filter: blur(10px); */
+    /* background-color: light-dark(var(--color-static-light-1), var(--color-static-dark-1)); */
+    /* background-image: var(--background-noise); */
     margin: var(--space-large) 0;
     color: var(--color-static-light);
-    box-shadow: 10px 10px 50px -1px var(--color-static-dark-4);
+    /* box-shadow: 10px 10px 50px -1px var(--color-static-dark-4); */
 }
 
 footer>section:nth-of-type(1) ul {
@@ -625,6 +625,9 @@ footer>section:nth-of-type(1) ul li {
 footer>section:nth-of-type(1)>div:nth-child(4) {
     align-self: end;
     justify-self: center;
+    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+    padding: var(--space-medium);
+    border-radius: inherit;
 }
 
 footer>section:nth-of-type(1)>div:nth-child(3)>h3:nth-child(2) {
