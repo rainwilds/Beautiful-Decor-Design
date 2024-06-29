@@ -36,7 +36,8 @@ textarea {
     font: inherit;
     background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light));
     padding: var(--space-tiny);
-    border: solid 1px transparent;
+    border: solid 1px;
+    border-color: light-dark(var(--color-accent-dark),var(--color-accent-light));
     border-radius: var(--border-radius-small);
     color: var(--color-static-light);
     font-weight: var(--font-2-weight-heavy);
