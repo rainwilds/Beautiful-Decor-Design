@@ -577,8 +577,13 @@ footer {
 }
 
 footer a:not(footer>section:last-child>span>a) {
-    color: var(--color-background-light);
+    color: var(--color-static-light);
     border: none;
+}
+
+footer a:hover {
+    color: var(--color-static-light-6);
+    transition: color 0.5s;
 }
 
 footer>section:last-child>span>a {
@@ -586,13 +591,13 @@ footer>section:last-child>span>a {
             var(--color-static-light));
 }
 
-footer>section:nth-of-type(2)>div:nth-child(4) a {
-    margin-top: var(--space-tiny);
+footer>section:last-child>span>a:hover {
+    color: light-dark(var(--color-static-dark-6),
+            var(--color-static-light-6));
 }
 
-footer a:hover {
-    color: var(--color-static-light-6);
-    transition: color 0.5s;
+footer>section:nth-of-type(2)>div:nth-child(4) a {
+    margin-top: var(--space-tiny);
 }
 
 footer p,
