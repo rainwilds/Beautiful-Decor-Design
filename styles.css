@@ -825,6 +825,10 @@ footer img {
         aspect-ratio: 3 / 2;
     }
 
+    main>section#message {
+        grid-area: 3 / 2 / 4 / -2;
+    }
+
     footer>section:nth-of-type(1) {
         grid-template-columns: repeat(2, fit-content(33ch));
         justify-content: center;
@@ -832,6 +836,7 @@ footer img {
     }
 
 }
+
 
 @media (min-width: 1920px) {
 
