@@ -556,18 +556,9 @@ main>section:nth-of-type(3)>div {
     justify-content: center;
 }
 
-/* main>section:nth-of-type(3)>div>a:hover~ {
-    filter: opacity(0.5);
-} */
-
-main>section:nth-of-type(3)>div>a:nth-child(even):hover {
+main>section:nth-of-type(3)>div>a:hover {
     filter: opacity(0.5);
 }
-
-main>section:nth-of-type(3)>div>a:nth-child(odd):hover {
-    filter: opacity(0.5);
-}
-
 
 main>section:nth-of-type(3) hgroup {
     text-align: center;
@@ -644,6 +635,8 @@ footer>section:nth-of-type(1)>div:nth-child(4) {
     box-shadow: 10px 10px 50px -1px var(--color-static-dark-4);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+    border: solid 1px;
+    border-color: light-dark(var(--color-static-dark-2), var(--color-static-light-2));
 }
 
 footer>section:nth-of-type(1)>div:nth-child(3)>h3:nth-child(2) {
