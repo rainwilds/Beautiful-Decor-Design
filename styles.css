@@ -649,9 +649,7 @@ footer>section:nth-of-type(2) {
     gap: var(--space-medium);
     padding: var(--space-medium);
     color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
-    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    background-color: light-dark(var(--color-background-light), var(--color-background-dark));
 }
 
 footer>section:nth-of-type(2)>span {
