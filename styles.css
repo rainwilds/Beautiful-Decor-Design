@@ -253,7 +253,7 @@ a {
 
 }
 
-a:not(button > a, header nav a, main>section>a, footer a, main>section:nth-child(3)>div>a) {
+a:not(button > a, header nav a, main>section>a, footer a, main>section:nth-child(3)>div>a, #brands a) {
     border-bottom: solid 5px light-dark(var(--color-static-light-1),
             var(--color-static-dark-1));
 }
