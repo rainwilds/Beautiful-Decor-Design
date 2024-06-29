@@ -608,7 +608,7 @@ footer>section:nth-of-type(1) {
     backdrop-filter: blur(10px);
     background-color: light-dark(var(--color-static-light-1), var(--color-static-dark-1));
     background-image: var(--background-noise);
-    margin-top: var(--space-large);
+    margin: var(--space-large) 0;
     color: var(--color-static-light);
     box-shadow: 10px 10px 50px -1px var(--color-static-dark-4);
 }
@@ -649,6 +649,9 @@ footer>section:nth-of-type(2) {
     gap: var(--space-medium);
     padding: var(--space-medium);
     color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
+    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 footer>section:nth-of-type(2)>span {
