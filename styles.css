@@ -543,8 +543,6 @@ main>section#brands {
     display: grid;
     grid-template: auto auto / auto;
     gap: var(--space-medium);
-    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
-    padding: var(--space-large);
 }
 
 main>section#brands>div {
@@ -812,11 +810,6 @@ footer img {
     main>section#services>a>hgroup>img {
         aspect-ratio: 3 / 2;
     }
-
-    main>section#message {
-        grid-area: 2 / 2 / 3 / -2;
-    }
-
 
     footer>section:nth-of-type(1) {
         grid-template-columns: repeat(2, fit-content(33ch));
