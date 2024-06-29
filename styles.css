@@ -488,7 +488,7 @@ main {
     display: grid;
     grid-template: repeat(2, auto) / subgrid;
     grid-area: main / gutter-left / main / gutter-right;
-    gap: var(--space-huge);
+    row-gap: var(--space-huge);
 }
 
 main>section:first-child {
