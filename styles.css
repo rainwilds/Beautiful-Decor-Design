@@ -39,6 +39,7 @@ textarea {
     border: solid 1px transparent;
     border-radius: var(--border-radius-small);
     color: var(--color-static-light);
+    font-weight: var(--font-2-weight-heavy);
     outline: solid 1px;
     outline-color: transparent;
     background-image: repeating-linear-gradient(to right, var(--color-accent-opaque-light), var(--color-accent-opaque-light) 10px, transparent 10px, transparent);
@@ -91,7 +92,7 @@ textarea:focus-visible {
     --color-accent-light: #9f368c;
     --color-accent-dark: #6b245e;
 
-    --color-accent-opaque-light: rgba(159, 54, 140, 0.5);
+    --color-accent-opaque-light: rgba(159, 54, 140, 0.4);
     --color-accent-opaque-dark: rgba(107, 36, 94, 0.5);
 
     --color-static-light: white;
@@ -478,6 +479,7 @@ header>span {
     font-family: var(--font-1-family);
     font-size: clamp(100vh, 100vh, 100vw);
     opacity: 0.1;
+    color: var(--color-static-light);
 }
 
 main {
