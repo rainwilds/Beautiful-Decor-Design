@@ -180,9 +180,9 @@ body {
 body.page-service {
     grid-template: 40vh auto auto / 5vw repeat(6, 1fr) 5vw;
     grid-template-areas:
-    "gutter-left header header header header header header gutter-right"
-    "gutter-left main main main main main main gutter-right"
-    "gutter-left footer footer footer footer footer footer gutter-right";
+        "gutter-left header header header header header header gutter-right"
+        "gutter-left main main main main main main gutter-right"
+        "gutter-left footer footer footer footer footer footer gutter-right";
 }
 
 h1,
@@ -366,6 +366,10 @@ header {
     overflow: hidden;
 }
 
+body#page-indoor-roller-blnds>header {
+    background-image: url(./img/indoor-roller-blinds-2.jpeg);
+}
+
 
 header>div {
     grid-area: header / gutter-left / header / gutter-right;
@@ -456,6 +460,10 @@ header>hgroup {
 header>hgroup>p {
     padding-bottom: var(--space-medium);
     color: var(--color-static-light);
+}
+
+body.page-service>header>hgroup>p {
+    padding: none;
 }
 
 header>hgroup>button:first-of-type {
