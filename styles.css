@@ -548,7 +548,7 @@ main>section:nth-of-type(3) {
     padding: var(--space-large);
 }
 
-main>section:nth-of-type(3)>div{
+main>section:nth-of-type(3)>div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 160px));
     gap: var(--space-medium);
@@ -556,13 +556,15 @@ main>section:nth-of-type(3)>div{
     justify-content: center;
 }
 
-main>section:nth-of-type(3) hgroup{
+main>section:nth-of-type(3)>div>a:hover~ {
+    filter: opacity(0.5);
+}
+
+main>section:nth-of-type(3) hgroup {
     text-align: center;
 }
 
-main>section:nth-of-type(3) picture:hover ~ {
-    filter: opacity(0.5);
-}
+
 
 footer {
     display: grid;
