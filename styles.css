@@ -42,7 +42,7 @@ textarea {
     font-weight: var(--font-2-weight-heavy);
     outline: solid 1px;
     outline-color: transparent;
-    background-image: repeating-linear-gradient(to right, var(--color-accent-opaque-light), var(--color-accent-opaque-light) 10px, transparent 10px, transparent);
+    /* background-image: repeating-linear-gradient(to right, var(--color-accent-opaque-light), var(--color-accent-opaque-light) 10px, transparent 10px, transparent); */
     background-size: 32px 32px;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -313,6 +313,8 @@ form>button {
     grid-row: 5;
     grid-column-end: 2;
     margin-top: var(--space-small);
+    color: light-dark(var(--color-static-dark), var(--color-static-light));
+    /* background-image: none; */
 }
 
 form>p {
