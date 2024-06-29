@@ -625,9 +625,11 @@ footer>section:nth-of-type(1) ul li {
 footer>section:nth-of-type(1)>div:nth-child(4) {
     align-self: end;
     justify-self: center;
-    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+    background-color: light-dark(var(--color-static-light-1), var(--color-static-dark-1));
     padding: var(--space-medium);
     border-radius: inherit;
+    background-image: var(--background-noise);
+    box-shadow: 10px 10px 50px -1px var(--color-static-dark-4);
 }
 
 footer>section:nth-of-type(1)>div:nth-child(3)>h3:nth-child(2) {
