@@ -550,8 +550,8 @@ main>section:nth-of-type(3) {
 
 main>section:nth-of-type(3)>div{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
-    gap: var(--space-huge);
+    grid-template-columns: repeat(auto-fit, minmax(140px, 190px));
+    gap: var(--space-medium);
     padding: 0 var(--space-medium);
     filter: opacity(0.7);
     justify-content: center;
