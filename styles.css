@@ -436,6 +436,10 @@ header nav a:hover {
     transition: all 0.5s;
 }
 
+header nav a#header-nav-active {
+    font-weight: var(--font-2-weight-heavy);
+}
+
 header>hgroup {
     grid-area: header / gutter-left / header / gutter-right;
     z-index: 3;
