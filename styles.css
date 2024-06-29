@@ -578,6 +578,10 @@ footer a:not(footer>section:last-child>span>a) {
     border: none;
 }
 
+footer > section:nth-child(3) > div > a{
+    color: light-dark(var(--color-static-dark),var(--color-static-light));
+}
+
 footer a:hover {
     color: var(--color-static-light-6);
     transition: color 0.5s;
