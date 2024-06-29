@@ -556,7 +556,7 @@ footer {
     background-position: bottom right;
 }
 
-footer a {
+footer a:not(footer>section:last-child>span>a) {
     color: var(--color-background-light);
     border: none;
 }
