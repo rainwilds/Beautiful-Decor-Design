@@ -510,7 +510,7 @@ main>section:nth-of-type(1)>a>hgroup>img {
 
 
 
-main>section:nth-of-type(2){
+main>section:nth-of-type(2) {
     grid-area: 2 / 3 / 3 / -3;
 }
 
@@ -620,7 +620,11 @@ footer>section:nth-of-type(2)>span {
     font-size: var(--font-2-size-small);
 }
 
-
+footer>section:nth-of-type(3) {
+    grid-area: 3/2/4/-2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
 
 footer address {
     text-align: center;
@@ -654,6 +658,7 @@ footer img {
     opacity: 1;
     display: grid;
 }
+
 /***/
 
 /* -- media -- */
@@ -751,10 +756,12 @@ footer img {
     header>hgroup {
         max-width: none;
     }
+
     main>section:nth-of-type(1)>a>hgroup>img {
         aspect-ratio: 3 / 2;
     }
-    main>section:nth-of-type(2){
+
+    main>section:nth-of-type(2) {
         grid-area: 2 / 2 / 3 / -2;
     }
 
