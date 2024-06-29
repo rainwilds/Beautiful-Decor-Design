@@ -630,6 +630,8 @@ footer>section:nth-of-type(1)>div:nth-child(4) {
     border-radius: inherit;
     background-image: var(--background-noise);
     box-shadow: 10px 10px 50px -1px var(--color-static-dark-4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
 footer>section:nth-of-type(1)>div:nth-child(3)>h3:nth-child(2) {
