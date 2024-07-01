@@ -37,7 +37,7 @@ textarea {
     background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light));
     padding: var(--space-tiny);
     border: solid 1px;
-    border-color: light-dark(var(--color-accent-dark),var(--color-accent-light));
+    border-color: light-dark(var(--color-accent-dark), var(--color-accent-light));
     border-radius: var(--border-radius-small);
     color: var(--color-static-light);
     font-weight: var(--font-2-weight-heavy);
@@ -51,7 +51,8 @@ textarea {
 
 button {
     cursor: pointer;
-    font-size: var(--font-2-size-large); /* larger font size for google accessibilty score */
+    font-size: var(--font-2-size-large);
+    /* larger font size for google accessibilty score */
 }
 
 form>button:hover {
@@ -592,8 +593,8 @@ footer a:not(footer>section:last-child>span>a) {
     border: none;
 }
 
-footer > section:nth-child(3) > div > a{
-    color: light-dark(var(--color-static-dark),var(--color-static-light)) !important;
+footer>section:nth-child(3)>div>a {
+    color: light-dark(var(--color-static-dark), var(--color-static-light)) !important;
 }
 
 footer a:hover {
@@ -637,8 +638,9 @@ footer>section:nth-of-type(1) {
     align-items: center;
 }
 
-footer>section:nth-of-type(1) ul {
+footer>section ul {
     list-style: none;
+    line-height: 1.5;
 }
 
 footer>section:nth-of-type(1) ul li {
