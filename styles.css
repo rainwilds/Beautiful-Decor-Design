@@ -537,6 +537,7 @@ main>section#services>a>hgroup>img {
     margin-bottom: var(--space-medium);
     border-radius: var(--border-radius-small);
     aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 
 
