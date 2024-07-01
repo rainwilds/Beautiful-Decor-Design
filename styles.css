@@ -316,12 +316,18 @@ form>button {
     grid-row: 5;
     grid-column-end: 2;
     margin-top: var(--space-small);
-    color: light-dark(var(--color-static-dark), var(--color-static-light));
+    color: var(--color-static-light);
     /* background-image: none; */
 }
 
 form>p {
     grid-row: 6;
+}
+
+input,
+/* select, TEST */
+textarea {
+    background-image: repeating-linear-gradient(to right, var(--color-accent-opaque-light), var(--color-accent-opaque-light) 10px, transparent 10px, transparent);
 }
 
 dialog {
