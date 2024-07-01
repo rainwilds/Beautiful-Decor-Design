@@ -51,6 +51,7 @@ textarea {
 
 button {
     cursor: pointer;
+    font-size: var(--font-2-size-large); /* larger font size for google accessibilty score */
 }
 
 form>button:hover {
