@@ -379,6 +379,10 @@ header {
     overflow: hidden;
 }
 
+body#about > header {
+    background-image: url(./img/header.jpg);
+}
+
 body#page-indoor-roller-blinds>header {
     background-image: url(./img/indoor-roller-blinds-2.jpeg);
 }
