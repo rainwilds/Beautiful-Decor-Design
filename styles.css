@@ -29,12 +29,6 @@ hr {
     background: var(--color-static-light);
 }
 
-input:invalid,
-/* select:invalid, TEST */
-textarea:invalid {
-    background-color: rgba(255, 0, 0, 0.5);
-}
-
 button,
 input,
 /* select, TEST */
@@ -53,6 +47,12 @@ textarea {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
+
+/*
+input:invalid,
+textarea:invalid {
+    background-color: rgba(255, 0, 0, 0.5);
+}*/
 
 button {
     cursor: pointer;
