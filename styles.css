@@ -394,6 +394,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    margin-bottom: var(--space-tiny);
 }
 
 body#page-about > header {
@@ -638,6 +639,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
+    margin-top: var(--space-tiny);
 }
 
 footer a:not(footer>section:last-child>span>a) {
