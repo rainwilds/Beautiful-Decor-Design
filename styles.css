@@ -696,7 +696,7 @@ footer>section:nth-of-type(1) {
 
 footer>section ul {
     list-style: none;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 footer>section:nth-of-type(1) ul li {
@@ -874,7 +874,7 @@ footer img {
 
 @media (max-width: 1200px) {
     body {
-        grid-template: 100vh auto auto / 0 repeat(6, 1fr) 0;
+        grid-template: min-content auto auto / 0 repeat(6, 1fr) 0;
         grid-template-areas:
             "gutter-left header header header header header header gutter-right"
             "gutter-left main main main main main main gutter-right"
@@ -917,7 +917,7 @@ footer img {
 @media (min-width: 1920px) {
 
     body {
-        grid-template: 100vh auto auto / 10vw repeat(6, 1fr) 10vw;
+        grid-template: 70vh auto auto / 10vw repeat(6, 1fr) 10vw;
         grid-template-areas:
             "gutter-left header header header header header header gutter-right"
             "gutter-left main main main main main main gutter-right"
