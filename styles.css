@@ -183,7 +183,7 @@ body {
     background-color: light-dark(var(--color-background-light), var(--color-background-dark));
 }
 
-body.page-service {
+body#page-about {
     grid-template: 40vh auto auto / 5vw repeat(6, 1fr) 5vw;
     grid-template-areas:
         "gutter-left header header header header header header gutter-right"
