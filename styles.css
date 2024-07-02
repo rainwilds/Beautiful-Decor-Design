@@ -243,6 +243,10 @@ p:not(:last-of-type) {
     margin-bottom: var(--space-medium);
 }
 
+article p:first-of-type::first-line {
+    font-size: var(--font-2-size-large);
+}
+
 a {
     color: light-dark(var(--color-accent-light),
             var(--color-accent-dark));
