@@ -42,7 +42,6 @@ textarea {
     color: var(--color-static-light);
     outline: solid 1px;
     outline-color: transparent;
-    /* background-image: repeating-linear-gradient(to right, var(--color-accent-opaque-light), var(--color-accent-opaque-light) 10px, transparent 10px, transparent); */
     background-size: 32px 32px;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -150,6 +149,10 @@ textarea:focus-visible {
 
     /* used for gallery JS generation */
     --aspect-ratio: 1 / 1;
+
+    /* background pattern */
+    --background-pattern-gradient: repeating-linear-gradient(to right, var(--color-accent-opaque-light), var(--color-accent-opaque-light) 10px, transparent 10px, transparent);
+    /* --background-pattern-size: 32px 32px; PLACEHOLDER */
 
     /* background noise */
     --background-noise:
@@ -335,7 +338,7 @@ form>p {
 input,
 /* select, TEST */
 textarea {
-    background-image: repeating-linear-gradient(to right, var(--color-accent-opaque-light), var(--color-accent-opaque-light) 10px, transparent 10px, transparent);
+    background-image: var(--background-pattern-gradient);
 }
 
 dialog {
@@ -521,8 +524,8 @@ body#page-about>main>hgroup{
     margin-top: var(--space-large);
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     padding: var(--space-medium) 0;
-    background-image: repeating-linear-gradient(to right, var(--color-accent-opaque-light), var(--color-accent-opaque-light) 10px, transparent 10px, transparent);
-    background-size: 32px 32px;
+    background-image: var(--background-pattern-gradient);
+    /* background-size: 32px 32px; */
 }
 body#page-about>main>section{
     grid-area: 2 / 2 / 3 / -2;
