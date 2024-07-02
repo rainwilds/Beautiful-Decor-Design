@@ -506,6 +506,22 @@ main {
     row-gap: var(--space-huge);
 }
 
+body#page-about>main>hgroup{
+    grid-area: 1 / 2 / 2 / -2;
+    text-align: center;
+}
+body#page-about>main>section{
+    grid-area: 2 / 2 / 3 / -2;
+    display: grid;
+    grid-template: auto / subgrid;
+}
+body#page-about>main>section>img{
+    grid-area: 1 / 1 / 2 / span 2;
+}
+body#page-about>main>section>article{
+    grid-area: 1 / 3 / 4 / -1;
+}
+
 main>section:first-child {
     margin-top: var(--space-large);
 }
