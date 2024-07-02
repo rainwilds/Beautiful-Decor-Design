@@ -511,11 +511,13 @@ main {
 }
 
 body#page-about>main>hgroup{
-    grid-area: 1 / 2 / 2 / -2;
+    grid-area: 1 / 1 / 2 / -1;
     text-align: center;
     margin-top: var(--space-large);
-    background-color: light-dark(var(--color-accent-opaque-light),var(--color-accent-opaque-dark));
+    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     padding: var(--space-medium) 0;
+    background-image: repeating-linear-gradient(to right, var(--color-accent-opaque-light), var(--color-accent-opaque-light) 10px, transparent 10px, transparent);
+    background-size: 32px 32px;
 }
 body#page-about>main>section{
     grid-area: 2 / 2 / 3 / -2;
