@@ -34,7 +34,7 @@ input,
 /* select, TEST */
 textarea {
     font: inherit;
-    background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light));
+    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     padding: var(--space-tiny);
     border: solid 1px;
     border-color: light-dark(var(--color-accent-dark), var(--color-accent-light));
