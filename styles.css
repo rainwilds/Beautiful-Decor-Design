@@ -95,7 +95,7 @@ textarea:focus-visible {
     --color-accent-light: #9f368c;
     --color-accent-dark: #6b245e;
 
-    --color-accent-opaque-light: rgba(159, 54, 140, 0.4);
+    --color-accent-opaque-light: rgba(159, 54, 140, 0.2);
     --color-accent-opaque-dark: rgba(107, 36, 94, 0.5);
 
     --color-static-light: white;
@@ -212,6 +212,11 @@ h6 {
 h1 {
     font-size: 4.2rem;
     color: var(--color-static-light);
+}
+
+body#page-about h1 {
+    color: light-dark(var(--color-static-dark),
+    var(--color-static-light));
 }
 
 h2 {
