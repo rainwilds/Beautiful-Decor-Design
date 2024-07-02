@@ -162,6 +162,10 @@ textarea:focus-visible {
 
     /* -- border -- */
 
+    --border-size-small: 1px;
+    --border-size-medium: 3px;
+    --border-size-large: 10px;
+
     --border-radius-small: 10px;
     --border-radius-medium: 20px;
     --border-radius-large: 30px;
@@ -269,7 +273,7 @@ a {
 }
 
 a:not(button > a, header nav a, main>section>a, footer a, main>section:nth-child(3)>div>a, #brands a) {
-    border-bottom: solid 5px light-dark(var(--color-static-light-1),
+    border-bottom: solid var(--border-size-medium) light-dark(var(--color-static-light-1),
             var(--color-static-dark-1));
 }
 
@@ -444,11 +448,11 @@ header>nav {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: var(--space-tiny) var(--space-medium);
-    border-radius: 10px;
+    border-radius: var(--border-radius-small);
     /* background-color: light-dark(var(--color-static-light-1), var(--color-static-dark-1)); */
     background-image: var(--background-noise);
     box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
-    border: solid 1px;
+    border: solid var(--border-size-small);
     border-color: var(--color-static-light-1);
     background-color: var(--color-static-light-1);
 }
@@ -470,7 +474,7 @@ header>nav ul>li {
 
 header nav a {
     color: var(--color-static-light);
-    border-bottom: solid 1px;
+    border-bottom: solid var(--border-size-small);
     border-color: var(--color-static-light);
 }
 
@@ -564,7 +568,7 @@ main>section#services a {
 main>section#services>a>hgroup {
     padding: var(--space-medium);
     text-align: center;
-    border: solid 1px;
+    border: solid var(--border-size-small);
     border-color: var(--color-accent-light);
     border-radius: var(--border-radius-medium);
     background-color: transparent;
