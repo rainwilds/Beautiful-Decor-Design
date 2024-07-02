@@ -379,7 +379,7 @@ header {
     overflow: hidden;
 }
 
-body#about > header {
+body#page-about > header {
     background-image: url(./img/header.jpg);
 }
 
@@ -439,6 +439,10 @@ header>nav {
     border: solid 1px;
     border-color: var(--color-static-light-1);
     background-color: var(--color-static-light-1);
+}
+
+body#page-about>header>nav {
+    margin: var(--space-medium) 0;
 }
 
 header>nav ul {
