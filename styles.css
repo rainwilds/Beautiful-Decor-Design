@@ -482,14 +482,6 @@ header>hgroup>p {
     color: var(--color-static-light);
 }
 
-header#about>hgroup>p {
-    padding: 0;
-}
-
-body.page-service>header>hgroup>p {
-    padding: 0;
-}
-
 header>hgroup>button:first-of-type {
     margin-right: var(--space-small);
 }
