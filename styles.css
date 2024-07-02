@@ -273,12 +273,11 @@ button>a {
 
 button>a:hover {
     color: var(--color-static-light-6);
+    transition: color 0.5s;
 }
 
 button:hover {
     background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light));
-    transition-property: background-color;
-    transition-duration: 0.5s;
 }
 
 form {
