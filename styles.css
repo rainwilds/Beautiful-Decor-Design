@@ -522,8 +522,8 @@ main {
     grid-template: repeat(2, auto) / subgrid;
     grid-area: main / gutter-left / main / gutter-right;
     row-gap: var(--space-huge);
-    border-bottom: dashed var(--border-size-large) light-dark(var(--color-accent-opaque-light),var(--color-accent-opaque-dark));
-    border-top: dashed var(--border-size-large) light-dark(var(--color-accent-opaque-light),var(--color-accent-opaque-dark));
+    border-bottom: dashed var(--border-size-medium) light-dark(var(--color-accent-light),var(--color-accent-dark));
+    border-top: dashed var(--border-size-medium) light-dark(var(--color-accent-light),var(--color-accent-dark));
 }
 
 body#page-about>main>hgroup{
