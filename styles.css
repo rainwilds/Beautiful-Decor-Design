@@ -693,60 +693,28 @@ header {
         background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
         z-index: 2;
     }
+
+    nav {
+        grid-area: header / gutter-left / header / gutter-right;
+        z-index: 3;
+        justify-self: center;
+        height: min-content;
+        margin-top: var(--space-medium);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        padding: var(--space-tiny) var(--space-medium);
+        border-radius: var(--border-radius-small);
+        background-image: var(--background-noise);
+        box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
+        border: solid var(--border-size-small);
+        border-color: var(--color-static-light-1);
+        background-color: var(--color-static-light-1);
+    }
 }
 
-/* header>div {
-    grid-area: header / gutter-left / header / gutter-right;
-    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
-    z-index: 2;
-} */
 
-/* background overlay hover transition PLACEHOLDER
-header>div:hover{
-    transition-property: background-color;
-    transition-duration: 3s;
-    transition-delay: 1s;
-    background-color: transparent;
-}*/
 
-/* header video initial opacity PLACEHOLDER
-header > div ~ *:not(video) {
-    opacity: 1;
-*/
 
-/* header video PLACEHOLDER
-header>video {
-    grid-area: 1 / 1 / 2 / 9;
-    width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-} */
-
-/* selects all except the header video PLACEHOLDER
-header:hover > div ~ *:not(video) {
-    transition-property: opacity;
-    transition-duration: 2s;
-    transition-delay: 1s;
-    opacity: 0;
-}*/
-
-header>nav {
-    grid-area: header / gutter-left / header / gutter-right;
-    z-index: 3;
-    justify-self: center;
-    height: min-content;
-    margin-top: var(--space-medium);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    padding: var(--space-tiny) var(--space-medium);
-    border-radius: var(--border-radius-small);
-    /* background-color: light-dark(var(--color-static-light-1), var(--color-static-dark-1)); */
-    background-image: var(--background-noise);
-    box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
-    border: solid var(--border-size-small);
-    border-color: var(--color-static-light-1);
-    background-color: var(--color-static-light-1);
-}
 
 header>nav ul {
     list-style-type: none;
@@ -974,5 +942,44 @@ header>span {
     }
 
 }
+
+/***/
+
+/* -- snippets -- */
+
+/* header>div {
+    grid-area: header / gutter-left / header / gutter-right;
+    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+    z-index: 2;
+} */
+
+/* background overlay hover transition PLACEHOLDER
+header>div:hover{
+    transition-property: background-color;
+    transition-duration: 3s;
+    transition-delay: 1s;
+    background-color: transparent;
+}*/
+
+/* header video initial opacity PLACEHOLDER
+header > div ~ *:not(video) {
+    opacity: 1;
+*/
+
+/* header video PLACEHOLDER
+header>video {
+    grid-area: 1 / 1 / 2 / 9;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+} */
+
+/* selects all except the header video PLACEHOLDER
+header:hover > div ~ *:not(video) {
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    opacity: 0;
+}*/
 
 /***/
