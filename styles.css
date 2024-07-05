@@ -738,6 +738,26 @@ header {
             }
         }
     }
+
+    hgroup {
+        grid-area: header / gutter-left / header / gutter-right;
+        z-index: 3;
+        align-self: center;
+        text-align: center;
+        max-width: 50vw;
+        justify-self: center;
+
+        p {
+            padding-bottom: var(--space-medium);
+            color: var(--color-static-light);
+        }
+
+        button:first-of-type {
+            margin-right: var(--space-small);
+        }
+
+    }
+
 }
 
 
@@ -750,23 +770,11 @@ header {
 
 
 
-header>hgroup {
-    grid-area: header / gutter-left / header / gutter-right;
-    z-index: 3;
-    align-self: center;
-    text-align: center;
-    max-width: 50vw;
-    justify-self: center;
-}
 
-header>hgroup>p {
-    padding-bottom: var(--space-medium);
-    color: var(--color-static-light);
-}
 
-header>hgroup>button:first-of-type {
-    margin-right: var(--space-small);
-}
+
+
+
 
 header>span {
     grid-area: header / gutter-left / header / gutter-right;
