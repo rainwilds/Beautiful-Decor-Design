@@ -690,12 +690,14 @@ footer {
         border: none;
         text-decoration: underline wavy var(--border-size-small) var(--color-static-light-6);
         text-underline-offset: 5px;
+
+        & :hover {
+            color: var(--color-static-light-6);
+            transition: color 0.5s;
+        }
     }
 
-    a:hover {
-        color: var(--color-static-light-6);
-        transition: color 0.5s;
-    }
+
 }
 
 
