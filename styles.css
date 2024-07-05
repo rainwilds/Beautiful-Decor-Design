@@ -575,15 +575,7 @@ footer>section:nth-of-type(2)>div {
 }
 
 
-footer>section:nth-of-type(2) {
-    grid-area: 2 / 1 / 3 / -1;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: var(--space-medium);
-    padding: var(--space-medium);
-    color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
-    background-color: light-dark(var(--color-background-light), var(--color-background-dark));
-}
+
 
 footer>section:nth-of-type(2)>span {
     font-size: var(--font-2-size-small);
@@ -658,7 +650,15 @@ footer {
         align-items: center;
     }
 
-    section:last-child {
+    section:nth-of-type(2) {
+
+        grid-area: 2 / 1 / 3 / -1;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: var(--space-medium);
+        padding: var(--space-medium);
+        color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
+        background-color: light-dark(var(--color-background-light), var(--color-background-dark));
 
         span>a {
             color: light-dark(var(--color-static-dark),
