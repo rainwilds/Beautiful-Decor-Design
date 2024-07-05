@@ -724,7 +724,7 @@ header {
 
         @media (max-width: 768px) {
 
-            grid-area: 1 / 2 / 2 / -2 !important;
+            grid-area: 1 / 2 / 2 / -2;
 
         }
 
