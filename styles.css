@@ -518,16 +518,9 @@ main>section#brands hgroup {
     text-align: center;
 }
 
-footer {
-    display: grid;
-    grid-template: repeat(2, auto) / subgrid;
-    grid-area: footer / gutter-left / footer / gutter-right;
-    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
-    background-image: url(./img/header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom right;
-    margin-top: var(--space-tiny);
+/* footer a:hover {
+    color: var(--color-static-light-6);
+    transition: color 0.5s;
 }
 
 footer a:not(footer>section:last-child>span>a) {
@@ -535,16 +528,13 @@ footer a:not(footer>section:last-child>span>a) {
     border: none;
     text-decoration: underline wavy var(--border-size-small) var(--color-static-light-6);
     text-underline-offset: 5px;
-}
+} */
 
 footer>section:nth-child(3)>div>a {
     color: light-dark(var(--color-static-dark), var(--color-static-light)) !important;
 }
 
-footer a:hover {
-    color: var(--color-static-light-6);
-    transition: color 0.5s;
-}
+
 
 footer>section:last-child>span>a {
     color: light-dark(var(--color-static-dark),
@@ -676,6 +666,33 @@ footer img {
 }
 
 /***/
+
+
+footer {
+    
+    display: grid;
+    grid-template: repeat(2, auto) / subgrid;
+    grid-area: footer / gutter-left / footer / gutter-right;
+    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+    background-image: url(./img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    margin-top: var(--space-tiny);
+
+    a:not(section:last-child>span>a) {
+        color: var(--color-static-light);
+        border: none;
+        text-decoration: underline wavy var(--border-size-small) var(--color-static-light-6);
+        text-underline-offset: 5px;
+    }
+
+    a:hover {
+        color: var(--color-static-light-6);
+        transition: color 0.5s;
+    }
+}
+
 
 header {
 
