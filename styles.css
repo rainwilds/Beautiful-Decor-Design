@@ -722,7 +722,7 @@ header {
             margin-right: var(--space-small);
         }
 
-        @media (max-width: 768px) {
+        /* @media (max-width: 768px) {
 
             grid-area: 1 / 2 / 2 / -2;
 
@@ -732,13 +732,7 @@ header {
 
             grid-area: 1 / 2 / 2 / -2;
 
-        }
-
-        @media (max-width: 1200px) {
-
-                max-width: none;
-
-        }
+        } */
     }
 
     nav {
