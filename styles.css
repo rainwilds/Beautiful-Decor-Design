@@ -632,21 +632,7 @@ footer>section:nth-of-type(3) {
     grid-template-columns: repeat(5, 1fr);
 }
 
-footer address {
-    text-align: center;
-}
 
-footer address ul {
-    list-style-type: none;
-}
-
-footer address ul>li:first-of-type {
-    margin-bottom: var(--space-small);
-}
-
-footer address i {
-    margin-right: var(--space-tiny);
-}
 
 footer img {
     margin-top: var(--space-medium);
@@ -697,7 +683,21 @@ footer {
         }
     }
 
+    address {
+        text-align: center;
 
+        ul {
+            list-style-type: none;
+
+            li:first-of-type {
+                margin-bottom: var(--space-small);
+
+                i {
+                    margin-right: var(--space-tiny);
+                }
+            }
+        }
+    }
 }
 
 
