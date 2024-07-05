@@ -638,35 +638,36 @@ footer {
         line-height: 2;
     }
 
-    section:nth-of-type(1) {
-        grid-area: 1 / 2 / 2 / -2;
-        display: grid;
-        grid-template-columns: repeat(2, max-content) fit-content(33ch) minmax(150px, 350px);
-        gap: var(--space-medium);
-        justify-content: space-between;
-        border-radius: var(--border-radius-medium);
-        margin: var(--space-large) 0;
-        color: var(--color-static-light);
-        align-items: center;
-    }
+    section {
+        &:nth-of-type(1) {
+            grid-area: 1 / 2 / 2 / -2;
+            display: grid;
+            grid-template-columns: repeat(2, max-content) fit-content(33ch) minmax(150px, 350px);
+            gap: var(--space-medium);
+            justify-content: space-between;
+            border-radius: var(--border-radius-medium);
+            margin: var(--space-large) 0;
+            color: var(--color-static-light);
+            align-items: center;
+        }
 
-    section:nth-of-type(2) {
+        &:nth-of-type(2) {
+            grid-area: 2 / 1 / 3 / -1;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: var(--space-medium);
+            padding: var(--space-medium);
+            color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
+            background-color: light-dark(var(--color-background-light), var(--color-background-dark));
 
-        grid-area: 2 / 1 / 3 / -1;
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: var(--space-medium);
-        padding: var(--space-medium);
-        color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
-        background-color: light-dark(var(--color-background-light), var(--color-background-dark));
+            span>a {
+                color: light-dark(var(--color-static-dark),
+                        var(--color-static-light));
 
-        span>a {
-            color: light-dark(var(--color-static-dark),
-                    var(--color-static-light));
-
-            &:hover {
-                color: light-dark(var(--color-static-dark-6),
-                        var(--color-static-light-6));
+                &:hover {
+                    color: light-dark(var(--color-static-dark-6),
+                            var(--color-static-light-6));
+                }
             }
         }
     }
