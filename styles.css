@@ -733,6 +733,12 @@ header {
             grid-area: 1 / 2 / 2 / -2;
 
         }
+
+        @media (max-width: 1200px) {
+
+                max-width: none;
+
+        }
     }
 
     nav {
@@ -908,9 +914,9 @@ header {
             "gutter-left footer footer footer footer footer footer gutter-right";
     }
 
-    header>hgroup {
+    /* header>hgroup {
         max-width: none;
-    }
+    } */
 
     main>section#services>a>hgroup>img {
         aspect-ratio: 3 / 2;
