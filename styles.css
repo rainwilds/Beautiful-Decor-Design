@@ -733,7 +733,6 @@ header {
             grid-area: 1 / 2 / 2 / -2;
 
         }
-
     }
 
     nav {
@@ -751,6 +750,12 @@ header {
         border: solid var(--border-size-small);
         border-color: var(--color-static-light-1);
         background-color: var(--color-static-light-1);
+
+        @media (max-width: 1024px) {
+
+            display: none;
+
+        }
 
         ul {
             list-style-type: none;
@@ -779,10 +784,6 @@ header {
             }
         }
     }
-
-
-
-
 
 }
 
@@ -882,13 +883,13 @@ header {
 
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
 
     header>nav {
         display: none;
     }
 
-}
+} */
 
 @media (max-width: 1200px) {
     body {
