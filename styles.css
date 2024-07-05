@@ -518,17 +518,7 @@ main>section#brands hgroup {
     text-align: center;
 }
 
-/* footer a:hover {
-    color: var(--color-static-light-6);
-    transition: color 0.5s;
-}
 
-footer a:not(footer>section:last-child>span>a) {
-    color: var(--color-static-light);
-    border: none;
-    text-decoration: underline wavy var(--border-size-small) var(--color-static-light-6);
-    text-underline-offset: 5px;
-} */
 
 footer>section:nth-child(3)>div>a {
     color: light-dark(var(--color-static-dark), var(--color-static-light)) !important;
@@ -536,24 +526,13 @@ footer>section:nth-child(3)>div>a {
 
 
 
-footer>section:last-child>span>a {
-    color: light-dark(var(--color-static-dark),
-            var(--color-static-light));
-}
 
-footer>section:last-child>span>a:hover {
-    color: light-dark(var(--color-static-dark-6),
-            var(--color-static-light-6));
-}
 
 footer>section:nth-of-type(2)>div:nth-child(4) a {
     margin-top: var(--space-tiny);
 }
 
-/* footer p,
-footer h3 {
-    color: var(--color-static-light);
-} */
+
 
 
 
@@ -569,10 +548,7 @@ footer>section:nth-of-type(1) {
     align-items: center;
 }
 
-footer>section ul {
-    list-style: none;
-    line-height: 2;
-}
+
 
 footer>section:nth-of-type(1) ul li {
     display: flex;
@@ -661,7 +637,7 @@ footer {
     background-position: bottom right;
     margin-top: var(--space-tiny);
 
-    > div {
+    >div {
         grid-area: 1 / 1 / 3 / -1;
         background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
     }
@@ -673,6 +649,24 @@ footer {
 
     img {
         margin-top: var(--space-medium);
+    }
+
+    ul {
+        list-style: none;
+        line-height: 2;
+    }
+
+    section:last-child {
+
+        span>a {
+            color: light-dark(var(--color-static-dark),
+                    var(--color-static-light));
+
+            &:hover {
+                color: light-dark(var(--color-static-dark-6),
+                        var(--color-static-light-6));
+            }
+        }
     }
 
     a:not(section:last-child>span>a) {
