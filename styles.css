@@ -693,6 +693,15 @@ header {
         z-index: 2;
     }
 
+    span {
+        grid-area: header / gutter-left / header / gutter-right;
+        z-index: 2;
+        font-family: var(--font-1-family);
+        font-size: clamp(100vh, 100vh, 100vw);
+        opacity: 0.1;
+        color: var(--color-static-light);
+    }
+
     hgroup {
         grid-area: header / gutter-left / header / gutter-right;
         z-index: 3;
@@ -709,15 +718,6 @@ header {
         button:first-of-type {
             margin-right: var(--space-small);
         }
-    }
-
-    span {
-        grid-area: header / gutter-left / header / gutter-right;
-        z-index: 2;
-        font-family: var(--font-1-family);
-        font-size: clamp(100vh, 100vh, 100vw);
-        opacity: 0.1;
-        color: var(--color-static-light);
     }
 
     nav {
