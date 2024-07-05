@@ -677,6 +677,7 @@ footer img {
 /* -- header -- */
 
 header {
+
     display: grid;
     grid-template: subgrid / subgrid;
     grid-area: header / gutter-left / header / gutter-right;
@@ -709,34 +710,34 @@ header {
         border: solid var(--border-size-small);
         border-color: var(--color-static-light-1);
         background-color: var(--color-static-light-1);
-    }
 
         ul {
             list-style-type: none;
             display: flex;
             align-items: center;
             gap: var(--space-large);
-        }
 
-        li {
-            display: inline-flex;
-        }
+            li {
+                display: inline-flex;
 
-        a {
-            color: var(--color-static-light);
-            text-decoration: underline wavy 1px var(--color-static-light-6);
-            text-underline-offset: 5px;
+                a {
+                    color: var(--color-static-light);
+                    text-decoration: underline wavy 1px var(--color-static-light-6);
+                    text-underline-offset: 5px;
+                }
+                
+                a:hover {
+                    color: var(--color-static-light-6);
+                    border-color: transparent;
+                    transition: all 0.5s;
+                }
+                
+                a#header-nav-active {
+                    font-weight: var(--font-2-weight-heavy);
+                }
+            }
         }
-        
-        a:hover {
-            color: var(--color-static-light-6);
-            border-color: transparent;
-            transition: all 0.5s;
-        }
-        
-        a#header-nav-active {
-            font-weight: var(--font-2-weight-heavy);
-        }
+    }
 }
 
 
