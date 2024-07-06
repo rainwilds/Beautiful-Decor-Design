@@ -744,6 +744,10 @@ header {
         max-width: 50vw;
         justify-self: center;
 
+        h1 {
+            text-shadow: white 10px 10px 3rem;
+        }
+
         p {
             padding-bottom: var(--space-medium);
             color: var(--color-static-light);
