@@ -711,10 +711,6 @@ header {
     grid-area: header / gutter-left / header / gutter-right;
     background-color: light-dark(var(--color-accent-opaque-light),
             var(--color-accent-opaque-dark));
-    /* background-image: url(./img/header.jpg); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* overflow: hidden; */
     margin-bottom: var(--space-tiny);
 
     div {
@@ -725,6 +721,8 @@ header {
 
     img {
         grid-area: header / gutter-left / header / gutter-right;
+        object-fit: cover;
+        height: 100%;
     }
 
     span {
