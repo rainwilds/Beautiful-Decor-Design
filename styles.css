@@ -439,7 +439,7 @@ body#page-about>main>section>article {
 }
 
 main > span {
-    grid-area: main / gutter-left / main / gutter-right;
+    /* grid-area: main / gutter-left / main / gutter-right; */
     z-index: 2;
     font-family: var(--font-1-family);
     font-size: clamp(100vh, 100vh, 100vw);
