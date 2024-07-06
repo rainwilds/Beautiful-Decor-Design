@@ -217,7 +217,7 @@ h6 {
 }
 
 h1 {
-    font-size: 4.2rem;
+    font-size: 4.5rem;
     color: var(--color-static-light);
 }
 
@@ -227,23 +227,23 @@ body#page-about h1 {
 }
 
 h2 {
-    font-size: 2.6rem;
+    font-size: 2.9rem;
 }
 
 h3 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
 }
 
 h4 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
 }
 
 h5 {
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 
 h6 {
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 
 p {
