@@ -711,16 +711,20 @@ header {
     grid-area: header / gutter-left / header / gutter-right;
     background-color: light-dark(var(--color-accent-opaque-light),
             var(--color-accent-opaque-dark));
-    background-image: url(./img/header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
+    /* background-image: url(./img/header.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* overflow: hidden; */
     margin-bottom: var(--space-tiny);
 
     div {
         grid-area: header / gutter-left / header / gutter-right;
         background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
         z-index: 2;
+    }
+
+    img {
+        grid-area: header / gutter-left / header / gutter-right;
     }
 
     span {
