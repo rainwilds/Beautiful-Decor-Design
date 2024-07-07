@@ -440,9 +440,10 @@ body#page-about>main>section>article {
 
 main > span {
     /* grid-area: main / gutter-left / main / gutter-right; */
-    z-index: 2;
+    /* z-index: 2; */
     font-family: var(--font-1-family);
-    font-size: clamp(100vh, 100vh, 100vw);
+    font-size: 20rem;
+    text-wrap: nowrap;
     opacity: 0.07;
     color: var(--color-static-light);
 }
