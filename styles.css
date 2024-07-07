@@ -616,7 +616,7 @@ footer>section:nth-of-type(3) {
 footer {
 
     display: grid;
-    grid-template: auto / subgrid;
+    grid-template: auto auto / subgrid;
     grid-area: footer / gutter-left / footer / gutter-right;
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
 
