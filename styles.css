@@ -409,6 +409,7 @@ main {
     row-gap: var(--space-huge);
     border-bottom: dashed var(--border-size-medium) light-dark(var(--color-accent-light), var(--color-accent-dark));
     border-top: dashed var(--border-size-medium) light-dark(var(--color-accent-light), var(--color-accent-dark));
+    margin: var(--space-small) 0;
 }
 
 body#page-about>main>hgroup {
@@ -618,7 +619,6 @@ footer {
     grid-template: 100vh auto / subgrid;
     grid-area: footer / gutter-left / footer / gutter-right;
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
-    margin-top: var(--space-tiny);
 
     >div {
         grid-area: 1 / 1 / 2 / -1;
@@ -726,7 +726,6 @@ header {
     grid-area: header / gutter-left / header / gutter-right;
     background-color: light-dark(var(--color-accent-opaque-light),
             var(--color-accent-opaque-dark));
-    margin-bottom: var(--space-tiny);
 
     div {
         grid-area: header / gutter-left / header / gutter-right;
