@@ -616,7 +616,7 @@ footer>section:nth-of-type(3) {
 footer {
 
     display: grid;
-    grid-template: min-content auto / subgrid;
+    grid-template: auto / subgrid;
     grid-area: footer / gutter-left / footer / gutter-right;
     background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
 
@@ -655,6 +655,7 @@ footer {
             display: grid;
             grid-template-columns: repeat(2, max-content) fit-content(33ch) minmax(150px, 350px);
             gap: var(--space-medium);
+            height: min-content;
             justify-content: space-between;
             border-radius: var(--border-radius-medium);
             margin: var(--space-large) 0;
