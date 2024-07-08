@@ -661,6 +661,10 @@ footer {
         z-index: 1;
     }
 
+    >span {
+        filter: blur(2);
+    }
+
     img {
         margin-top: var(--space-medium);
     }
