@@ -632,6 +632,17 @@ body {
         }
     }
 
+    @media (min-width: 2560px) {
+
+        body {
+            grid-template: 60vh auto auto / 20vw repeat(6, 1fr) 20vw;
+            grid-template-areas:
+                "gutter-left header header header header header header gutter-right"
+                "gutter-left main main main main main main gutter-right"
+                "gutter-left footer footer footer footer footer footer gutter-right";
+        }
+    }
+
 }
 
 
@@ -1011,13 +1022,13 @@ header {
 
 @media (min-width: 2560px) {
 
-    body {
+    /* body {
         grid-template: 60vh auto auto / 20vw repeat(6, 1fr) 20vw;
         grid-template-areas:
             "gutter-left header header header header header header gutter-right"
             "gutter-left main main main main main main gutter-right"
             "gutter-left footer footer footer footer footer footer gutter-right";
-    }
+    } */
 
     body#page-about {
         grid-template: min-content auto auto / 20vw repeat(6, 1fr) 20vw;
