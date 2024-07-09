@@ -791,6 +791,7 @@ header {
         /* color: var(--color-static-light); */
         filter: blur(3px);
         mix-blend-mode: plus-lighter;
+        overflow: hidden;
     }
 
     hgroup {
