@@ -54,9 +54,9 @@ button {
     /* larger font size for google accessibilty score */
 }
 
-form>button:hover {
-    /* color: var(--color-static-light-6); */
-}
+/* form>button:hover {
+    color: var(--color-static-light-6);
+} */
 
 input:focus-visible,
 select:focus-visible,
@@ -278,9 +278,9 @@ a:not(button > a, header nav a, main>section>a, footer a, main>section:nth-child
             var(--color-static-dark-1));
 }
 
-button>a {
-    /* color: var(--color-static-light); */
-}
+/* button>a {
+    color: var(--color-static-light);
+} */
 
 button>a:hover {
     /* color: var(--color-static-light-6); */
@@ -790,6 +790,7 @@ header {
         opacity: 0.07;
         /* color: var(--color-static-light); */
         filter: blur(3px);
+        mix-blend-mode: plus-lighter;
     }
 
     hgroup {
