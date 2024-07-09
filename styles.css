@@ -769,12 +769,12 @@ header {
         z-index: 1;
     }
 
-    video {
+    /* video {
         grid-area: header / gutter-left / header / gutter-right;
         object-fit: cover;
         height: 100%;
         min-height: 100%;
-    }
+    } */
 
     img {
         grid-area: header / gutter-left / header / gutter-right;
