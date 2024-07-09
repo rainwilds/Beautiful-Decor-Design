@@ -87,7 +87,6 @@ textarea:focus-visible {
     /* -- colours -- */
 
     color-scheme: light dark;
-    color: light-dark(var(--color-static-dark), var(--color-static-light));
 
     --color-background-light: #ffffff;
     --color-background-dark: #2f0728;
@@ -102,24 +101,20 @@ textarea:focus-visible {
     --color-accent-opaque-dark-primary: rgba(107, 36, 94, 0.5);
     --color-accent-opaque-dark-secondary: rgba(40, 12, 35, 0.5);
     
-
     --color-static-light: white;
     --color-static-dark: black;
-
     --color-static-dark-1: rgba(0, 0, 0, 0.1);
     --color-static-light-1: rgba(255, 255, 255, 0.1);
-
     --color-static-dark-2: rgba(0, 0, 0, 0.2);
     --color-static-light-2: rgba(255, 255, 255, 0.2);
-
     --color-static-dark-4: rgba(0, 0, 0, 0.4);
     --color-static-light-4: rgba(255, 255, 255, 0.4);
-
     --color-static-dark-6: rgba(0, 0, 0, 0.6);
     --color-static-light-6: rgba(255, 255, 255, 0.6);
-
     --color-static-dark-8: rgba(0, 0, 0, 0.8);
     --color-static-light-8: rgba(255, 255, 255, 0.8);
+
+    color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
 
     /***/
 
@@ -770,8 +765,8 @@ header {
 
     div {
         grid-area: header / gutter-left / header / gutter-right;
-        /* background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark)); */
-        background-color: var(--color-accent-opaque-dark);
+        background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark));
+        /* background-color: var(--color-accent-opaque-dark); */
         z-index: 1;
     }
 
