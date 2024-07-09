@@ -760,12 +760,11 @@ header {
     display: grid;
     grid-template: subgrid / subgrid;
     grid-area: header / gutter-left / header / gutter-right;
-    background-color: light-dark(var(--color-accent-opaque-light-primary),
-            var(--color-accent-opaque-dark));
+    color-scheme: only light;
 
     div {
         grid-area: header / gutter-left / header / gutter-right;
-        background-color: var(--color-accent-opaque-dark-secondary);
+        background-color: light-dark(var(--color-accent-opaque-dark-secondary),var(--color-accent-opaque-light-secondary));
         z-index: 1;
     }
 
@@ -774,6 +773,7 @@ header {
         object-fit: cover;
         height: 100%;
         min-height: 100%;
+        min-width: 100%;
     } */
 
     img {
@@ -800,14 +800,13 @@ header {
         max-width: 50vw;
         justify-self: center;
 
-        /* h1 {
-            text-shadow: white 10px 10px 3rem;
-        } */
+        h1 {
+            text-shadow: var(--color-static-light) 10px 10px 3rem;
+        }
 
-        /* p {
+        p {
             padding-bottom: var(--space-medium);
-            color: var(--color-static-light);
-        } */
+        }
 
         button:first-of-type {
             margin-right: var(--space-small);
