@@ -34,10 +34,10 @@ input,
 /* select, TEST */
 textarea {
     font: inherit;
-    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+    background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark));
     padding: var(--space-tiny);
     border: solid 1px;
-    border-color: light-dark(var(--color-accent-dark), var(--color-accent-light));
+    border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
     border-radius: var(--border-radius-small);
     color: var(--color-static-light);
     outline: solid 1px;
@@ -87,15 +87,21 @@ textarea:focus-visible {
     /* -- colours -- */
 
     color-scheme: light dark;
+    color: light-dark(var(--color-static-dark), var(--color-static-light));
 
     --color-background-light: #ffffff;
     --color-background-dark: #2f0728;
 
-    --color-accent-light: #9f368c;
-    --color-accent-dark: #6b245e;
+    --color-accent-light-primary: #9f368c;
+    --color-accent-light-secondary: #ffadff;
+    --color-accent-dark-primary: #6b245e;
+    --color-accent-dark-secondary: #280c23;
 
-    --color-accent-opaque-light: rgba(159, 54, 140, 0.2);
-    --color-accent-opaque-dark: rgba(107, 36, 94, 0.5);
+    --color-accent-opaque-light-primary: rgba(159, 54, 140, 0.2);
+    --color-accent-opaque-light-secondary:rgba(255, 173, 255, 0.2);
+    --color-accent-opaque-dark-primary: rgba(107, 36, 94, 0.5);
+    --color-accent-opaque-dark-secondary: rgba(40, 12, 35, 0.5);
+    
 
     --color-static-light: white;
     --color-static-dark: black;
@@ -151,7 +157,7 @@ textarea:focus-visible {
     --aspect-ratio: 1 / 1;
 
     /* background pattern */
-    --background-pattern-gradient: repeating-linear-gradient(to right, var(--color-accent-opaque-light), var(--color-accent-opaque-light) 10px, transparent 10px, transparent);
+    --background-pattern-gradient: repeating-linear-gradient(to right, var(--color-accent-opaque-light-primary), var(--color-accent-opaque-light-primary) 10px, transparent 10px, transparent);
     /* --background-pattern-size: 32px 32px; PLACEHOLDER */
 
     /* background noise */
@@ -218,13 +224,13 @@ h6 {
 
 h1 {
     font-size: 4.5rem;
-    color: var(--color-static-light);
+    /* color: var(--color-static-light); */
 }
 
-body#page-about h1 {
+/* body#page-about h1 {
     color: light-dark(var(--color-static-dark),
             var(--color-static-light));
-}
+} */
 
 h2 {
     font-size: 2.9rem;
@@ -246,10 +252,10 @@ h6 {
     font-size: 2.3rem;
 }
 
-p {
+/* p {
     color: light-dark(var(--color-static-dark),
             var(--color-static-light));
-}
+} */
 
 p:not(:last-of-type) {
     margin-bottom: var(--space-medium);
@@ -260,8 +266,8 @@ article p:nth-child(1)::first-line {
 }
 
 a {
-    color: light-dark(var(--color-accent-light),
-            var(--color-accent-dark));
+    color: light-dark(var(--color-accent-light-primary),
+            var(--color-accent-dark-primary));
     text-decoration: none;
 
     /* adobe font requirements */
@@ -287,7 +293,7 @@ button>a:hover {
 }
 
 button:hover {
-    background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light));
+    background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light-primary));
     transition: background-color 0.5s;
 }
 
@@ -407,8 +413,8 @@ main {
     grid-template: repeat(2, auto) / subgrid;
     grid-area: main / gutter-left / main / gutter-right;
     row-gap: var(--space-huge);
-    border-bottom: dashed var(--border-size-medium) light-dark(var(--color-accent-light), var(--color-accent-dark));
-    border-top: dashed var(--border-size-medium) light-dark(var(--color-accent-light), var(--color-accent-dark));
+    border-bottom: dashed var(--border-size-medium) light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary));
+    border-top: dashed var(--border-size-medium) light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary));
     margin: var(--space-small) 0;
 }
 
@@ -416,7 +422,7 @@ body#page-about>main>hgroup {
     grid-area: 1 / 1 / 2 / -1;
     text-align: center;
     margin-top: var(--space-large);
-    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+    background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark));
     padding: var(--space-medium) 0;
     background-image: var(--background-pattern-gradient);
     /* background-size: 32px 32px; */
@@ -446,7 +452,7 @@ main>span {
     font-size: 20rem;
     text-wrap: nowrap;
     opacity: 0.07;
-    color: var(--color-static-light);
+    /* color: var(--color-static-light); */
     filter: blur(3px);
 }
 
@@ -473,7 +479,7 @@ main>section#services>a>hgroup {
     padding: var(--space-medium);
     text-align: center;
     border: solid var(--border-size-small);
-    border-color: var(--color-accent-light);
+    border-color: var(--color-accent-light-primary);
     border-radius: var(--border-radius-medium);
     background-color: transparent;
     cursor: pointer;
@@ -482,7 +488,7 @@ main>section#services>a>hgroup {
 }
 
 main>section#services>a>hgroup:hover {
-    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+    background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark));
     transition: background-color 0.5s;
 }
 
@@ -652,11 +658,11 @@ footer {
     display: grid;
     grid-template: auto auto / subgrid;
     grid-area: footer / gutter-left / footer / gutter-right;
-    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+    background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark));
 
     >div {
         grid-area: 1 / 1 / 2 / -1;
-        /* background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark)); */
+        /* background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark)); */
         background-color: var(--color-accent-opaque-dark);
         backdrop-filter: blur(10px);
         z-index: 1;
@@ -670,10 +676,10 @@ footer {
         margin-top: var(--space-medium);
     }
 
-    p,
+    /* p,
     h3 {
         color: var(--color-static-light);
-    }
+    } */
 
 
 
@@ -703,7 +709,7 @@ footer {
             grid-template-columns: auto 1fr;
             gap: var(--space-medium);
             padding: var(--space-medium);
-            color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
+            /* color: light-dark(var(--color-static-dark-8), var(--color-static-light-8)); */
             background-color: light-dark(var(--color-background-light), var(--color-background-dark));
 
             div {
@@ -759,12 +765,12 @@ header {
     display: grid;
     grid-template: subgrid / subgrid;
     grid-area: header / gutter-left / header / gutter-right;
-    background-color: light-dark(var(--color-accent-opaque-light),
+    background-color: light-dark(var(--color-accent-opaque-light-primary),
             var(--color-accent-opaque-dark));
 
     div {
         grid-area: header / gutter-left / header / gutter-right;
-        /* background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark)); */
+        /* background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark)); */
         background-color: var(--color-accent-opaque-dark);
         z-index: 1;
     }
@@ -788,7 +794,8 @@ header {
         font-family: var(--font-1-family);
         font-size: clamp(100vh, 100vh, 100vw);
         opacity: 0.07;
-        color: var(--color-static-light);
+        /* color: var(--color-static-light); */
+        fill: blur(3px);
     }
 
     hgroup {
@@ -803,10 +810,10 @@ header {
             text-shadow: white 10px 10px 3rem;
         }
 
-        p {
+        /* p {
             padding-bottom: var(--space-medium);
             color: var(--color-static-light);
-        }
+        } */
 
         button:first-of-type {
             margin-right: var(--space-small);
@@ -1063,7 +1070,7 @@ header {
 
 /* header>div {
     grid-area: header / gutter-left / header / gutter-right;
-    background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+    background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark));
     z-index: 2;
 } */
 
