@@ -519,6 +519,7 @@ main>section#brands>div {
     gap: var(--space-medium);
     padding: 0 var(--space-medium);
     justify-content: center;
+    align-items: center;
 }
 
 main>section#brands>div>a:hover {
