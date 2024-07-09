@@ -765,9 +765,7 @@ header {
 
     div {
         grid-area: header / gutter-left / header / gutter-right;
-        background-color: light-dark(var(--color-accent-opaque-dark-primary),
-        var(--color-accent-light-dark));
-        /* background-color: var(--color-accent-opaque-dark); */
+        background-color: var(--color-accent-opaque-dark-secondary);
         z-index: 1;
     }
 
@@ -791,7 +789,7 @@ header {
         font-size: clamp(100vh, 100vh, 100vw);
         opacity: 0.07;
         /* color: var(--color-static-light); */
-        fill: blur(3px);
+        filter: blur(3px);
     }
 
     hgroup {
