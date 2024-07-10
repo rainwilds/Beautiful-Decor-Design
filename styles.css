@@ -62,8 +62,6 @@
 
         /* -- colours -- */
 
-        color-scheme: light dark;
-
         --color-background-light: #ffffff;
         --color-background-dark: #2f0728;
 
@@ -90,7 +88,8 @@
         --color-static-dark-8: rgba(0, 0, 0, 0.8);
         --color-static-light-8: rgba(255, 255, 255, 0.8);
 
-        /* color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary)); */
+        color-scheme: light dark;
+        color: light-dark(var(--color-accent-dark-secondary), var(--color-accent-light-primary));
 
         /***/
 
@@ -212,11 +211,11 @@
 
 /* -- tags -- */
 
-body {
+/* body {
 
     color: light-dark(var(--color-accent-dark-secondary), var(--color-accent-light-primary));
 
-}
+} */
 
 /* body {
     display: grid;
