@@ -194,7 +194,7 @@
 
                 color: light-dark(var(--color-static-dark-6), var(--color-static-light-6));
 
-
+                transition: color 0.4s;
             }
         }
 
