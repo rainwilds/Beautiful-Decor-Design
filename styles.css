@@ -788,9 +788,9 @@ header {
     grid-area: header / gutter-left / header / gutter-right;
     color-scheme: only light;
 
-    div {
+    >div {
         grid-area: header / gutter-left / header / gutter-right;
-        background-color: light-dark(var(--color-accent-opaque-dark-secondary), var(--color-accent-opaque-light-secondary));
+        background-color: light-dark(var(--color-accent-opaque-light-secondary), var(--color-accent-opaque-dark-secondary));
         z-index: 1;
     }
 
