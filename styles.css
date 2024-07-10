@@ -541,7 +541,7 @@ main>section#brands {
 
 main>section#brands>div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 160px));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 220px));
     gap: var(--space-medium);
     padding: 0 var(--space-medium);
     justify-content: center;
