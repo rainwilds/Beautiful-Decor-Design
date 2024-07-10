@@ -785,7 +785,7 @@ header {
     display: grid;
     grid-template: subgrid / subgrid;
     grid-area: header / gutter-left / header / gutter-right;
-    color-scheme: only light;
+    color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
 
     >div {
         grid-area: header / gutter-left / header / gutter-right;
