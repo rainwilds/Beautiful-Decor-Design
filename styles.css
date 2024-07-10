@@ -1,4 +1,4 @@
-@layer reset, default;
+@layer reset, defaults, components;
 
 @layer reset {
 
@@ -44,7 +44,7 @@
 
 }
 
-@layer default {
+@layer defaults {
 
     :root {
 
@@ -90,7 +90,7 @@
         --color-static-dark-8: rgba(0, 0, 0, 0.8);
         --color-static-light-8: rgba(255, 255, 255, 0.8);
 
-        color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
+        /* color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary)); */
 
         /***/
 
@@ -186,13 +186,37 @@
 }
 
 
+@layer components {
 
+    button {
+        &:hover {
+            background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light-primary));
+            transition: background-color 0.5s;
+        }
+
+        >a {
+            color: var(--color-static-light);
+
+            &:hover {
+                /* color: var(--color-static-light-6); */
+                transition: color 0.5s;
+            }
+        }
+    }
+
+}
 
 
 
 /***/
 
 /* -- tags -- */
+
+body {
+
+    color: light-dark(var(--color-accent-dark-secondary), var(--color-accent-light-primary));
+
+}
 
 /* body {
     display: grid;
@@ -292,19 +316,7 @@ a:not(button > a, header nav a, main>section>a, footer a, main>section:nth-child
             var(--color-static-dark-1));
 }
 
-/* button>a {
-    color: var(--color-static-light);
-} */
 
-button>a:hover {
-    /* color: var(--color-static-light-6); */
-    transition: color 0.5s;
-}
-
-button:hover {
-    background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light-primary));
-    transition: background-color 0.5s;
-}
 
 form {
     display: grid;
