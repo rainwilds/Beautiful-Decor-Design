@@ -34,6 +34,7 @@
     /* select, TEST */
     textarea {
         font: inherit;
+        color: inherit;
         outline: solid 1px;
         outline-color: transparent;
     }
@@ -194,8 +195,6 @@
         }
 
         >a {
-            color: var(--color-static-light);
-
             &:hover {
                 /* color: var(--color-static-light-6); */
                 transition: color 0.5s;
