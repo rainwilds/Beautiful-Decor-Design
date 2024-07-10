@@ -159,7 +159,7 @@
         input,
         /* select, TEST */
         textarea {
-            background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark));
+            background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark-primary));
             padding: var(--space-tiny);
             border: solid 1px;
             border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
@@ -167,6 +167,18 @@
             background-size: 32px 32px;
             -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
+        }
+
+        button {
+            font-size: var(--font-2-size-large);
+        }
+
+        input:focus-visible,
+        select:focus-visible,
+        textarea:focus-visible {
+            outline-color: var(--color-static-light);
+            transition: outline 1s;
+            background-image: none;
         }
 
         a {
@@ -182,17 +194,9 @@
         
         }
 
-        input:focus-visible,
-        select:focus-visible,
-        textarea:focus-visible {
-            outline-color: var(--color-static-light);
-            transition: outline 1s;
-            background-image: none;
-        }
 
-        button {
-            font-size: var(--font-2-size-large);
-        }
+
+
 
     }
 
@@ -840,9 +844,7 @@ header {
         button {
             border-color: inherit;
 
-            &:hover {
-                background-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-lgiht-primary));
-            }
+
         }
 
         button:first-of-type {
