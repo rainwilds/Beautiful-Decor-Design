@@ -181,17 +181,21 @@
             background-image: none;
         }
 
-        a {
-            /* color: light-dark(var(--color-accent-light-primary),
-                    var(--color-accent-dark-primary)); */
-            text-decoration: none;
-        
+
+        a:not(button a) {
+            text-decoration: underline wavy 1px light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
+            text-underline-offset: 5px;
             /* adobe font requirements */
-        
+
             font-weight: var(--font-2-weight-medium);
-        
+
             /***/
-        
+
+            &::hover {
+                color: light-dark(var(--color-static-dark-6), var(--color-static-light-6));
+                text-decoration-color:  light-dark(var(--color-static-dark-6), var(--color-static-light-6));;
+            }
+
         }
 
 
@@ -903,8 +907,8 @@ header {
 
                 a {
                     /* color: var(--color-static-light); */
-                    text-decoration: underline wavy 1px var(--color-static-light-6);
-                    text-underline-offset: 5px;
+                    /* text-decoration: underline wavy 1px light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
+                    text-underline-offset: 5px; */
                 }
 
                 a:hover {
