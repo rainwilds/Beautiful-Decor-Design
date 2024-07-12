@@ -206,14 +206,11 @@
             &:hover {
 
                 text-decoration-color: light-dark(var(--color-static-dark-6), var(--color-static-light-6));
+                transition: text-decoration-color 0.4s, color 0.4s;
 
             }
 
         }
-
-
-
-
 
     }
 
