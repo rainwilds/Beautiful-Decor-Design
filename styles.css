@@ -915,16 +915,9 @@ header {
             li {
                 display: inline-flex;
 
-                a {
-                    /* color: var(--color-static-light); */
-                    /* text-decoration: underline wavy 1px light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
-                    text-underline-offset: 5px; */
-                }
-
                 a:hover {
-                    /* color: var(--color-static-light-6); */
-                    border-color: transparent;
-                    transition: all 0.4s;
+                    text-shadow: var(--color-accent-light-secondary) 3px 3px 1rem;
+                    transition: text-shadow 0.4s;
                 }
 
                 a#header-nav-active {
