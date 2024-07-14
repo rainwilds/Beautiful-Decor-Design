@@ -211,6 +211,60 @@
             background: var(--color-static-light);
         }
 
+        body {
+
+            display: grid;
+            column-gap: var(--space-medium);
+            background-color: light-dark(var(--color-background-light), var(--color-background-dark));
+    
+            @media (max-width: 1200px) {
+    
+                body {
+                    grid-template: 100vh auto auto / 0 repeat(6, 1fr) 0;
+                    grid-template-areas:
+                        "gutter-left header header header header header header gutter-right"
+                        "gutter-left main main main main main main gutter-right"
+                        "gutter-left footer footer footer footer footer footer gutter-right";
+                }
+    
+            }
+    
+            @media (min-width: 1201px) and (max-width: 1919px) {
+    
+                body {
+                    grid-template: 100vh auto auto / 5vw repeat(6, 1fr) 5vw;
+                    grid-template-areas:
+                        "gutter-left header header header header header header gutter-right"
+                        "gutter-left main main main main main main gutter-right"
+                        "gutter-left footer footer footer footer footer footer gutter-right";
+                }
+                
+            }
+    
+            @media (min-width: 1920px) {
+    
+                body {
+                    grid-template: 100vh auto auto / 10vw repeat(6, 1fr) 10vw;
+                    grid-template-areas:
+                        "gutter-left header header header header header header gutter-right"
+                        "gutter-left main main main main main main gutter-right"
+                        "gutter-left footer footer footer footer footer footer gutter-right";
+                }
+            }
+    
+            @media (min-width: 2560px) {
+    
+                body {
+                    grid-template: 60vh auto auto / 20vw repeat(6, 1fr) 20vw;
+                    grid-template-areas:
+                        "gutter-left header header header header header header gutter-right"
+                        "gutter-left main main main main main main gutter-right"
+                        "gutter-left footer footer footer footer footer footer gutter-right";
+                }
+            }
+    
+        }
+
     }
 
 }
@@ -684,59 +738,7 @@
 
     /***/
 
-    body {
 
-        display: grid;
-        column-gap: var(--space-medium);
-        background-color: light-dark(var(--color-background-light), var(--color-background-dark));
-
-        @media (max-width: 1200px) {
-
-            body {
-                grid-template: 100vh auto auto / 0 repeat(6, 1fr) 0 !important;
-                grid-template-areas:
-                    "gutter-left header header header header header header gutter-right"
-                    "gutter-left main main main main main main gutter-right"
-                    "gutter-left footer footer footer footer footer footer gutter-right";
-            }
-
-        }
-
-        @media (min-width: 1201px) and (max-width: 1919px) {
-
-            body {
-                grid-template: 100vh auto auto / 5vw repeat(6, 1fr) 5vw;
-                grid-template-areas:
-                    "gutter-left header header header header header header gutter-right"
-                    "gutter-left main main main main main main gutter-right"
-                    "gutter-left footer footer footer footer footer footer gutter-right";
-            }
-            
-        }
-
-        @media (min-width: 1920px) {
-
-            body {
-                grid-template: 100vh auto auto / 10vw repeat(6, 1fr) 10vw;
-                grid-template-areas:
-                    "gutter-left header header header header header header gutter-right"
-                    "gutter-left main main main main main main gutter-right"
-                    "gutter-left footer footer footer footer footer footer gutter-right";
-            }
-        }
-
-        @media (min-width: 2560px) {
-
-            body {
-                grid-template: 60vh auto auto / 20vw repeat(6, 1fr) 20vw;
-                grid-template-areas:
-                    "gutter-left header header header header header header gutter-right"
-                    "gutter-left main main main main main main gutter-right"
-                    "gutter-left footer footer footer footer footer footer gutter-right";
-            }
-        }
-
-    }
 
 
     footer {
