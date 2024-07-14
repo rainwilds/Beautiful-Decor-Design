@@ -262,7 +262,7 @@
                         "gutter-left footer footer footer footer footer footer gutter-right";
                 }
             }
-            
+
         }
 
     }
@@ -867,8 +867,12 @@
         min-width: 100%;
     } */
 
-        img {
+        picture {
             grid-area: header / gutter-left / header / gutter-right;
+        }
+
+        img {
+            /* grid-area: header / gutter-left / header / gutter-right; */
             object-fit: cover;
             height: 100%;
         }
