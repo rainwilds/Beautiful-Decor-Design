@@ -267,7 +267,7 @@
             >li {
                 display: inline-flex;
 
-                >a {
+                /* >a {
                     color: inherit;
 
                     &:hover {
@@ -275,7 +275,7 @@
                         color: var(--color-static-light-6);
                         transition: color 0.4s, text-shadow 0.4s;
                     }
-                }
+                } */
             }
         }
     }
@@ -320,43 +320,6 @@
 
     }
 } 
-    /* 
-    main>section#services {
-        grid-area: 1 / 2 / 2 / -2;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: var(--space-medium);
-    } */
-
-    /* main>section#services a {
-        color: light-dark(var(--color-static-dark), var(--color-static-light));
-    } */
-
-    /* main>section#services>a>hgroup {
-        padding: var(--space-medium);
-        text-align: center;
-        border: solid var(--border-size-small);
-        border-color: var(--color-accent-light-primary);
-        border-radius: var(--border-radius-medium);
-        background-color: transparent;
-        cursor: pointer;
-        height: 100%;
-        /* makes all tiles same height */
-    /*  } */
-
-    /* main>section#services>a>hgroup:hover {
-        background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark));
-        transition: background-color 0.4s;
-    } */
-
-
-    /* main>section#services>a>hgroup>img {
-        margin-bottom: var(--space-medium);
-        border-radius: var(--border-radius-small);
-        aspect-ratio: 16 / 9;
-        object-fit: cover;
-    }
-*/
 
 
 
