@@ -345,13 +345,6 @@
                     background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-dark-primary));
                     transition: background-color 0.4s;
                 }
-
-                img {
-                    margin-bottom: var(--space-medium);
-                    border-radius: var(--border-radius-small);
-                    aspect-ratio: 16 / 9;
-                    object-fit: cover;
-                }
             }
 
         }
