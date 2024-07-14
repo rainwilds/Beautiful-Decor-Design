@@ -226,9 +226,56 @@
         }
 
         >a {
+
+            color: inherit;
+
             &:hover {
-                /* color: var(--color-static-light-6); */
+                color: var(--color-static-light-6);
                 transition: color 0.4s;
+            }
+        }
+    }
+
+    nav {
+        grid-area: header / gutter-left / header / gutter-right;
+        z-index: 3;
+        justify-self: center;
+        height: min-content;
+        margin-top: var(--space-medium);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        padding: var(--space-tiny) var(--space-medium);
+        border-radius: var(--border-radius-small);
+        background-image: var(--background-noise);
+        box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
+        border: solid var(--border-size-small);
+        border-color: var(--color-static-light-1);
+        background-color: var(--color-static-light-1);
+        
+
+        @media (max-width: 1024px) {
+
+            display: none;
+
+        }
+
+        >ul {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            gap: var(--space-large);
+
+            >li {
+                display: inline-flex;
+
+                >a {
+                    color: inherit;
+
+                    &:hover {
+                        text-shadow: var(--color-accent-light-secondary) 3px 3px 1rem;
+                        transition: text-shadow 0.4s;
+                    }
+                }
             }
         }
     }
@@ -884,48 +931,7 @@ header {
         }
     }
 
-    nav {
-        grid-area: header / gutter-left / header / gutter-right;
-        z-index: 3;
-        justify-self: center;
-        height: min-content;
-        margin-top: var(--space-medium);
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-        padding: var(--space-tiny) var(--space-medium);
-        border-radius: var(--border-radius-small);
-        background-image: var(--background-noise);
-        box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
-        border: solid var(--border-size-small);
-        border-color: var(--color-static-light-1);
-        background-color: var(--color-static-light-1);
 
-        @media (max-width: 1024px) {
-
-            display: none;
-
-        }
-
-        ul {
-            list-style-type: none;
-            display: flex;
-            align-items: center;
-            gap: var(--space-large);
-
-            li {
-                display: inline-flex;
-
-                a:hover {
-                    text-shadow: var(--color-accent-light-secondary) 3px 3px 1rem;
-                    transition: text-shadow 0.4s;
-                }
-
-                a#header-nav-active {
-                    font-weight: var(--font-2-weight-heavy);
-                }
-            }
-        }
-    }
 
 }
 
