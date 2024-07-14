@@ -90,7 +90,7 @@
         --color-static-light-8: rgba(255, 255, 255, 0.8);
 
         color-scheme: light dark;
-        color: light-dark(var(--color-accent-dark-secondary), var(--color-accent-light-primary));
+        color: light-dark(var(--color-accent-dark-secondary), var(--color-static-light-8));
 
         /***/
 
