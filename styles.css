@@ -807,17 +807,17 @@
             }
         }
 
-        a:not(section:last-child>span>a) {
-            /* color: var(--color-static-light); */
+        /* a:not(section:last-child>span>a) {
+           
             border: none;
             text-decoration: underline wavy var(--border-size-small) var(--color-static-light-6);
             text-underline-offset: 5px;
 
             &:hover {
-                /* color: var(--color-static-light-6); */
+               
                 transition: color 0.4s;
             }
-        }
+        } */
 
         address {
             text-align: center;
