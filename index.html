@@ -22,7 +22,12 @@
   <header>
     <span>Beautiful</span>
     <div></div>
-    <img src="./img/interior-1.jpeg" >
+    <picture>
+      <source src="./img/header-2.webp" media="(prefers-color-scheme: light)">
+      <source src="./img/header.jpg" media="(prefers-color-scheme: dark)">
+      <img src="./img/header-2.webp" loading="lazy"alt="beautiful home decor">
+    </picture>
+
     <!-- header video PLACEHOLDER
         <video autoplay muted loop disablepictureinpicture poster="./img/RE-image.jpg">
             <source src="./img/RE-video_2.webm" type="video/webm">
@@ -111,7 +116,8 @@
           <picture>
             <source srcset="./img/logos/ricky-richards-logo-light-theme-1.svg" media="(prefers-color-scheme: light)">
             <source srcset="./img/logos/ricky-richards-logo-dark-theme-1.svg" media="(prefers-color-scheme: dark)">
-            <img src="./img/logos/ricky-richards-logo-light-theme-1.svg" loading="lazy" alt="Ricky Richards's logo" style="max-height: 70px;">
+            <img src="./img/logos/ricky-richards-logo-light-theme-1.svg" loading="lazy" alt="Ricky Richards's logo"
+              style="max-height: 70px;">
           </picture>
         </a>
       </div>
@@ -125,7 +131,7 @@
         <label for="email">Email:</label>
         <input type="email" name="email" required>
         <label for="phone">Phone:</label>
-        <input type="tel" name="phone" >
+        <input type="tel" name="phone">
         <label for="message">Message:</label>
         <textarea name="message" required></textarea>
         <button id="contact-form-button">Submit</button>
@@ -195,8 +201,10 @@
         © Beautiful Décor &amp; Design 2024 | ABN: 97 861 935 760 | Designed w/ 💗 by <a
           href="mailto:mail@behive.co">David Dufourq</a></span>
       <div>
-        <a href="https://www.facebook.com/beautifuldecoranddesign" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/beautiful_decoranddesign/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/beautifuldecoranddesign" target="_blank"><i
+            class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/beautiful_decoranddesign/" target="_blank"><i
+            class="fa-brands fa-instagram"></i></a>
         <a href="https://maps.app.goo.gl/SiDXqJjhx52NniNu9" target="_blank"><i class="fa-brands fa-google"></i></a>
       </div>
     </section>
