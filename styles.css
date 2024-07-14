@@ -266,16 +266,6 @@
 
             >li {
                 display: inline-flex;
-
-                /* >a {
-                    color: inherit;
-
-                    &:hover {
-                        text-shadow: var(--color-accent-light-secondary) 3px 3px 1rem;
-                        color: var(--color-static-light-6);
-                        transition: color 0.4s, text-shadow 0.4s;
-                    }
-                } */
             }
         }
     }
@@ -287,34 +277,28 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: var(--space-medium);
 
-        a {
+        hgroup {
+
+            padding: var(--space-medium);
+            text-align: center;
+            border: solid var(--border-size-small);
+            border-color: var(--color-accent-light-primary);
+            border-radius: var(--border-radius-medium);
+            background-color: transparent;
+            cursor: pointer;
+            height: 100%;
 
 
+            &:hover {
+                background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark-primary))
+                transition: background-color 0.4s;
+            }
 
-            /* &:hover {} */
-
-            hgroup {
-
-                padding: var(--space-medium);
-                text-align: center;
-                border: solid var(--border-size-small);
-                border-color: var(--color-accent-light-primary);
-                border-radius: var(--border-radius-medium);
-                background-color: transparent;
-                cursor: pointer;
-                height: 100%;
-
-                &:hover {
-                    background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark));
-                    transition: background-color 0.4s;
-                }
-
-                img {
-                    margin-bottom: var(--space-medium);
-                    border-radius: var(--border-radius-small);
-                    aspect-ratio: 16 / 9;
-                    object-fit: cover;
-                }
+            img {
+                margin-bottom: var(--space-medium);
+                border-radius: var(--border-radius-small);
+                aspect-ratio: 16 / 9;
+                object-fit: cover;
             }
         }
 
