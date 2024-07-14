@@ -342,7 +342,7 @@
 
 
                 &:hover {
-                    background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-primary));
+                    background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-dark-primary));
                     transition: background-color 0.4s;
                 }
 
