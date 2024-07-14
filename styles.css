@@ -281,7 +281,7 @@
         }
     }
 
-    .services {
+    .cards {
 
         grid-area: 1 / 2 / 2 / -2;
         display: grid;
@@ -295,7 +295,7 @@
             /* &:hover {} */
 
             hgroup {
-                
+
                 padding: var(--space-medium);
                 text-align: center;
                 border: solid var(--border-size-small);
@@ -320,7 +320,7 @@
         }
 
     }
-
+} 
     /* 
     main>section#services {
         grid-area: 1 / 2 / 2 / -2;
@@ -357,8 +357,8 @@
         aspect-ratio: 16 / 9;
         object-fit: cover;
     }
+*/
 
-} */
 
 
 
