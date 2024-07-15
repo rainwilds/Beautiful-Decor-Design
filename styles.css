@@ -898,6 +898,11 @@
                 padding-bottom: var(--space-medium);
             }
 
+            div {
+                display: flex;
+                gap: var(--space-small);
+            }
+
             button {
                 border-color: inherit;
 
