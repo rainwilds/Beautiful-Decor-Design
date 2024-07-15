@@ -901,16 +901,13 @@
             div {
                 display: flex;
                 gap: var(--space-small);
+                place-content: center;
             }
 
             button {
                 border-color: inherit;
 
 
-            }
-
-            button:first-of-type {
-                margin-right: var(--space-small);
             }
 
             @media (max-width: 768px) {
