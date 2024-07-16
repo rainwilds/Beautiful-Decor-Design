@@ -18,7 +18,7 @@
         width: 100%;
         max-width: 100%;
         display: block;
-        aspect-ratio: 3/2 auto;
+        aspect-ratio: 3/1 auto;
     }
 
     address {
@@ -639,6 +639,7 @@
         display: grid;
         grid-template: auto auto / auto;
         gap: var(--space-medium);
+        background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
     }
 
     main>section#brands>div {
@@ -790,7 +791,7 @@
                 gap: var(--space-medium);
                 padding: var(--space-medium);
                 /* color: light-dark(var(--color-static-dark-8), var(--color-static-light-8)); */
-                background-color: light-dark(var(--color-background-light), var(--color-background-dark));
+                background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
 
                 div {
                     justify-self: end;
@@ -863,12 +864,11 @@
 
         picture {
             grid-area: header / gutter-left / header / gutter-right;
-            /* display: grid;
-            grid-template: subgrid / subgrid; */
+            height: 100%;
 
             img {
                 object-fit: cover;
-                /* height: 100%; */
+                height: inherit;
             }
 
         }
