@@ -18,7 +18,7 @@
         width: 100%;
         max-width: 100%;
         display: block;
-        aspect-ratio: auto 3 / 2;
+        aspect-ratio: 3/2 auto;
     }
 
     address {
@@ -126,7 +126,7 @@
         /* -- image -- */
 
         /* used for gallery JS generation */
-        --aspect-ratio: 1 / 1;
+        --aspect-ratio: 1/1;
 
         /* background pattern */
         --background-pattern-gradient: repeating-linear-gradient(to right, var(--color-accent-opaque-light-primary), var(--color-accent-opaque-light-primary) 10px, transparent 10px, transparent);
