@@ -18,7 +18,7 @@
         width: 100%;
         max-width: 100%;
         display: block;
-        aspect-ratio: auto 3/2;
+        aspect-ratio: 16/9 auto;
     }
 
     address {
