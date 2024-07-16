@@ -18,7 +18,7 @@
         width: 100%;
         max-width: 100%;
         display: block;
-        aspect-ratio: 16/9 auto;
+        aspect-ratio: 3/2 auto;
     }
 
     address {
@@ -863,12 +863,14 @@
 
         picture {
             grid-area: header / gutter-left / header / gutter-right;
-        }
+            /* display: grid;
+            grid-template: subgrid / subgrid; */
 
-        img {
-            /* grid-area: header / gutter-left / header / gutter-right; */
-            object-fit: cover;
-            height: 100%;
+            img {
+                object-fit: cover;
+                /* height: 100%; */
+            }
+
         }
 
         span {
