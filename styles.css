@@ -19,7 +19,7 @@
         height: 100%;
         max-width: 100%;
         display: block;
-        aspect-ratio: 3/2 auto;
+        aspect-ratio: auto;
     }
 
     address {
