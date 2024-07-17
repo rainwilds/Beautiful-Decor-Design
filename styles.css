@@ -918,7 +918,7 @@
 
             @media (max-width: 768px) {
 
-                grid-area: 1 / 1 / 2 / -1;
+                grid-area: 1 / 1 / 2 / -1 !important;
                 padding: var(--space-tiny);
 
             }
