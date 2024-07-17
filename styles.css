@@ -69,12 +69,12 @@
         --color-background-dark: #2f0728;
 
         --color-accent-light-primary: #9f368c;
-        --color-accent-light-secondary: #e2ace2;
+        --color-accent-light-secondary: #d96ccb;
         --color-accent-dark-primary: #6b245e;
         --color-accent-dark-secondary: #280c23;
 
         --color-accent-opaque-light-primary: rgba(159, 54, 140, 0.2);
-        --color-accent-opaque-light-secondary: rgba(226, 172, 226, 0.2);
+        --color-accent-opaque-light-secondary: rgba(217, 108, 203,0.2);
         --color-accent-opaque-dark-primary: rgba(107, 36, 94, 0.5);
         --color-accent-opaque-dark-secondary: rgba(40, 12, 35, 0.5);
 
@@ -1057,6 +1057,10 @@
 
         main>section#brands {
             grid-area: 2 / 2 / 3 / -2;
+            border-radius: var(--border-radius-medium);
+        }
+        main>section#brands>div {
+            gap: var(--space-large);
         }
 
         footer>section:nth-of-type(1) {
