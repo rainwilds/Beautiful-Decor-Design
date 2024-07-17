@@ -69,12 +69,12 @@
         --color-background-dark: #2f0728;
 
         --color-accent-light-primary: #9f368c;
-        --color-accent-light-secondary: #d96ccb;
+        --color-accent-light-secondary: #e9bce8;
         --color-accent-dark-primary: #6b245e;
         --color-accent-dark-secondary: #280c23;
 
         --color-accent-opaque-light-primary: rgba(159, 54, 140, 0.2);
-        --color-accent-opaque-light-secondary: rgba(217, 108, 203,0.2);
+        --color-accent-opaque-light-secondary: rgba(233, 188, 232,0.2);
         --color-accent-opaque-dark-primary: rgba(107, 36, 94, 0.5);
         --color-accent-opaque-dark-secondary: rgba(40, 12, 35, 0.5);
 
@@ -274,7 +274,7 @@
 
         button {
             &:hover {
-                background-color: light-dark(var(--color-accent-opaque-dark), var(--color-accent-opaque-light-primary));
+                background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
                 transition: background-color 0.4s;
             }
 
