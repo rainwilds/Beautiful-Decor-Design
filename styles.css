@@ -371,23 +371,6 @@
 
         }
 
-        .text-overlay {
-
-            display: flex;
-            justify-content: center;
-            grid-area: 3 / 1 / 4 / -1;
-            z-index: -1;
-            align-items: center;
-            mask-image: linear-gradient(to bottom, #000, transparent 75%);
-            filter: blur(10px);
-
-            span {
-                font-size: clamp(100vh, 100vh, 100vw);
-                color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-dark-primary));;
-
-
-            }
-        }
     }
 
 
