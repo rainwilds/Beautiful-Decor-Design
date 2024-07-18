@@ -193,8 +193,8 @@
             border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
             border-radius: var(--border-radius-small);
             background-size: 32px 32px;
-            -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
         }
 
         button {
@@ -367,24 +367,26 @@
                 }
             }
 
-            .text-overlay {
-
-                display: flex;
-                justify-content: center;
-                grid-area: 3 / 1 / 4 / -1;
-                z-index: -1;
-                align-items: center;
-                mask-image: linear-gradient(to bottom, #000, transparent 75%);
-                filter: blur(10px);
-
-                span {
-                    font-size: clamp(100vh, 100vh, 100vw);
-                    color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-dark-primary));;
 
 
-                }
+        }
+
+        .text-overlay {
+
+            display: flex;
+            justify-content: center;
+            grid-area: 3 / 1 / 4 / -1;
+            z-index: -1;
+            align-items: center;
+            mask-image: linear-gradient(to bottom, #000, transparent 75%);
+            filter: blur(10px);
+
+            span {
+                font-size: clamp(100vh, 100vh, 100vw);
+                color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-dark-primary));;
+
+
             }
-
         }
     }
 
