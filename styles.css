@@ -201,7 +201,8 @@
             font-size: var(--font-2-size-large);
 
             &:hover {
-                background-color: initial;
+                background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
+                transition: background-color 0.4s;
             }
         }
 
@@ -277,10 +278,6 @@
     @layer components {
 
         button {
-            &:hover {
-                background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
-                transition: background-color 0.4s;
-            }
 
             >a {
 
