@@ -163,7 +163,7 @@
 
             &:hover {
 
-                color: light-dark(var(--color-static-dark-6), var(--color-static-light-6));
+                color: light-dark(var(--color-static-dark-4), var(--color-static-light-4));
                 transition: color 0.4s;
             }
         }
@@ -176,7 +176,7 @@
 
             &:hover {
 
-                text-decoration-color: light-dark(var(--color-static-dark-6), var(--color-static-light-6));
+                text-decoration-color: light-dark(var(--color-static-dark-4), var(--color-static-light-4));
                 transition: text-decoration-color 0.4s, color 0.4s;
 
             }
@@ -199,6 +199,10 @@
 
         button {
             font-size: var(--font-2-size-large);
+
+            &:hover {
+                background-color: initial;
+            }
         }
 
         input:focus-visible,
@@ -575,8 +579,8 @@
         grid-template: repeat(2, auto) / subgrid;
         grid-area: main / gutter-left / main / gutter-right;
         row-gap: var(--space-huge);
-        border-bottom: dashed var(--border-size-medium) light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary));
-        border-top: dashed var(--border-size-medium) light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary));
+        border-bottom: dashed var(--border-size-small) light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary));
+        border-top: dashed var(--border-size-small) light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary));
         margin: var(--space-small) 0;
     }
 
