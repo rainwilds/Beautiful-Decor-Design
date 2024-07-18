@@ -383,6 +383,7 @@
                     span {
                         position: absolute;
                         color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-dark-primary));
+                        filter: blur(7px);
                     }
                 }
             }
