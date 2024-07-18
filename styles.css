@@ -74,7 +74,7 @@
         --color-accent-dark-secondary: #280c23;
 
         --color-accent-opaque-light-primary: rgba(159, 54, 140, 0.2);
-        --color-accent-opaque-light-secondary: rgba(233, 188, 232,0.2);
+        --color-accent-opaque-light-secondary: rgba(233, 188, 232, 0.2);
         --color-accent-opaque-dark-primary: rgba(107, 36, 94, 0.5);
         --color-accent-opaque-dark-secondary: rgba(40, 12, 35, 0.5);
 
@@ -251,7 +251,7 @@
             @media (min-width: 1201px) and (max-width: 1919px) {
 
                 & {
-                    grid-template: 100vh auto auto / 5vw repeat(6, 1fr) 5vw;
+                    grid-template: 100vh / 5vw repeat(6, 1fr) 5vw;
                     grid-template-areas:
                         "gutter-left header header header header header header gutter-right"
                         "gutter-left main main main main main main gutter-right"
@@ -263,7 +263,7 @@
             @media (min-width: 1920px) {
 
                 & {
-                    grid-template: 100vh auto auto / 10vw repeat(6, 1fr) 10vw;
+                    grid-template: 100vh / 10vw repeat(6, 1fr) 10vw;
                     grid-template-areas:
                         "gutter-left header header header header header header gutter-right"
                         "gutter-left main main main main main main gutter-right"
@@ -274,7 +274,7 @@
             @media (min-width: 2560px) {
 
                 & {
-                    grid-template: 60vh auto auto / 20vw repeat(6, 1fr) 20vw;
+                    grid-template: 60vh / 20vw repeat(6, 1fr) 20vw;
                     grid-template-areas:
                         "gutter-left header header header header header header gutter-right"
                         "gutter-left main main main main main main gutter-right"
@@ -364,6 +364,26 @@
 
                 p {
                     padding-bottom: var(--space-medium);
+                }
+            }
+
+            .text-overlay {
+
+                display: flex;
+                justify-content: center;
+                grid-area: 3 / 1 / 4 / -1;
+                z-index: -1;
+
+                h2 {
+                    display: grid;
+                    justify-items: center;
+                    font-size: clamp(100vh, 100vh, 100vw);
+                    line-height: 0;
+
+                    span {
+                        position: absolute;
+                        color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-dark-primary));
+                    }
                 }
             }
 
@@ -660,7 +680,7 @@
         gap: var(--space-medium);
         background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
         padding: var(--space-medium);
-        
+
     }
 
     main>section#brands>div {
@@ -887,7 +907,7 @@
 
         picture {
             grid-area: header / gutter-left / header / gutter-right;
-            mask-image: linear-gradient(to bottom, light-dark(var(--color-accent-light-secondary),var(--color-accent-dark-secondary)), transparent 200%);
+            mask-image: linear-gradient(to bottom, light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary)), transparent 200%);
 
             img {
                 object-fit: cover;
@@ -1060,7 +1080,7 @@
     } */
 
         body#page-about {
-            grid-template: min-content auto auto / 0 repeat(6, 1fr) 0;
+            grid-template: min-content / 0 repeat(6, 1fr) 0;
             grid-template-areas:
                 "gutter-left header header header header header header gutter-right"
                 "gutter-left main main main main main main gutter-right"
@@ -1080,6 +1100,7 @@
             grid-area: 2 / 2 / 3 / -2;
             border-radius: var(--border-radius-medium);
         }
+
         main>section#brands>div {
             gap: var(--space-large);
         }
@@ -1104,7 +1125,7 @@
     } */
 
         body#page-about {
-            grid-template: min-content auto auto / 10vw repeat(6, 1fr) 10vw;
+            grid-template: min-content / 10vw repeat(6, 1fr) 10vw;
             grid-template-areas:
                 "gutter-left header header header header header header gutter-right"
                 "gutter-left main main main main main main gutter-right"
@@ -1124,7 +1145,7 @@
     } */
 
         body#page-about {
-            grid-template: min-content auto auto / 20vw repeat(6, 1fr) 20vw;
+            grid-template: min-content / 20vw repeat(6, 1fr) 20vw;
             grid-template-areas:
                 "gutter-left header header header header header header gutter-right"
                 "gutter-left main main main main main main gutter-right"
