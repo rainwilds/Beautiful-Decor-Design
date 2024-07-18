@@ -185,7 +185,7 @@
 
         button,
         input,
-        /* select, TEST */
+        select,
         textarea {
             background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark-primary));
             padding: var(--space-tiny);
@@ -204,6 +204,18 @@
                 background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
                 transition: background-color 0.4s;
             }
+        }
+
+        input:user-valid,
+        select:user-valid,
+        textarea:user-valid {
+            border-color: green;
+        }
+
+        input:user-invalid,
+        select:user-invalid,
+        textarea:user-invalid {
+            border-color: red;
         }
 
         input:focus-visible,
