@@ -775,9 +775,7 @@
             z-index: 1;
         }
 
-        >span {
-            filter: blur(2);
-        }
+
 
         img {
             margin-top: var(--space-medium);
@@ -905,7 +903,7 @@
             font-size: clamp(100vh, 100vh, 100vw);
             opacity: 0.05;
             color: var(--color-accent-light-secondary);
-            filter: blur(3px);
+            filter: blur(5px);
             mix-blend-mode: plus-lighter;
             overflow: hidden;
         }
