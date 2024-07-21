@@ -888,7 +888,7 @@
 
         picture {
             grid-area: header / gutter-left / header / gutter-right;
-            mask-image: linear-gradient(to bottom, light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary)), transparent 200%);
+            /* mask-image: linear-gradient(to bottom, light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary)), transparent 200%); */
 
             img {
                 object-fit: cover;
