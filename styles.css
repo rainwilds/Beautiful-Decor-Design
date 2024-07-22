@@ -501,7 +501,7 @@
                 grid-template-columns: 2fr minmax(300px, 1fr);
             }
 
-            & + .left, + .right {
+            & + .left {
 
                 @media (max-width: 768px) 
                 
