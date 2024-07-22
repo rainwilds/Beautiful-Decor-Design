@@ -695,6 +695,15 @@
             &:nth-last-of-type(1) {
                 grid-column-start: 3;
                 grid-column-end: -3;
+
+                @media (min-width: 980px) {
+
+                    & {
+                        grid-column-start: 2;
+                        grid-column-end: -1;
+                    }
+
+                }
             }
 
             &:nth-last-of-type(2) {
@@ -758,7 +767,7 @@
 
             >section#brands {
 
-                border-radius: var(--border-radius-medium);
+                /* border-radius: var(--border-radius-medium); */
 
                 >div {
                     gap: var(--space-large);
