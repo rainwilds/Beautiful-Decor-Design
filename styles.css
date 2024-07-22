@@ -41,6 +41,10 @@
         outline-color: transparent;
     }
 
+    button {
+        cursor: pointer;
+    }
+
 }
 
 @layer defaults {
