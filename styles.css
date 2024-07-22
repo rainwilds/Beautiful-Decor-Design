@@ -493,7 +493,7 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: var(--space-medium);
 
-            hgroup {
+            >hgroup {
 
                 display: flex;
                 flex-direction: column;
@@ -516,6 +516,10 @@
                     background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-dark-primary));
                     transition: background-color 0.4s;
                 } */
+            }
+
+            >picture {
+                border-radius: var(--border-radius-medium);
             }
 
         }
