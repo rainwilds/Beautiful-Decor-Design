@@ -379,7 +379,7 @@
             @media (max-width: 1200px) {
 
                 & {
-                    grid-template: 100vh / 0 repeat(6, 1fr) 0;
+                    grid-template: 100% / 0 repeat(6, 1fr) 0;
                     grid-template-areas:
                         "gutter-left header header header header header header gutter-right"
                         "gutter-left main main main main main main gutter-right"
@@ -660,7 +660,7 @@
             @media (max-width: 768px) {
 
                 grid-area: 1 / 1 / 2 / -1 !important;
-                padding: var(--space-tiny);
+                padding: var(--space-large);
 
             }
 
@@ -712,8 +712,8 @@
                 @media (min-width: 980px) {
 
                     & {
-                        grid-column-start: 2 !important;
-                        grid-column-end: -2 !important;
+                        grid-column-start: 2;
+                        grid-column-end: -2 ;
                     }
 
                 }
