@@ -488,7 +488,7 @@
 
         .cards {
 
-            grid-area: 1 / 2 / 2 / -2;
+            /* grid-area: 1 / 2 / 2 / -2; */
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: var(--space-medium);
@@ -531,6 +531,22 @@
         :is(body#page-navigation, body#page-service) .cards.right {
             grid-template-columns: 2fr minmax(300px, 1fr);
         }
+
+        :is(body#page-navigation, body#page-service) .cards:has(.left, .right) {
+            
+            @media (max-width: 768px) {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            @media (max-width: 980px) {
+
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+        }
+        
 
     }
 
@@ -669,10 +685,13 @@
                 grid-column-start: 1;
                 grid-column-end: -1;
             }
+
+            >picture {
+                object-fit: cover;
+            }
         }
 
         >section#message {
-            /* grid-area: 3 / 3 / 4 / -3; */
 
             >hgroup {
                 text-align: center;
@@ -681,7 +700,7 @@
         }
 
         >section#brands {
-            /* grid-area: 2 / 1 / 3 / -1; */
+
             display: grid;
             grid-template: auto / auto;
             gap: var(--space-medium);
@@ -720,12 +739,9 @@
                 aspect-ratio: 3 / 2;
             }
 
-            >section#message {
-                grid-area: 3 / 2 / 4 / -2;
-            }
 
             >section#brands {
-                grid-area: 2 / 2 / 3 / -2;
+          
                 border-radius: var(--border-radius-medium);
 
                 >div {
