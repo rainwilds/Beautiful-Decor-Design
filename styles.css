@@ -230,6 +230,56 @@
             background: var(--color-static-light);
         }
 
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-1-family);
+            line-height: 1;
+    
+            /* adobe font requirements */
+    
+            font-weight: var(--font-1-weight-medium);
+            font-style: normal;
+    
+            /***/
+        }
+    
+        h1 {
+            font-size: 4.5rem;
+        }
+    
+        h2 {
+            font-size: 2.9rem;
+        }
+    
+        h3 {
+            font-size: 2.5rem;
+        }
+    
+        h4 {
+            font-size: 2.5rem;
+        }
+    
+        h5 {
+            font-size: 2.3rem;
+        }
+    
+        h6 {
+            font-size: 2.3rem;
+        }    
+
+        p:not(:last-of-type) {
+            margin-bottom: var(--space-medium);
+        }
+
+        article p:nth-child(1)::first-line {
+            font-size: var(--font-2-size-large);
+            font-weight: var(--font-2-weight-heavy);
+        }
+
         body {
 
             display: grid;
@@ -362,9 +412,9 @@
                     transition: background-color 0.4s;
                 }
 
-                p {
+                /* p {
                     padding-bottom: var(--space-medium);
-                }
+                } */
             }
 
 
@@ -380,22 +430,9 @@
 
     /* -- tags -- */
 
-    /* body {
 
-    color: light-dark(var(--color-accent-dark-secondary), var(--color-accent-light-primary));
 
-} */
 
-    /* body {
-    display: grid;
-    grid-template: 100vh auto auto / 5vw repeat(6, 1fr) 5vw;
-    grid-template-areas:
-        "gutter-left header header header header header header gutter-right"
-        "gutter-left main main main main main main gutter-right"
-        "gutter-left footer footer footer footer footer footer gutter-right";
-    column-gap: var(--space-medium);
-    background-color: light-dark(var(--color-background-light), var(--color-background-dark));
-} */
 
     body#page-about {
         grid-template: min-content auto auto / 5vw repeat(6, 1fr) 5vw;
@@ -405,73 +442,29 @@
             "gutter-left footer footer footer footer footer footer gutter-right";
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: var(--font-1-family);
-        line-height: 1;
-        /* padding-bottom: var(--space-tiny); PLACEHOLDER */
-
-        /* adobe font requirements */
-
-        font-weight: var(--font-1-weight-medium);
-        font-style: normal;
-
-        /***/
+    body#page-about>header {
+        background-image: url(./img/header.jpg);
     }
 
-    h1 {
-        font-size: 4.5rem;
-        /* color: var(--color-static-light); */
-    }
-
-    /* body#page-about h1 {
-    color: light-dark(var(--color-static-dark),
-            var(--color-static-light));
-} */
-
-    h2 {
-        font-size: 2.9rem;
-    }
-
-    h3 {
-        font-size: 2.5rem;
-    }
-
-    h4 {
-        font-size: 2.5rem;
-    }
-
-    h5 {
-        font-size: 2.3rem;
-    }
-
-    h6 {
-        font-size: 2.3rem;
-    }
-
-    /* p {
-    color: light-dark(var(--color-static-dark),
-            var(--color-static-light));
-} */
-
-    p:not(:last-of-type) {
-        margin-bottom: var(--space-medium);
-    }
-
-    article p:nth-child(1)::first-line {
-        font-size: var(--font-2-size-large);
+    body#page-indoor-roller-blinds>header {
+        background-image: url(./img/indoor-roller-blinds-2.jpeg);
     }
 
 
 
-    a:not(button > a, header nav a, main>section>a, footer a, main>section:nth-child(3)>div>a, #brands a) {
+    body#page-about>header>nav {
+        margin: var(--space-medium) 0;
+    }
+
+
+
+
+
+
+    /* a:not(button > a, header nav a, main>section>a, footer a, main>section:nth-child(3)>div>a, #brands a) {
         border-bottom: solid var(--border-size-medium) light-dark(var(--color-static-light-1),
                 var(--color-static-dark-1));
-    }
+    } */
 
 
 
@@ -570,19 +563,7 @@
 
 
 
-    body#page-about>header {
-        background-image: url(./img/header.jpg);
-    }
 
-    body#page-indoor-roller-blinds>header {
-        background-image: url(./img/indoor-roller-blinds-2.jpeg);
-    }
-
-
-
-    body#page-about>header>nav {
-        margin: var(--space-medium) 0;
-    }
 
 
 
