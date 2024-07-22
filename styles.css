@@ -352,7 +352,7 @@
                 border-color: var(--color-accent-light-primary);
                 border-radius: var(--border-radius-medium);
                 background-color: transparent;
-                mask-image: linear-gradient(to bottom, #000, transparent 95%);
+                /* mask-image: linear-gradient(to bottom, #000, transparent 95%); */
                 cursor: pointer;
                 height: 100%;
 
