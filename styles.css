@@ -41,10 +41,6 @@
         outline-color: transparent;
     }
 
-    button {
-        cursor: pointer;
-    }
-
 }
 
 @layer defaults {
@@ -204,6 +200,7 @@
         }
 
         button {
+            width: 100%;
             font-size: var(--font-2-size-large);
 
             &:hover {
@@ -379,7 +376,7 @@
             @media (max-width: 1200px) {
 
                 & {
-                    grid-template: 100% / 0 repeat(6, 1fr) 0;
+                    grid-template: 100vh / 0 repeat(6, 1fr) 0;
                     grid-template-areas:
                         "gutter-left header header header header header header gutter-right"
                         "gutter-left main main main main main main gutter-right"
@@ -392,7 +389,7 @@
             @media (min-width: 1201px) and (max-width: 1919px) {
 
                 & {
-                    grid-template: min-content / 5vw repeat(6, 1fr) 5vw;
+                    grid-template: 100vh / 5vw repeat(6, 1fr) 5vw;
                     grid-template-areas:
                         "gutter-left header header header header header header gutter-right"
                         "gutter-left main main main main main main gutter-right"
