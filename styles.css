@@ -712,8 +712,8 @@
                 @media (min-width: 980px) {
 
                     & {
-                        grid-column-start: 2;
-                        grid-column-end: -1;
+                        grid-column-start: 2 !important;
+                        grid-column-end: -2 !important;
                     }
 
                 }
