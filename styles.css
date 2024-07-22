@@ -501,7 +501,7 @@
                 grid-template-columns: 2fr minmax(300px, 1fr);
             }
 
-            & +:has(.left, .right) {
+            & + .left, + .right {
 
                 @media (max-width: 768px) 
                 
