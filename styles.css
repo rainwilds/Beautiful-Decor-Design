@@ -489,15 +489,15 @@
         .cards {
 
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: var(--space-medium);
 
             &.left {
-                grid-template-columns: minmax(300px, 1fr) 2fr;
+                grid-template-columns: minmax(350px, 1fr) 2fr;
             }
 
             &.right {
-                grid-template-columns: 2fr minmax(300px, 1fr);
+                grid-template-columns: 2fr minmax(350px, 1fr);
             }
 
             &.left,
@@ -541,7 +541,7 @@
                 /* mask-image: linear-gradient(to bottom, #000, transparent 95%); */
                 height: 100%;
 
-                >p {
+                p {
                     padding-bottom: var(--space-medium);
                 }
 
