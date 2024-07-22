@@ -526,10 +526,6 @@
 
         :is(body#page-navigation, body#page-service) .cards.left {
             grid-template-columns: minmax(300px, 1fr) 2fr;
-            grid-template-areas:
-                "gutter-left header header header header header header gutter-right"
-                "gutter-left main main main main main main gutter-right"
-                "gutter-left footer footer footer footer footer footer gutter-right";
         }
 
         :is(body#page-navigation, body#page-service) .cards.right {
@@ -661,10 +657,16 @@
                 margin-bottom: var(--space-large);
             }
 
-            &:nth-last-of-type(2) {
+            &:nth-last-of-type(1 + 2) {
+                grid-row: initial;
+            }
+            &:nth-last-of-type(1) {
                 grid-column-start: 3;
                 grid-column-end: -3;
-                grid-row: initial;
+            }
+            &:nth-last-of-type(2) {
+                grid-column-start: 1;
+                grid-column-end: -1;
             }
         }
 
