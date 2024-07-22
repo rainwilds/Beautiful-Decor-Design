@@ -554,6 +554,7 @@
 
             img {
                 border-radius: var(--border-radius-medium);
+                object-fit: cover;
             }
 
         }
