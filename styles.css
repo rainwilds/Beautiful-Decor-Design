@@ -518,14 +518,18 @@
                 } */
             }
 
-            >picture {
+            img {
                 border-radius: var(--border-radius-medium);
             }
 
         }
 
-        :is(body#page-navigation, body#page-service) .cards {
+        :is(body#page-navigation, body#page-service) .cards.left {
             grid-template-columns: minmax(300px, 1fr) 2fr;
+        }
+
+        :is(body#page-navigation, body#page-service) .cards.right {
+            grid-template-columns: 2fr minmax(300px, 1fr);
         }
 
     }
