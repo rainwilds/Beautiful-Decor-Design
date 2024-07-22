@@ -488,7 +488,6 @@
 
         .cards {
 
-            /* grid-area: 1 / 2 / 2 / -2; */
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: var(--space-medium);
@@ -502,6 +501,8 @@
             }
 
             & .left, .right {
+
+                grid-template-columns: inherit;
 
                 @media (max-width: 768px) 
                 
