@@ -188,6 +188,7 @@
         select,
         textarea {
             background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark-primary));
+            background-image: var(--background-pattern-gradient);
             padding: var(--space-tiny);
             border: solid 1px;
             border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
