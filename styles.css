@@ -492,15 +492,15 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: var(--space-medium);
 
-            & .left {
+            &.left {
                 grid-template-columns: minmax(300px, 1fr) 2fr;
             }
     
-            & .right {
+            &.right {
                 grid-template-columns: 2fr minmax(300px, 1fr);
             }
 
-            /* & .left, .right {
+            &.left, .right {
 
                 grid-template-columns: inherit;
 
@@ -520,7 +520,7 @@
     
                 }
 
-            } */
+            }
 
             >hgroup {
 
