@@ -500,7 +500,7 @@
                 grid-template-columns: 2fr minmax(300px, 1fr);
             }
 
-            & .left, .right {
+            /* & .left, .right {
 
                 grid-template-columns: inherit;
 
@@ -520,7 +520,7 @@
     
                 }
 
-            }
+            } */
 
             >hgroup {
 
