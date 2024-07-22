@@ -508,7 +508,7 @@
                 height: 100%;
 
                 >p {
-                    padding-bottom: var(--space);
+                    padding-bottom: var(--space-medium);
                 }
 
 
@@ -527,77 +527,6 @@
     /***/
 
     /* -- tags -- */
-
-
-
-
-
-
-
-
-
-
-
-    body#page-about {
-        grid-template: min-content auto auto / 5vw repeat(6, 1fr) 5vw;
-        grid-template-areas:
-            "gutter-left header header header header header header gutter-right"
-            "gutter-left main main main main main main gutter-right"
-            "gutter-left footer footer footer footer footer footer gutter-right";
-    }
-
-    body#page-about>header {
-        background-image: url(./img/header.jpg);
-    }
-
-    body#page-about>header>nav {
-        margin: var(--space-medium) 0;
-    }
-
-    body#page-about>main>hgroup {
-        grid-area: 1 / 1 / 2 / -1;
-        text-align: center;
-        margin-top: var(--space-large);
-        background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark));
-        padding: var(--space-medium) 0;
-        background-image: var(--background-pattern-gradient);
-        /* background-size: 32px 32px; */
-    }
-
-    body#page-about>main>section {
-        grid-area: 2 / 2 / 3 / -2;
-        display: grid;
-        grid-template: auto / subgrid;
-    }
-
-    body#page-about>main>section>img {
-        grid-area: 1 / 1 / 2 / span 2;
-        border-radius: var(--border-radius-small);
-        aspect-ratio: 2 / 3;
-        object-fit: cover;
-    }
-
-    body#page-about>main>section>article {
-        grid-area: 1 / 3 / 4 / -1;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     /***/
@@ -940,7 +869,48 @@
 
 
 
+    body#page-about {
+        grid-template: min-content auto auto / 5vw repeat(6, 1fr) 5vw;
+        grid-template-areas:
+            "gutter-left header header header header header header gutter-right"
+            "gutter-left main main main main main main gutter-right"
+            "gutter-left footer footer footer footer footer footer gutter-right";
+    }
 
+    body#page-about>header {
+        background-image: url(./img/header.jpg);
+    }
+
+    body#page-about>header>nav {
+        margin: var(--space-medium) 0;
+    }
+
+    body#page-about>main>hgroup {
+        grid-area: 1 / 1 / 2 / -1;
+        text-align: center;
+        margin-top: var(--space-large);
+        background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark));
+        padding: var(--space-medium) 0;
+        background-image: var(--background-pattern-gradient);
+        /* background-size: 32px 32px; */
+    }
+
+    body#page-about>main>section {
+        grid-area: 2 / 2 / 3 / -2;
+        display: grid;
+        grid-template: auto / subgrid;
+    }
+
+    body#page-about>main>section>img {
+        grid-area: 1 / 1 / 2 / span 2;
+        border-radius: var(--border-radius-small);
+        aspect-ratio: 2 / 3;
+        object-fit: cover;
+    }
+
+    body#page-about>main>section>article {
+        grid-area: 1 / 3 / 4 / -1;
+    }
 
     @media (max-width: 1200px) {
 
