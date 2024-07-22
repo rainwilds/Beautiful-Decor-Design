@@ -168,7 +168,7 @@
             }
         }
 
-        a:any-link:not(button>a, .cards a) {
+        a:any-link:not(a + button, .cards a) {
 
             text-decoration: underline wavy 1px light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
             text-underline-offset: 5px;
@@ -441,7 +441,7 @@
 
         button {
 
-            >a {
+            +a {
 
                 color: inherit;
 
