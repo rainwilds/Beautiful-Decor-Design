@@ -495,32 +495,37 @@
             &.left {
                 grid-template-columns: minmax(300px, 1fr) 2fr;
             }
-    
+
             &.right {
                 grid-template-columns: 2fr minmax(300px, 1fr);
             }
 
-            &.left, .right {
+            &.left,
+            .right {
 
-                grid-template-columns: inherit;
+                @media (max-width: 768px) {
 
-                @media (max-width: 768px) 
-                
-                & {
+                    & {
 
-                    grid-template-columns: 1fr;
-    
+                        grid-template-columns: 1fr;
+
+                    }
                 }
-    
-                @media (max-width: 980px)
-                
-                & {
-    
-                    grid-template-columns: repeat(2, 1fr);
-    
+
+                @media (max-width: 980px) {
+
+                    & {
+
+                        grid-template-columns: repeat(2, 1fr);
+
+                    }
                 }
 
             }
+
+
+
+
 
             >hgroup {
 
@@ -553,7 +558,7 @@
 
         }
 
-        
+
 
     }
 
@@ -679,15 +684,18 @@
             &:last-child {
                 margin-bottom: var(--space-large);
             }
-            &:not(:nth-last-of-type(1),:nth-last-of-type(2)) {
+
+            &:not(:nth-last-of-type(1), :nth-last-of-type(2)) {
                 grid-row: initial;
                 grid-column-start: 2;
                 grid-column-end: -2;
             }
+
             &:nth-last-of-type(1) {
                 grid-column-start: 3;
                 grid-column-end: -3;
             }
+
             &:nth-last-of-type(2) {
                 grid-column-start: 1;
                 grid-column-end: -1;
@@ -748,7 +756,7 @@
 
 
             >section#brands {
-          
+
                 border-radius: var(--border-radius-medium);
 
                 >div {
