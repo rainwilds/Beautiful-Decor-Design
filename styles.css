@@ -440,16 +440,16 @@
 
     @layer components {
 
-        button {
+        button  {
 
-            +a {
+            &+a {
 
-                color: inherit;
+                /* color: inherit;
 
                 &:hover {
                     color: var(--color-static-light-6);
                     transition: color 0.4s;
-                }
+                } */
 
                 &.secondary {
                     background-color: transparent;
