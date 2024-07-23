@@ -451,6 +451,12 @@
                     transition: color 0.4s;
                 }
             }
+
+            &.secondary {
+                background-color: transparent;
+                color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
+                border-color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
+            }
         }
 
         nav {
@@ -716,7 +722,7 @@
 
                     & {
                         grid-column-start: 2;
-                        grid-column-end: -2 ;
+                        grid-column-end: -2;
                     }
 
                 }
