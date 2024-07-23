@@ -442,7 +442,7 @@
 
         button  {
 
-            + a {
+            & +a {
 
                 /* color: inherit;
 
