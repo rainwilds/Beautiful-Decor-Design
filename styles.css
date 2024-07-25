@@ -159,7 +159,7 @@
             /* adobe font requirements */
             font-weight: var(--font-2-weight-medium);
             /***/
-            text-decoration: none; 
+            text-decoration: none;
 
             &:hover {
 
@@ -440,9 +440,9 @@
 
     @layer components {
 
-        button  {
+        button {
 
-            & +a {
+            &+a {
 
                 /* color: inherit;
 
@@ -744,6 +744,18 @@
             >hgroup {
                 text-align: center;
                 margin-bottom: var(--space-medium);
+            }
+
+            >div {
+                text-align: center;
+                margin-bottom: var(--space-medium);
+
+                >a:first-of-type {
+                    display: block;
+                    margin-bottom: var(--space-small);
+                    font-size: var(--font-2-size-large);
+                    font-weight: var(--font-2-weight-heavy);
+                }
             }
         }
 
