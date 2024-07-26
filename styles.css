@@ -659,6 +659,12 @@
                 display: flex;
                 gap: var(--space-small);
                 place-content: center;
+
+                @media (max-width: 768px) {
+
+                    flex-direction: column;
+    
+                }
             }
 
             button {
