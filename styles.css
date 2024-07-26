@@ -162,7 +162,7 @@
         scroll-behavior: smooth;
 
         :popover-open {
-            background-color: gray;
+            border: none;
         }
 
         ::backdrop {
