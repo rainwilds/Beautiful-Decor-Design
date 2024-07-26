@@ -206,6 +206,7 @@
         button {
             width: 100%;
             font-size: var(--font-2-size-large);
+            background-image: var(--background-noise);
 
             &:hover {
                 background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
