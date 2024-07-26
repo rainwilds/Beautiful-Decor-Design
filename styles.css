@@ -1009,7 +1009,7 @@ footer {
     }
 }
 
-section#menu-footer {
+section#menu-mobile {
     backdrop-filter: blur(10px);
     padding: var(--space-small);
     border-radius: var(--border-radius-small);
