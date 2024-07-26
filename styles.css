@@ -45,6 +45,14 @@
         cursor: pointer;
     }
 
+    i {
+        vertical-align: middle;
+    }
+
+    div:has(i) {
+        display: flex;
+    }
+
 }
 
 @layer defaults {
