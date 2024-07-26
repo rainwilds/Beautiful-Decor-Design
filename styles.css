@@ -289,6 +289,16 @@
             font-weight: var(--font-2-weight-heavy);
         }
 
+        img,
+        picture {
+
+            @media (prefers-color-scheme: dark) & {
+
+                filter: opacity: (0.9);
+
+            }
+        }
+
         form {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -580,6 +590,7 @@
         img {
             border-radius: var(--border-radius-medium);
             object-fit: cover;
+
         }
 
     }
