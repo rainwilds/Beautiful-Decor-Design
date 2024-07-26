@@ -127,7 +127,7 @@
         <!-- <i class="fa-thin fa-bars"></i> -->
         <form method="get" id="menu-mobile-form">
           <label for="menu-mobile-select" aria-label="Mobie Menu"></label>
-          <select name="menu-mobile" id="menu-mobile-select" onchange="this.form.submit()">
+          <select name="menu-mobile" id="menu-mobile-select" onchange="navigateToPage(this)">
             <option value="menu" selected>-- Menu --</option>
             <option value="./index.html">Home</option>
             <option value="./contact.html">Contact</option>
@@ -388,6 +388,15 @@
       dialog.close();
     });
   </script> -->
+
+  <script>
+    function navigateToPage(selectElement) {
+      var url = selectElement.value;
+      if (url) {
+        window.location.href = url;
+      }
+    }
+  </script>
 
   <script>
     var form = document.getElementById("contact-form");
