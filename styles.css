@@ -524,6 +524,13 @@
 
         &:last-of-type {
 
+            width: 100%;
+            padding: var(--space-small);
+
+            select {
+                width: 100%;
+            }
+
             @media (max-width: 1023px) {
 
                 & {
