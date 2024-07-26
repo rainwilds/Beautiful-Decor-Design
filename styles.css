@@ -163,6 +163,7 @@
 
         :popover-open {
             border: none;
+            background-color: transparent;
         }
 
         ::backdrop {
