@@ -443,9 +443,12 @@
 
         a:has(> button.secondary) {
 
-            background-color: transparent;
             color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
-            border-color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
+
+            >button {
+                background-color: transparent;
+                border-color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
+            }
 
         }
 
