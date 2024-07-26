@@ -491,11 +491,26 @@
         border-color: var(--color-static-light-1);
         background-color: var(--color-static-light-1);
 
-        @media (max-width: 1024px) {
+        &:first-of-type {
 
-            display: none;
+            @media (max-width: 1024px) & {
+
+                display: none;
+
+            }
 
         }
+
+        &:last-of-type {
+
+            @media (max-width: 1024px) & {
+
+                display: block;
+
+            }
+        }
+
+
 
         >ul {
             list-style-type: none;
