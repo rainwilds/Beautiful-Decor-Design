@@ -1010,15 +1010,19 @@ footer {
 }
 
 section#menu-mobile {
-    backdrop-filter: blur(10px);
+
     padding: var(--space-small);
-    border-radius: var(--border-radius-small);
-    background-image: var(--background-noise);
-    box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
-    border: solid var(--border-size-small);
-    border-color: var(--color-static-light-1);
-    background-color: var(--color-static-light-1);
-    display: flex;
+
+    >div {
+        backdrop-filter: blur(10px);
+        padding: var(--space-small);
+        border-radius: var(--border-radius-small);
+        background-image: var(--background-noise);
+        box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
+        border: solid var(--border-size-small);
+        border-color: var(--color-static-light-1);
+        background-color: var(--color-static-light-1);
+    }
 }
 
 
