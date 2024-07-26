@@ -256,6 +256,7 @@
 
         h1 {
             font-size: 4.5rem;
+            line-height: .8;
         }
 
         h2 {
@@ -440,22 +441,12 @@
 
     @layer components {
 
-        button {
+        button+a {
 
-            &+a {
-
-                /* color: inherit;
-
-                &:hover {
-                    color: var(--color-static-light-6);
-                    transition: color 0.4s;
-                } */
-
-                &.secondary {
-                    background-color: transparent;
-                    color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
-                    border-color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
-                }
+            &.secondary {
+                background-color: transparent;
+                color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
+                border-color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
             }
 
         }
