@@ -676,20 +676,20 @@
             @media (max-width: 768px) {
 
                 grid-area: 1 / 1 / 2 / -1 !important;
-                padding: var(--space-tiny);
+                padding: var(--space-small) !important;
 
             }
 
             @media (max-width: 980px) {
 
                 grid-area: 1 / 2 / 2 / -2;
-                padding: var(--space-large);
 
             }
 
             @media (max-width: 1200px) {
 
                 max-width: none;
+                padding: var(--space-large);
 
             }
         }
