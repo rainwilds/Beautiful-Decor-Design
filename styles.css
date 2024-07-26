@@ -1013,6 +1013,8 @@ footer {
 section#menu-mobile {
 
     padding: var(--space-small);
+    width: auto;
+    text-align: center;
 
     >div {
         backdrop-filter: blur(10px);
