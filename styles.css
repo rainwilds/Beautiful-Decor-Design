@@ -441,13 +441,11 @@
 
     @layer components {
 
-        button+a {
+        a:has(> button.secondary) {
 
-            &.secondary {
-                background-color: transparent;
-                color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
-                border-color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
-            }
+            background-color: transparent;
+            color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
+            border-color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
 
         }
 
@@ -489,11 +487,11 @@
         .cards {
 
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: var(--space-medium);
 
             &.left {
-                grid-template-columns: minmax(350px, 1fr) 2fr;
+                grid-template-columns: minmax(300px, 1fr) 2fr;
 
                 @media (max-width: 768px) {
 
@@ -509,7 +507,7 @@
             }
 
             &.right {
-                grid-template-columns: 2fr minmax(350px, 1fr);
+                grid-template-columns: 2fr minmax(300px, 1fr);
             }
 
             &.left,
@@ -845,7 +843,7 @@
             &:nth-of-type(1) {
                 grid-area: 1 / 2 / 2 / -2;
                 display: grid;
-                grid-template-columns: repeat(2, max-content) fit-content(33ch) minmax(150px, 350px);
+                grid-template-columns: repeat(2, max-content) fit-content(33ch) minmax(150px, 300px);
                 gap: var(--space-medium);
                 height: min-content;
                 justify-content: space-between;
