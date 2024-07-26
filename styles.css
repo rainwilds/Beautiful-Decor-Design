@@ -161,6 +161,15 @@
 
         scroll-behavior: smooth;
 
+        :popover-open {
+            background-color: gray;
+        }
+
+        ::backdrop {
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+        }
+
         a:any-link {
 
             color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
