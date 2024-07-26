@@ -663,7 +663,7 @@
                 @media (max-width: 768px) {
 
                     flex-direction: column;
-    
+
                 }
             }
 
@@ -676,13 +676,14 @@
             @media (max-width: 768px) {
 
                 grid-area: 1 / 1 / 2 / -1 !important;
-                padding: var(--space-large);
+                padding: var(--space-tiny);
 
             }
 
             @media (max-width: 980px) {
 
                 grid-area: 1 / 2 / 2 / -2;
+                padding: var(--space-large);
 
             }
 
@@ -845,6 +846,11 @@
         }
 
         section {
+
+            >div>h3:nth-of-type(2) {
+                margin-top: var(--space-medium);
+            }
+
             &:nth-of-type(1) {
                 grid-area: 1 / 2 / 2 / -2;
                 display: grid;
@@ -860,10 +866,6 @@
                 ul li {
                     display: flex;
                     flex-direction: column;
-                }
-
-                >div:nth-child(1)>h3:nth-child(3) {
-                    margin-top: var(--space-medium);
                 }
 
                 >div:nth-child(3)>h3:nth-child(2) {
