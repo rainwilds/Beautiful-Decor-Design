@@ -740,13 +740,19 @@ header {
         max-width: 50vw;
         justify-self: center;
 
-        h1 {
+        >h1 {
             text-shadow: var(--color-static-light) 10px 10px 3rem;
             line-height: 0.8;
+
+            >span {
+                font-family: var(--font-2-family);
+                font-size: var(--font-2-size-large);
+                display: block;
+            }
         }
 
         p {
-            padding-bottom: var(--space-medium);
+            padding-bottom: var(--space-medium) 0;
         }
 
         div {
