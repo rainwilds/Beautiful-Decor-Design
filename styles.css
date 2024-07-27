@@ -543,7 +543,7 @@
                     border-color: var(--color-static-light-1);
                     background-color: var(--color-static-light-1);
                     text-align: center;
-                    justify-self: end;
+                    justify-self: center;
                 }
             }
 
