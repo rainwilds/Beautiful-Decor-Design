@@ -222,9 +222,9 @@
         }
 
         button {
-            width: 100%;
             font-size: var(--font-2-size-large);
             background-image: var(--background-noise);
+            padding: var(--space-tiny) var(--space-medium);
 
             &:hover {
                 background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
