@@ -529,6 +529,7 @@
             box-shadow: none;
             backdrop-filter: none;
             margin-top: var(--space-small);
+            grid-area: initial;
 
             form {
                 gap: 0;
@@ -539,6 +540,9 @@
                     box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
                     border-color: var(--color-static-light-1);
                     background-color: var(--color-static-light-1);
+                    text-align: center;
+                    display: flex;
+                    justify-self: flex-end;
                 }
             }
 
