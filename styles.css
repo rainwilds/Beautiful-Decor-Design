@@ -721,6 +721,11 @@ header {
         filter: blur(5px);
         mix-blend-mode: plus-lighter;
         overflow: hidden;
+
+        @media (max-width: 768px) {
+            display: none;
+
+        }
     }
 
     >hgroup {
