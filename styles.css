@@ -526,6 +526,9 @@
 
             width: 100%;
             padding: var(--space-small);
+            background: none;
+            box-shadow: none;
+            backdrop-filter: none;
 
             form {
                 gap: 0;
