@@ -555,8 +555,7 @@
                     border-color: var(--color-static-light-1);
                     background-color: var(--color-static-light-1);
                     text-align: center;
-                    display: flex;
-                    justify-self: flex-end;
+                    justify-self: end;
                 }
             }
 
