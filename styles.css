@@ -899,6 +899,7 @@ main {
 
     @media (max-width: 1200px) {
 
+        row-gap: var(--space-medium);
 
         >section#services>a>hgroup>img {
             aspect-ratio: 3 / 2;
