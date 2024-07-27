@@ -232,6 +232,21 @@
             }
         }
 
+        select {
+            appearance: none;
+            display: grid;
+            grid-template-areas: "select"
+        }
+
+        select::after {
+            content: "";
+            width: 0.8em;
+            height: 0.5em;
+            background-color: black;
+            clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+            grid-area: select;
+          }
+
         input:user-valid,
         select:user-valid,
         textarea:user-valid {
@@ -725,10 +740,6 @@ header {
         mix-blend-mode: plus-lighter;
         overflow: hidden;
 
-        @media (max-width: 768px) {
-            display: none;
-
-        }
     }
 
     >hgroup {
