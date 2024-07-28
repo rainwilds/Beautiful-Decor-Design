@@ -410,6 +410,18 @@
             column-gap: var(--space-medium);
             background-color: light-dark(var(--color-background-light), var(--color-background-dark));
 
+            @media (max-width: 1200px) and (orientation: landscape) {
+
+                & {
+                    grid-template: min-content / 0 repeat(6, 1fr) 0;
+                    grid-template-areas:
+                        "gutter-left header header header header header header gutter-right"
+                        "gutter-left main main main main main main gutter-right"
+                        "gutter-left footer footer footer footer footer footer gutter-right";
+                }
+
+            }
+
             @media (max-width: 1200px) {
 
                 & {
@@ -419,18 +431,6 @@
                         "gutter-left main main main main main main gutter-right"
                         "gutter-left footer footer footer footer footer footer gutter-right";
                     column-gap: var(--space-small);
-                }
-
-            }
-
-            @media (max-width: 1200px) and (orientation: landscape) {
-
-                & {
-                    grid-template: min-content / 0 repeat(6, 1fr) 0;
-                    grid-template-areas:
-                        "gutter-left header header header header header header gutter-right"
-                        "gutter-left main main main main main main gutter-right"
-                        "gutter-left footer footer footer footer footer footer gutter-right";
                 }
 
             }
@@ -751,7 +751,7 @@ header {
 
         >h1 {
             text-shadow: var(--color-static-light) 10px 10px 3rem;
-            font-size: clamp(4.5rem,13vh,17vh);
+            font-size: clamp(4.5rem, 13vh, 17vh);
 
             >span {
                 font-family: var(--font-2-family);
