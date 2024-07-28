@@ -739,6 +739,7 @@ header {
 
         >h1 {
             text-shadow: var(--color-static-light) 10px 10px 3rem;
+            font-size: clamp(4.5rem,13vh,17vh);
 
             >span {
                 font-family: var(--font-2-family);
