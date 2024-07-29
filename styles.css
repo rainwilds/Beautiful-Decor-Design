@@ -744,6 +744,20 @@ header {
         visibility: hidden;
         animation: 30s linear 2s infinite alternate text-scroll;
 
+        @keyframes text-scroll {
+            0% {
+                visibility: visible;
+                opacity: 0;
+                transform: translateX(-20vw);
+            }
+            20% {
+                opacity: 0.1;
+            }
+            100% {
+                transform: translateX(5vw);
+            }
+        }
+
         @media (max-width: 768px) {
 
             animation: 10s linear 2s infinite alternate text-scroll;
@@ -1099,19 +1113,7 @@ section#menu-mobile {
 
 
 
-@keyframes text-scroll {
-    0% {
-        visibility: visible;
-        opacity: 0;
-        transform: translateX(-20vw);
-    }
-    20% {
-        opacity: 0.2;
-    }
-    100% {
-        transform: translateX(5vw);
-    }
-}
+
 
 
 
