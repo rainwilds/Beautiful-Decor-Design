@@ -1097,7 +1097,7 @@ section#menu-mobile {
     0% {
         visibility: visible;
         opacity: 0;
-        transform: translateX(-15vw);
+        transform: translateX(-20vw);
     }
     100% {
         opacity: 0.2;
