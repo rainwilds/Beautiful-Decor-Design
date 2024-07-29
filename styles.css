@@ -733,13 +733,14 @@ header {
         z-index: 2;
         font-family: var(--font-1-family);
         font-size: clamp(100vh, 100vh, 100vw);
+        line-height: 1.8;
         opacity: 0.05;
         color: var(--color-accent-light-secondary);
         filter: blur(5px);
         mix-blend-mode: plus-lighter;
         overflow: hidden;
         position: relative;
-        animation: textScroll 30s infinite;
+        animation: text-scroll 30s infinite alternate;
 
     }
 
@@ -1089,7 +1090,7 @@ section#menu-mobile {
 
 
 
-@keyframes textScroll {
+/* @keyframes textScroll {
     from {
         left: 0;
     }
@@ -1097,11 +1098,18 @@ section#menu-mobile {
     to {
         left: 10vw;
     }
+} */
+
+
+
+@keyframes text-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10vw);
+    }
 }
-
-
-
-
 
 
 
