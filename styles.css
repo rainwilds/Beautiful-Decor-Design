@@ -1100,7 +1100,7 @@ section#menu-mobile {
         transform: translateX(-15vw);
     }
     100% {
-        opacity: 1;
+        opacity: 0.3;
         transform: translateX(5vw);
     }
 }
