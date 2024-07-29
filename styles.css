@@ -703,6 +703,7 @@ header {
     grid-template: subgrid / subgrid;
     grid-area: header / gutter-left / header / gutter-right;
     color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
+    overflow: hidden;
 
     >div {
         grid-area: header / gutter-left / header / gutter-right;
@@ -1090,21 +1091,10 @@ section#menu-mobile {
 
 
 
-/* @keyframes textScroll {
-    from {
-        left: 0;
-    }
-
-    to {
-        left: 10vw;
-    }
-} */
-
-
 
 @keyframes text-scroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(-5vw);
     }
     100% {
         transform: translateX(10vw);
