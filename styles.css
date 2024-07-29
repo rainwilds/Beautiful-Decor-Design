@@ -739,7 +739,6 @@ header {
         color: var(--color-accent-light-secondary);
         filter: blur(5px);
         mix-blend-mode: plus-lighter;
-        overflow: hidden;
         position: relative;
         visibility: hidden;
         animation: 30s linear 3s infinite alternate text-scroll;
@@ -1100,7 +1099,7 @@ section#menu-mobile {
         transform: translateX(-15vw);
     }
     100% {
-        opacity: 0.3;
+        opacity: 0.2;
         transform: translateX(5vw);
     }
 }
