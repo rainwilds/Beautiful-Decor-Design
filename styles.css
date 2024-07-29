@@ -744,6 +744,12 @@ header {
         visibility: hidden;
         animation: 30s linear 2s infinite alternate text-scroll;
 
+        @media (max-width: 768px) {
+
+            animation: 5s linear 2s infinite alternate text-scroll;
+
+        }
+
     }
 
     >hgroup {
@@ -1099,8 +1105,10 @@ section#menu-mobile {
         opacity: 0;
         transform: translateX(-20vw);
     }
-    100% {
+    20% {
         opacity: 0.2;
+    }
+    100% {
         transform: translateX(5vw);
     }
 }
