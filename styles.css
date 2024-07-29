@@ -738,6 +738,18 @@ header {
         filter: blur(5px);
         mix-blend-mode: plus-lighter;
         overflow: hidden;
+        position: relative;
+        animation: text-scroll 30s infinite;
+
+        @keyframes text-scroll {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 10vw;
+            }
+        }
 
     }
 
