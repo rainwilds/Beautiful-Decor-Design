@@ -739,9 +739,9 @@ header {
         mix-blend-mode: plus-lighter;
         overflow: hidden;
         position: relative;
-        animation: text-scroll 30s infinite;
+        animation: textScroll 30s infinite;
 
-        @keyframes text-scroll {
+        @keyframes textScroll {
             from {
                 left: 0;
             }
