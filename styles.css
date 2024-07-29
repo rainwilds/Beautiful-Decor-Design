@@ -741,7 +741,8 @@ header {
         mix-blend-mode: plus-lighter;
         overflow: hidden;
         position: relative;
-        animation: 30s linear 5s infinite alternate text-scroll;
+        visibility: hidden;
+        animation: 30s linear 1s infinite alternate text-scroll;
 
     }
 
@@ -1094,6 +1095,7 @@ section#menu-mobile {
 
 @keyframes text-scroll {
     0% {
+        visibility: visible;
         transform: translateX(-10vw);
     }
     100% {
