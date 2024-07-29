@@ -725,6 +725,7 @@ header {
 
         img {
             object-fit: cover;
+            object-position: 100% 75%;
         }
 
     }
