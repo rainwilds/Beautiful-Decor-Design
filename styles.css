@@ -741,16 +741,6 @@ header {
         position: relative;
         animation: textScroll 30s infinite;
 
-        @keyframes textScroll {
-            from {
-                left: 0;
-            }
-
-            to {
-                left: 10vw;
-            }
-        }
-
     }
 
     >hgroup {
@@ -1099,7 +1089,15 @@ section#menu-mobile {
 
 
 
+@keyframes textScroll {
+    from {
+        left: 0;
+    }
 
+    to {
+        left: 10vw;
+    }
+}
 
 
 
