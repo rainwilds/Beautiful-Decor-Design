@@ -728,7 +728,7 @@ header {
 
     }
 
-    >span {
+    >span#text-overlay {
         grid-area: header / gutter-left / header / gutter-right;
         z-index: 2;
         font-family: var(--font-1-family);
