@@ -741,7 +741,7 @@ header {
         mix-blend-mode: plus-lighter;
         overflow: hidden;
         position: relative;
-        animation: text-scroll 30s infinite alternate;
+        animation: 30s linear 2s infinite alternate text-scroll;
 
     }
 
