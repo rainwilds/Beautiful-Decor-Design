@@ -746,7 +746,7 @@ header {
 
         @media (max-width: 768px) {
 
-            animation: 5s linear 2s infinite alternate text-scroll;
+            animation: 10s linear 2s infinite alternate text-scroll;
 
         }
 
