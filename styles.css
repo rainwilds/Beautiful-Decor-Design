@@ -766,7 +766,7 @@ header {
             line-height: 0.7;
 
             &:not(:has(>span)) {
-                line-height: 0.2;
+                line-height: 0.1;
             }
 
             >span {
