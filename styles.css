@@ -765,7 +765,7 @@ header {
             font-size: clamp(4.5rem, 13vh, 17vh);
             line-height: 0.7;
 
-            &::not(:has(>span)) {
+            &:not(:has(>span)) {
                 line-height: 0.2;
             }
 
