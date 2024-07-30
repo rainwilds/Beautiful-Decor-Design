@@ -774,6 +774,10 @@ header {
             }
         }
 
+        >h1:has(span) {
+            line-height: 0.2;
+        }
+
         p {
             padding: var(--space-medium) 0;
         }
