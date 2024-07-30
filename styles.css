@@ -765,6 +765,10 @@ header {
             font-size: clamp(4.5rem, 13vh, 17vh);
             line-height: 0.7;
 
+            &:has(>span) {
+                line-height: 0.2;
+            }
+
             >span {
                 font-family: var(--font-2-family);
                 font-size: var(--font-2-size-large);
@@ -774,9 +778,7 @@ header {
             }
         }
 
-        >h1:has(span) {
-            line-height: 0.2;
-        }
+
 
         p {
             padding: var(--space-medium) 0;
