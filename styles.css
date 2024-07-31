@@ -878,6 +878,7 @@ main {
     >section#gallery {
         display: grid;
         grid-auto-flow: column;
+        animation: 10s linear infinite alternate gallery-scroll;
     }
 
     >section#message {
@@ -1141,6 +1142,17 @@ section#menu-mobile {
         }
     }
 
+}
+
+
+@keyframes gallery-scroll {
+    0% {
+        transform: translateX(-20vw);
+    }
+
+    100% {
+        transform: translateX(20vw);
+    }
 }
 
 
