@@ -742,7 +742,7 @@ header {
         mix-blend-mode: plus-lighter;
         position: relative;
         visibility: hidden;
-        animation: 37s linear 2s infinite alternate text-scroll;
+        animation: 37s linear 2.5s infinite alternate text-scroll;
 
         @media (max-width: 768px) {
 
