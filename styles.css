@@ -875,9 +875,9 @@ main {
         }
     }
 
-    >section:has(>img) {
+    >section#gallery {
         display: grid;
-        grid-template: 300px / auto;
+        grid-auto-flow: column;
     }
 
     >section#message {
