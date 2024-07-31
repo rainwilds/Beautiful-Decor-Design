@@ -875,6 +875,11 @@ main {
         }
     }
 
+    >section:has(>img) {
+        display: grid;
+        grid-template: 300px / auto;
+    }
+
     >section#message {
 
         >hgroup {
