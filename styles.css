@@ -602,7 +602,10 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: var(--space-medium);
 
-        &:not(.left):not(.right) {
+        grid-column-start: 2;
+        grid-column-end: -2;
+
+        /* &:not(.left):not(.right) {
 
             padding: 0 var(--space-large);
 
@@ -610,11 +613,11 @@
 
                 & {
 
-                    padding: 0;
+                    padding: var(--space-small);
 
                 }
             }
-        }
+        } */
 
         &.left {
             grid-template-columns: minmax(300px, 1fr) 2fr;
