@@ -602,7 +602,7 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: var(--space-medium);
 
-        &:has(:not(.right):not(.left)) {
+        &:has(:not(.right)):has:(not(.left)) {
 
             padding: 0 var(--space-large);
 
