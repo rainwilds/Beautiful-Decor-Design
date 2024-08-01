@@ -846,7 +846,7 @@ main {
             margin-bottom: var(--space-large);
         }
 
-        &:not(:nth-last-of-type(1), :nth-last-of-type(2)) {
+        &:not(:nth-last-of-type(1), :nth-last-of-type(2), :nth-last-of-type(3)) {
             grid-row: initial;
             grid-column-start: 2;
             grid-column-end: -2;
@@ -866,7 +866,7 @@ main {
             }
         }
 
-        &:nth-last-of-type(2) {
+        &:nth-last-of-type(2), &:nth-last-of-type(3) {
             grid-column-start: 1;
             grid-column-end: -1;
         }
@@ -888,7 +888,7 @@ main {
             padding: var(--space-tiny);
 
 
-            >img {
+            >picture {
                 border-radius: var(--border-radius-small);
             }
         }
