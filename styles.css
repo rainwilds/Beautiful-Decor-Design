@@ -1092,7 +1092,7 @@ footer {
     }
 }
 
-section#menu-mobile {
+section[id^="gallery-item-"] {
 
     padding: var(--space-small);
     width: auto;
