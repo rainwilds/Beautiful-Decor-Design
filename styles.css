@@ -221,7 +221,7 @@
             background-image: var(--background-pattern-gradient);
         }
 
-        button {
+        button:not(:has(>img)) {
             font-size: var(--font-2-size-large);
             background-image: var(--background-noise);
             padding: var(--space-tiny) var(--space-medium);
@@ -1153,11 +1153,11 @@ section#menu-mobile {
 
 @keyframes gallery-scroll {
     0% {
-        transform: translateX(calc(-2500px - 100vw) / 2)px;
+        transform: translateX(calc(2500px - 100vw) / 2) * -1px;
     }
 
     100% {
-        transform: translateX(calc(2500px - 100vw) / 2)px;
+        transform: translateX(calc(2500px - 100vw) / 2);
     }
 }
 
