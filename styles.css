@@ -1197,8 +1197,7 @@ section[id^="gallery-item-"] {
     }
 
     100% {
-        transform: translateX(100vw);
-        /* transform: translateX(calc( ((100vw / 7) * 10) - 100vw) ); */
+        transform: translateX(calc( ((((100vw / 7) * 10) - 100vw) / 2) * -1) );
     }
 }
 
