@@ -1136,7 +1136,7 @@ section#menu-mobile {
         0% {
             visibility: visible;
             opacity: 0;
-            transform: translateX(-20vw);
+            transform: translateX(calc(-2500px - 100vw) / 2);
         }
 
         20% {
@@ -1144,7 +1144,7 @@ section#menu-mobile {
         }
 
         100% {
-            transform: translateX(5vw);
+            transform: translateX(calc(2500px - 100vw) / 2);
         }
     }
 
