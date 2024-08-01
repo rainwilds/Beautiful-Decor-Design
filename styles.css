@@ -1111,6 +1111,7 @@ section[id^="gallery-item-"] {
         border-color: var(--color-static-light-1);
         background-color: var(--color-static-light-1);
         height: calc(100vh - (var(--space-small)*2));
+        display: grid;
 
         >button {
             grid-area: 1/1/2/-1;
@@ -1126,6 +1127,7 @@ section[id^="gallery-item-"] {
             margin-top: 0;
             grid-area: 1/1/2/-1;
             border-radius: var(--border-radius-small);
+            object-fit: cover;
         }
     }
 }
