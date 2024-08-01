@@ -601,9 +601,11 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: var(--space-medium);
-        padding: 0 var(--space-large);
 
-        &:has(:not(.right, .left)) {
+        &:has(:not(.right):not(.left)) {
+
+            padding: 0 var(--space-large);
+
             @media (max-width: 980px) {
 
                 & {
