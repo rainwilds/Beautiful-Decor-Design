@@ -835,6 +835,7 @@ main {
     border-bottom: dashed var(--border-size-small) light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary));
     border-top: dashed var(--border-size-small) light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary));
     margin: var(--space-small) 0;
+    overflow-x: hidden;
 
     >section {
         &:first-child {
@@ -878,7 +879,12 @@ main {
     >section#gallery {
         display: grid;
         grid-auto-flow: column;
-        animation: 10s linear infinite alternate gallery-scroll;
+        /* grid-auto-columns: calc(100vw / 10)px; */
+        animation: 20s linear infinite alternate gallery-scroll;
+
+        >img {
+            min-width: 250px;
+        }
     }
 
     >section#message {
