@@ -884,10 +884,14 @@ main {
         gap: var(--space-tiny);
         padding: 0 var(--space-tiny);
 
-        img {
-            /* min-width: 250px; */
-            border-radius: var(--border-radius-small);
+        >button {
+            padding: var(--space-tiny);
+
+            >img {
+                border-radius: var(--border-radius-small);
+            }
         }
+
     }
 
     >section#message {
