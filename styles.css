@@ -603,6 +603,17 @@
         gap: var(--space-medium);
         padding: 0 var(--space-large);
 
+        &:has(:not(.right, .left)) {
+            @media (max-width: 980px) {
+
+                & {
+
+                    padding: 0 var(--space-medium);
+
+                }
+            }
+        }
+
         &.left {
             grid-template-columns: minmax(300px, 1fr) 2fr;
 
@@ -615,16 +626,6 @@
 
                 }
             }
-
-            @media (max-width: 980px) {
-
-                & {
-
-                    padding: 0 var(--space-medium);
-
-                }
-            }
-
 
         }
 
@@ -695,6 +696,8 @@
     .comming-soon {
         filter: grayscale(1) opacity(0.5);
     }
+
+
 
 }
 
