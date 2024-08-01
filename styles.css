@@ -887,6 +887,7 @@ main {
         >button {
             padding: var(--space-tiny);
 
+
             >img {
                 border-radius: var(--border-radius-small);
             }
@@ -1092,11 +1093,13 @@ footer {
     }
 }
 
+
+
+
 section[id^="gallery-item-"] {
 
     padding: var(--space-small);
     width: auto;
-    text-align: center;
 
     >div {
         backdrop-filter: blur(10px);
@@ -1108,6 +1111,22 @@ section[id^="gallery-item-"] {
         border-color: var(--color-static-light-1);
         background-color: var(--color-static-light-1);
         height: calc(100vh - (var(--space-small)*2));
+
+        >button {
+            grid-area: 1/1/2/-1;
+            height: fit-content;
+            width: fit-content;
+            margin: var(--space-small);
+            display: flex;
+            justify-self: flex-end;
+
+        }
+
+        >img {
+            margin-top: 0;
+            grid-area: 1/1/2/-1;
+            border-radius: var(--border-radius-small);
+        }
     }
 }
 
