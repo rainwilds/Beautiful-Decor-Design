@@ -221,7 +221,7 @@
             background-image: var(--background-pattern-gradient);
         }
 
-        button:not(:has(>img)) {
+        button {
             font-size: var(--font-2-size-large);
             background-image: var(--background-noise);
             padding: var(--space-tiny) var(--space-medium);
@@ -879,11 +879,14 @@ main {
     >section#gallery {
         display: grid;
         grid-auto-flow: column;
-        /* grid-auto-columns: calc(100vw / 10)px; */
+        grid-auto-columns: calc(100vw / 10);
         animation: 20s linear infinite alternate gallery-scroll;
+        gap: var(--space-tiny);
+        padding: 0 var(--space-tiny);
 
-        >img {
-            min-width: 250px;
+        img {
+            /* min-width: 250px; */
+            border-radius: var(--border-radius-small);
         }
     }
 
@@ -1100,6 +1103,7 @@ section#menu-mobile {
         border: solid var(--border-size-small);
         border-color: var(--color-static-light-1);
         background-color: var(--color-static-light-1);
+        height: calc(100vh - (var(--space-small)*2));
     }
 }
 
