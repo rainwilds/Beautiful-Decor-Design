@@ -1103,7 +1103,7 @@ section[id^="gallery-item-"] {
 
     >div {
         backdrop-filter: blur(10px);
-        padding: var(--space-small);
+        /* padding: var(--space-small); */
         border-radius: var(--border-radius-small);
         background-image: var(--background-noise);
         box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
@@ -1128,6 +1128,13 @@ section[id^="gallery-item-"] {
             grid-area: 1/1/2/-1;
             border-radius: var(--border-radius-small);
             object-fit: cover;
+
+            @media (max-width: 980px) { 
+
+                & {
+                    object-fit: contain;
+                }
+            }
         }
     }
 }
