@@ -879,7 +879,7 @@ main {
     >section#gallery {
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: calc(100vw / 10);
+        grid-auto-columns: calc(100vw / 7);
         animation: 20s linear infinite alternate gallery-scroll;
         gap: var(--space-tiny);
         padding: 0 var(--space-tiny);
