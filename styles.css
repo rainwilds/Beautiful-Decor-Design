@@ -1193,11 +1193,11 @@ section[id^="gallery-item-"] {
 
 @keyframes gallery-scroll {
     0% {
-        transform: translateX((calc((2500px - 100vw) / 2) * -1px));
+        transform: translateX((calc((((100vw / 7)*10) - 100vw) / 2) * -1px));
     }
 
     100% {
-        transform: translateX(calc((2500px - 100vw) / 2));
+        transform: translateX(calc((((100vw / 7)*10) - 100vw) / 2));
     }
 }
 
