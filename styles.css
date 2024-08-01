@@ -896,6 +896,14 @@ main {
         @media (max-width: 980px) {
 
             & {
+                grid-auto-columns: calc(100vw / 2) !important;
+            }
+
+        }
+
+        @media (max-width: 980px) {
+
+            & {
                 grid-auto-columns: calc(100vw / 4);
             }
 
@@ -1195,6 +1203,21 @@ section[id^="gallery-item-"] {
 
         100% {
             transform: translateX(5vw);
+        }
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    @keyframes gallery-scroll {
+        0% {
+            transform: translateX(calc( ((((100vw / 2) * 10) - 100vw) + (11 * var(--space-tiny)))  * -1) ) !important;
+        }
+    
+        100% {
+            transform: translateX(0);
         }
     }
 
