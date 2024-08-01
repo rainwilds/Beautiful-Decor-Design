@@ -1144,6 +1144,7 @@ section[id^="gallery-item-"] {
 
         >picture {
             grid-area: 1/1/2/-1;
+            max-height: calc(100vh - (4*var(--space-small)));
 
             >img {
                 margin-top: 0;
