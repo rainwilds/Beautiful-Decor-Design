@@ -661,10 +661,6 @@
 
         }
 
-
-
-
-
         >hgroup {
 
             display: flex;
@@ -682,7 +678,6 @@
             p {
                 padding-bottom: var(--space-medium);
             }
-
 
             /* &:hover { PLACEHOLDER
                 background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-dark-primary));
