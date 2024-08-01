@@ -893,6 +893,16 @@ main {
             }
         }
 
+        @media (max-width: 980px) {
+
+            & {
+                grid-auto-columns: calc(100vw / 4);
+            }
+
+        }
+
+        
+
     }
 
     >section#message {
@@ -1190,16 +1200,36 @@ section[id^="gallery-item-"] {
 
 }
 
+@media (max-width: 980px) {
 
-@keyframes gallery-scroll {
-    0% {
-        transform: translateX(calc( ((((100vw / 7) * 10) - 100vw) + (11 * var(--space-tiny)))  * -1) );
+    @keyframes gallery-scroll {
+        0% {
+            transform: translateX(calc( ((((100vw / 4) * 10) - 100vw) + (11 * var(--space-tiny)))  * -1) );
+        }
+    
+        100% {
+            transform: translateX(0);
+        }
     }
 
-    100% {
-        transform: translateX(0);
-    }
 }
+
+@media (min-width: 981px) {
+
+    @keyframes gallery-scroll {
+        0% {
+            transform: translateX(calc( ((((100vw / 7) * 10) - 100vw) + (11 * var(--space-tiny)))  * -1) );
+        }
+    
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+}
+
+
+
 
 
 
