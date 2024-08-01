@@ -601,6 +601,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: var(--space-medium);
+        padding: 0 var(--space-large);
 
         &.left {
             grid-template-columns: minmax(300px, 1fr) 2fr;
@@ -611,6 +612,15 @@
 
                     display: flex;
                     flex-direction: column-reverse;
+
+                }
+            }
+
+            @media (max-width: 980px) {
+
+                & {
+
+                    padding: 0 var(--space-medium);
 
                 }
             }
