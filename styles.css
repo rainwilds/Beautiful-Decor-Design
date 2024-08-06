@@ -703,7 +703,7 @@
             height: 100%;
 
             p {
-                padding-bottom: var(--space-medium);
+                margin-bottom: var(--space-medium);
             }
 
             ul {
@@ -723,7 +723,9 @@
                     border-radius: var(--border-radius-small);
                     background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
 
-
+                    >p {
+                        padding: var(--space-small);
+                    }
 
                     >div {
                         background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark-primary));
