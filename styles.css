@@ -619,6 +619,10 @@
             }
         } */
 
+        &.header {
+            grid-template: auto / 1fr;
+        }
+
         &.left {
             grid-template-columns: minmax(300px, 1fr) 2fr;
 
@@ -682,6 +686,8 @@
             ul {
                 list-style: none;
                 width: fit-content;
+                display: flex;
+                column-gap: var(--space-small);
 
                 >li {
                     display: grid;
