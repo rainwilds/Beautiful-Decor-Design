@@ -635,7 +635,7 @@
                 background-image: var(--background-noise);
                 box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
                 border-color: var(--color-static-light-1);
-                background-color: var(--color-static-light-1);
+                background-color: var(--color-static-dark-1);
                 padding: var(--space-large);
                 max-width: 60vw;
                 height: fit-content;
