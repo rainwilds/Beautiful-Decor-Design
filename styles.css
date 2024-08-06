@@ -621,6 +621,26 @@
 
         &.header {
             grid-template: auto / 1fr;
+
+            >picture {
+                aspect-ratio: 2 / 1;
+            }
+
+            >hgroup {
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                padding: var(--space-tiny) var(--space-medium);
+                background-image: var(--background-noise);
+                box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
+                border-color: var(--color-static-light-1);
+                background-color: var(--color-static-light-1);
+                padding: var(--space-large);
+                max-width: 60vw;
+                height: fit-content;
+                display: flex;
+                justify-self: center;
+                align-self: center;
+            }
         }
 
         &.left {
@@ -670,6 +690,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            align-items: center;
             padding: var(--space-medium);
             text-align: center;
             border: solid var(--border-size-small);
