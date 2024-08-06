@@ -710,7 +710,9 @@
                 list-style: none;
                 width: fit-content;
                 display: flex;
-                column-gap: var(--space-small);
+                flex-wrap: wrap;
+                gap: var(--space-small);
+
 
                 >li {
                     display: grid;
@@ -721,7 +723,7 @@
                     border-radius: var(--border-radius-small);
                     background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
 
-                    
+
 
                     >div {
                         background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark-primary));
