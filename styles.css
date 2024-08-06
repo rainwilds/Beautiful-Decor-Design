@@ -719,6 +719,9 @@
                     border: solid 1px;
                     border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
                     border-radius: var(--border-radius-small);
+                    background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
+
+                    
 
                     >div {
                         background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark-primary));
