@@ -623,10 +623,12 @@
             grid-template: auto / 1fr;
 
             >picture {
+                grid-area: 1/1/2/-1;
                 aspect-ratio: 2 / 1;
             }
 
             >hgroup {
+                grid-area: 1/1/2/-1;
                 -webkit-backdrop-filter: blur(10px);
                 backdrop-filter: blur(10px);
                 padding: var(--space-tiny) var(--space-medium);
