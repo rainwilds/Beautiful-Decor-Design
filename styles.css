@@ -643,10 +643,6 @@
                 display: flex;
                 justify-self: center;
                 align-self: center;
-
-                >h2+p {
-                    margin-bottom: var(--space-medium);
-                }
             }
         }
 
@@ -712,7 +708,9 @@
                 margin-bottom: var(--space-medium);
             }
 
-
+            :is(h1, h2, h3)+p {
+                margin-bottom: var(--space-medium);
+            }
 
 
             ul {
