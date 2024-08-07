@@ -621,6 +621,7 @@
 
         &.header {
             grid-template: auto / 1fr;
+            z-index: 1;
 
             >picture {
                 grid-area: 1/1/2/-1;
