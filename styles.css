@@ -643,7 +643,15 @@
                 display: flex;
                 justify-self: center;
                 align-self: center;
+
+                @media (min-width: 1366px) {
+
+                    max-width: 65vw;
+        
+                }
             }
+
+
         }
 
         &.left {
