@@ -725,6 +725,7 @@
 
                     >p {
                         padding: var(--space-small);
+                        margin: 0;
                     }
 
                     >div {
