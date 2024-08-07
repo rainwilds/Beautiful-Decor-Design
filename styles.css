@@ -638,7 +638,6 @@
                 border-color: var(--color-static-light-1);
                 background-color: var(--color-static-light-1);
                 padding: var(--space-large);
-                max-width: 60vw;
                 height: fit-content;
                 display: flex;
                 justify-self: center;
