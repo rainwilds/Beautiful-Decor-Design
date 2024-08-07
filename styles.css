@@ -650,6 +650,14 @@
                     }
 
                 }
+
+                @media (min-width: 2460px) {
+
+                    & {
+                        max-width: 50vw !important;
+                    }
+
+                }
             }
 
 
