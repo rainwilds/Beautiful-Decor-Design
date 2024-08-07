@@ -645,8 +645,10 @@
 
                 @media (min-width: 1366px) {
 
-                    max-width: 65vw;
-        
+                    & {
+                        max-width: 60vw;
+                    }
+
                 }
             }
 
@@ -710,7 +712,9 @@
             /* mask-image: linear-gradient(to bottom, #000, transparent 95%); */
             height: 100%;
 
-            h1, h2, h3 {
+            h1,
+            h2,
+            h3 {
                 margin-bottom: var(--space-small);
             }
 
