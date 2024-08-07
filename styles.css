@@ -703,7 +703,11 @@
             /* mask-image: linear-gradient(to bottom, #000, transparent 95%); */
             height: 100%;
 
-            p {
+            p + h2 {
+                margin-bottom: var(--space-medium);
+            }
+
+            p:not(:last-of-type) {
                 margin-bottom: var(--space-medium);
             }
 
