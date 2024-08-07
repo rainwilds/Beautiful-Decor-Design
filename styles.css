@@ -703,9 +703,12 @@
             /* mask-image: linear-gradient(to bottom, #000, transparent 95%); */
             height: 100%;
 
+            h1, h2, h3 {
+                margin-bottom: var(--space-small);
+            }
 
             p:not(:last-of-type) {
-                margin-bottom: var(--space-medium);
+                margin-bottom: var(--space-small);
             }
 
             :is(h1, h2, h3)+p {
