@@ -619,25 +619,6 @@
             }
         } */
 
-        &.text-align-left {
-            text-align: left;
-        }
-
-        &.text-align-right {
-            text-align: right;
-        }
-
-        &.text-align-left,
-        &.text-align-right {
-
-            border: none;
-
-            p {
-                font-size: var(--font-2-size-large);
-                line-height: 1.7;
-            }
-        }
-
         &.header {
             grid-template: auto / 1fr;
             z-index: 1;
@@ -755,6 +736,25 @@
             background-color: transparent;
             /* mask-image: linear-gradient(to bottom, #000, transparent 95%); */
             height: 100%;
+
+            &.text-align-left {
+                text-align: left;
+            }
+    
+            &.text-align-right {
+                text-align: right;
+            }
+    
+            &.text-align-left,
+            &.text-align-right {
+    
+                border: none;
+    
+                p {
+                    font-size: var(--font-2-size-large);
+                    line-height: 1.7;
+                }
+            }
 
             h1,
             h2,
