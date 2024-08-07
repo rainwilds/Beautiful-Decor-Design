@@ -740,19 +740,29 @@
             &.text-align-left {
                 text-align: left;
             }
-    
+
             &.text-align-right {
                 text-align: right;
             }
-    
+
             &.text-align-left,
             &.text-align-right {
-    
+
                 border: none;
-    
+
                 p {
                     font-size: var(--font-2-size-large);
                     line-height: 1.7;
+                    margin-bottom: 0;
+                }
+
+                @media (max-width: 980px) {
+
+                    & {
+
+                        text-align: center;
+
+                    }
                 }
             }
 
