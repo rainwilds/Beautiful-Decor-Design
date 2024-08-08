@@ -708,6 +708,24 @@
                 background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
                 padding: var(--space-large);
                 border-radius: var(--border-radius-medium);
+
+                @media (max-width: 768px) {
+
+                    & {
+
+                        padding: var(--space-small) !important;
+
+                    }
+                }
+
+                @media (max-width: 980px) {
+
+                    & {
+
+                        padding: var(--space-medium);
+
+                    }
+                }
             }
 
             @media (max-width: 768px) {
