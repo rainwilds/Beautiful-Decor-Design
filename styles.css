@@ -957,6 +957,7 @@ header {
 
         p {
             padding: var(--space-medium) 0;
+            text-shadow: var(--color-accent-light-primary) 1px 1px 5rem;
         }
 
         div {
