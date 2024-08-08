@@ -313,10 +313,13 @@
         img,
         picture {
 
-            @media (prefers-color-scheme: dark) & {
+            @media (prefers-color-scheme: dark) {
 
-                filter: opacity: (0.9);
+                & {
 
+                    filter: opacity(0.9) saturate(0.8);
+
+                }
             }
         }
 
@@ -796,7 +799,7 @@
             h1,
             h2,
             h3 {
-                margin-bottom: var(--space-small);
+                margin-bottom: var(--space-tiny);
             }
 
             p:not(:last-of-type) {
@@ -848,16 +851,6 @@
         img {
             border-radius: var(--border-radius-medium);
             object-fit: cover;
-
-            @media (prefers-color-scheme: dark) {
-
-                & {
-
-                    filter: opacity(0.9) saturate(0.8);
-
-                }
-            }
-
         }
 
     }
