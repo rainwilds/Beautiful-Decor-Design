@@ -849,6 +849,15 @@
             border-radius: var(--border-radius-medium);
             object-fit: cover;
 
+            @media (prefers-color-scheme: dark) {
+
+                & {
+
+                    filter: opacity(0.9) saturate(0.8);
+
+                }
+            }
+
         }
 
     }
