@@ -800,13 +800,13 @@
                     background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
 
                     >p {
-                        padding: var(--space-small);
+                        padding: var(--space-tiny);
                         margin: 0;
                     }
 
                     >div {
                         background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark-primary));
-                        padding: var(--space-small);
+                        padding: var(--space-tiny);
                         border-radius: var(--border-radius-small);
                     }
                 }
