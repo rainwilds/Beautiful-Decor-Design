@@ -62,8 +62,8 @@
         /* -- space -- */
 
         --space-tiny: 0.5rem;
-        --space-small: 1rem;
-        --space-medium: 2rem;
+        --space-small: 0.9rem;
+        --space-medium: 1.5rem;
         --space-large: 3.5rem;
         --space-huge: 5rem;
 
