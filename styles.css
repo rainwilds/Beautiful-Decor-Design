@@ -222,7 +222,7 @@
         }
 
         button {
-            font-size: var(--font-2-size-large);
+            /* font-size: var(--font-2-size-large); */
             background-image: var(--background-noise);
             padding: var(--space-tiny) var(--space-medium);
 
@@ -763,7 +763,7 @@
             border-color: var(--color-accent-light-primary);
             border-radius: var(--border-radius-medium);
             background-color: transparent;
-            /* mask-image: linear-gradient(to bottom, #000, transparent 95%); */
+            mask-image: linear-gradient(to bottom, #000, transparent 95%);
             height: 100%;
 
             &.text-align-left {
