@@ -710,7 +710,7 @@
             &:nth-of-type(even) {
                 background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
                 padding: var(--space-large);
-                border-radius: var(--border-radius-medium);
+                /* border-radius: var(--border-radius-medium); */
 
                 @media (max-width: 768px) {
 
@@ -1128,7 +1128,7 @@ main {
         grid-template: auto / auto;
         gap: var(--space-medium);
         background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
-        padding: var(--space-medium);
+        padding: var(--space-large);
 
         >hgroup {
             text-align: center;
