@@ -1073,6 +1073,10 @@ main {
         gap: var(--space-tiny);
         padding: 0 var(--space-tiny);
 
+        &:hover {
+            animation-play-state: paused;
+        }
+
         >button {
             padding: var(--space-tiny);
 
