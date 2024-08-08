@@ -619,6 +619,8 @@
             }
         } */
 
+
+
         &.header {
             grid-template: auto / 1fr;
             z-index: 1;
@@ -701,6 +703,12 @@
 
         &.left,
         &.right {
+
+            &:nth-of-type(even) {
+                background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
+                padding: var(--space-large);
+                border-radius: var(--border-radius-medium);
+            }
 
             @media (max-width: 768px) {
 
@@ -788,7 +796,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: var(--space-small);
+                gap: var(--space-tiny);
 
 
                 >li {
