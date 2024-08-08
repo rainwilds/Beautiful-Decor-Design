@@ -763,8 +763,11 @@
             border-color: var(--color-accent-light-primary);
             border-radius: var(--border-radius-medium);
             background-color: transparent;
-            mask-image: linear-gradient(to bottom, #000, transparent 95%);
             height: 100%;
+
+            &:not(.text-align-left, .text-align-right) {
+                mask-image: linear-gradient(to bottom, #000, transparent 95%);
+            }
 
             &.text-align-left {
                 text-align: left;
