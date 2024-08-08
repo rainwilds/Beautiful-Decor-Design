@@ -765,7 +765,7 @@
             background-color: transparent;
             height: 100%;
 
-            &:not(.text-align-left, .text-align-right) {
+            &:not(.text-align-left, .text-align-right):not(:has(h1)) {
                 mask-image: linear-gradient(to bottom, #000, transparent 95%);
             }
 
