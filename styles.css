@@ -765,9 +765,9 @@
             background-color: transparent;
             height: 100%;
 
-            &:not(.text-align-left, .text-align-right):not(:has(h1)) {
+            /* &:not(.text-align-left, .text-align-right):not(:has(h1)) {
                 mask-image: linear-gradient(to bottom, #000, transparent 95%);
-            }
+            } */
 
             &.text-align-left {
                 text-align: left;
@@ -1331,12 +1331,16 @@ section[id^="gallery-item-"] {
             margin: var(--space-small);
             display: flex;
             justify-self: flex-end;
+            z-index: 1;
 
         }
 
         >picture {
             grid-area: 1/1/2/-1;
             max-height: calc(100vh - (4*var(--space-small)));
+            max-width: max-content;
+            display: flex;
+            justify-self: center;
 
             >img {
                 margin-top: 0;
