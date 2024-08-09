@@ -769,7 +769,7 @@
                 text-align: left;
 
                 i {
-                    right: var(--space-large);
+                    right: 5vw;
                 }
             }
 
@@ -777,7 +777,7 @@
                 text-align: right;
 
                 i {
-                    left: var(--space-large);
+                    left: 5vw;
                 }
             }
 
@@ -835,7 +835,16 @@
             h2,
             h3 {
                 margin-bottom: var(--space-tiny);
-                line-height: 0.7;
+
+                @media (max-width: 768px) {
+
+                    & {
+
+                        line-height: 0.7;
+
+                    }
+                }
+                
             }
 
             p:not(:last-of-type) {
