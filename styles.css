@@ -652,12 +652,8 @@
                 @media (max-width: 980px) {
 
                     & {
-                        /* padding: 0;
-                        border: none; */
-                        /* backdrop-filter: none; */
-                        /* box-shadow: none; */
-                        /* background-image: none; */
-                        /* background-color: transparent; */
+                        align-self: flex-end;
+                        margin-bottom: var(--space-medium);
                     }
 
                 }
@@ -821,6 +817,7 @@
             h2,
             h3 {
                 margin-bottom: var(--space-tiny);
+                line-height: 0.7;
             }
 
             p:not(:last-of-type) {
