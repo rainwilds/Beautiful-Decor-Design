@@ -78,12 +78,13 @@
 
         --color-accent-light-primary: #9f368c;
         --color-accent-light-secondary: #daafd9;
-        --color-accent-dark-primary: #6b245e;
+        /* --color-accent-dark-primary: #6b245e; */
+        --color-accent-dark-primary: #450f3b;
         --color-accent-dark-secondary: #280c23;
 
         --color-accent-opaque-light-primary: rgba(159, 54, 140, 0.2);
         --color-accent-opaque-light-secondary: rgba(218, 175, 217, 0.2);
-        --color-accent-opaque-dark-primary: rgba(107, 36, 94, 0.5);
+        --color-accent-opaque-dark-primary: rgba(69, 15, 59, 0.5);
         --color-accent-opaque-dark-secondary: rgba(40, 12, 35, 0.5);
 
         --color-static-light: white;
