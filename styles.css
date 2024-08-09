@@ -790,7 +790,7 @@
                 border: none;
                 padding: 0 0 var(--space-medium) 0;
                 justify-content: flex-end;
-                border-bottom: solid var(--border-size-small) light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary));
+                border-bottom: solid var(--border-size-small) light-dark(var(--color-accent-light-primary),var(--color-accent-light-primary));
                 border-radius: 0;
 
                 p {
