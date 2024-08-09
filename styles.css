@@ -827,6 +827,10 @@
                 }
             }
 
+            a:has(button) {
+                margin-top: var(--space-medium);
+            }
+
             h1,
             h2,
             h3 {
