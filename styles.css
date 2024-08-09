@@ -634,21 +634,19 @@
             }
 
             >hgroup {
-                /* grid-area: 1/1/2/-1;
-                -webkit-backdrop-filter: blur(10px);
-                backdrop-filter: blur(10px);
-                padding: var(--space-tiny) var(--space-medium);
-                background-image: var(--background-noise);
-                box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
-                border-color: var(--color-static-light-1);
-                background-color: var(--color-static-light-1);
-                padding: var(--space-large); */
                 height: fit-content;
                 display: flex;
                 justify-self: center;
                 align-self: center;
-                padding: 0;
-                border: none;
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                padding: var(--space-medium);
+                border-radius: var(--border-radius-small);
+                background-image: var(--background-noise);
+                box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
+                border: solid var(--border-size-small);
+                border-color: var(--color-static-light-1);
+                background-color: var(--color-static-light-1);
 
                 @media (max-width: 980px) {
 
@@ -710,7 +708,7 @@
             &:nth-of-type(even) {
                 background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
                 padding: var(--space-large);
-                /* border-radius: var(--border-radius-medium); */
+                border-radius: var(--border-radius-medium);
 
                 @media (max-width: 768px) {
 
@@ -781,7 +779,10 @@
             &.text-align-right {
 
                 border: none;
-                padding: 0;
+                padding: 0 0 var(--space-medium) 0;
+                justify-content: flex-end;
+                border-bottom: solid var(--border-size-small) light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary));
+                border-radius: 0;
 
                 p {
                     font-size: var(--font-2-size-large);
