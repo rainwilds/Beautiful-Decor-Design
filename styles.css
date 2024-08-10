@@ -831,6 +831,10 @@
                 margin-top: var(--space-medium);
             }
 
+            h1 {
+                font-size: 3.2rem;
+            }
+
             h1,
             h2,
             h3 {
@@ -853,6 +857,15 @@
 
             :is(h1, h2, h3)+p {
                 margin-bottom: var(--space-medium);
+
+                @media (max-width: 768px) {
+
+                    & {
+
+                        margin-bottom: var(--space-small);
+
+                    }
+                }
             }
 
 
@@ -877,6 +890,7 @@
                     >p {
                         padding: var(--space-tiny);
                         margin: 0;
+                        font-size: var(--font-2-size-small);
                     }
 
                     >div {
