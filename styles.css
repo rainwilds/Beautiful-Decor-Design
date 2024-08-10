@@ -834,9 +834,11 @@
 
             h1 {
                 font-size: 3.2rem;
+                line-height: 1.1 !important;
+                margin-bottom: 0 !important;
             }
 
-            h1,
+
             h2,
             h3 {
                 margin-bottom: var(--space-tiny);
@@ -849,7 +851,7 @@
 
                     }
                 }
-                
+
             }
 
             p:not(:last-of-type) {
@@ -1081,12 +1083,18 @@ main {
             @media (max-width: 768px) {
 
                 margin-top: var(--space-small);
-    
+
             }
         }
 
         &:last-child {
             margin-bottom: var(--space-large);
+
+            @media (max-width: 768px) {
+
+                margin-bottom: var(--space-small);
+
+            }
         }
 
         &:not(:nth-last-of-type(1), :nth-last-of-type(2), :nth-last-of-type(3)) {
@@ -1301,6 +1309,15 @@ footer {
                 margin-top: var(--space-tiny);
                 font-weight: var(--font-2-weight-heavy);
             }
+
+            @media (max-width: 768px) {
+
+                & {
+                    margin: var(--space-small) 0 var(--space-medium) 0;
+                }
+
+            }
+
         }
 
         &:nth-of-type(2) {
