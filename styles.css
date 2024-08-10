@@ -655,6 +655,7 @@
                     & {
                         align-self: flex-end;
                         margin-bottom: var(--space-medium);
+                        padding: var(--space-small);
                     }
 
                 }
