@@ -1076,6 +1076,12 @@ main {
     >section {
         &:first-child {
             margin-top: var(--space-large);
+
+            @media (max-width: 768px) {
+
+                margin-top: var(--space-small);
+    
+            }
         }
 
         &:last-child {
