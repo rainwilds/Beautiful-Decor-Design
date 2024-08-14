@@ -1205,10 +1205,10 @@ main {
         animation: 20s linear infinite alternate gallery-scroll;
         gap: var(--space-tiny);
         padding: 0 var(--space-tiny);
+        filter: drop-shadow(0px 0px 170px light-dark(var(--color-accent-light-primary), var(--color-accent-light-primary)));
 
         &:hover {
             animation-play-state: paused;
-            filter: drop-shadow(0px 0px 170px light-dark(var(--color-accent-light-primary), var(--color-accent-light-primary)));
         }
 
         >button {
