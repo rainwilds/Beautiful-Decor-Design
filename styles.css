@@ -645,6 +645,8 @@
         &.header {
             grid-template: auto / 1fr;
             z-index: 1;
+            align-content: end;
+            margin-bottom: var(--space-huge);
 
             >picture {
                 grid-area: 1/1/2/-1;
