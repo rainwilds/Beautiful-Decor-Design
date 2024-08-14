@@ -164,7 +164,7 @@
 
         /***/
 
-        /* scroll-behavior: smooth; */
+        scroll-behavior: smooth;
 
         :popover-open {
             border: none;
@@ -172,8 +172,12 @@
         }
 
         ::backdrop {
+
+            @supports selector(backdrop-filter) {
+                backdrop-filter: blur(20px);
+            }
+
             -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
         }
 
         @supports selector(scrollbar-color) {
@@ -233,8 +237,12 @@
             border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
             border-radius: var(--border-radius-small);
             background-size: 32px 32px;
+
+            @supports selector(backdrop-filter) {
+                backdrop-filter: blur(20px);
+            }
+
             -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
         }
 
         input,
@@ -904,7 +912,7 @@
 
 
             ul {
-                list-style: none;
+                /* list-style: none; */
                 width: fit-content;
                 display: flex;
                 flex-wrap: wrap;
@@ -1305,7 +1313,7 @@ footer {
     }
 
     ul {
-        list-style: none;
+        /* list-style: none; */
         line-height: 2;
     }
 
