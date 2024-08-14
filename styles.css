@@ -409,12 +409,12 @@
 
         @media (max-width: 768px) {
 
-            :root {
+            &:root {
                 --font-2-size-small: 17px;
                 --font-2-size-medium: 20px;
                 --font-2-size-large: 22px;
 
-                --space-medium: 1.5rem !important;
+                --space-medium: 1.5rem;
             }
             
         }
