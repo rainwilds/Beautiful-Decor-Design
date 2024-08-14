@@ -658,7 +658,7 @@
 
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: var(--space-medium);
+        gap: var(--space-large);
 
         grid-column-start: 2 !important;
         grid-column-end: -2 !important;
@@ -693,6 +693,8 @@
                 display: flex;
                 justify-self: center;
                 align-self: center;
+                border: solid 1px;
+                border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
 
                 @supports selector(backdrop-filter) {
                     backdrop-filter: blur(10px);
@@ -978,11 +980,18 @@
 
     }
 
+
     .comming-soon {
         filter: grayscale(1) opacity(0.5);
     }
 
+    @media (max-width: 1200px) {
 
+        & {
+            gap: var(--space-medium);
+
+        }
+    }
 
 }
 
@@ -1006,7 +1015,7 @@ header {
     >div {
         grid-area: header / gutter-left / header / gutter-right;
         /* background-color: light-dark(var(--color-accent-opaque-light-secondary), var(--color-accent-opaque-dark-secondary)); */
-        background-color: light-dark(var(--color-accent-opaque-light-secondary), var(--color-accent-opaque-light-primary));
+        background-color: light-dark(var(--color-static-light-2), var(--color-static-dark-2));
         z-index: 1;
     }
 
