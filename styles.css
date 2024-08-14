@@ -694,7 +694,7 @@
                 justify-self: center;
                 align-self: center;
                 border: solid 1px;
-                border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
+                border-color: light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary));
 
                 @supports selector(backdrop-filter) {
                     backdrop-filter: blur(10px);
