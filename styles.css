@@ -768,7 +768,7 @@
 
                     & {
 
-                        padding: var(--space-small) !important;
+                        padding: var(--space-tiny) !important;
 
                     }
                 }
@@ -863,7 +863,6 @@
 
                             position: initial;
                             font-size: 4rem;
-                            filter: blur(3px);
 
                         }
                     }
