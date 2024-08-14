@@ -709,7 +709,7 @@
 
                     & {
                         align-self: flex-end;
-                        margin-bottom: var(--space-large);
+                        margin-bottom: var(--space-huge);
                         padding: var(--space-small);
                     }
 
@@ -969,6 +969,10 @@
 
         img {
             border-radius: var(--border-radius-medium);
+            border: solid light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary)) 0.25rem;
+            outline: solid 1px;
+            outline-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
+            outline-offset: 0.25rem;
             object-fit: cover;
         }
 
@@ -1204,6 +1208,7 @@ main {
 
         &:hover {
             animation-play-state: paused;
+            filter: drop-shadow(0px 0px 170px light-dark(var(--color-accent-light-primary), var(--color-accent-light-primary)));
         }
 
         >button {
