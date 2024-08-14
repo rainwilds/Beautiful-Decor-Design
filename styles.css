@@ -764,7 +764,7 @@
         &.left,
         &.right {
 
-            gap: var(--space-large);
+            /* gap: var(--space-large); */
 
             &:nth-of-type(even) {
                 background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
