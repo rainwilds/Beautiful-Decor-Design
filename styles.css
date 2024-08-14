@@ -67,7 +67,7 @@
 
         --space-tiny: 0.5rem;
         --space-small: 1rem;
-        --space-medium: 2rem;
+        --space-medium: 1.7rem;
         --space-large: 3.5rem;
         --space-huge: 5rem;
 
@@ -520,9 +520,12 @@
                 --font-2-size-small: 17px;
                 --font-2-size-medium: 20px;
                 --font-2-size-large: 22px;
+
+                --space-medium: 1.5rem;
             }
         }
 
+   
     }
 
 }
@@ -962,10 +965,6 @@
                 background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-dark-primary));
                 transition: background-color 0.4s;
             } */
-        }
-
-        picture {
-            filter: drop-shadow(0px 0px 170px light-dark(var(--color-accent-light-primary), var(--color-accent-light-primary)));
         }
 
         img {
