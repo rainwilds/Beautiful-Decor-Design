@@ -845,8 +845,7 @@
 
                         }
                     }
-
-
+                    
                 }
 
                 @media (max-width: 980px) {
@@ -856,7 +855,9 @@
                         text-align: center;
 
                     }
+
                 }
+
             }
 
             a:has(button) {
@@ -870,7 +871,6 @@
                 margin-bottom: 0 !important;
             }
 
-
             h2,
             h3 {
                 margin-bottom: var(--space-tiny);
@@ -882,6 +882,7 @@
                         line-height: 0.7;
 
                     }
+
                 }
 
             }
@@ -900,12 +901,12 @@
                         margin-bottom: var(--space-small);
 
                     }
+
                 }
+
             }
 
-
             ul {
-                /* list-style: none; */
                 width: fit-content;
                 display: flex;
                 flex-wrap: wrap;
@@ -934,12 +935,9 @@
                         border-radius: var(--border-radius-small);
                     }
                 }
+
             }
 
-            /* &:hover { PLACEHOLDER
-                background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-dark-primary));
-                transition: background-color 0.4s;
-            } */
         }
 
         img {
@@ -953,11 +951,6 @@
 
     }
 
-
-    .comming-soon {
-        filter: grayscale(1) opacity(0.5);
-    }
-
     @media (max-width: 1200px) {
 
         & {
@@ -968,14 +961,6 @@
 
 }
 
-
-
-/***/
-
-/* -- tags -- */
-
-
-/***/
 
 header {
 
@@ -992,17 +977,8 @@ header {
         z-index: 1;
     }
 
-    /* video {
-        grid-area: header / gutter-left / header / gutter-right;
-        object-fit: cover;
-        height: 100%;
-        min-height: 100%;
-        min-width: 100%;
-    } */
-
     >picture {
         grid-area: header / gutter-left / header / gutter-right;
-        /* mask-image: linear-gradient(to bottom, light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary)), transparent 200%); */
 
         img {
             object-fit: cover;
@@ -1034,6 +1010,7 @@ header {
     }
 
     >hgroup {
+
         grid-area: header / gutter-left / header / gutter-right;
         z-index: 3;
         align-self: center;
@@ -1059,8 +1036,6 @@ header {
             }
         }
 
-
-
         p {
             padding: var(--space-medium) 0;
             text-shadow: var(--color-accent-light-primary) 1px 1px 5rem;
@@ -1080,8 +1055,6 @@ header {
 
         button {
             border-color: inherit;
-
-
         }
 
         @media (max-width: 768px) {
@@ -1103,9 +1076,8 @@ header {
             padding: var(--space-large);
 
         }
+
     }
-
-
 
 }
 
@@ -1121,6 +1093,7 @@ main {
 
     >section {
         &:first-child {
+
             margin-top: var(--space-large);
 
             @media (max-width: 768px) {
@@ -1128,9 +1101,11 @@ main {
                 margin-top: var(--space-small);
 
             }
+
         }
 
         &:last-child {
+
             margin-bottom: var(--space-large);
 
             @media (max-width: 768px) {
@@ -1138,6 +1113,7 @@ main {
                 margin-bottom: var(--space-small);
 
             }
+
         }
 
         &:not(:nth-last-of-type(1), :nth-last-of-type(2), :nth-last-of-type(3)) {
@@ -1156,7 +1132,6 @@ main {
                     grid-column-start: 2;
                     grid-column-end: -2;
                 }
-
             }
         }
 
@@ -1167,6 +1142,7 @@ main {
         }
 
         >picture {
+
             object-fit: cover;
 
             @media (max-width: 980px) {
@@ -1178,6 +1154,7 @@ main {
             }
 
         }
+
     }
 
     >section#gallery {
@@ -1195,7 +1172,6 @@ main {
 
         >button {
             padding: var(--space-tiny);
-
 
             img {
                 border-radius: var(--border-radius-small);
@@ -1218,8 +1194,6 @@ main {
 
         }
 
-
-
     }
 
     >section#message {
@@ -1240,6 +1214,7 @@ main {
                 font-weight: var(--font-2-weight-heavy);
             }
         }
+
     }
 
     >section#brands {
@@ -1283,10 +1258,7 @@ main {
             aspect-ratio: 3 / 2;
         }
 
-
         >section#brands {
-
-            /* border-radius: var(--border-radius-medium); */
 
             >div {
                 gap: var(--space-large);
@@ -1304,6 +1276,7 @@ main {
         }
 
     }
+
 }
 
 footer {
@@ -1319,7 +1292,6 @@ footer {
     }
 
     ul {
-        /* list-style: none; */
         line-height: 2;
     }
 
