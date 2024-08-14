@@ -658,7 +658,7 @@
 
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: var(--space-large);
+        gap: var(--space-medium);
 
         grid-column-start: 2 !important;
         grid-column-end: -2 !important;
@@ -763,6 +763,8 @@
 
         &.left,
         &.right {
+
+            gap: var(--space-large);
 
             &:nth-of-type(even) {
                 background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
