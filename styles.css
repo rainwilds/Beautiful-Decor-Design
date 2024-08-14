@@ -557,8 +557,13 @@
         justify-self: center;
         height: min-content;
         margin-top: var(--space-medium);
+
+        @supports selector(backdrop-filter) {
+            backdrop-filter: blur(10px);
+        }
+
         -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
+
         padding: var(--space-tiny) var(--space-medium);
         border-radius: var(--border-radius-small);
         background-image: var(--background-noise);
@@ -585,7 +590,13 @@
             width: 100%;
             background: none;
             box-shadow: none;
-            backdrop-filter: none;
+
+            @supports selector(backdrop-filter) {
+                backdrop-filter: none;
+            }
+
+            -webkit-backdrop-filter: none;
+
             margin-top: var(--space-small);
             grid-area: header;
 
@@ -679,8 +690,13 @@
                 display: flex;
                 justify-self: center;
                 align-self: center;
+
+                @supports selector(backdrop-filter) {
+                    backdrop-filter: blur(10px);
+                }
+    
                 -webkit-backdrop-filter: blur(10px);
-                backdrop-filter: blur(10px);
+
                 padding: var(--space-medium);
                 border-radius: var(--border-radius-small);
                 background-image: var(--background-noise);
@@ -837,9 +853,7 @@
                 }
 
                 i {
-                    position: absolute;
-                    font-size: 10rem;
-                    filter: blur(7px);
+                    font-size: 4rem;
                     color: light-dark(var(--color-accent-opaque-dark-primary), var(--color-static-light-4));
                     display: flex;
 
@@ -1433,7 +1447,13 @@ section[id^="gallery-item-"] {
     width: auto;
 
     >div {
-        backdrop-filter: blur(10px);
+
+        @supports selector(backdrop-filter) {
+            backdrop-filter: blur(10px);
+        }
+
+        -webkit-backdrop-filter: blur(10px);
+
         padding: var(--space-small);
         border-radius: var(--border-radius-small);
         background-image: var(--background-noise);
