@@ -525,7 +525,7 @@
             }
         }
 
-   
+
     }
 
 }
@@ -699,7 +699,7 @@
                 @supports selector(backdrop-filter) {
                     backdrop-filter: blur(10px);
                 }
-    
+
                 -webkit-backdrop-filter: blur(10px);
 
                 padding: var(--space-medium);
@@ -764,8 +764,6 @@
         &.left,
         &.right {
 
-            /* gap: var(--space-large); */
-
             &:nth-of-type(even) {
                 background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
                 padding: var(--space-large);
@@ -790,6 +788,8 @@
                 }
             }
 
+            gap: var(--space-large);
+
             @media (max-width: 768px) {
 
                 & {
@@ -807,6 +807,8 @@
 
                 }
             }
+
+
 
         }
 
