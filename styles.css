@@ -658,7 +658,7 @@
                 justify-self: center;
                 align-self: center;
                 border: solid 1px;
-                border-color: light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary));
+                border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
 
                 @supports selector(backdrop-filter) {
                     backdrop-filter: blur(10px);
@@ -760,7 +760,7 @@
 
             }
 
-            gap: var(--space-large);
+            /* gap: var(--space-large); */
 
             @media (max-width: 768px) {
 
@@ -782,6 +782,10 @@
 
 
 
+        }
+
+        &.feature {
+            gap: var(--space-large);
         }
 
         >hgroup {
