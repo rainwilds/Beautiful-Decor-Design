@@ -645,8 +645,6 @@
         &.header {
             grid-template: auto / 1fr;
             z-index: 1;
-            align-content: end;
-            margin-bottom: var(--space-huge);
 
             >picture {
                 grid-area: 1/1/2/-1;
@@ -984,6 +982,7 @@ header {
 
     >picture {
         grid-area: header / gutter-left / header / gutter-right;
+        mask-image: linear-gradient(to left, #000, transparent 100%);
 
         img {
             object-fit: cover;
