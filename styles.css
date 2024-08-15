@@ -678,6 +678,7 @@
                     padding: var(--space-large);
 
                     >h1 {
+                        font-size: 9rem;
                         position: absolute;
                         top: -5rem;
                         filter: drop-shadow(2px 20px 0px var(--color-static-light-8));
