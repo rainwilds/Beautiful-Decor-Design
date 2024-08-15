@@ -673,6 +673,10 @@
                 border: solid var(--border-size-small);
                 background-color: var(--color-static-light-1);
 
+                &.feature {
+                    justify-self: left;
+                }
+
                 @media (max-width: 980px) {
 
                     & {
@@ -688,7 +692,7 @@
                 @media (min-width: 1366px) {
 
                     & {
-                        max-width: 60vw;
+                        max-width: 25vw;
                         min-width: 25vw;
                         top: var(--space-medium);
                         position: relative;
