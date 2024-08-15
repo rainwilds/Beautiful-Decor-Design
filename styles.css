@@ -689,6 +689,9 @@
 
                     & {
                         max-width: 60vw;
+                        min-width: 25vw;
+                        top: var(--space-medium);
+                        position: relative;
                     }
 
                 }
@@ -982,7 +985,7 @@ header {
 
     >picture {
         grid-area: header / gutter-left / header / gutter-right;
-        mask-image: linear-gradient(to left, #000, transparent 100%);
+        mask-image: linear-gradient(to left, #000 50%, transparent 100%);
 
         img {
             object-fit: cover;
