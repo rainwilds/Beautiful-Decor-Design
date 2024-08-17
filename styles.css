@@ -644,6 +644,10 @@
 
         &.feature {
             gap: var(--space-large);
+
+            >picture {
+                aspect-ratio: 3 / 2;
+            }
         }
 
         &.header {
@@ -681,7 +685,7 @@
                     justify-self: left;
                     padding: var(--space-large);
                     visibility: hidden;
-                    animation: 1s linear 2.5s header-feature;
+                    animation: 1s linear normal 2s header-feature;
 
                     >h1 {
                         font-size: 9rem;
