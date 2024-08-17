@@ -344,7 +344,7 @@
             column-gap: var(--space-medium);
             background-color: light-dark(var(--color-background-light), var(--color-background-dark));
 
-            @media (max-width: 1200px) and (orientation: landscape) {
+            /* @media (max-width: 1200px) and (orientation: landscape) {
 
                 & {
                     grid-template: min-content / 0 repeat(6, 1fr) 0 !important;
@@ -354,7 +354,7 @@
                         "gutter-left footer footer footer footer footer footer gutter-right" !important;
                 }
 
-            }
+            } */
 
             @media (max-width: 1200px) {
 
@@ -842,6 +842,18 @@
             &.feature {
                 gap: var(--space-large);
             }
+
+            @media (max-width: 768px) {
+
+                & {
+
+                    position: relative;
+                    top: -3em;
+
+                }
+
+            }
+
         }
 
         >hgroup {
@@ -1141,6 +1153,12 @@ header {
 
     }
 
+    @media (max-width: 768px) {
+
+        grid-template: 40vh / subgrid;
+
+    }
+    
 }
 
 main {
