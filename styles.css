@@ -1496,7 +1496,7 @@ footer {
 
 }
 
-picture:not(:has(i) > picture) {
+header:not(picture:has(i)) > picture {
 
     @media (prefers-color-scheme: dark) {
 
