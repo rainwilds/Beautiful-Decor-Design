@@ -707,9 +707,17 @@
                     @media (min-width: 1366px) {
 
                         & {
-                            max-width: 30vw;
+                            max-width: 35vw;
                             top: var(--space-medium);
                             position: relative;
+                        }
+
+                    }
+
+                    @media (max-width: 1440px) {
+
+                        & {
+                            padding: var(--space-medium);
                         }
 
                     }
@@ -717,7 +725,7 @@
                     @media (min-width: 1650px) {
 
                         & {
-                            max-width: 35vw;
+                            max-width: 30vw;
                         }
 
                     }
@@ -726,6 +734,14 @@
 
                         & {
                             max-width: 25vw;
+                        }
+
+                    }
+
+                    @media (min-width: 1920px) {
+
+                        & {
+                            max-width: 20vw;
                         }
 
                     }
@@ -1015,7 +1031,7 @@ header {
 
     >picture {
         grid-area: header / gutter-left / header / gutter-right;
-        mask-image: linear-gradient(to left, #000 70%, transparent 100%);
+        mask-image: linear-gradient(to left, #000 90%, transparent 100%);
 
         img {
             object-fit: cover;
