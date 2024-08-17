@@ -1502,7 +1502,7 @@ header:not(picture:has(i)) > picture {
 
         & {
 
-            filter: opacity(0.9) saturate(0.8);
+            filter: initial;
 
         }
     }
