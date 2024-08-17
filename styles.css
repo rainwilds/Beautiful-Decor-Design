@@ -1043,6 +1043,16 @@ header {
     color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
     overflow: hidden;
 
+    &:has(ul) {
+        
+        @media (max-width: 768px) {
+
+            grid-template: 40vh / subgrid;
+    
+        }
+
+    }
+
     >div {
         grid-area: header / gutter-left / header / gutter-right;
         /* background-color: light-dark(var(--color-accent-opaque-light-secondary), var(--color-accent-opaque-dark-secondary)); */
@@ -1150,12 +1160,6 @@ header {
             padding: var(--space-large);
 
         }
-
-    }
-
-    @media (max-width: 768px) {
-
-        grid-template: 40vh / subgrid;
 
     }
     
