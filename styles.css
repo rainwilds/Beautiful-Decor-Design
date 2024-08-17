@@ -684,8 +684,6 @@
                 &.feature {
                     justify-self: left;
                     padding: var(--space-large);
-                    /* visibility: hidden;
-                    animation: 1s linear normal 2s header-feature; */
 
                     >h1 {
                         font-size: 2.3rem;
@@ -706,23 +704,28 @@
 
                     }
 
-
-
                     @media (min-width: 1366px) {
 
                         & {
-                            max-width: 25vw;
-                            min-width: 25vw;
+                            max-width: 30vw;
                             top: var(--space-medium);
                             position: relative;
                         }
 
                     }
 
-                    @media (min-width: 2460px) {
+                    @media (min-width: 1650px) {
 
                         & {
-                            max-width: 40vw;
+                            max-width: 35vw;
+                        }
+
+                    }
+
+                    @media (min-width: 1920px) {
+
+                        & {
+                            max-width: 25vw;
                         }
 
                     }
