@@ -704,7 +704,7 @@
 
                     }
 
-                    @media (min-width: 1366px) {
+                    @media (min-width: 1200px) {
 
                         & {
                             max-width: 35vw;
@@ -718,6 +718,7 @@
 
                         & {
                             padding: var(--space-medium);
+                            justify-self: center;
                         }
 
                     }
@@ -733,15 +734,15 @@
                     @media (min-width: 1920px) {
 
                         & {
-                            max-width: 25vw;
+                            max-width: 20vw;
                         }
 
                     }
 
-                    @media (min-width: 1920px) {
+                    @media (min-width: 2560px) {
 
                         & {
-                            max-width: 20vw;
+                            max-width: 15vw;
                         }
 
                     }
