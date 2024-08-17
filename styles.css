@@ -503,7 +503,7 @@
                 select {
                     background-image: var(--background-noise);
                     box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
-                    border-color: var(--color-static-light-1);
+                    border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
                     background-color: var(--color-static-light-1);
                     text-align: center;
                     justify-self: center;
@@ -1494,6 +1494,18 @@ footer {
 
     }
 
+}
+
+picture:not(:has(i) > picture) {
+
+    @media (prefers-color-scheme: dark) {
+
+        & {
+
+            filter: opacity(0.9) saturate(0.8);
+
+        }
+    }
 }
 
 section[id^="gallery-item-"] {
