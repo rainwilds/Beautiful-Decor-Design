@@ -1014,7 +1014,7 @@ header {
 
     >picture {
         grid-area: header / gutter-left / header / gutter-right;
-        mask-image: linear-gradient(to left, #000 50%, transparent 100%);
+        mask-image: linear-gradient(to left, #000 70%, transparent 100%);
 
         img {
             object-fit: cover;
