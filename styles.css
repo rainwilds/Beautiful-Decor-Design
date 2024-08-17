@@ -684,8 +684,8 @@
                 &.feature {
                     justify-self: left;
                     padding: var(--space-large);
-                    visibility: hidden;
-                    animation: 1s linear normal 2s header-feature;
+                    /* visibility: hidden;
+                    animation: 1s linear normal 2s header-feature; */
 
                     >h1 {
                         font-size: 9rem;
