@@ -1043,8 +1043,8 @@ header {
     color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
     overflow: hidden;
 
-    &:has(ul) {
-        
+    &:has(i) {
+
         @media (max-width: 768px) {
 
             grid-template: 40vh / subgrid;
