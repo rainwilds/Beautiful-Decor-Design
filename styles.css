@@ -1048,7 +1048,7 @@ header {
         @media (max-width: 768px) {
 
             grid-template: 40vh / subgrid;
-    
+
         }
 
     }
@@ -1139,6 +1139,13 @@ header {
 
         button {
             border-color: inherit;
+
+            @media (max-width: 768px) {
+
+                min-width: 60vw;
+
+            }
+
         }
 
         @media (max-width: 768px) {
@@ -1162,7 +1169,7 @@ header {
         }
 
     }
-    
+
 }
 
 main {
