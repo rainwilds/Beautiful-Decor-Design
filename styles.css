@@ -688,11 +688,8 @@
                     animation: 1s linear normal 2s header-feature; */
 
                     >h1 {
-                        font-size: 3rem;
-                        /* position: absolute; */
-                        /* top: -5rem; */
-                        /* filter: drop-shadow(2px 20px 0px light-dark(var(--color-static-dark-1), var(--color-static-light-1))); */
-                        margin-bottom: var(--space-medium) !important;
+                        font-size: 2.3rem;
+                        margin-bottom: var(--space-small) !important;
                     }
 
                     li {
@@ -968,6 +965,7 @@
                         background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark-primary));
                         padding: var(--space-tiny);
                         border-radius: var(--border-radius-small);
+                        min-width: 70px;
                     }
                 }
 
