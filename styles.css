@@ -540,7 +540,7 @@
             list-style-type: none;
             display: flex;
             align-items: center;
-            gap: var(--space-large);
+            gap: var(--space-medium);
 
             >li {
                 display: inline-flex;
@@ -704,12 +704,20 @@
 
                     }
 
+                    @media (min-width: 1024px) {
+
+                        & {
+                            max-width: 40vw;
+                            top: var(--space-medium);
+                            position: relative;
+                        }
+
+                    }
+
                     @media (min-width: 1200px) {
 
                         & {
                             max-width: 35vw;
-                            top: var(--space-medium);
-                            position: relative;
                         }
 
                     }
@@ -734,7 +742,7 @@
                     @media (min-width: 1920px) {
 
                         & {
-                            max-width: 20vw;
+                            max-width: 25vw;
                         }
 
                     }
@@ -742,7 +750,7 @@
                     @media (min-width: 2560px) {
 
                         & {
-                            max-width: 15vw;
+                            max-width: 20vw;
                         }
 
                     }
