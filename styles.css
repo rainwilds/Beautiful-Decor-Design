@@ -1508,6 +1508,10 @@ header:not(:has(i)) > picture {
     }
 }
 
+header:has(i) > div {
+    display: none;
+}
+
 section[id^="gallery-item-"] {
 
     padding: var(--space-small);
