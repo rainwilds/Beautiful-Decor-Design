@@ -1484,6 +1484,10 @@ footer {
             >span {
                 font-size: var(--font-2-size-small);
             }
+
+            a {
+                color: light-dark(var(--color-background-light), var(--color-background-dark));
+            }
         }
 
     }
