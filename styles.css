@@ -344,17 +344,17 @@
             column-gap: var(--space-medium);
             background-color: light-dark(var(--color-background-light), var(--color-background-dark));
 
-            /* @media (max-width: 1200px) and (orientation: landscape) {
+            @media (max-width: 768px) and (max-width: 980px) and (orientation: landscape) {
 
                 & {
-                    grid-template: min-content / 0 repeat(6, 1fr) 0 !important;
+                    grid-template: 150vh / 0 repeat(6, 1fr) 0;
                     grid-template-areas:
                         "gutter-left header header header header header header gutter-right"
                         "gutter-left main main main main main main gutter-right"
-                        "gutter-left footer footer footer footer footer footer gutter-right" !important;
+                        "gutter-left footer footer footer footer footer footer gutter-right";
                 }
 
-            } */
+            }
 
             @media (max-width: 1200px) {
 
