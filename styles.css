@@ -1056,7 +1056,7 @@ header {
     color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
     overflow: hidden;
 
-    &:has(i) {
+    /* &:has(i) {
 
         @media (max-width: 768px) {
 
@@ -1064,7 +1064,7 @@ header {
 
         }
 
-    }
+    } */
 
     >div {
         grid-area: header / gutter-left / header / gutter-right;
