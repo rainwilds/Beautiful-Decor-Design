@@ -667,6 +667,12 @@
 
             }
 
+            @media (max-width: 768px) {
+
+                gap: var(--space-medium);
+    
+            }
+
             @media (min-width: 769px) and (max-width: 1199px) {
 
                 gap: var(--space-medium);
@@ -699,7 +705,7 @@
 
                 padding: var(--space-medium);
                 box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
-                background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
+                background-color: light-dark(var(--color-background-light), var(--color-accent-dark-secondary));
 
                 &.feature {
                     justify-self: left;
