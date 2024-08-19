@@ -633,6 +633,14 @@
 
         }
 
+        @media (max-width: 980px) {
+
+            &:has(select) {
+                grid-template-columns: auto;
+            }
+
+        }
+
     }
 
     .cards {
@@ -710,7 +718,7 @@
 
                         & {
                             align-self: flex-end;
-                            margin-bottom: var(--space-huge);
+                            margin-bottom: var(--space-large);
                             padding: var(--space-small);
                         }
 
@@ -1175,6 +1183,7 @@ header {
         @media (max-width: 980px) {
 
             grid-area: 1 / 2 / 2 / -2;
+            mask-image: linear-gradient(to bottom, #000 80%, transparent 100%);
 
         }
 
