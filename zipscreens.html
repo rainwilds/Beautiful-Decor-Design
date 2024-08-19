@@ -638,11 +638,11 @@
             </div>
             <form id="contact-form" action="https://formspree.io/f/xblrrlaz" method="POST">
                 <label for="email" aria-label="Email">Email:</label>
-                <input type="email" name="email" required>
+                <input type="email" name="email" id="email" required autocomplete="email">
                 <label for="phone" aria-label="Phone">Phone:</label>
-                <input type="tel" name="phone" pattern="^\d{8,10}$">
+                <input type="tel" name="phone" id="phone" pattern="^\d{8,10}$" autocomplete="tel-local">
                 <label for="message" aria-label="Message">Message:</label>
-                <textarea name="message" required></textarea>
+                <textarea name="message" id="message" required></textarea>
                 <button id="contact-form-button">Submit</button>
                 <p id="contact-form-status"></p>
             </form>
