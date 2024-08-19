@@ -465,8 +465,8 @@
         background-image: var(--background-noise);
         box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
         border: solid var(--border-size-small);
-        border-color: var(--color-static-light-1);
-        background-color: var(--color-static-light-1);
+        border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
+        background-color: light-dark(var(--color-static-light-2), var(--color-static-dark-2));
 
         &:first-of-type {
 
@@ -690,7 +690,7 @@
                 box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
                 border: solid var(--border-size-small);
                 /* background-color: var(--color-static-light-1); */
-                background-color: light-dark(var(--color-background-light), var(--color-background-dark));
+                background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
 
                 &.feature {
                     justify-self: left;
