@@ -690,8 +690,6 @@
                 display: flex;
                 justify-self: center;
                 align-self: center;
-                /* border: solid 1px;
-                border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary)); */
 
                 @supports selector(backdrop-filter) {
                     backdrop-filter: blur(10px);
@@ -700,11 +698,7 @@
                 -webkit-backdrop-filter: blur(10px);
 
                 padding: var(--space-medium);
-                border-radius: var(--border-radius-small);
-                /* background-image: var(--background-noise); */
                 box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
-                border: solid var(--border-size-small);
-                /* background-color: var(--color-static-light-1); */
                 background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
 
                 &.feature {
