@@ -885,7 +885,7 @@
 
         }
 
-        >hgroup {
+        >div {
 
             display: flex;
             flex-direction: column;
