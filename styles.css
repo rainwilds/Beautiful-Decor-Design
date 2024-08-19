@@ -690,7 +690,7 @@
                 aspect-ratio: 2 / 1;
             }
 
-            >hgroup {
+            >div {
 
                 height: fit-content;
                 display: flex;
