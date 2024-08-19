@@ -647,6 +647,15 @@
 
             >picture {
                 aspect-ratio: 3 / 2;
+
+                @media (max-width: 980px) {
+
+                    & {
+                        aspect-ratio: auto;
+                    }
+
+                }
+
             }
         }
 
@@ -1500,7 +1509,7 @@ footer {
 
 }
 
-header:not(:has(i)) > picture {
+header:not(:has(i))>picture {
 
     @media (prefers-color-scheme: dark) {
 
@@ -1512,7 +1521,7 @@ header:not(:has(i)) > picture {
     }
 }
 
-header:has(i) > div {
+header:has(i)>div {
     display: none;
 }
 
