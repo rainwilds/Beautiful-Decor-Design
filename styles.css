@@ -685,10 +685,11 @@
 
                 padding: var(--space-medium);
                 border-radius: var(--border-radius-small);
-                background-image: var(--background-noise);
+                /* background-image: var(--background-noise); */
                 box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
                 border: solid var(--border-size-small);
-                background-color: var(--color-static-light-1);
+                /* background-color: var(--color-static-light-1); */
+                background-color: light-dark(var(--color-background-light), var(--color-background-dark));
 
                 &.feature {
                     justify-self: left;
