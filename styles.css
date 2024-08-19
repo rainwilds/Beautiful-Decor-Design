@@ -217,11 +217,11 @@
             border-radius: var(--border-radius-small);
             background-size: 32px 32px;
 
-            @supports selector(backdrop-filter) {
+            /* @supports selector(backdrop-filter) {
                 backdrop-filter: blur(20px);
             }
 
-            -webkit-backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px); */
         }
 
         input,
@@ -1486,7 +1486,7 @@ footer {
             }
 
             a {
-                color: light-dark(var(--color-background-light), var(--color-background-dark));
+                color: light-dark(var(--color-background-dark), var(--color-background-light));
             }
         }
 
