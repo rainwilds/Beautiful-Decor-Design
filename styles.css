@@ -825,6 +825,7 @@
                     & {
 
                         padding: var(--space-medium);
+                        border: none;
 
                     }
 
@@ -1224,6 +1225,7 @@ main {
                 & {
                     grid-column-start: 2;
                     grid-column-end: -2;
+                    margin-top: var(--space-medium);
                 }
             }
         }
@@ -1423,7 +1425,7 @@ footer {
             @media (max-width: 768px) {
 
                 & {
-                    margin: var(--space-small) 0 var(--space-medium) 0;
+                    margin: var(--space-small) 0 var(--space-large) 0;
                 }
 
             }
