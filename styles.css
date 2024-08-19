@@ -633,7 +633,7 @@
 
         }
 
-        @media (max-width: 980px) {
+        @media (max-width: 1024px) {
 
             &:has(select) {
                 grid-template-columns: auto;
@@ -690,8 +690,8 @@
                 display: flex;
                 justify-self: center;
                 align-self: center;
-                border: solid 1px;
-                border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
+                /* border: solid 1px;
+                border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary)); */
 
                 @supports selector(backdrop-filter) {
                     backdrop-filter: blur(10px);
@@ -1190,7 +1190,6 @@ header {
         @media (max-width: 980px) {
 
             grid-area: 1 / 2 / 2 / -2;
-            mask-image: linear-gradient(to bottom, #000 80%, transparent 100%);
 
         }
 
@@ -1200,6 +1199,12 @@ header {
             padding: var(--space-large);
 
         }
+
+    }
+
+    @media (max-width: 980px) {
+
+        mask-image: linear-gradient(to bottom, #000 80%, transparent 100%);
 
     }
 
