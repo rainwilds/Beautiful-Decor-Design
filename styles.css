@@ -703,6 +703,7 @@
 
                     li {
                         width: 100%;
+                        max-width: 350px;
                     }
 
                     @media (max-width: 980px) {
@@ -1266,7 +1267,7 @@ main {
             @media (max-width: 980px) {
 
                 & {
-                    aspect-ratio: 1/1;
+                    aspect-ratio: 3/2;
                 }
 
             }
