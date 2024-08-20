@@ -1061,7 +1061,7 @@ header {
 
     &:has(i) picture {
 
-        mask-image: initial;
+        mask-image: linear-gradient(to left, #000 80%, transparent 50%);
 
         @media (max-width: 980px) {
 
@@ -1116,7 +1116,7 @@ header {
 
     >picture {
         grid-area: header / gutter-left / header / gutter-right;
-        mask-image: linear-gradient(to left, #000 80%, transparent 50%);
+        
 
         img {
             object-fit: cover;
