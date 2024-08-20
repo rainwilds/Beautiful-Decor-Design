@@ -804,6 +804,12 @@
 
         }
 
+        &.left.feature, &.right.feature {
+            picture {
+                aspect-ratio: auto;
+            }
+        }
+
         &.left {
 
             grid-template-columns: minmax(300px, 1fr) 2fr;
