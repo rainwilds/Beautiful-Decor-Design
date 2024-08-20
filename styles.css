@@ -670,13 +670,13 @@
             @media (max-width: 768px) {
 
                 gap: var(--space-medium);
-    
+
             }
 
             @media (min-width: 769px) and (max-width: 1199px) {
 
                 gap: var(--space-medium);
-    
+
             }
 
         }
@@ -1083,6 +1083,18 @@ header {
 
         }
 
+    }
+
+    >p {
+        text-align: center;
+        width: 100%;
+        grid-area: header / gutter-left / header / gutter-right;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: var(--space-large);
+        color: light-dark(var(--color-background-dark), var(--color-background-light));
+        font-weight: var(--font-2-weight-heavy);
+        font-size: var(--font-2-size-large);
     }
 
     >div {
