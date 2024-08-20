@@ -190,7 +190,7 @@
             scrollbar-gutter: stable;
         }
 
-        a:any-link {
+        a:any-link, form > button {
 
             color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
             text-decoration: none;
@@ -437,7 +437,7 @@
         }
 
         >button {
-            background-color: transparent;
+            background-color: light-dark(var(--color-static-light-6), var(--color-static-dark-6));
             border-color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
 
             &:hover {
