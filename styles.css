@@ -705,7 +705,7 @@
 
                 -webkit-backdrop-filter: blur(10px);
 
-                padding: var(--space-medium); */
+                padding: var(--space-medium); 
 
                 &.feature {
                     justify-self: left;
@@ -899,7 +899,7 @@
             box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
             border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
             background-color: light-dark(var(--color-accent-opaque-light-secondary), var(--color-accent-opaque-dark-secondary));
-        }
+        
 
             &.text-align-left {
                 text-align: left;
