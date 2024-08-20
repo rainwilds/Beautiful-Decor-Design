@@ -286,7 +286,7 @@
         }
 
         h1 {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
         }
 
         h2 {
@@ -712,10 +712,6 @@
                 &.feature {
                     justify-self: left;
                     padding: var(--space-large);
-
-                    >h1 {
-                        margin-bottom: var(--space-tiny) !important;
-                    }
 
                     li {
                         width: 100%;
