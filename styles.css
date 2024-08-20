@@ -712,7 +712,7 @@
                     padding: var(--space-large);
 
                     >h1 {
-                        font-size: 2rem;
+                        font-size: 1.5rem;
                         margin-bottom: var(--space-small) !important;
                     }
 
@@ -725,7 +725,7 @@
 
                         & {
                             align-self: flex-end;
-                            margin-bottom: var(--space-large);
+                            margin-bottom: var(--space-medium);
                             padding: var(--space-small);
                         }
 
