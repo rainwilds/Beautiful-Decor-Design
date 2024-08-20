@@ -279,7 +279,7 @@
             line-height: 1;
 
             /* adobe font requirements */
-            font-weight: var(--font-2-weight-medium);
+            font-weight: var(--font-2-weight-heavy);
             font-style: normal;
 
             margin-bottom: var(--space-tiny);
@@ -925,6 +925,7 @@
                 justify-content: flex-end;
                 border-bottom: dashed var(--border-size-small) light-dark(var(--color-accent-light-primary), var(--color-accent-light-primary));
                 border-radius: 0;
+                align-items: initial;
 
                 p {
                     font-size: var(--font-2-size-large);
