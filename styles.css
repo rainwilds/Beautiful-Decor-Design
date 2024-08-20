@@ -707,7 +707,7 @@
 
                 padding: var(--space-medium);
                 box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
-                background-color: light-dark(var(--color-background-light), var(--color-accent-dark-secondary));
+                background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark-primary));
 
                 &.feature {
                     justify-self: left;
