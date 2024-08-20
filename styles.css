@@ -468,7 +468,7 @@
         box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
         border: solid var(--border-size-small);
         border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
-        background-color: light-dark(var(--color-static-light-2), var(--color-static-dark-2));
+        background-color: light-dark(var(--color-static-light-6), var(--color-static-dark-6));
 
         &:first-of-type {
 
@@ -701,7 +701,7 @@
                 filter: drop-shadow(0px 0px 170px light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary)));
                 background-image: var(--background-noise);
                 box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
-                background-color: light-dark(var(--color-static-light-2), var(--color-static-dark-2));
+                background-color: light-dark(var(--color-static-light-6), var(--color-static-dark-6));
 
                 @supports selector(backdrop-filter) {
                     backdrop-filter: blur(10px);
@@ -927,7 +927,6 @@
 
                 p {
                     font-size: var(--font-2-size-large);
-                    line-height: 1.7;
                     margin-bottom: 0;
                 }
 
@@ -1021,8 +1020,8 @@
         }
 
         img {
-            border-radius: var(--border-radius-medium);
-            border: solid light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary)) 0.25rem;
+            /* border-radius: var(--border-radius-medium);
+            border: solid light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary)) 0.25rem; */
             outline: solid 1px;
             outline-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
             outline-offset: 0.25rem;
@@ -1063,7 +1062,7 @@ header {
     }
 
     >a {
-        width: 250px;
+        width: 300px;
         grid-area: header / gutter-left / header / gutter-right;
         position: absolute;
         justify-self: center;
@@ -1228,8 +1227,8 @@ main {
     grid-template: auto / subgrid;
     grid-area: main / gutter-left / main / gutter-right;
     row-gap: var(--space-huge);
-    border-bottom: dashed var(--border-size-small) light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary));
-    border-top: dashed var(--border-size-small) light-dark(var(--color-accent-light-primary), var(--color-accent-dark-primary));
+    border-bottom: dashed var(--border-size-small) light-dark(var(--color-accent-light-primary), var(--color-accent-light-primary));
+    border-top: dashed var(--border-size-small) light-dark(var(--color-accent-light-primary), var(--color-accent-light-primary));
     margin: var(--space-small) 0;
     overflow-x: hidden;
 
