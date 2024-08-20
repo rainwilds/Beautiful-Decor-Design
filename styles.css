@@ -286,27 +286,27 @@
         }
 
         h1 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
 
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
 
         h3 {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
         }
 
         h4 {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
         }
 
         h5 {
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
         h6 {
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
         p:not(:last-of-type) {
@@ -1150,6 +1150,8 @@ header {
             text-shadow: var(--color-static-light) 10px 10px 3rem;
             font-size: clamp(4.5rem, 13vh, 17vh);
             line-height: 0.7;
+            font-family: var(--font-1-family);
+            font-weight: var(--font-1-weight-medium);
 
             &:not(:has(>span)) {
                 line-height: 0.1;
