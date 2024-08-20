@@ -705,9 +705,7 @@
 
                 -webkit-backdrop-filter: blur(10px);
 
-                padding: var(--space-medium);
-                box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
-                background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark-primary));
+                padding: var(--space-medium); */
 
                 &.feature {
                     justify-self: left;
@@ -891,11 +889,17 @@
             padding: var(--space-medium);
             text-align: center;
             border: solid var(--border-size-small);
-            border-color: var(--color-accent-light-primary);
+            /* border-color: var(--color-accent-light-primary); */
             border-radius: var(--border-radius-medium);
-            background-color: transparent;
+            /* background-color: transparent; */
             height: 100%;
-            filter: drop-shadow(0px 0px 170px light-dark(var(--color-accent-light-primary), var(--color-accent-light-primary)));
+            filter: drop-shadow(0px 0px 170px light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary)));
+
+            background-image: var(--background-noise);
+            box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
+            border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
+            background-color: light-dark(var(--color-accent-opaque-light-secondary), var(--color-accent-opaque-dark-secondary));
+        }
 
             &.text-align-left {
                 text-align: left;
