@@ -1073,6 +1073,7 @@ header {
         width: 300px;
         grid-area: header / gutter-left / header / gutter-right;
         position: absolute;
+        display: flex;
         justify-self: center;
         bottom: var(--space-medium);
         right: var(--space-medium);
