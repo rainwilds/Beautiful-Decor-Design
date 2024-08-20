@@ -1111,6 +1111,7 @@ header {
                 width: 270px;
                 bottom: initial;
                 right: initial;
+                top: var(--space-medium);
                 z-index: 2;
             }
 
