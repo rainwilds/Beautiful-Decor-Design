@@ -281,30 +281,32 @@
             /* adobe font requirements */
             font-weight: var(--font-2-weight-medium);
             font-style: normal;
+
+            margin-bottom: var(--space-tiny);
         }
 
         h1 {
-            font-size: 1.7rem;
+            font-size: 1.5rem;
         }
 
         h2 {
-            font-size: 1.7rem;
+            font-size: 1.5rem;
         }
 
         h3 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
 
         h4 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
 
         h5 {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
         }
 
         h6 {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
         }
 
         p:not(:last-of-type) {
@@ -712,7 +714,6 @@
                     padding: var(--space-large);
 
                     >h1 {
-                        font-size: 1.5rem;
                         margin-bottom: var(--space-tiny) !important;
                     }
 
@@ -725,7 +726,7 @@
 
                         & {
                             align-self: flex-end;
-                            margin-bottom: var(--space-large);
+                            margin-bottom: var(--space-huge);
                             padding: var(--space-small);
                         }
 
@@ -964,29 +965,6 @@
 
             a:has(button) {
                 margin-top: var(--space-medium);
-            }
-
-            h1 {
-                /* font-size: 3.2rem; */
-                font-size: 5rem;
-                line-height: 1.1 !important;
-                margin-bottom: 0 !important;
-            }
-
-            h2,
-            h3 {
-                margin-bottom: var(--space-tiny);
-
-                @media (max-width: 768px) {
-
-                    & {
-
-                        line-height: 0.7;
-
-                    }
-
-                }
-
             }
 
             p:not(:last-of-type) {
