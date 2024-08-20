@@ -109,7 +109,7 @@
         /* font 1 - */
         --font-1-family: hummingbird, sans-serif;
         /* --font-1-weight-light: 400; PLACEHOLDER */
-        --font-1-weight-medium: 400 PLACEHOLDER;
+        --font-1-weight-medium: 400;
         /* --font-1-weight-heavy: 700 PLACEHOLDER; */
 
         /* font 2 */
@@ -275,36 +275,36 @@
         h4,
         h5,
         h6 {
-            font-family: var(--font-1-family);
-            line-height: 0.9;
+            font-family: var(--font-2-family);
+            line-height: 1;
 
             /* adobe font requirements */
-            font-weight: var(--font-1-weight-medium);
+            font-weight: var(--font-2-weight-medium);
             font-style: normal;
         }
 
         h1 {
-            font-size: 4.5rem;
+            font-size: 1.7rem;
         }
 
         h2 {
-            font-size: 2.9rem;
+            font-size: 1.7rem;
         }
 
         h3 {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
         }
 
         h4 {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
         }
 
         h5 {
-            font-size: 2.3rem;
+            font-size: 1.3rem;
         }
 
         h6 {
-            font-size: 2.3rem;
+            font-size: 1.3rem;
         }
 
         p:not(:last-of-type) {
@@ -1140,6 +1140,7 @@ header {
         grid-area: header / gutter-left / header / gutter-right;
         z-index: 2;
         font-family: var(--font-1-family);
+        font-weight: var(--font-1-weight-medium);
         font-size: clamp(100vh, 100vh, 100vw);
         line-height: 1.8;
         opacity: 0.05;
