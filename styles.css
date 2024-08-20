@@ -748,7 +748,7 @@
 
                     }
 
-                    @media (max-width: 1440px) {
+                    @media (max-width: 1280px) {
 
                         & {
                             padding: var(--space-medium);
@@ -1405,7 +1405,7 @@ main {
                 }
             }
 
-            @media (min-width: 1280px) and (max-width: 1679px) {
+            @media (min-width: 1024px) and (max-width: 1679px) {
        
                 >a:last-of-type {
                     display: none;
