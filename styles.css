@@ -840,7 +840,9 @@
 
                     & {
 
-                        padding: var(--space-tiny) !important;
+                        padding: o !important;
+                        background-color: transparent;
+                        border-radius: 0;
 
                     }
 
