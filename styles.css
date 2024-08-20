@@ -1399,6 +1399,14 @@ main {
                 }
             }
 
+            @media (min-width: 1280px) and (max-width: 1679px) {
+       
+                >a:last-of-type {
+                    display: none;
+                }
+        
+            }
+
         }
 
     }
