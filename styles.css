@@ -808,6 +808,17 @@
             picture {
                 aspect-ratio: auto;
             }
+
+            @media (max-width: 980px) {
+
+                & {
+
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+                }
+
+            }
+
         }
 
         &.left {
@@ -842,22 +853,13 @@
                 padding: var(--space-large);
                 border-radius: var(--border-radius-medium);
 
-                @media (max-width: 768px) {
+                @media (max-width: 980px) {
 
                     & {
 
                         padding: o !important;
                         background-color: transparent;
                         border-radius: 0;
-
-                    }
-
-                }
-
-                @media (max-width: 980px) {
-
-                    & {
-
                         padding: 0;
 
                     }
@@ -956,7 +958,7 @@
 
                 }
 
-                @media (max-width: 980px) {
+                @media (max-width: 768px) {
 
                     & {
 
