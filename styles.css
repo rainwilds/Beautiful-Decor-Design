@@ -210,7 +210,7 @@
         input,
         select,
         textarea {
-            background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark-primary));
+            background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
             padding: var(--space-tiny);
             border: solid 1px;
             border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
@@ -506,7 +506,7 @@
                     background-image: var(--background-noise);
                     box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
                     border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
-                    background-color: light-dark(var(--color-static-light-2), var(--color-static-dark-2));
+                    background-color: light-dark(var(--color-static-light-6), var(--color-static-dark-6));
                     text-align: center;
                     text-align-last: center;
                     justify-self: center;
