@@ -254,8 +254,8 @@
         input:focus-visible,
         select:focus-visible,
         textarea:focus-visible {
-            outline-color: var(--color-static-light);
-            outline-offset: 0.25rem;
+            outline-color: light-dark(var(--color-static-dark-2),var(--color-static-light-2));
+            outline-offset: 0.15rem;
             transition: outline 1s;
             background-image: none;
         }
