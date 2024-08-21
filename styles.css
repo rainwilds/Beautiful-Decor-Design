@@ -1054,7 +1054,6 @@
 header {
 
     display: grid;
-    /* grid-template: subgrid / subgrid; */
     grid-template-columns: subgrid;
     grid-template-rows: subgrid;
     grid-area: header / gutter-left / header / gutter-right;
@@ -1248,7 +1247,6 @@ header {
 
 main {
     display: grid;
-    /* grid-template: auto / subgrid; */
     grid-template-columns: subgrid;
     grid-area: main / gutter-left / main / gutter-right;
     row-gap: var(--space-huge);
@@ -1457,7 +1455,6 @@ main {
 footer {
 
     display: grid;
-    /* grid-template: auto / subgrid; */
     grid-template-columns: subgrid;
     grid-area: footer / gutter-left / footer / gutter-right;
     background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark));
@@ -1834,7 +1831,6 @@ body#page-about>main>hgroup {
 body#page-about>main>section {
     grid-area: 2 / 2 / 3 / -2;
     display: grid;
-    /* grid-template: auto / subgrid; */
     grid-template-columns: subgrid;
 }
 
