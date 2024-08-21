@@ -1342,7 +1342,7 @@ main {
             }
         }
 
-        @media (max-width: 980px) {
+        @media (max-width: 768px) {
 
             & {
                 grid-auto-columns: calc(100vw / 2) !important;
