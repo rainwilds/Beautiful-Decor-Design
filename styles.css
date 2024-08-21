@@ -1014,8 +1014,7 @@
         }
 
         img {
-            /* border-radius: var(--border-radius-medium);
-            border: solid light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary)) 0.25rem; */
+            border-radius: var(--border-radius-small);
             outline: solid 1px;
             outline-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
             outline-offset: 0.25rem;
