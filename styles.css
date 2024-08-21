@@ -344,7 +344,7 @@
             @media (max-width: 768px) and (max-width: 980px) and (orientation: landscape) {
 
                 & {
-                    grid-template: 150vh / 0 repeat(6, 1fr) 0;
+                    grid-template: auto / 0 repeat(6, 1fr) 0;
                     grid-template-areas:
                         "gutter-left header header header header header header gutter-right"
                         "gutter-left main main main main main main gutter-right"
@@ -356,7 +356,7 @@
             @media (max-width: 1200px) {
 
                 & {
-                    grid-template: 100vh / 0 repeat(6, 1fr) 0;
+                    grid-template: auto / 0 repeat(6, 1fr) 0;
                     grid-template-areas:
                         "gutter-left header header header header header header gutter-right"
                         "gutter-left main main main main main main gutter-right"
@@ -369,7 +369,7 @@
             @media (min-width: 1201px) and (max-width: 1919px) {
 
                 & {
-                    grid-template: 100vh / 5vw repeat(6, 1fr) 5vw;
+                    grid-template: auto / 5vw repeat(6, 1fr) 5vw;
                     grid-template-areas:
                         "gutter-left header header header header header header gutter-right"
                         "gutter-left main main main main main main gutter-right"
@@ -381,7 +381,7 @@
             @media (min-width: 1920px) {
 
                 & {
-                    grid-template: 100vh / 10vw repeat(6, 1fr) 10vw;
+                    grid-template: auto / 10vw repeat(6, 1fr) 10vw;
                     grid-template-areas:
                         "gutter-left header header header header header header gutter-right"
                         "gutter-left main main main main main main gutter-right"
@@ -1038,7 +1038,7 @@ header {
 
     display: grid;
     grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
+    grid-template-rows: 100vh auto;
     grid-area: header / gutter-left / header / gutter-right;
     color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
     overflow: hidden;
@@ -1831,7 +1831,6 @@ body#page-about>main>section>article {
 
 @media (max-width: 1200px) {
 
-
     body#page-about {
         grid-template: min-content / 0 repeat(6, 1fr) 0;
         grid-template-areas:
@@ -1839,12 +1838,11 @@ body#page-about>main>section>article {
             "gutter-left main main main main main main gutter-right"
             "gutter-left footer footer footer footer footer footer gutter-right";
     }
+
 }
 
 
 @media (min-width: 1920px) {
-
-
 
     body#page-about {
         grid-template: min-content / 10vw repeat(6, 1fr) 10vw;
@@ -1857,8 +1855,6 @@ body#page-about>main>section>article {
 }
 
 @media (min-width: 2560px) {
-
-
 
     body#page-about {
         grid-template: min-content / 20vw repeat(6, 1fr) 20vw;
