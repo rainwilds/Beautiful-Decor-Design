@@ -1100,9 +1100,9 @@ header {
         @media (max-width: 980px) {
 
             & {
-                width: 270px;
-                bottom: var(--space-medium);
-                right: initial;
+                width: 330px;
+                align-self: flex-start;
+                position: relative;
                 z-index: 2;
             }
 
