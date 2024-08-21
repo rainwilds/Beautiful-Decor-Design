@@ -1082,6 +1082,7 @@ header {
         position: absolute;
         display: flex;
         justify-self: center;
+        align-self: flex-start;
         bottom: var(--space-medium);
         right: var(--space-medium);
 
@@ -1101,9 +1102,10 @@ header {
 
             & {
                 width: 330px;
-                align-self: flex-start;
                 position: relative;
                 z-index: 2;
+                bottom: initial;
+                right: initial;
             }
 
         }
@@ -1149,7 +1151,7 @@ header {
         position: relative;
         visibility: hidden;
         animation: 37s linear 3s infinite alternate text-scroll;
-        mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
+        /* mask-image: linear-gradient(to bottom, #000 70%, transparent 100%); */
 
         @media (max-width: 768px) {
 
