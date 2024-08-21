@@ -239,6 +239,10 @@
             appearance: none;
         }
 
+        form#menu-mobile-form > select {
+            font-family: "Font Awesome 6 Pro";
+        }
+
         input:user-valid,
         select:user-valid,
         textarea:user-valid {
