@@ -1605,7 +1605,7 @@ header:has(i)>div {
     display: none;
 }
 
-section[id^="gallery-item-"] {
+div[id^="gallery-item-"] {
 
     padding: var(--space-small);
     width: auto;
