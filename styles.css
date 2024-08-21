@@ -190,7 +190,8 @@
             scrollbar-gutter: stable;
         }
 
-        a:any-link, form > button {
+        a:any-link,
+        form>button {
 
             color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
             text-decoration: none;
@@ -709,7 +710,7 @@
 
                 -webkit-backdrop-filter: blur(10px);
 
-                padding: var(--space-medium); 
+                padding: var(--space-medium);
 
                 &.feature {
                     justify-self: left;
@@ -804,7 +805,8 @@
 
         }
 
-        &.left.feature, &.right.feature {
+        &.left.feature,
+        &.right.feature {
             picture {
                 aspect-ratio: auto;
             }
@@ -1060,7 +1062,7 @@ header {
     color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
     overflow: hidden;
 
-    &:has(i) picture:first-of-type {
+    &:has(i)>picture:first-of-type {
 
         mask-image: linear-gradient(to left, #000 80%, transparent 50%);
 
@@ -1117,7 +1119,7 @@ header {
 
     >picture {
         grid-area: header / gutter-left / header / gutter-right;
-        
+
         img {
             object-fit: cover;
             object-position: 100% 75%;
@@ -1411,11 +1413,11 @@ main {
             }
 
             @media (min-width: 1024px) and (max-width: 1679px) {
-       
+
                 >a:last-of-type {
                     display: none;
                 }
-        
+
             }
 
         }
