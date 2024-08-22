@@ -164,16 +164,16 @@
             background-color: transparent;
         }
 
-        /* ::backdrop {
+        ::backdrop {
 
             @supports selector(backdrop-filter) {
                 backdrop-filter: blur(20px);
             }
 
             -webkit-backdrop-filter: blur(20px);
-        } */
+        }
 
-        /* @supports selector(scrollbar-color) {
+        @supports selector(scrollbar-color) {
             scrollbar-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary)) light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-primary));
         }
 
@@ -188,7 +188,7 @@
 
         @supports selector(scrollbar-gutter) {
             scrollbar-gutter: stable;
-        } */
+        }
 
         a:any-link,
         form>button {
@@ -439,11 +439,11 @@
         height: min-content;
         margin-top: var(--space-medium);
 
-        /* @supports selector(backdrop-filter) {
+        @supports selector(backdrop-filter) {
             backdrop-filter: blur(10px);
         }
 
-        -webkit-backdrop-filter: blur(10px); */
+        -webkit-backdrop-filter: blur(10px);
 
         padding: var(--space-tiny) var(--space-medium);
         border-radius: var(--border-radius-small);
@@ -472,11 +472,11 @@
             background: none;
             box-shadow: none;
 
-            /* @supports selector(backdrop-filter) {
+            @supports selector(backdrop-filter) {
                 backdrop-filter: none;
             }
 
-            -webkit-backdrop-filter: none; */
+            -webkit-backdrop-filter: none;
 
             margin-top: var(--space-small);
             grid-area: header;
@@ -686,11 +686,11 @@
                 box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
                 background-color: light-dark(var(--color-static-light-6), var(--color-static-dark-6));
 
-                /* @supports selector(backdrop-filter) {
+                @supports selector(backdrop-filter) {
                     backdrop-filter: blur(10px);
                 }
 
-                -webkit-backdrop-filter: blur(10px); */
+                -webkit-backdrop-filter: blur(10px);
 
                 padding: var(--space-medium);
 
@@ -1593,11 +1593,11 @@ div[id^="gallery-item-"] {
 
     >div {
 
-        /* @supports selector(backdrop-filter) {
+        @supports selector(backdrop-filter) {
             backdrop-filter: blur(10px);
         }
 
-        -webkit-backdrop-filter: blur(10px); */
+        -webkit-backdrop-filter: blur(10px);
 
         padding: var(--space-small);
         border-radius: var(--border-radius-small);
