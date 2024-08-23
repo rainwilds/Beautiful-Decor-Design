@@ -1440,7 +1440,7 @@ footer {
     grid-template-columns: subgrid;
     grid-area: footer / gutter-left / footer / gutter-right;
     background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark));
-    filter: drop-shadow(0px 0px 170px light-dark(var(--color-accent-light-primary), var(--color-accent-light-primary)));
+    /* filter: drop-shadow(0px 0px 170px light-dark(var(--color-accent-light-primary), var(--color-accent-light-primary))); */
 
     img {
         margin-top: var(--space-medium);
