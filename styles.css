@@ -1240,7 +1240,7 @@ main {
     >section {
         &:first-child {
 
-            margin-top: calc(var(--space-huge) * 1.2)
+            margin-top: calc(var(--space-huge) * 1.2);
 
             @media (max-width: 768px) {
 
