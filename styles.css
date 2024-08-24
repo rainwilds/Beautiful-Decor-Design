@@ -1346,6 +1346,11 @@ main {
 
     }
 
+    >section#quote {
+        grid-column-start: 3;
+        grid-column-end: -3;
+    }
+
     >section#gallery {
         display: grid;
         grid-auto-flow: column;
