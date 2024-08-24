@@ -329,16 +329,16 @@
             padding: var(--space-large);
             border-radius: var(--border-radius-medium);
 
-            >i {
-                font-size: 3rem;
-                position: absolute;
-                color: light-dark(var(--color-accent-opaque-dark-primary), var(--color-accent-opaque-light-secondary));
-            }
-
             >p {
                 font-size: var(--font-2-size-small);
                 margin-top: var(--space-small);
             }
+        }
+
+        blockquote+i {
+            font-size: 3rem;
+            position: absolute;
+            color: light-dark(var(--color-accent-opaque-dark-primary), var(--color-accent-opaque-light-secondary));
         }
 
         img,
@@ -1355,6 +1355,16 @@ main {
     >section#quote {
         grid-column-start: 3;
         grid-column-end: -3;
+
+        @media (max-width: 980px) {
+
+            & {
+                grid-column-start: 2;
+                grid-column-end: -2;
+            }
+
+        }
+
     }
 
     >section#gallery {
