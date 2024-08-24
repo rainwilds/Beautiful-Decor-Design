@@ -652,10 +652,6 @@
 
             }
 
-            >h1 {
-                font-family: var(--font-2-family);
-            }
-
             @media (max-width: 768px) {
 
                 gap: var(--space-medium);
@@ -1153,12 +1149,9 @@ header {
         max-width: 50vw;
         justify-self: center;
 
-        >h1 {
-            text-shadow: var(--color-static-light) 10px 10px 3rem;
-            font-size: clamp(4.5rem, 13vh, 17vh);
-            line-height: 0.7;
-            font-family: var(--font-1-family);
-            font-weight: var(--font-1-weight-medium);
+        >h1:not(.logo-text) {
+            font-family: var(--font-2-family);
+            font-weight: var(--font-2-weight-medium);
 
             &:not(:has(>span)) {
                 line-height: 0.1;
@@ -1171,6 +1164,14 @@ header {
                 position: relative;
                 top: -0.6em;
             }
+        }
+
+        >h1.logo-text {
+            text-shadow: var(--color-static-light) 10px 10px 3rem;
+            font-size: clamp(4.5rem, 13vh, 17vh);
+            line-height: 0.7;
+            font-family: var(--font-1-family);
+            font-weight: var(--font-1-weight-medium);
         }
 
         p {
