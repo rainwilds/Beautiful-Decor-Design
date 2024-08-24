@@ -190,6 +190,16 @@
             scrollbar-gutter: stable;
         }
 
+        .animate {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        
+        .animate-active {
+            animation: fadeInTopDown 2s forwards;
+        }
+
         a:any-link,
         form>button {
 
@@ -1821,14 +1831,10 @@ div[id^="gallery-item-"] {
 
 }
 
-
-
-
-/* Define your keyframes */
-@keyframes fadeIn {
+@keyframes fadeInTopDown {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(60px);
     }
     to {
         opacity: 1;
@@ -1836,17 +1842,7 @@ div[id^="gallery-item-"] {
     }
 }
 
-/* Initially hide the element */
-.animate {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
 
-/* Animation active state */
-.animate-active {
-    animation: fadeIn 1s forwards;
-}
 
 
 
