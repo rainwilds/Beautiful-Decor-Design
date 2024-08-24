@@ -882,16 +882,25 @@
 
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: initial;
             align-items: center;
             padding: var(--space-medium);
             text-align: center;
             border: solid var(--border-size-small);
-            /* border-color: var(--color-accent-light-primary); */
             border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
             border-radius: var(--border-radius-medium);
             background-color: transparent;
             height: 100%;
+
+            &.category {
+                justify-content: initial;
+                align-items: initial;
+                padding: 0;
+                text-align: initial;
+                border: none;
+                border-color: initial;
+                border-radius: 0;
+            }
 
             &.text-align-left {
                 text-align: left;
@@ -1164,6 +1173,7 @@ header {
             >span {
                 font-family: var(--font-2-family);
                 font-size: var(--font-2-size-large);
+                font-weight: var(--font-2-weight-heavy);
             }
         }
 
