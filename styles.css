@@ -322,6 +322,19 @@
             list-style: none;
         }
 
+        blockquote {
+
+            font-size: var(--font-2-size-large);
+            background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
+            padding: var(--space-large);
+            border-radius: var(--border-radius-medium);
+
+            >p {
+                font-size: var(--font-2-size-small);
+                margin-top: var(--space-small);
+            }
+        }
+
         img,
         picture {
 
