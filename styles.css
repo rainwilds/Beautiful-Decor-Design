@@ -332,6 +332,7 @@
             >p {
                 font-size: var(--font-2-size-small);
                 margin-top: var(--space-small);
+                text-align: center;
             }
         }
 
