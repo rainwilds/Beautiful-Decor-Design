@@ -1541,7 +1541,7 @@ footer {
 
     h3>a {
         font-weight: var(--font-2-weight-heavy);
-        color: initial;
+        color: light-dark(var(--color-accent-dark-secondary), var(--color-static-light-8));
     }
 
     section {
