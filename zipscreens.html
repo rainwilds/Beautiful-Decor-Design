@@ -233,7 +233,7 @@
 
             </picture>
 
-            <div class="text-align-left">
+            <div class="text-align-left animate">
 
                 <i class="fa-thin fa-cloud-sun-rain"></i>
                 <h2>Weather protection</h2>
@@ -247,7 +247,7 @@
 
         <section class="cards left feature">
 
-            <div class="text-align-right">
+            <div class="text-align-right animate" >
 
                 <i class="fa-thin fa-user-robot"></i>
                 <h2>Automation or manual</h2>
@@ -338,7 +338,7 @@
 
             </picture>
 
-            <div class="text-align-left">
+            <div class="text-align-left animate">
 
                 <i class="fa-thin fa-palette"></i>
                 <h2>Highly customisable</h2>
@@ -860,6 +860,25 @@
             });
         }
         form.addEventListener("submit", handleSubmit)
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll('.animate');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-active');
+                    }
+                });
+            });
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+
     </script>
 
     <!-- <script type="text/javascript">
