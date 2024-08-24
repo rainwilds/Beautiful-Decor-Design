@@ -513,7 +513,7 @@
 
       </picture>
 
-      <div class="category animate">
+      <div class="category animate animate-top-down">
         <h2>Printed Blinds</h2>
         <p>Elevate your interiors with our custom printed blinds, offering both functionality and flair. Designed to add
           a personal touch to any space, our blinds come in various patterns and colors to match your décor.</p>
@@ -1139,25 +1139,29 @@
 
 <script>
 
-  document.addEventListener("DOMContentLoaded", function () {
-      const elements = document.querySelectorAll('.animate');
+document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll('.animate');
 
-      const observer = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                  if (entry.target.classList.contains('animate-top-down')) {
-                      entry.target.classList.add('animate-top-down');
-                  } else if (entry.target.classList.contains('animate-fade-in')) {
-                      entry.target.classList.add('animate-fade-in');
-                  }
-              }
-          });
-      });
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (entry.target.classList.contains('animate-top-down')) {
+                            entry.target.classList.remove('animate-top-down');
+                            void entry.target.offsetWidth;
+                            entry.target.classList.add('animate-top-down');
+                        } else if (entry.target.classList.contains('animate-fade-in')) {
+                            entry.target.classList.remove('animate-fade-in');
+                            void entry.target.offsetWidth;
+                            entry.target.classList.add('animate-fade-in');
+                        }
+                    }
+                });
+            });
 
-      elements.forEach(element => {
-          observer.observe(element);
-      });
-  });
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
 
 </script>
 

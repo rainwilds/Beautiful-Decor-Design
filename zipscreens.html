@@ -871,8 +871,12 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         if (entry.target.classList.contains('animate-top-down')) {
+                            entry.target.classList.remove('animate-top-down');
+                            void entry.target.offsetWidth;
                             entry.target.classList.add('animate-top-down');
                         } else if (entry.target.classList.contains('animate-fade-in')) {
+                            entry.target.classList.remove('animate-fade-in');
+                            void entry.target.offsetWidth;
                             entry.target.classList.add('animate-fade-in');
                         }
                     }
@@ -883,6 +887,7 @@
                 observer.observe(element);
             });
         });
+
 
     </script>
 

@@ -415,25 +415,29 @@
 
 <script>
 
-  document.addEventListener("DOMContentLoaded", function () {
-      const elements = document.querySelectorAll('.animate');
+document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll('.animate');
 
-      const observer = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                  if (entry.target.classList.contains('animate-top-down')) {
-                      entry.target.classList.add('animate-top-down');
-                  } else if (entry.target.classList.contains('animate-fade-in')) {
-                      entry.target.classList.add('animate-fade-in');
-                  }
-              }
-          });
-      });
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (entry.target.classList.contains('animate-top-down')) {
+                            entry.target.classList.remove('animate-top-down');
+                            void entry.target.offsetWidth;
+                            entry.target.classList.add('animate-top-down');
+                        } else if (entry.target.classList.contains('animate-fade-in')) {
+                            entry.target.classList.remove('animate-fade-in');
+                            void entry.target.offsetWidth;
+                            entry.target.classList.add('animate-fade-in');
+                        }
+                    }
+                });
+            });
 
-      elements.forEach(element => {
-          observer.observe(element);
-      });
-  });
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
 
 </script>
 
