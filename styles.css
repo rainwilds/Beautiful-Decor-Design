@@ -1166,7 +1166,7 @@ header {
         >h1.logo-text {
             text-shadow: var(--color-static-light) 10px 10px 3rem;
             font-size: clamp(4.5rem, 13vh, 17vh);
-            line-height: 0.7;
+            line-height: 0.4;
             font-family: var(--font-1-family);
             font-weight: var(--font-1-weight-medium);
 
