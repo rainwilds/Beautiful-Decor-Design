@@ -313,10 +313,6 @@
             font-weight: var(--font-2-weight-heavy);
         }
 
-        /* nav div:has(i) {
-            display: flex;
-        } */
-
         ol,
         ul {
             list-style: none;
