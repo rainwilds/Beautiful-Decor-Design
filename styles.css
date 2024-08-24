@@ -652,6 +652,10 @@
 
             }
 
+            >h1 {
+                font-family: var(--font-2-family);
+            }
+
             @media (max-width: 768px) {
 
                 gap: var(--space-medium);
