@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Chaparral Pro';
+    src: url('ChaparralPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hummingbird';
+    src: url('Hummingbird.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @layer reset, defaults, components;
 
 @layer reset {
