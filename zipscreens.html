@@ -162,7 +162,7 @@
             </form>
         </nav>
 
-        <section class="cards header animate">
+        <section class="cards header animate animate-top-down">
             <div class="feature">
                 <h1>Zipscreens</h1>
                 <p>Premium Zipscreens for the Sunshine Coast. Enhance your outdoor living with stylish, durable, and
@@ -233,7 +233,7 @@
 
             </picture>
 
-            <div class="text-align-left animate">
+            <div class="text-align-left animate animate-top-down">
 
                 <i class="fa-thin fa-cloud-sun-rain"></i>
                 <h2>Weather protection</h2>
@@ -247,7 +247,7 @@
 
         <section class="cards left feature">
 
-            <div class="text-align-right animate" >
+            <div class="text-align-right animate animate-top-down">
 
                 <i class="fa-thin fa-user-robot"></i>
                 <h2>Automation or manual</h2>
@@ -338,7 +338,7 @@
 
             </picture>
 
-            <div class="text-align-left animate">
+            <div class="text-align-left animate animate-top-down">
 
                 <i class="fa-thin fa-palette"></i>
                 <h2>Highly customisable</h2>
@@ -503,7 +503,7 @@
 
         </section>
 
-        <section id="contact" class="animate">
+        <section id="contact" class="animate animate-top-down">
 
             <hgroup>
                 <h2>Interested in printed blinds?</h2>
@@ -541,7 +541,7 @@
                     <li><a href="./indoor-cushions.html">Indoor Cushions</a></li>
                     <li><a href="./floor-cushions.html">Floor Cushions</a></li>
                     <li><a href="./cushion-covers.html">Cushion Covers</a></li>
-        
+
                 </ul>
                 <h3><a href="./repairs.html">Repairs</a></h3>
                 <ul>
@@ -558,13 +558,13 @@
                     <li><a href="./roman-blinds.html">Roman Blinds</a></li>
                     <li><a href="./printed-blinds.html">Printed Blinds</a></li>
                     <li><a href="./zipscreens.html">Zipscreens</a></li>
-        
+
                 </ul>
                 <h3><a href="./curtains.html">Curtains</a></h3>
                 <ul>
                     <li><a href="./sheer-curtains.html">Sheer Curtains</a></li>
                     <li><a href="./blackout-curtains.html">Blackout Curtains</a></li>
-        
+
                 </ul>
             </div>
             <div>
@@ -863,13 +863,18 @@
     </script>
 
     <script>
+
         document.addEventListener("DOMContentLoaded", function () {
             const elements = document.querySelectorAll('.animate');
 
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('animate-active');
+                        if (entry.target.classList.contains('animate-top-down')) {
+                            entry.target.classList.add('animate-top-down');
+                        } else if (entry.target.classList.contains('animate-fade-in')) {
+                            entry.target.classList.add('animate-fade-in');
+                        }
                     }
                 });
             });

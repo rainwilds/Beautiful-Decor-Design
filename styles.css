@@ -192,12 +192,15 @@
 
         .animate {
             opacity: 0;
-            transform: translateY(60px);
-            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+            transition: opacity 0.5s ease-out;
         }
-
-        .animate-active {
-            animation: fadeInTopDown 2s forwards;
+        
+        .animate-top-down {
+            animation: fadeInTopDown 1s forwards;
+        }
+        
+        .animate-fade-in {
+            animation: fadeInOnly 1s forwards;
         }
 
         a:any-link,
@@ -1836,17 +1839,27 @@ div[id^="gallery-item-"] {
 
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes fadeInTopDown {
     from {
         opacity: 0;
-        transform: translateY(60px);
+        transform: translateY(-20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
+
 
 
 

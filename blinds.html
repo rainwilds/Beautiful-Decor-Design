@@ -162,7 +162,7 @@
       </form>
     </nav>
 
-    <hgroup class="animate">
+    <hgroup class="animate animate-top-down">
 
       <h1>Blinds</h1>
       <p>Discover stylish roller, panel glide, roman, printed blinds, and Zipscreens for privacy, light control, and
@@ -177,7 +177,7 @@
   <main id="main">
 
     <section class="cards left">
-      <div class="category animate">
+      <div class="category animate animate-top-down">
         <h2>Roller Blinds</h2>
         <p>Enhance your living space with our stylish roller blinds, designed to provide privacy and control light.
           Available in a wide range of materials and colors, these versatile blinds are perfect for any room in your
@@ -336,7 +336,7 @@
 
       </picture>
 
-      <div class="category animate">
+      <div class="category animate animate-top-down">
         <h2>Panel Glide Blinds</h2>
         <p>Transform your home with our elegant panel glide blinds, perfect for large windows and sliding doors.
           Offering exceptional privacy and light control, these sleek blinds come in an array of fabrics and colors to
@@ -350,7 +350,7 @@
 
     <section class="cards left">
 
-      <div class="category animate">
+      <div class="category animate animate-top-down">
         <h2>Roman Blinds</h2>
         <p>Transform your home with our elegant roman blinds, crafted to add a touch of sophistication while offering
           excellent light control and privacy. Our collection features a variety of fabrics and colors to complement any
@@ -526,7 +526,7 @@
 
     <section class="cards left">
 
-      <div class="category animate">
+      <div class="category animate animate-top-down">
         <h2>Zipscreens</h2>
         <p>
           Transform your outdoor spaces with Zipscreens, the ultimate solution for stylish and functional shade. Our
@@ -778,7 +778,7 @@
 
     </section> -->
 
-    <section id="contact" class="animate">
+    <section id="contact" class="animate animate-top-down">
 
       <hgroup>
         <h2>Interested in printed blinds?</h2>
@@ -1138,13 +1138,18 @@
   </script>
 
 <script>
+
   document.addEventListener("DOMContentLoaded", function () {
       const elements = document.querySelectorAll('.animate');
 
       const observer = new IntersectionObserver(entries => {
           entries.forEach(entry => {
               if (entry.isIntersecting) {
-                  entry.target.classList.add('animate-active');
+                  if (entry.target.classList.contains('animate-top-down')) {
+                      entry.target.classList.add('animate-top-down');
+                  } else if (entry.target.classList.contains('animate-fade-in')) {
+                      entry.target.classList.add('animate-fade-in');
+                  }
               }
           });
       });
