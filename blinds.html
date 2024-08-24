@@ -1137,6 +1137,25 @@
     form.addEventListener("submit", handleSubmit)
   </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const elements = document.querySelectorAll('.animate');
+
+      const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('animate-active');
+              }
+          });
+      });
+
+      elements.forEach(element => {
+          observer.observe(element);
+      });
+  });
+
+</script>
+
   <!-- <script type="text/javascript">
   var sc_project = 12815469;
   var sc_invisible = 1;
