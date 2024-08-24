@@ -200,7 +200,7 @@
         }
         
         .animate-fade-in {
-            animation: fadeInOnly 1s forwards;
+            animation: fadeIn 1s forwards;
         }
 
         a:any-link,
