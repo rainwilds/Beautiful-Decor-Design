@@ -235,11 +235,6 @@
             }
         }
 
-        footer li a {
-            text-decoration: underline 1px light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
-            text-underline-offset: 7px;
-        }
-
         button,
         input,
         select,
@@ -883,7 +878,7 @@
 
             &:nth-of-type(even) {
 
-                background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
+                background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-primary));
                 padding: var(--space-large);
                 border-radius: var(--border-radius-medium);
 
