@@ -219,8 +219,7 @@
             animation: fadeIn 1.5s forwards;
         }
 
-        a:any-link,
-        form>button {
+        a:any-link {
 
             color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
             text-decoration: none;
@@ -234,6 +233,11 @@
                 transition: color 0.4s;
 
             }
+        }
+
+        footer li a {
+            text-decoration: underline 1px light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
+            text-underline-offset: 7px;
         }
 
         button,
