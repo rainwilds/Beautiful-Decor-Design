@@ -386,7 +386,7 @@
             column-gap: var(--space-medium);
             background-color: light-dark(var(--color-background-light), var(--color-background-dark));
 
-            @media (max-width: 768px) and (max-width: 980px) and (orientation: landscape) {
+            @media (min-width: 550px) and (max-width: 980px) and (orientation: landscape) {
 
                 & {
                     grid-template: 150vh / 0 repeat(6, 1fr) 0;
