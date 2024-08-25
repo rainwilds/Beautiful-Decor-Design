@@ -1108,8 +1108,6 @@ header {
 
     &:has(i)>picture:first-of-type {
 
-        /* mask-image: linear-gradient(to left, #000 80%, transparent 50%); */
-
         @media (max-width: 980px) {
 
             & {
@@ -1158,7 +1156,6 @@ header {
 
     >div {
         grid-area: header / gutter-left / header / gutter-right;
-        /* background-color: light-dark(var(--color-accent-opaque-light-secondary), var(--color-accent-opaque-dark-secondary)); */
         background-color: light-dark(var(--color-static-light-2), var(--color-static-dark-2));
         z-index: 1;
     }
@@ -1195,7 +1192,6 @@ header {
         position: relative;
         visibility: hidden;
         animation: 37s linear 3s infinite alternate text-scroll;
-        /* mask-image: linear-gradient(to bottom, #000 70%, transparent 100%); */
 
         @media (max-width: 768px) {
 
@@ -1400,7 +1396,7 @@ main {
         animation: 20s linear infinite alternate gallery-scroll;
         gap: var(--space-tiny);
         padding: 0 var(--space-tiny);
-        filter: drop-shadow(0px 0px 170px light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary)));
+        filter: drop-shadow(0px 0px 170px light-dark(var(--color-accent-light-secondary), var(--color-accent-light-primary)));
 
         &:hover {
             animation-play-state: paused;
@@ -1529,7 +1525,6 @@ footer {
     grid-template-columns: subgrid;
     grid-area: footer / gutter-left / footer / gutter-right;
     background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark));
-    /* filter: drop-shadow(0px 0px 170px light-dark(var(--color-accent-light-primary), var(--color-accent-light-primary))); */
 
     img {
         margin-top: var(--space-medium);
@@ -1925,7 +1920,6 @@ body#page-about>main>hgroup {
     background-color: light-dark(var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark));
     padding: var(--space-medium) 0;
     background-image: var(--background-pattern-gradient);
-    /* background-size: 32px 32px; */
 }
 
 body#page-about>main>section {
