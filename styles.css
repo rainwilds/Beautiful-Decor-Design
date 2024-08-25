@@ -469,7 +469,7 @@
             border-color: light-dark(var(--color-static-dark-8), var(--color-static-light-8));
 
             &:hover {
-                background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
+                background-color: light-dark(var(--color-accent-dark-secondary), var(--color-accent-light-secondary));
                 transition: background-color 0.4s;
             }
         }
@@ -1156,7 +1156,7 @@ header {
 
     >div {
         grid-area: header / gutter-left / header / gutter-right;
-        background-color: light-dark(var(--color-static-light-2), var(--color-static-dark-2));
+        background-color: light-dark(var(--color-static-light-2), var(--color-static-dark-4));
         z-index: 1;
     }
 
@@ -1191,11 +1191,11 @@ header {
         mix-blend-mode: plus-lighter;
         position: relative;
         visibility: hidden;
-        animation: 37s linear 2s infinite alternate text-scroll;
+        animation: 37s linear 3s infinite alternate text-scroll;
 
         @media (max-width: 768px) {
 
-            animation: 20s linear 2s infinite alternate text-scroll;
+            animation: 20s linear 3s infinite alternate text-scroll;
 
         }
 
