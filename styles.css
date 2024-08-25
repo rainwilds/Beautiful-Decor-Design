@@ -1191,11 +1191,11 @@ header {
         mix-blend-mode: plus-lighter;
         position: relative;
         visibility: hidden;
-        animation: 37s linear 3s infinite alternate text-scroll;
+        animation: 37s linear 2s infinite alternate text-scroll;
 
         @media (max-width: 768px) {
 
-            animation: 20s linear 3s infinite alternate text-scroll;
+            animation: 20s linear 2s infinite alternate text-scroll;
 
         }
 
@@ -1747,7 +1747,7 @@ div[id^="gallery-item-"] {
 
 
 
-@keyframes header-feature {
+/* @keyframes header-feature {
 
     0% {
         visibility: visible;
@@ -1759,7 +1759,7 @@ div[id^="gallery-item-"] {
         opacity: 1;
     }
 
-}
+} */
 
 
 
