@@ -14,10 +14,6 @@
     font-display: swap;
 }
 
-@view-transition {
-    navigation: auto;
-}
-
 @layer reset, defaults, components;
 
 @layer reset {
