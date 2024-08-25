@@ -356,9 +356,8 @@
 
     <section>
 
-      <span>
-        © Beautiful Décor & Design 2024<br>ABN: 97 861 935 760<br>Hand crafted w/ 💗 by <a
-          href="mailto:mail@behive.co">David Dufourq</a></span>
+      <span>© Beautiful Décor & Design 2024<br>ABN: 97 861 935 760</span>
+      <span>Hand crafted w/ 💗 by <a href="mailto:mail@behive.co">David Dufourq</a></span>
       <div>
         <a href="https://www.facebook.com/beautifuldecoranddesign" target="_blank" aria-label="Facebook profile"><i
             class="fa-brands fa-facebook"></i></a>
@@ -414,33 +413,33 @@
     form.addEventListener("submit", handleSubmit)
   </script>
 
-<script>
+  <script>
 
-document.addEventListener("DOMContentLoaded", function () {
-            const elements = document.querySelectorAll('.animate');
+    document.addEventListener("DOMContentLoaded", function () {
+      const elements = document.querySelectorAll('.animate');
 
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        if (entry.target.classList.contains('animate-top-down')) {
-                            entry.target.classList.remove('animate-top-down');
-                            void entry.target.offsetWidth;
-                            entry.target.classList.add('animate-top-down');
-                        } else if (entry.target.classList.contains('animate-fade-in')) {
-                            entry.target.classList.remove('animate-fade-in');
-                            void entry.target.offsetWidth;
-                            entry.target.classList.add('animate-fade-in');
-                        }
-                    }
-                });
-            });
-
-            elements.forEach(element => {
-                observer.observe(element);
-            });
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            if (entry.target.classList.contains('animate-top-down')) {
+              entry.target.classList.remove('animate-top-down');
+              void entry.target.offsetWidth;
+              entry.target.classList.add('animate-top-down');
+            } else if (entry.target.classList.contains('animate-fade-in')) {
+              entry.target.classList.remove('animate-fade-in');
+              void entry.target.offsetWidth;
+              entry.target.classList.add('animate-fade-in');
+            }
+          }
         });
+      });
 
-</script>
+      elements.forEach(element => {
+        observer.observe(element);
+      });
+    });
+
+  </script>
 
   <!-- <script type="text/javascript">
         var sc_project = 12815469;
