@@ -259,8 +259,9 @@
             padding: var(--space-tiny) var(--space-medium);
 
             &:hover {
-                background-color: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-secondary));
-                transition: background-color 0.4s;
+                background-color: light-dark(var(--color-accent-light-primary), var(--color-accent-light-secondary));
+                transition: all 0.4s;
+                color: light-dark(var(--color-static-light-8), var(--color-static-dark-8));
             }
         }
 
