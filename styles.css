@@ -752,7 +752,6 @@
 
                         & {
                             align-self: flex-end;
-                            margin-bottom: var(--space-huge);
                             padding: var(--space-small);
                         }
 
