@@ -1182,7 +1182,7 @@ header {
         font-family: var(--font-1-family);
         font-weight: var(--font-1-weight-medium);
         font-size: clamp(100vh, 100vh, 100vw);
-        line-height: 1.7;
+        line-height: 1.6;
         opacity: 0.05;
         color: var(--color-accent-light-secondary);
         filter: blur(6px);
