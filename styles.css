@@ -210,11 +210,11 @@
             opacity: 0;
             transition: opacity 0.5s ease-out;
         }
-        
+
         .animate-top-down {
             animation: fadeInTopDown 1s forwards;
         }
-        
+
         .animate-fade-in {
             animation: fadeIn 1.5s forwards;
         }
@@ -1574,6 +1574,10 @@ footer {
 
             @media (max-width: 768px) {
 
+                >div:nth-child(4) picture {
+                    padding: 0 var(--space-tiny);
+                }
+
                 & {
                     margin: var(--space-small) 0 var(--space-large) 0;
                 }
@@ -1856,6 +1860,7 @@ div[id^="gallery-item-"] {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -1866,6 +1871,7 @@ div[id^="gallery-item-"] {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
