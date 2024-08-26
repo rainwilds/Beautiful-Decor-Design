@@ -531,7 +531,6 @@
                 gap: 0;
 
                 select {
-                    background-image: var(--background-noise);
                     box-shadow: 10px 10px 50px -1px var(--color-static-dark-1);
                     border-color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-primary));
                     background-color: light-dark(var(--color-static-light-6), var(--color-static-dark-6));
