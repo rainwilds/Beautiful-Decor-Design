@@ -1897,6 +1897,28 @@ div[id^="gallery-item-"] {
 
 /* -- about page -- */
 
+body#page-about {
+    header {
+        >hgroup {
+            align-self: end;
+            background: black;
+            width: 100%;
+            max-width: inherit;
+            padding: var(--space-medium);
+            display: flex;
+            column-gap: var(--space-large);
+
+            >h1 {
+                margin: 0;
+            }
+
+            >p {
+                padding: 0;
+            }
+        }
+    }
+}
+
 
 
 
