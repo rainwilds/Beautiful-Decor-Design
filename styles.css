@@ -1884,6 +1884,9 @@ div[id^="gallery-item-"] {
 
 body#page-about {
     header {
+
+
+
         >hgroup {
             align-self: end;
             background: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-primary));
@@ -1906,8 +1909,22 @@ body#page-about {
                 padding: 0;
                 display: flex;
                 align-self: center;
+
+                @media (max-width: 980px) {
+                    & {
+                        max-width: initial;
+                    }
+                }
+
             }
         }
+
+        @media (max-width: 980px) {
+            & {
+                mask-image: initial;
+            }
+        }
+
     }
 
     main {
