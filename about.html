@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <title>About: Beautiful Decor & Design - Sunshine Coast & Brisbane</title>
+    <title>About: Beautiful Décor & Design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-        content="About Beautiful Decor and Design and Lisa the owner">
+        content="Discover our range of sheer curtains and blackout curtains for privacy and light control. Perfect for any room. Servicing the Sunshine Coast.">
     <meta name="keywords" content="about">
     <meta name="author" content="David Dufourq">
 
-    <link rel="preconnect" href="https://use.typekit.net" crossorigin>
-    <link rel="preconnect" href="https://p.typekit.net" crossorigin>
-    <link rel="stylesheet" href="https://use.typekit.net/bnt1hso.css">
+    <link rel="preload" href="./fonts/ChaparralPro-Regular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="./fonts/Hummingbird.woff2" as="font" type="font/woff2">
 
     <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
@@ -22,7 +22,11 @@
     <link rel="canonical" href="https://beautifuldecoranddesign.com.au/about.html">
     <link rel="stylesheet" href="./styles.css">
 
-    <script src="https://kit.fontawesome.com/dfd947f6cb.js" crossorigin></script>
+    <link rel="stylesheet" href="./fonts/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./fonts/fontawesome/css/thin.min.css">
+    <link rel="stylesheet" href="./fonts/fontawesome/css/brands.min.css">
+
+    <script src="./scripts.js" defer></script>
 
 </head>
 
@@ -35,182 +39,291 @@
         <picture>
 
             <source srcset="
-  ./img/sheer-curtains-sunshine-coast-brisbane-1-768.avif 768w,
-  ./img/sheer-curtains-sunshine-coast-brisbane-1-980.avif 980w,
-  ./img/sheer-curtains-sunshine-coast-brisbane-1-1366.avif 1366w,
-  ./img/sheer-curtains-sunshine-coast-brisbane-1-1920.avif 1920w,
-  ./img/sheer-curtains-sunshine-coast-brisbane-1-2560.avif 2560w,
-  ./img/sheer-curtains-sunshine-coast-brisbane-1-3840.avif 3840w
-  " media="(prefers-color-scheme: light)"
+  ./img/beautiful-decor-design-location-sunshine-coast-1-768.avif 768w,
+  ./img/beautiful-decor-design-location-sunshine-coast-1-980.avif 980w,
+  ./img/beautiful-decor-design-location-sunshine-coast-1-1366.avif 1366w,
+  ./img/beautiful-decor-design-location-sunshine-coast-1-1920.avif 1920w,
+  ./img/beautiful-decor-design-location-sunshine-coast-1-2560.avif 2560w,
+  ./img/beautiful-decor-design-location-sunshine-coast-1-3840.avif 3840w
+  " 
                 sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
                 type="image/avif">
 
             <source srcset="
-  ./img/sheer-curtains-sunshine-coast-brisbane-1-768.webp 768w,
-  ./img/sheer-curtains-sunshine-coast-brisbane-1-980.webp 980w,
-  ./img/sheer-curtains-sunshine-coast-brisbane-1-1366.webp 1366w,
-  ./img/sheer-curtains-sunshine-coast-brisbane-1-1920.webp 1920w,
-  ./img/sheer-curtains-sunshine-coast-brisbane-1-2560.webp 2560w,
-  ./img/sheer-curtains-sunshine-coast-brisbane-1-3840.webp 3840w
-  " media="(prefers-color-scheme: light)"
+  ./img/beautiful-decor-design-location-sunshine-coast-1-768.webp 768w,
+  ./img/beautiful-decor-design-location-sunshine-coast-1-980.webp 980w,
+  ./img/beautiful-decor-design-location-sunshine-coast-1-1366.webp 1366w,
+  ./img/beautiful-decor-design-location-sunshine-coast-1-1920.webp 1920w,
+  ./img/beautiful-decor-design-location-sunshine-coast-1-2560.webp 2560w,
+  ./img/beautiful-decor-design-location-sunshine-coast-1-3840.webp 3840w
+  " 
                 sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
                 type="image/webp">
 
             <source srcset="
-    ./img/sheer-curtains-sunshine-coast-brisbane-1-768.jpg 768w,
-    ./img/sheer-curtains-sunshine-coast-brisbane-1-980.jpg 980w,
-    ./img/sheer-curtains-sunshine-coast-brisbane-1-1366.jpg 1366w,
-    ./img/sheer-curtains-sunshine-coast-brisbane-1-1920.jpg 1920w,
-    ./img/sheer-curtains-sunshine-coast-brisbane-1-2560.jpg 2560w,
-    ./img/sheer-curtains-sunshine-coast-brisbane-1-3840.jpg 3840w
-  " media="(prefers-color-scheme: light)"
+    ./img/beautiful-decor-design-location-sunshine-coast-1-768.jpg 768w,
+    ./img/beautiful-decor-design-location-sunshine-coast-1-980.jpg 980w,
+    ./img/beautiful-decor-design-location-sunshine-coast-1-1366.jpg 1366w,
+    ./img/beautiful-decor-design-location-sunshine-coast-1-1920.jpg 1920w,
+    ./img/beautiful-decor-design-location-sunshine-coast-1-2560.jpg 2560w,
+    ./img/beautiful-decor-design-location-sunshine-coast-1-3840.jpg 3840w
+  " 
                 sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
                 type="image/jpeg">
 
-            <source srcset="
-          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-768.avif 768w,
-          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-980.avif 980w,
-          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-1366.avif 1366w,
-          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-1920.avif 1920w,
-          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-2560.avif 2560w,
-          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-3840.avif 3840w
-      " media="(prefers-color-scheme: dark)"
-                sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
-                type="image/avif">
-
-            <source srcset="
-      ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-768.webp 768w,
-      ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-980.webp 980w,
-      ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-1366.webp 1366w,
-      ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-1920.webp 1920w,
-      ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-2560.webp 2560w,
-      ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-3840.webp 3840w
-" media="(prefers-color-scheme: dark)"
-                sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
-                type="image/webp">
-
-            <source srcset="
-      ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-768.jpg 768w,
-      ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-980.jpg 980w,
-      ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-1366.jpg 1366w,
-      ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-1920.jpg 1920w,
-      ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-2560.jpg 2560w,
-      ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-3840.jpg 3840w
-  " media="(prefers-color-scheme: dark)"
-                sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
-                type="image/jpeg">
-
-            <img src="./img/sheer-curtains-sunshine-coast-brisbane-1-1920.jpg" alt="Curtains">
+            <img src="./img/beautiful-decor-design-location-sunshine-coast-1-1920.jpg" alt="Beautiful Décor and Design location">
 
         </picture>
 
+        <a href="./index.html" class="animate animate-fade-in">
+            <picture>
+                <source srcset="./img/logos/beautiful-decor-design-logo-light-theme-1.svg"
+                    media="(prefers-color-scheme: light)">
+                <source srcset="./img/logos/beautiful-decor-design-logo-dark-theme-1.svg"
+                    media="(prefers-color-scheme: dark)">
+                <img src="./img/logos/beautiful-decor-design-logo-light-theme-1.svg"
+                    alt="Beautiful Decor and Design logo">
+            </picture>
+        </a>
 
-
-        <!-- header video PLACEHOLDER
-        <video autoplay muted loop disablepictureinpicture poster="./img/RE-image.jpg">
-            <source src="./img/RE-video_2.webm" type="video/webm">
-        </video> -->
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./cushions.html">Cushions</a></li>
                 <li><a href="./blinds.html">Blinds</a></li>
                 <li><a href="./curtains.html">Curtains</a></li>
-                <li><a href="./repairs.html"">Repairs</a></li>
-                 <li><a href="#message">Contact</a></li>
+                <li><a href="./repairs.html">Repairs</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="./about.html">About</a></li>
             </ul>
         </nav>
-        <nav>
-            <!-- <button popovertargetaction="show" popovertarget="menu-mobile"> -->
-            <div>
-                <!-- <i class="fa-thin fa-bars"></i> -->
-                <form method="get" id="menu-mobile-form">
-                    <label for="menu-mobile-select" aria-label="Mobie Menu"></label>
-                    <select name="menu-mobile" id="menu-mobile-select" onchange="navigateToPage(this)">
-                        <option value="./index.html" selected>Menu</option>
-                        <hr>
-                        <option value="./index.html">Home</option>
-                        <option value="./contact.html">Contact</option>
-                        <option value="./about.html">About</option>
-                        <hr>
-                        <optgroup label="Cushions">
-                            <option value="outdoor-cushions">Outdoor Cushions</option>
-                            <option value="indoor-cushions">Indoor Cushions</option>
-                            <option value="floor-cushions">Floor Cushions</option>
-                            <option value="cushion-covers">Cushion Covers</option>
-                        </optgroup>
-                        <hr>
-                        <optgroup label="Blinds">
-                            <option value="roller-blinds">Roller Blinds</option>
-                            <option value="panel-glide-blinds">Panel Glide Blinds</option>
-                            <option value="roman-blinds">Roman Blinds</option>
-                            <option value="printed-blinds">Printed Blinds</option>
-                            <option value="zipscreens">Zipscreens</option>
-                        </optgroup>
-                        <optgroup label="Curtains">
-                            <option value="sheer-curtains">Sheer Curtains</option>
-                            <option value="blackout-curtains">Blackout Curtains</option>
-                        </optgroup>
-                        <optgroup label="Repairs">
-                            <option value="upholstery-repairs">Upholstery Repairs</option>
-                            <option value="car-upholstery">Car Upholstery</option>
-                            <option value="marine-upholstery">Marine Upholstery</option>
-                        </optgroup>
-                    </select>
-                </form>
-            </div>
-            <!-- </button> -->
-        </nav>
-        <hgroup>
 
-            <h1>About</h1>
-            <p>With over two decades of industry expertise, Lisa's vision has shaped Beautiful Décor and Design</p>
+        <nav>
+            <form method="get" id="menu-mobile-form">
+                <label for="menu-mobile-select" aria-label="Mobie Menu"></label>
+                <select name="menu-mobile" id="menu-mobile-select" onchange="navigateToPage(this)">
+                    <option value="./index.html" selected>Menu</option>
+                    <option value="./index.html">Home</option>
+                    <option value="./contact.html">Contact</option>
+                    <option value="./about.html">About</option>
+                    <optgroup label="Cushions">
+                        <option value="outdoor-cushions">Outdoor Cushions</option>
+                        <option value="indoor-cushions">Indoor Cushions</option>
+                        <option value="floor-cushions">Floor Cushions</option>
+                        <option value="cushion-covers">Cushion Covers</option>
+                    </optgroup>
+                    <optgroup label="Blinds">
+                        <option value="roller-blinds">Roller Blinds</option>
+                        <option value="panel-glide-blinds">Panel Glide Blinds</option>
+                        <option value="roman-blinds">Roman Blinds</option>
+                        <option value="printed-blinds">Printed Blinds</option>
+                        <option value="zipscreens">Zipscreens</option>
+                    </optgroup>
+                    <optgroup label="Curtains">
+                        <option value="sheer-curtains">Sheer Curtains</option>
+                        <option value="blackout-curtains">Blackout Curtains</option>
+                    </optgroup>
+                    <optgroup label="Repairs">
+                        <option value="upholstery-repairs">Upholstery Repairs</option>
+                        <option value="car-upholstery">Car Upholstery</option>
+                        <option value="marine-upholstery">Marine Upholstery</option>
+                    </optgroup>
+                </select>
+            </form>
+        </nav>
+
+        <hgroup class="animate animate-top-down">
+
+            <h1>Curtains</h1>
+            <p>Discover our range of sheer curtains and blackout curtains for privacy and light control. Perfect for any
+                room. Servicing the Sunshine Coast.</p>
             <div>
                 <a href="#message"><button>Contact Now</button></a>
                 <a href="#main"><button class="secondary">Learn More</button></a>
             </div>
+
         </hgroup>
+
     </header>
 
     <main id="main">
 
         <section class="cards left">
 
-            <picture>
+            <div class="category animate animate-top-down">
+                <h2>Sheer Curtains</h2>
+                <p>Enhance your home with our elegant sheer curtains. Available in various colors and designs, they
+                    provide a soft, airy look while allowing natural light to filter through.</p>
+                <p>Perfect for any room, our premium quality sheer curtains add a touch of sophistication and charm to
+                    your living spaces.</p>
+                <a href="./sheer-curtains.html"><button>Explore &gt;</button></a>
+            </div>
 
-                <img src="./img/roller-blinds-sunshine-coast-brisbane-2-1920.jpg" alt="Sheer Curtains" loading="lazy">
+            <picture class="animate animate-fade-in">
+
+                <source srcset="
+            ./img/sheer-curtains-sunshine-coast-brisbane-3-768.avif 768w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-3-980.avif 980w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-3-1366.avif 1366w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-3-1920.avif 1920w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-3-2560.avif 2560w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-3-3840.avif 3840w
+            " media="(prefers-color-scheme: light)"
+                    sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                    type="image/avif">
+
+                <source srcset="
+          ./img/sheer-curtains-sunshine-coast-brisbane-3-768.webp 768w,
+          ./img/sheer-curtains-sunshine-coast-brisbane-3-980.webp 980w,
+          ./img/sheer-curtains-sunshine-coast-brisbane-3-1366.webp 1366w,
+          ./img/sheer-curtains-sunshine-coast-brisbane-3-1920.webp 1920w,
+          ./img/sheer-curtains-sunshine-coast-brisbane-3-2560.webp 2560w,
+          ./img/sheer-curtains-sunshine-coast-brisbane-3-3840.webp 3840w
+          " media="(prefers-color-scheme: light)"
+                    sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                    type="image/webp">
+
+                <source srcset="
+              ./img/sheer-curtains-sunshine-coast-brisbane-3-768.jpg 768w,
+              ./img/sheer-curtains-sunshine-coast-brisbane-3-980.jpg 980w,
+              ./img/sheer-curtains-sunshine-coast-brisbane-3-1366.jpg 1366w,
+              ./img/sheer-curtains-sunshine-coast-brisbane-3-1920.jpg 1920w,
+              ./img/sheer-curtains-sunshine-coast-brisbane-3-2560.jpg 2560w,
+              ./img/sheer-curtains-sunshine-coast-brisbane-3-3840.jpg 3840w
+            " media="(prefers-color-scheme: light)"
+                    sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                    type="image/jpeg">
+
+                <source srcset="
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-768.avif 768w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-980.avif 980w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-1366.avif 1366w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-1920.avif 1920w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-2560.avif 2560w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-3840.avif 3840w
+            " media="(prefers-color-scheme: dark)"
+                    sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                    type="image/avif">
+
+                <source srcset="
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-768.webp 768w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-980.webp 980w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-1366.webp 1366w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-1920.webp 1920w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-2560.webp 2560w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-3840.webp 3840w
+            " media="(prefers-color-scheme: dark)"
+                    sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                    type="image/webp">
+
+                <source srcset="
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-768.jpg 768w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-980.jpg 980w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-1366.jpg 1366w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-1920.jpg 1920w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-2560.jpg 2560w,
+            ./img/sheer-curtains-sunshine-coast-brisbane-2-3840.jpg 3840w
+            " media="(prefers-color-scheme: dark)"
+                    sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                    type="image/jpeg">
+
+                <img src="./img/roller-blinds-sunshine-coast-brisbane-2-1920.jpg" alt="Sheer curtains" loading="lazy">
 
             </picture>
 
-            <hgroup>
-                <div>
-                    <p>Welcome to Beautiful Décor and Design, where creativity meets craftsmanship with a touch of personal flair. I'm Lisa Dove, the heart and soul behind this journey. For over two decades, I've immersed myself in the upholstery and textile industries, honing my skills and passion into what has become a testament to dedication and innovation.</p><p>In 2018, I founded Beautiful Décor and Design as a culmination of 18 years of industry experience. This venture wasn't just about creating a business; it was about crafting a legacy of excellence. Through every phase of building this brand, from conceptualization to manufacturing, I've strived for perfection, driven by a vision to offer nothing less than top-tier Outdoor & Indoor Fabrics and Design solutions.</p>
-                    
-                    <p>Today, with 24 years of expertise under my belt, I stand proudly at the forefront of this dynamic industry. Beautiful Décor and Design is not just a company—it's a testament to my commitment to delivering cutting-edge decor ideas that resonate with modern tastes while adding a unique touch of elegance to any living space.</p>
-                    
-                    <p>Step into our world and let's bring your decor dreams to life. Whether you're seeking the delicate allure of sheer curtains, bespoke printed blinds, durable UV-resistant outdoor cushions, or the serene hues inspired by coastal landscapes, we have the perfect blend of style and functionality to suit your vision.</p>
-                    
-                    <p>Explore our gallery, where each piece tells a story of craftsmanship and creativity. Let's embark on a journey together, where inspiration meets transformation. Your home deserves the best—let Beautiful Décor and Design be your partner in creating spaces that reflect your personality and style.</p>
-                    
-                    <p>Join me for a chat, explore our exquisite fabrics, and let's turn your creative ideas into a reality. Together, we'll elevate your living experience and inspire admiration with every detail.</p>
-                    
-                </div>
+        </section>
 
-            </hgroup>
+        <section class="cards right">
+
+            <picture class="animate animate-fade-in">
+
+                <source srcset="
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-768.avif 768w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-980.avif 980w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-1366.avif 1366w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-1920.avif 1920w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-2560.avif 2560w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-3840.avif 3840w
+          " media="(prefers-color-scheme: light)"
+                    sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                    type="image/avif">
+
+                <source srcset="
+        ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-768.webp 768w,
+        ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-980.webp 980w,
+        ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-1366.webp 1366w,
+        ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-1920.webp 1920w,
+        ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-2560.webp 2560w,
+        ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-3840.webp 3840w
+        " media="(prefers-color-scheme: light)"
+                    sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                    type="image/webp">
+
+                <source srcset="
+            ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-768.jpg 768w,
+            ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-980.jpg 980w,
+            ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-1366.jpg 1366w,
+            ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-1920.jpg 1920w,
+            ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-2560.jpg 2560w,
+            ./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-3840.jpg 3840w
+          " media="(prefers-color-scheme: light)"
+                    sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                    type="image/jpeg">
+
+                <source srcset="
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-768.avif 768w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-980.avif 980w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-1366.avif 1366w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-1920.avif 1920w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-2560.avif 2560w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-3840.avif 3840w
+          " media="(prefers-color-scheme: dark)"
+                    sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                    type="image/avif">
+
+                <source srcset="
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-768.webp 768w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-980.webp 980w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-1366.webp 1366w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-1920.webp 1920w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-2560.webp 2560w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-3840.webp 3840w
+          " media="(prefers-color-scheme: dark)"
+                    sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                    type="image/webp">
 
 
+                <source srcset="
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-768.jpg 768w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-980.jpg 980w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-1366.jpg 1366w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-1920.jpg 1920w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-2560.jpg 2560w,
+          ./img/blackout-blockout-curtains-sunshine-coast-brisbane-1-3840.jpg 3840w
+          " media="(prefers-color-scheme: dark)"
+                    sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                    type="image/jpeg">
+
+                <img src="./img/blackout-blockout-curtains-sunshine-coast-brisbane-2-1920.jpg" alt="Blackout curtains"
+                    loading="lazy">
+
+            </picture>
+
+            <div class="category animate animate-top-down">
+                <h2>Blackout Curtains</h2>
+                <p>Transform your space with our premium blackout curtains. Available in various colors and designs, they provide complete privacy and block out unwanted light.</p><p>Perfect for bedrooms, media rooms, and nurseries. Our high-quality blackout curtains enhance your comfort and ensure a restful environment.</p>
+                <a href="./blackout-curtains.html"><button>Explore &gt;</button></a>
+            </div>
 
         </section>
 
-
-
-
         <section id="brands">
+
             <hgroup>
                 <h2>Brands we use</h2>
-                <p>We use only the very best brands available.</p>
+                <p>We use only the very best brands available</p>
             </hgroup>
+      
             <div>
                 <a href="https://global.sunbrella.com/en-us/australia" target="_blank">
                     <picture>
@@ -259,481 +372,347 @@
                     </picture>
                 </a>
             </div>
+      
         </section>
-
-        <section id="gallery">
-            <button popovertargetaction="show" popovertarget="gallery-item-1">
-                <picture>
-                    <source srcset="
-        ./img/blinds-sunshine-coast-1-768.jpg 768w,
-        ./img/blinds-sunshine-coast-1-980.jpg 980w
-        " sizes="(max-width: 768px) 30vw, (max-width: 980px) 20vw, 980px" type="image/jpeg">
-                    <img src="./img/blinds-sunshine-coast-1-980.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </button>
-            <button popovertargetaction="show" popovertarget="gallery-item-2">
-                <picture>
-                    <source srcset="
-        ./img/blinds-sunshine-coast-2-768.jpg 768w,
-        ./img/blinds-sunshine-coast-2-980.jpg 980w
-        " sizes="(max-width: 768px) 30vw, (max-width: 980px) 20vw, 980px" type="image/jpeg">
-                    <img src="./img/blinds-sunshine-coast-2-980.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </button>
-            <button popovertargetaction="show" popovertarget="gallery-item-3">
-                <picture>
-                    <source srcset="
-        ./img/blinds-sunshine-coast-3-768.jpg 768w,
-        ./img/blinds-sunshine-coast-3-980.jpg 980w
-        " sizes="(max-width: 768px) 30vw, (max-width: 980px) 20vw, 980px" type="image/jpeg">
-                    <img src="./img/blinds-sunshine-coast-3-980.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </button>
-            <button popovertargetaction="show" popovertarget="gallery-item-4">
-                <picture>
-                    <source srcset="
-        ./img/blinds-sunshine-coast-4-768.jpg 768w,
-        ./img/blinds-sunshine-coast-4-980.jpg 980w
-        " sizes="(max-width: 768px) 30vw, (max-width: 980px) 20vw, 980px" type="image/jpeg">
-                    <img src="./img/blinds-sunshine-coast-4-980.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </button>
-            <button popovertargetaction="show" popovertarget="gallery-item-5">
-                <picture>
-                    <source srcset="
-        ./img/curtains-sunshine-coast-1-768.jpg 768w,
-        ./img/curtains-sunshine-coast-1-980.jpg 980w
-        " sizes="(max-width: 768px) 30vw, (max-width: 980px) 20vw, 980px" type="image/jpeg">
-                    <img src="./img/curtains-sunshine-coast-1-980.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </button>
-            <button popovertargetaction="show" popovertarget="gallery-item-6">
-                <picture>
-                    <source srcset="
-        ./img/blinds-sunshine-coast-5-768.jpg 768w,
-        ./img/blinds-sunshine-coast-5-980.jpg 980w
-        " sizes="(max-width: 768px) 30vw, (max-width: 980px) 20vw, 980px" type="image/jpeg">
-                    <img src="./img/blinds-sunshine-coast-5-980.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </button>
-            <button popovertargetaction="show" popovertarget="gallery-item-7">
-                <picture>
-                    <source srcset="
-        ./img/blinds-sunshine-coast-6-768.jpg 768w,
-        ./img/blinds-sunshine-coast-6-980.jpg 980w
-        " sizes="(max-width: 768px) 30vw, (max-width: 980px) 20vw, 980px" type="image/jpeg">
-                    <img src="./img/blinds-sunshine-coast-6-980.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </button>
-            <button popovertargetaction="show" popovertarget="gallery-item-8">
-                <picture>
-                    <source srcset="
-        ./img/curtains-sunshine-coast-2-768.jpg 768w,
-        ./img/curtains-sunshine-coast-2-980.jpg 980w
-        " sizes="(max-width: 768px) 30vw, (max-width: 980px) 20vw, 980px" type="image/jpeg">
-                    <img src="./img/curtains-sunshine-coast-2-980.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </button>
-            <button popovertargetaction="show" popovertarget="gallery-item-9">
-                <picture>
-                    <source srcset="
-        ./img/blinds-sunshine-coast-7-768.jpg 768w,
-        ./img/blinds-sunshine-coast-7-980.jpg 980w
-        " sizes="(max-width: 768px) 30vw, (max-width: 980px) 20vw, 980px" type="image/jpeg">
-                    <img src="./img/blinds-sunshine-coast-7-980.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </button>
-            <button popovertargetaction="show" popovertarget="gallery-item-10">
-                <picture>
-                    <source srcset="
-        ./img/curtains-sunshine-coast-3-768.jpg 768w,
-        ./img/curtains-sunshine-coast-3-980.jpg 980w
-        " sizes="(max-width: 768px) 30vw, (max-width: 980px) 20vw, 980px" type="image/jpeg">
-                    <img src="./img/curtains-sunshine-coast-3-980.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </button>
-
-        </section>
-
-        <section id="message">
+      
+          <section id="quote">
+      
+            <i class="fa-thin fa-quote-left"></i>
+            <blockquote>
+              "Lisa & her team have excelled in making our curtains! It was a huge job & their craftsmanship to bring our vision to life was really impressive."
+              <p>- Peter Watt</p>
+            </blockquote>
+      
+          </section>
+      
+          <section id="contact" class="animate animate-top-down">
+      
             <hgroup>
-                <h2>Send us a message</h2>
-                <p>Fill in the form below and we'll get back to you shortly</p>
+              <h2>Interested in curtains?</h2>
+              <p>Fill in the form below and we'll get back to you shortly</p>
             </hgroup>
+      
             <div>
-                <a href="tel:0411550402">0411 550 402</a>
-                <a href="mailto:lisa@beautifuldecoranddesign.com.au">lisa@beautifuldecoranddesign.com.au</a>
+              <a href="tel:0411550402">0411 550 402</a>
+              <a href="mailto:lisa@beautifuldecoranddesign.com.au">lisa@beautifuldecoranddesign.com.au</a>
             </div>
+      
             <form id="contact-form" action="https://formspree.io/f/xblrrlaz" method="POST">
-                <label for="email" aria-label="Email">Email:</label>
-                <input type="email" name="email" required>
-                <label for="phone" aria-label="Phone">Phone:</label>
-                <input type="tel" name="phone" pattern="^\d{8,10}$">
-                <label for="message" aria-label="Message">Message:</label>
-                <textarea name="message" required></textarea>
-                <button id="contact-form-button">Submit</button>
-                <p id="contact-form-status"></p>
+              <label for="email" aria-label="Email">Email:</label>
+              <input type="email" name="email" id="email" required autocomplete="email">
+              <label for="phone" aria-label="Phone">Phone:</label>
+              <input type="tel" name="phone" id="phone" pattern="^\d{8,10}$" autocomplete="tel">
+              <label for="message" aria-label="Message">Message:</label>
+              <textarea name="message" id="message" required></textarea>
+              <button id="contact-form-button">Submit</button>
+              <p id="contact-form-status"></p>
             </form>
-        </section>
-    </main>
-
-    <footer>
-        <section>
+      
+          </section>
+      
+        </main>
+      
+        <footer>
+      
+          <section>
+      
             <div>
-                <h3>Cushions</h3>
+              <h3><a href="./cushions.html">Cushions</a></h3>
+              <ul>
+                  <li><a href="./outdoor-cushions.html">Outdoor Cushions</a></li>
+                  <li><a href="./indoor-cushions.html">Indoor Cushions</a></li>
+                  <li><a href="./floor-cushions.html">Floor Cushions</a></li>
+                  <li><a href="./cushion-covers.html">Cushion Covers</a></li>
+      
+              </ul>
+              <h3><a href="./repairs.html">Repairs</a></h3>
+              <ul>
+                  <li><a href="./upholstery-repairs.html">Upholstery Repairs</a></li>
+                  <li><a href="./car-upholstery.html">Car Upholstery</a></li>
+                  <li><a href="./marine-upholstery.html">Marine Upholstery</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3><a href="./blinds.html">Blinds</a></h3>
+              <ul>
+                  <li><a href="./roller-blinds.html">Roller Blinds</a></li>
+                  <li><a href="./panel-glide-blinds.html">Panel Glide Blinds</a></li>
+                  <li><a href="./roman-blinds.html">Roman Blinds</a></li>
+                  <li><a href="./printed-blinds.html">Printed Blinds</a></li>
+                  <li><a href="./zipscreens.html">Zipscreens</a></li>
+      
+              </ul>
+              <h3><a href="./curtains.html">Curtains</a></h3>
+              <ul>
+                  <li><a href="./sheer-curtains.html">Sheer Curtains</a></li>
+                  <li><a href="./blackout-curtains.html">Blackout Curtains</a></li>
+      
+              </ul>
+          </div>
+            <div>
+              <h3>Hours</h3>
+              Monday-Friday: 8am - 4pm
+              <h3>Services areas</h3>
+              <p>The Sunshine Coast including Maroochydore, Buderim, Caloundra, Noosa and the Hinterlands.</p>
+            </div>
+            <div>
+              <address>
                 <ul>
-                    <li><a href="./outdoor-cushions.html">Outdoor Cushions</a></li>
-                    <li><a href="./indoor-cushions.html">Indoor Cushions</a></li>
-                    <li><a href="./floor-cushions.html">Floor Cushions</a></li>
-                    <li><a href="./cushion-covers.html">Cushion Covers</a></li>
-
+                  <li>
+                    <i class="fa-thin fa-location-dot"></i>
+                    <a href="https://maps.app.goo.gl/oyrMBAJ53Cjo2AZZ8" target="_blank">4/47 Wises
+                      Road,<br>Buderim Q 4556</a>
+                  </li>
+                  <li>
+                    <i class="fa-thin fa-phone"></i>
+                    <a href="tel:0411550402">0411 550 402</a>
+                  </li>
                 </ul>
-                <h3>Repairs</h3>
-                <ul>
-                    <li><a href="./upholstery-repairs.html">Upholstery Repairs</a></li>
-                    <li><a href="./car-upholstery.html">Car Upholstery</a></li>
-                    <li><a href="./marine-upholstery.html">Marine Upholstery</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>Blinds</h3>
-                <ul>
-                    <li><a href="./roller-blinds.html">Roller Blinds</a></li>
-                    <li><a href="./panel-glide-blinds.html">Panel Glide Blinds</a></li>
-                    <li><a href="./roman-blinds.html">Roman Blinds</a></li>
-                    <li><a href="./printed-blinds.html">Printed Blinds</a></li>
-                    <li><a href="./zipscreens.html">Zipscreens</a></li>
-
-                </ul>
-                <h3>Curtains</h3>
-                <ul>
-                    <li><a href="./sheer-curtains.html">Sheer Curtains</a></li>
-                    <li><a href="./blackout-curtains.html">Blackout Curtains</a></li>
-
-                </ul>
-            </div>
-            <div>
-                <h3>Hours</h4>
-                    Monday-Friday: 8am - 4pm
-                    <h3>Services areas</h4>
-                        <p>The Sunshine Coast including Maroochydore, Buderim, Caloundra, Noosa and the Hinterlands.</p>
-            </div>
-            <div>
-                <address>
-                    <ul>
-                        <li>
-                            <i class="fa-thin fa-location-dot"></i>
-                            <a href="https://maps.app.goo.gl/oyrMBAJ53Cjo2AZZ8" target="_blank">4/47 Wises
-                                Road,<br>Buderim Q 4556</a>
-                        </li>
-                        <li>
-                            <i class="fa-thin fa-phone"></i>
-                            <a href="tel:0411550402">0411 550 402</a>
-                        </li>
-                    </ul>
-                </address>
-                <a href="./index.html">
-                    <picture>
-                        <source srcset="./img/logos/beautiful-decor-design-logo-light-theme-1.svg"
-                            media="(prefers-color-scheme: light)" alt="Beautiful Decor and Design logo">
-                        <source srcset="./img/logos/beautiful-decor-design-logo-dark-theme-1.svg"
-                            media="(prefers-color-scheme: dark)" alt="Beautiful Decor and Design logo">
-                        <img src="./img/logos/beautiful-decor-design-logo-light-theme-1.svg" loading="lazy"
-                            alt="Beautiful Decor and Design logo">
-                    </picture>
-                </a>
-            </div>
-        </section>
-        <section>
-            <span>
-                © Beautiful Décor &amp; Design 2024 | ABN: 97 861 935 760 | Designed w/ 💗 by <a
-                    href="mailto:mail@behive.co">David Dufourq</a></span>
-            <div>
-                <a href="https://www.facebook.com/beautifuldecoranddesign" target="_blank"
-                    aria-label="Facebook profile"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/beautiful_decoranddesign/" target="_blank"
-                    aria-label="Instagram profile"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://maps.app.goo.gl/SiDXqJjhx52NniNu9" target="_blank" aria-label="Google Maps profile"><i
-                        class="fa-brands fa-google"></i></a>
-            </div>
-        </section>
-        <!-- <dialog> PLACEHOLDER
-      <img src="./img/header.jpg" alt="Alt title" title="Image title" loading="lazy" >
-      <hgroup>
-        <h3>Contact Me</h3>
-        <p>Elit scelerisque mauris
-          pellentesque pulvinar pellentesque habitant. Nisi porta lorem mollis
-          aliquam ut porttitor leo a diam.</p>
-        <form>
-          <label for="field1">Enter something here</label>
-          <input name="test" >
-        </form>
-      </hgroup>
-      <button autofocus><i class="fa-light fa-xmark"></i>Close</button>
-    </dialog> -->
-
-        <section id="gallery-item-1" popover>
-            <div>
-                <button popovertargetaction="hide" popovertarget="gallery-item-1">
-                    <i class="fa-thin fa-xmark"></i>
-                </button>
+              </address>
+              <a href="./index.html">
                 <picture>
-                    <source srcset="
-        ./img/blinds-sunshine-coast-1-768.jpg 768w,
-        ./img/blinds-sunshine-coast-1-980.jpg 980w,
-        ./img/blinds-sunshine-coast-1-1366.jpg 1366w,
-        ./img/blinds-sunshine-coast-1-1920.jpg 1920w,
-        ./img/blinds-sunshine-coast-1-2560.jpg 2560w,
-        ./img/blinds-sunshine-coast-1-3840.jpg 3840w
-        " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
-                        type="image/jpeg">
-
-                    <img src="./img/blinds-sunshine-coast-1-1920.jpg" alt="Cushions" loading="lazy">
+                  <source srcset="./img/logos/beautiful-decor-design-logo-light-theme-1.svg"
+                    media="(prefers-color-scheme: light)">
+                  <source srcset="./img/logos/beautiful-decor-design-logo-dark-theme-1.svg"
+                    media="(prefers-color-scheme: dark)">
+                  <img src="./img/logos/beautiful-decor-design-logo-light-theme-1.svg" loading="lazy"
+                    alt="Beautiful Decor and Design logo">
                 </picture>
+              </a>
             </div>
-        </section>
-        <section id="gallery-item-2" popover>
+      
+          </section>
+      
+          <section>
+      
+            <span>ABN: 97 861 935 760<br>© Beautiful Décor & Design 2024</span>
+            <span>Hand crafted w/ 💗 by <a href="mailto:mail@behive.co">David Dufourq</a></span>
             <div>
-                <button popovertargetaction="hide" popovertarget="gallery-item-2">
-                    <i class="fa-thin fa-xmark"></i>
-                </button>
-                <picture>
-                    <source srcset="
-        ./img/blinds-sunshine-coast-2-768.jpg 768w,
-        ./img/blinds-sunshine-coast-2-980.jpg 980w,
-        ./img/blinds-sunshine-coast-2-1366.jpg 1366w,
-        ./img/blinds-sunshine-coast-2-1920.jpg 1920w,
-        ./img/blinds-sunshine-coast-2-2560.jpg 2560w,
-        ./img/blinds-sunshine-coast-2-3840.jpg 3840w
-        " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
-                        type="image/jpeg">
-
-                    <img src="./img/blinds-sunshine-coast-2-1920.jpg" alt="Cushions" loading="lazy">
-                </picture>
+              <a href="https://www.facebook.com/beautifuldecoranddesign" target="_blank" aria-label="Facebook profile"><i
+                  class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/beautiful_decoranddesign/" target="_blank" aria-label="Instagram profile"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="https://maps.app.goo.gl/SiDXqJjhx52NniNu9" target="_blank" aria-label="Google Maps profile"><i
+                  class="fa-brands fa-google"></i></a>
             </div>
-        </section>
-        <section id="gallery-item-3" popover>
-            <div>
-                <button popovertargetaction="hide" popovertarget="gallery-item-3">
-                    <i class="fa-thin fa-xmark"></i>
-                </button>
-                <picture>
-                    <source srcset="
-        ./img/blinds-sunshine-coast-3-768.jpg 768w,
-        ./img/blinds-sunshine-coast-3-980.jpg 980w,
-        ./img/blinds-sunshine-coast-3-1366.jpg 1366w,
-        ./img/blinds-sunshine-coast-3-1920.jpg 1920w,
-        ./img/blinds-sunshine-coast-3-2560.jpg 2560w,
-        ./img/blinds-sunshine-coast-3-3840.jpg 3840w
-        " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
-                        type="image/jpeg">
-
-                    <img src="./img/blinds-sunshine-coast-3-1920.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </div>
-        </section>
-        <section id="gallery-item-4" popover>
-            <div>
-                <button popovertargetaction="hide" popovertarget="gallery-item-4">
-                    <i class="fa-thin fa-xmark"></i>
-                </button>
-                <picture>
-                    <source srcset="
-        ./img/blinds-sunshine-coast-4-768.jpg 768w,
-        ./img/blinds-sunshine-coast-4-980.jpg 980w,
-        ./img/blinds-sunshine-coast-4-1366.jpg 1366w,
-        ./img/blinds-sunshine-coast-4-1920.jpg 1920w,
-        ./img/blinds-sunshine-coast-4-2560.jpg 2560w,
-        ./img/blinds-sunshine-coast-4-3840.jpg 3840w
-        " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
-                        type="image/jpeg">
-
-                    <img src="./img/blinds-sunshine-coast-4-1920.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </div>
-        </section>
-        <section id="gallery-item-5" popover>
-            <div>
-                <button popovertargetaction="hide" popovertarget="gallery-item-5">
-                    <i class="fa-thin fa-xmark"></i>
-                </button>
-                <picture>
-                    <source srcset="
-        ./img/curtains-sunshine-coast-1-768.jpg 768w,
-        ./img/curtains-sunshine-coast-1-980.jpg 980w,
-        ./img/curtains-sunshine-coast-1-1366.jpg 1366w,
-        ./img/curtains-sunshine-coast-1-1920.jpg 1920w,
-        ./img/curtains-sunshine-coast-1-2560.jpg 2560w,
-        ./img/curtains-sunshine-coast-1-3840.jpg 3840w
-        " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
-                        type="image/jpeg">
-
-                    <img src="./img/curtains-sunshine-coast-1-1920.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </div>
-        </section>
-        <section id="gallery-item-6" popover>
-            <div>
-                <button popovertargetaction="hide" popovertarget="gallery-item-6">
-                    <i class="fa-thin fa-xmark"></i>
-                </button>
-                <picture>
-                    <source srcset="
-        ./img/blinds-sunshine-coast-5-768.jpg 768w,
-        ./img/blinds-sunshine-coast-5-980.jpg 980w,
-        ./img/blinds-sunshine-coast-5-1366.jpg 1366w,
-        ./img/blinds-sunshine-coast-5-1920.jpg 1920w,
-        ./img/blinds-sunshine-coast-5-2560.jpg 2560w,
-        ./img/blinds-sunshine-coast-5-3840.jpg 3840w
-        " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
-                        type="image/jpeg">
-
-                    <img src="./img/blinds-sunshine-coast-5-1920.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </div>
-        </section>
-        <section id="gallery-item-7" popover>
-            <div>
-                <button popovertargetaction="hide" popovertarget="gallery-item-7">
-                    <i class="fa-thin fa-xmark"></i>
-                </button>
-                <picture>
-                    <source srcset="
-        ./img/blinds-sunshine-coast-6-768.jpg 768w,
-        ./img/blinds-sunshine-coast-6-980.jpg 980w,
-        ./img/blinds-sunshine-coast-6-1366.jpg 1366w,
-        ./img/blinds-sunshine-coast-6-1920.jpg 1920w,
-        ./img/blinds-sunshine-coast-6-2560.jpg 2560w,
-        ./img/blinds-sunshine-coast-6-3840.jpg 3840w
-        " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
-                        type="image/jpeg">
-
-                    <img src="./img/blinds-sunshine-coast-6-1920.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </div>
-        </section>
-        <section id="gallery-item-8" popover>
-            <div>
-                <button popovertargetaction="hide" popovertarget="gallery-item-8">
-                    <i class="fa-thin fa-xmark"></i>
-                </button>
-                <picture>
-                    <source srcset="
-        ./img/curtains-sunshine-coast-2-768.jpg 768w,
-        ./img/curtains-sunshine-coast-2-980.jpg 980w,
-        ./img/curtains-sunshine-coast-2-1366.jpg 1366w,
-        ./img/curtains-sunshine-coast-2-1920.jpg 1920w,
-        ./img/curtains-sunshine-coast-2-2560.jpg 2560w,
-        ./img/curtains-sunshine-coast-2-3840.jpg 3840w
-        " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
-                        type="image/jpeg">
-
-                    <img src="./img/curtains-sunshine-coast-2-1920.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </div>
-        </section>
-        <section id="gallery-item-9" popover>
-            <div>
-                <button popovertargetaction="hide" popovertarget="gallery-item-9">
-                    <i class="fa-thin fa-xmark"></i>
-                </button>
-                <picture>
-                    <source srcset="
-        ./img/blinds-sunshine-coast-7-768.jpg 768w,
-        ./img/blinds-sunshine-coast-7-980.jpg 980w,
-        ./img/blinds-sunshine-coast-7-1366.jpg 1366w,
-        ./img/blinds-sunshine-coast-7-1920.jpg 1920w,
-        ./img/blinds-sunshine-coast-7-2560.jpg 2560w,
-        ./img/blinds-sunshine-coast-7-3840.jpg 3840w
-        " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
-                        type="image/jpeg">
-
-                    <img src="./img/blinds-sunshine-coast-7-1920.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </div>
-        </section>
-        <section id="gallery-item-10" popover>
-            <div>
-                <button popovertargetaction="hide" popovertarget="gallery-item-10">
-                    <i class="fa-thin fa-xmark"></i>
-                </button>
-                <picture>
-                    <source srcset="
-        ./img/curtains-sunshine-coast-3-768.jpg 768w,
-        ./img/curtains-sunshine-coast-3-980.jpg 980w,
-        ./img/curtains-sunshine-coast-3-1366.jpg 1366w,
-        ./img/curtains-sunshine-coast-3-1920.jpg 1920w,
-        ./img/curtains-sunshine-coast-3-2560.jpg 2560w,
-        ./img/curtains-sunshine-coast-3-3840.jpg 3840w
-        " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
-                        type="image/jpeg">
-
-                    <img src="./img/curtains-sunshine-coast-3-1920.jpg" alt="Cushions" loading="lazy">
-                </picture>
-            </div>
-        </section>
-
-
-    </footer>
-
-    <!-- <script> PLACEHOLDER
-    const dialog = document.querySelector("dialog");
-    const showButton = document.querySelector("p + button");
-    const closeButton = document.querySelector("dialog button");
-
-    showButton.addEventListener("click", () => {
-      dialog.style.display = "grid";
-      dialog.showModal();
-    });
-
-    closeButton.addEventListener("click", () => {
-      dialog.style.display = "none";
-      dialog.close();
-    });
-  </script> -->
-
-    <script>
-        function navigateToPage(selectElement) {
-            var url = selectElement.value;
-            if (url) {
-                window.location.href = url;
-            }
-        }
-    </script>
-
-    <script>
-        var form = document.getElementById("contact-form");
-
-        async function handleSubmit(event) {
-            event.preventDefault();
-            var status = document.getElementById("contact-form-status");
-            var data = new FormData(event.target);
-            fetch(event.target.action, {
-                method: form.method,
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            }).then(response => {
-                if (response.ok) {
-                    status.innerHTML = "Thanks for your message. We'll be in touch shortly!";
-                    form.reset()
-                } else {
-                    response.json().then(data => {
-                        if (Object.hasOwn(data, 'errors')) {
-                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                        } else {
-                            status.innerHTML = "Oops! There was a problem submitting your form."
-                        }
-                    })
-                }
-            }).catch(error => {
-                status.innerHTML = "Oops! There was a problem submitting your form."
-            });
-        }
-        form.addEventListener("submit", handleSubmit)
-    </script>
-
-</body>
-
-</html>
+      
+          </section>
+      
+        </footer>
+      
+        <div id="gallery-item-1" popover>
+          <div>
+            <button popovertargetaction="hide" popovertarget="gallery-item-1">
+              <i class="fa-thin fa-xmark"></i>
+            </button>
+            <picture>
+              <source srcset="
+      ./img/blinds-sunshine-coast-1-768.jpg 768w,
+      ./img/blinds-sunshine-coast-1-980.jpg 980w,
+      ./img/blinds-sunshine-coast-1-1366.jpg 1366w,
+      ./img/blinds-sunshine-coast-1-1920.jpg 1920w,
+      ./img/blinds-sunshine-coast-1-2560.jpg 2560w,
+      ./img/blinds-sunshine-coast-1-3840.jpg 3840w
+      " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                type="image/jpeg">
+      
+              <img src="./img/blinds-sunshine-coast-1-1920.jpg" alt="Cushions" loading="lazy">
+            </picture>
+          </div>
+        </div>
+        <div id="gallery-item-2" popover>
+          <div>
+            <button popovertargetaction="hide" popovertarget="gallery-item-2">
+              <i class="fa-thin fa-xmark"></i>
+            </button>
+            <picture>
+              <source srcset="
+      ./img/blinds-sunshine-coast-2-768.jpg 768w,
+      ./img/blinds-sunshine-coast-2-980.jpg 980w,
+      ./img/blinds-sunshine-coast-2-1366.jpg 1366w,
+      ./img/blinds-sunshine-coast-2-1920.jpg 1920w,
+      ./img/blinds-sunshine-coast-2-2560.jpg 2560w,
+      ./img/blinds-sunshine-coast-2-3840.jpg 3840w
+      " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                type="image/jpeg">
+      
+              <img src="./img/blinds-sunshine-coast-2-1920.jpg" alt="Cushions" loading="lazy">
+            </picture>
+          </div>
+        </div>
+        <div id="gallery-item-3" popover>
+          <div>
+            <button popovertargetaction="hide" popovertarget="gallery-item-3">
+              <i class="fa-thin fa-xmark"></i>
+            </button>
+            <picture>
+              <source srcset="
+      ./img/blinds-sunshine-coast-3-768.jpg 768w,
+      ./img/blinds-sunshine-coast-3-980.jpg 980w,
+      ./img/blinds-sunshine-coast-3-1366.jpg 1366w,
+      ./img/blinds-sunshine-coast-3-1920.jpg 1920w,
+      ./img/blinds-sunshine-coast-3-2560.jpg 2560w,
+      ./img/blinds-sunshine-coast-3-3840.jpg 3840w
+      " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                type="image/jpeg">
+      
+              <img src="./img/blinds-sunshine-coast-3-1920.jpg" alt="Cushions" loading="lazy">
+            </picture>
+          </div>
+        </div>
+        <div id="gallery-item-4" popover>
+          <div>
+            <button popovertargetaction="hide" popovertarget="gallery-item-4">
+              <i class="fa-thin fa-xmark"></i>
+            </button>
+            <picture>
+              <source srcset="
+      ./img/blinds-sunshine-coast-4-768.jpg 768w,
+      ./img/blinds-sunshine-coast-4-980.jpg 980w,
+      ./img/blinds-sunshine-coast-4-1366.jpg 1366w,
+      ./img/blinds-sunshine-coast-4-1920.jpg 1920w,
+      ./img/blinds-sunshine-coast-4-2560.jpg 2560w,
+      ./img/blinds-sunshine-coast-4-3840.jpg 3840w
+      " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                type="image/jpeg">
+      
+              <img src="./img/blinds-sunshine-coast-4-1920.jpg" alt="Cushions" loading="lazy">
+            </picture>
+          </div>
+        </div>
+        <div id="gallery-item-5" popover>
+          <div>
+            <button popovertargetaction="hide" popovertarget="gallery-item-5">
+              <i class="fa-thin fa-xmark"></i>
+            </button>
+            <picture>
+              <source srcset="
+      ./img/curtains-sunshine-coast-1-768.jpg 768w,
+      ./img/curtains-sunshine-coast-1-980.jpg 980w,
+      ./img/curtains-sunshine-coast-1-1366.jpg 1366w,
+      ./img/curtains-sunshine-coast-1-1920.jpg 1920w,
+      ./img/curtains-sunshine-coast-1-2560.jpg 2560w,
+      ./img/curtains-sunshine-coast-1-3840.jpg 3840w
+      " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                type="image/jpeg">
+      
+              <img src="./img/curtains-sunshine-coast-1-1920.jpg" alt="Cushions" loading="lazy">
+            </picture>
+          </div>
+        </div>
+        <div id="gallery-item-6" popover>
+          <div>
+            <button popovertargetaction="hide" popovertarget="gallery-item-6">
+              <i class="fa-thin fa-xmark"></i>
+            </button>
+            <picture>
+              <source srcset="
+      ./img/blinds-sunshine-coast-5-768.jpg 768w,
+      ./img/blinds-sunshine-coast-5-980.jpg 980w,
+      ./img/blinds-sunshine-coast-5-1366.jpg 1366w,
+      ./img/blinds-sunshine-coast-5-1920.jpg 1920w,
+      ./img/blinds-sunshine-coast-5-2560.jpg 2560w,
+      ./img/blinds-sunshine-coast-5-3840.jpg 3840w
+      " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                type="image/jpeg">
+      
+              <img src="./img/blinds-sunshine-coast-5-1920.jpg" alt="Cushions" loading="lazy">
+            </picture>
+          </div>
+        </div>
+        <div id="gallery-item-7" popover>
+          <div>
+            <button popovertargetaction="hide" popovertarget="gallery-item-7">
+              <i class="fa-thin fa-xmark"></i>
+            </button>
+            <picture>
+              <source srcset="
+      ./img/blinds-sunshine-coast-6-768.jpg 768w,
+      ./img/blinds-sunshine-coast-6-980.jpg 980w,
+      ./img/blinds-sunshine-coast-6-1366.jpg 1366w,
+      ./img/blinds-sunshine-coast-6-1920.jpg 1920w,
+      ./img/blinds-sunshine-coast-6-2560.jpg 2560w,
+      ./img/blinds-sunshine-coast-6-3840.jpg 3840w
+      " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                type="image/jpeg">
+      
+              <img src="./img/blinds-sunshine-coast-6-1920.jpg" alt="Cushions" loading="lazy">
+            </picture>
+          </div>
+        </div>
+        <div id="gallery-item-8" popover>
+          <div>
+            <button popovertargetaction="hide" popovertarget="gallery-item-8">
+              <i class="fa-thin fa-xmark"></i>
+            </button>
+            <picture>
+              <source srcset="
+      ./img/curtains-sunshine-coast-2-768.jpg 768w,
+      ./img/curtains-sunshine-coast-2-980.jpg 980w,
+      ./img/curtains-sunshine-coast-2-1366.jpg 1366w,
+      ./img/curtains-sunshine-coast-2-1920.jpg 1920w,
+      ./img/curtains-sunshine-coast-2-2560.jpg 2560w,
+      ./img/curtains-sunshine-coast-2-3840.jpg 3840w
+      " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                type="image/jpeg">
+      
+              <img src="./img/curtains-sunshine-coast-2-1920.jpg" alt="Cushions" loading="lazy">
+            </picture>
+          </div>
+        </div>
+        <div id="gallery-item-9" popover>
+          <div>
+            <button popovertargetaction="hide" popovertarget="gallery-item-9">
+              <i class="fa-thin fa-xmark"></i>
+            </button>
+            <picture>
+              <source srcset="
+      ./img/blinds-sunshine-coast-7-768.jpg 768w,
+      ./img/blinds-sunshine-coast-7-980.jpg 980w,
+      ./img/blinds-sunshine-coast-7-1366.jpg 1366w,
+      ./img/blinds-sunshine-coast-7-1920.jpg 1920w,
+      ./img/blinds-sunshine-coast-7-2560.jpg 2560w,
+      ./img/blinds-sunshine-coast-7-3840.jpg 3840w
+      " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                type="image/jpeg">
+      
+              <img src="./img/blinds-sunshine-coast-7-1920.jpg" alt="Cushions" loading="lazy">
+            </picture>
+          </div>
+        </div>
+        <div id="gallery-item-10" popover>
+          <div>
+            <button popovertargetaction="hide" popovertarget="gallery-item-10">
+              <i class="fa-thin fa-xmark"></i>
+            </button>
+            <picture>
+              <source srcset="
+      ./img/curtains-sunshine-coast-3-768.jpg 768w,
+      ./img/curtains-sunshine-coast-3-980.jpg 980w,
+      ./img/curtains-sunshine-coast-3-1366.jpg 1366w,
+      ./img/curtains-sunshine-coast-3-1920.jpg 1920w,
+      ./img/curtains-sunshine-coast-3-2560.jpg 2560w,
+      ./img/curtains-sunshine-coast-3-3840.jpg 3840w
+      " sizes="(max-width: 768px) 100vw, (max-width: 980px) 60vw, (max-width: 1366px) 75vw, (max-width: 1920px) 75vw, (max-width: 2560px) 75vw, (max-width: 3840px) 75vw, 1920px"
+                type="image/jpeg">
+      
+              <img src="./img/curtains-sunshine-coast-3-1920.jpg" alt="Cushions" loading="lazy">
+            </picture>
+          </div>
+        </div>
+      
+        <!-- <script type="text/javascript">
+        var sc_project = 12815469;
+        var sc_invisible = 1;
+        var sc_security = "4e9c1882"; 
+      </script>
+      <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+      <noscript>
+        <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+                    class="statcounter" src="https://c.statcounter.com/12815469/0/4e9c1882/1/" alt="Web Analytics"
+                    referrerPolicy="no-referrer-when-downgrade"></a></div>
+      </noscript> -->
+      
+      </body>
+      
+      </html>
