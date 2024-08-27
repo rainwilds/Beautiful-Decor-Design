@@ -1898,6 +1898,11 @@ body#page-about {
 
             >p {
                 padding: 0;
+                text-align: left;
+                max-width: 50vw;
+                padding: 0;
+                display: flex;
+                align-self: center;
             }
         }
     }
