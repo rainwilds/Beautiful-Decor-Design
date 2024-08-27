@@ -1930,6 +1930,13 @@ body#page-about {
     main {
         >section:first-of-type {
             flex-direction: initial;
+
+            @media (max-width: 768px) {
+                & {
+                    display: grid;
+                }
+            }
+
         }
     }
 }
