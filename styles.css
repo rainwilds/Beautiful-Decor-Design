@@ -1125,6 +1125,7 @@ header {
         align-self: flex-start;
         bottom: var(--space-large);
         right: var(--space-large);
+        z-index: 4;
 
         >picture {
 
@@ -1885,7 +1886,7 @@ body#page-about {
     header {
         >hgroup {
             align-self: end;
-            background: black;
+            background: light-dark(var(--color-accent-light-secondary), var(--color-accent-dark-primary));
             width: 100%;
             max-width: inherit;
             padding: var(--space-medium);
@@ -1894,12 +1895,14 @@ body#page-about {
 
             >h1 {
                 margin: 0;
+                display: flex;
+                align-self: end;
             }
 
             >p {
                 padding: 0;
                 text-align: left;
-                max-width: 50vw;
+                max-width: 35vw;
                 padding: 0;
                 display: flex;
                 align-self: center;
