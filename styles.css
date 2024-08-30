@@ -1104,10 +1104,6 @@ header {
     color: light-dark(var(--color-accent-dark-primary), var(--color-accent-light-secondary));
     overflow: hidden;
 
-    &:has(.under-construction) {
-        background-image: repeating-linear-gradient(45deg, transparent, transparent 32px, var(--color-accent-opaque-light-primary) 32px, var(--color-accent-opaque-light-primary) 64px);
-    }
-
     &:has(i)>picture:first-of-type {
 
         @media (max-width: 980px) {
