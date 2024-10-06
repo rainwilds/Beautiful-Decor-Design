@@ -956,14 +956,29 @@
                 border-radius: 0;
             }
 
-            &.home:first-of-type {
-                background: linear-gradient(0deg, var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark-primary)), url(./img/cushion-covers-sunshine-coast-brisbane-2-768.jpg);
-                background-size: cover;
-
+            &.home {
                 >div {
                     color: var(--color-background-light);
+                    background-size: cover;
                 }
             }
+
+            &.home:nth-of-type(1) {
+                background: linear-gradient(0deg, var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark-primary)), url(./img/cushion-covers-sunshine-coast-brisbane-2-768.jpg);
+                
+            }
+
+            &.home:nth-of-type(2) {
+                background: linear-gradient(0deg, var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark-primary)), url(./img/roller-blinds-sunshine-coast-brisbane-1-768.jpg);
+            }
+
+            &.home:nth-of-type(3) {
+                background: linear-gradient(0deg, var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark-primary)), url(./img/sheer-curtains-sunshine-coast-brisbane-3-768.jpg);
+            }
+
+            &.home:nth-of-type(4) {
+                background: linear-gradient(0deg, var(--color-accent-opaque-light-primary), var(--color-accent-opaque-dark-primary)), url(./img/roller-blinds-sunshine-coast-brisbane-1-768.jpg);
+            }            
 
             &.text-align-left {
                 text-align: left;
