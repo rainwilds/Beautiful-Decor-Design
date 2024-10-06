@@ -956,7 +956,7 @@
                 border-radius: 0;
             }
 
-            &.home >div {
+            &.home {
                     color: var(--color-background-light);
                     background-size: cover;
             }
