@@ -956,11 +956,9 @@
                 border-radius: 0;
             }
 
-            &.home {
-                >div {
+            &.home >div {
                     color: var(--color-background-light);
                     background-size: cover;
-                }
             }
 
             &.home:nth-of-type(1) {
