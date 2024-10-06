@@ -958,7 +958,7 @@
 
             &.home {
                     color: var(--color-background-light);
-                    background-size: cover;
+                    background-size: cover !important;
             }
 
             &.home:nth-of-type(1) {
