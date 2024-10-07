@@ -954,6 +954,10 @@
                 border: none;
                 border-color: initial;
                 border-radius: 0;
+
+                &p:nth-child(3) {
+                    font-size: var(--font-2-size-small);
+                }
             }
 
             &.home {
