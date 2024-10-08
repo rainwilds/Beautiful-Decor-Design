@@ -1014,6 +1014,10 @@
                     margin-bottom: 0;
                 }
 
+                p:nth-child(4) {
+                    font-size: var(--font-2-size-small);
+                }
+
                 i {
                     font-size: 4rem;
                     color: light-dark(var(--color-accent-opaque-dark-primary), var(--color-static-light-4));
